@@ -1,0 +1,206 @@
+/var/spool/slurm/slurmd/job8492657/slurm_script: line 8: activate: No such file or directory
+Running benchmark `H2OAutoML` on `openml/t/2073` framework in `local` mode.
+Loading frameworks definitions from ['/home/juradoi/experiments/automlbenchmark/resources/frameworks.yaml'].
+Loading benchmark constraint definitions from ['/home/juradoi/experiments/automlbenchmark/resources/constraints.yaml'].
+Loading openml task 2073.
+
+-----------------------------------------------------------
+Starting job local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML.
+Assigning 16 cores (total=16) for new task yeast.
+Assigning 90999 MB (total=95302 MB) for new yeast task.
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 17.1%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 2.4%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+Running task yeast on framework H2OAutoML with config:
+TaskConfig({})
+Running cmd `/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py`
+INFO:__main__:
+**** H2O AutoML [v3.34.0.3] ****
+
+INFO:__main__:Starting H2O cluster with 16 cores, 60666M memory.
+Checking whether there is an H2O instance running at http://localhost:11656 ..... not found.
+Attempting to start a local H2O server...
+  Java Version: openjdk version "11.0.12" 2021-07-20; OpenJDK Runtime Environment (build 11.0.12+7-post-Debian-2deb10u1); OpenJDK 64-Bit Server VM (build 11.0.12+7-post-Debian-2deb10u1, mixed mode, sharing)
+  Starting server from /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/backend/bin/h2o.jar
+  Ice root: /tmp/tmp2luufjzx
+  JVM stdout: /tmp/tmp2luufjzx/h2o_unknownUser_started_from_python.out
+  JVM stderr: /tmp/tmp2luufjzx/h2o_unknownUser_started_from_python.err
+  Server is running at http://127.0.0.1:11656
+Connecting to H2O server at http://127.0.0.1:11656 ... successful.
+--------------------------  ------------------------------------------------------------------
+H2O_cluster_uptime:         01 secs
+H2O_cluster_timezone:       Europe/Amsterdam
+H2O_data_parsing_timezone:  UTC
+H2O_cluster_version:        3.34.0.3
+H2O_cluster_version_age:    2 months and 2 days
+H2O_cluster_name:           H2O_from_python_unknownUser_a6gom7
+H2O_cluster_total_nodes:    1
+H2O_cluster_free_memory:    59.25 Gb
+H2O_cluster_total_cores:    16
+H2O_cluster_allowed_cores:  16
+H2O_cluster_status:         locked, healthy
+H2O_connection_url:         http://127.0.0.1:11656
+H2O_connection_proxy:       {"http": null, "https": null}
+H2O_internal_security:      False
+H2O_API_Extensions:         Amazon S3, XGBoost, Algos, AutoML, Core V3, TargetEncoder, Core V4
+Python_version:             3.8.12 final
+--------------------------  ------------------------------------------------------------------
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+INFO:__main__:Running model on task yeast, fold 0.
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 40.9%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 41.6%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 86.1%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 44.7%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 96.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 44.8%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 96.7%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 44.8%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 96.8%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 44.8%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 96.5%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 44.8%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 96.4%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 44.8%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 97.5%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 44.8%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 97.3%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 44.8%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 97.5%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 44.8%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 95.8%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 45.5%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 96.0%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 45.5%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 97.0%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 45.5%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 96.4%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 45.5%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 96.0%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 45.5%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 96.3%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 45.5%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 96.1%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 45.5%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 97.4%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 45.5%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 96.5%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 45.6%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 96.5%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 45.6%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 56.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 45.6%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 84.4%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 45.7%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 97.7%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 45.7%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 96.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 45.7%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 96.6%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 45.7%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 95.1%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 45.7%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 96.8%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 45.7%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 98.0%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 45.7%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 38.4%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 45.7%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 80.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 46.1%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+AutoML progress: |███████████████████████████████████████████████████████████████| (done) 100%
+xgboost prediction progress: |███████████████████████████████████████████████████| (done) 100%
+H2O session _sid_9ede closed.
+
+
+
+Predictions preview:
+                     CYT                    ERL                    EXC                    ME1                    ME2                    ME3                   MIT                  NUC                    POX                   VAC predictions truth
+0   0.33664587140083313   0.004830498248338699   0.006470773369073868   0.004790704231709242   0.008635756559669971    0.05137713998556137  0.027982279658317566   0.5300475358963013   0.009007636457681656  0.020211797207593918         NUC   NUC
+1    0.5111952424049377  0.0032673587556928396   0.004222700837999582  0.0032404421363025904   0.005377406254410744   0.012991017661988735   0.08151449263095856  0.36444008350372314   0.006027678493410349  0.007723599672317505         CYT   NUC
+2   0.25470027327537537  0.0019604740664362907  0.0025240969844162464  0.0019443236524239182   0.003004244761541486    0.00487563107162714  0.010365266352891922    0.712967038154602   0.003704535774886608  0.003954105544835329         NUC   NUC
+3    0.3180025517940521  0.0025884155184030533   0.004525812342762947  0.0025670919567346573   0.004123076796531677    0.00853680819272995    0.0452040396630764   0.5999496579170227    0.00519788870587945  0.009304624982178211         NUC   NUC
+4   0.37020784616470337   0.006601559463888407   0.026505179703235626   0.008185375481843948   0.031952254474163055    0.09649892896413803   0.05381755530834198  0.35733044147491455   0.014142951928079128  0.034757908433675766         CYT   NUC
+5   0.27460092306137085   0.005427980329841375  0.0069127692840993404   0.005588599015027285   0.009744774550199509   0.050185658037662506  0.031123559921979904   0.5733172297477722   0.011136064305901527   0.03196241334080696         NUC   NUC
+6    0.7767720222473145  0.0022925417870283127  0.0028552839066833258  0.0022736545652151108   0.003949431702494621   0.011061877012252808   0.03236602991819382  0.15523724257946014   0.005974775180220604   0.00721714785322547         CYT   NUC
+7   0.19437548518180847   0.007262622471898794      0.009913370013237    0.00934283435344696      0.059662114828825    0.38831740617752075   0.07013695687055588  0.20465658605098724   0.013797684572637081    0.0425349660217762         ME3   NUC
+8      0.59492427110672  0.0031911323312669992   0.003974447958171368   0.003238474717363715   0.005483783781528473   0.013961734250187874   0.01380652654916048   0.3244113326072693   0.006778715178370476  0.030229555442929268         CYT   NUC
+9    0.1932360976934433   0.003302373457700014   0.004806886427104473   0.003275168128311634    0.00502805644646287   0.024988876655697823   0.36785703897476196   0.3836004436016083   0.006416487507522106  0.007488595321774483         NUC   NUC
+10  0.34376612305641174   0.003496483899652958  0.0046406579203903675   0.003467678092420101   0.005332579370588064   0.016646744683384895   0.05250152200460434   0.5541297197341919   0.007582919206470251   0.00843559205532074         NUC   NUC
+11   0.5372046232223511   0.002524737501516938  0.0031444760970771313   0.002597867976874113   0.004642551764845848  0.0054368628188967705   0.08207054436206818   0.3452518582344055  0.0049147107638418674  0.012211751192808151         CYT   NUC
+12    0.114012211561203   0.005080582108348608  0.0063276938162744045   0.006467630621045828   0.029254183173179626     0.1657578945159912   0.01495247520506382   0.6248176693916321   0.010127472691237926   0.02320215478539467         NUC   NUC
+13  0.32149460911750793  0.0033244453370571136    0.00414048507809639   0.003297056769952178   0.005505488719791174    0.01095686387270689   0.01938721351325512   0.6011801362037659    0.01098077092319727   0.01973288133740425         NUC   NUC
+14  0.14798948168754578  0.0029578623361885548   0.004040168598294258  0.0029334938153624535   0.004839566070586443   0.012360545806586742   0.02303868904709816   0.7892242074012756   0.005432048812508583  0.007183963432908058         NUC   NUC
+15  0.12471342086791992   0.003670469159260392   0.005182696506381035  0.0036402298137545586   0.005422817077487707   0.016749395057559013   0.01977471262216568   0.8053679466247559   0.007289213594049215  0.008189131505787373         NUC   NUC
+16   0.6325903534889221   0.003141746623441577   0.012025274336338043   0.003115864936262369   0.005344953387975693    0.00797298178076744  0.035770900547504425  0.28503090143203735   0.007108501624315977  0.007898527197539806         CYT   NUC
+17   0.3019600510597229  0.0028085976373404264   0.003498014295473695   0.002785460324957967  0.0045043970458209515    0.01370142586529255  0.014110585674643517   0.6455387473106384   0.005394500680267811  0.005698247347027063         NUC   NUC
+18  0.45733141899108887   0.005530017428100109   0.006887450814247131  0.0054844580590724945    0.01947176083922386    0.15735304355621338   0.12896879017353058  0.17378796637058258   0.013748528435826302   0.03143654391169548         CYT   NUC
+19  0.31499776244163513  0.0022939362097531557    0.00285702059045434   0.002275038743391633   0.004781466443091631  0.0037190469447523355   0.06668240576982498   0.5850062370300293   0.004395715426653624  0.012991353869438171         NUC   NUC
+
+Predictions saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_2073.pygmo_c.local.20211209T170353/predictions/yeast/0/predictions.csv`.
+Loading metadata from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_2073.pygmo_c.local.20211209T170353/predictions/yeast/0/metadata.json`.
+Loading predictions from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_2073.pygmo_c.local.20211209T170353/predictions/yeast/0/predictions.csv`.
+Metric scores: { 'acc': 0.697986577181208,
+  'app_version': 'dev [master, beef024]',
+  'balacc': 0.5171286904172852,
+  'constraint': 'pygmo_c',
+  'duration': nan,
+  'fold': 0,
+  'framework': 'H2OAutoML',
+  'id': 'openml.org/t/2073',
+  'info': None,
+  'logloss': 0.9561142067368578,
+  'metric': 'neg_logloss',
+  'mode': 'local',
+  'models_count': 123,
+  'params': '',
+  'predict_duration': 0.09055447578430176,
+  'result': -0.9561142067368578,
+  'seed': 1365246411,
+  'task': 'yeast',
+  'training_duration': 3603.7326986789703,
+  'type': 'multiclass',
+  'utc': '2021-12-09T18:04:09',
+  'version': '3.34.0.3'}
+Job `local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML` executed in 3615.683 seconds.
+All jobs executed in 3615.692 seconds.
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 70.8%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 2.3%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+Processing results for h2oautoml.openml_t_2073.pygmo_c.local.20211209T170353
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_2073.pygmo_c.local.20211209T170353/scores/H2OAutoML.benchmark_openml_t_2073.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_2073.pygmo_c.local.20211209T170353/scores/results.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/results.csv`.
+Summing up scores for current run:
+               id  task fold framework constraint    result      metric  duration       seed
+openml.org/t/2073 yeast    0 H2OAutoML    pygmo_c -0.956114 neg_logloss    3615.7 1365246411

@@ -1,0 +1,689 @@
+/var/spool/slurm/slurmd/job8492660/slurm_script: line 8: activate: No such file or directory
+Running benchmark `H2OAutoML` on `openml/t/2073` framework in `local` mode.
+Loading frameworks definitions from ['/home/juradoi/experiments/automlbenchmark/resources/frameworks.yaml'].
+Loading benchmark constraint definitions from ['/home/juradoi/experiments/automlbenchmark/resources/constraints.yaml'].
+Loading openml task 2073.
+Setting up framework H2OAutoML.
+Running cmd `/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/setup.sh stable`
+setting up H2O version stable
+shared/setup.sh /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML true
+Requirement already satisfied: pip in ./frameworks/H2OAutoML/venv/lib/python3.8/site-packages (21.1.1)
+Collecting pip
+  Downloading pip-21.3.1-py3-none-any.whl (1.7 MB)
+Collecting wheel
+  Downloading wheel-0.37.0-py2.py3-none-any.whl (35 kB)
+Installing collected packages: wheel, pip
+  Attempting uninstall: pip
+    Found existing installation: pip 21.1.1
+    Uninstalling pip-21.1.1:
+      Successfully uninstalled pip-21.1.1
+Successfully installed pip-21.3.1 wheel-0.37.0
+PY=/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore
+PIP=/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -m pip
+Collecting numpy==1.21.0
+  Downloading numpy-1.21.0-cp38-cp38-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (15.7 MB)
+Collecting psutil==5.8.0
+  Downloading psutil-5.8.0-cp38-cp38-manylinux2010_x86_64.whl (296 kB)
+Collecting pyarrow==4.0.1
+  Downloading pyarrow-4.0.1-cp38-cp38-manylinux2014_x86_64.whl (21.9 MB)
+Collecting ruamel.yaml.clib==0.2.2
+  Downloading ruamel.yaml.clib-0.2.2-cp38-cp38-manylinux1_x86_64.whl (578 kB)
+Collecting ruamel.yaml==0.17.4
+  Downloading ruamel.yaml-0.17.4-py3-none-any.whl (101 kB)
+Installing collected packages: ruamel.yaml.clib, numpy, ruamel.yaml, pyarrow, psutil
+Successfully installed numpy-1.21.0 psutil-5.8.0 pyarrow-4.0.1 ruamel.yaml-0.17.4 ruamel.yaml.clib-0.2.2
+
+We trust you have received the usual lecture from the local System
+Administrator. It usually boils down to these three things:
+
+    #1) Respect the privacy of others.
+    #2) Think before you type.
+    #3) With great power comes great responsibility.
+
+sudo: no tty present and no askpass program specified
+
+We trust you have received the usual lecture from the local System
+Administrator. It usually boils down to these three things:
+
+    #1) Respect the privacy of others.
+    #2) Think before you type.
+    #3) With great power comes great responsibility.
+
+sudo: no tty present and no askpass program specified
+Collecting requests>=2.10
+  Downloading requests-2.26.0-py2.py3-none-any.whl (62 kB)
+Collecting tabulate
+  Downloading tabulate-0.8.9-py3-none-any.whl (25 kB)
+Collecting future
+  Downloading future-0.18.2.tar.gz (829 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting colorama>=0.3.8
+  Downloading colorama-0.4.4-py2.py3-none-any.whl (16 kB)
+Collecting packaging
+  Downloading packaging-21.3-py3-none-any.whl (40 kB)
+Collecting pandas
+  Downloading pandas-1.3.4-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (11.5 MB)
+Collecting certifi>=2017.4.17
+  Downloading certifi-2021.10.8-py2.py3-none-any.whl (149 kB)
+Collecting idna<4,>=2.5
+  Downloading idna-3.3-py3-none-any.whl (61 kB)
+Collecting urllib3<1.27,>=1.21.1
+  Downloading urllib3-1.26.7-py2.py3-none-any.whl (138 kB)
+Collecting charset-normalizer~=2.0.0
+  Downloading charset_normalizer-2.0.9-py3-none-any.whl (39 kB)
+Collecting pyparsing!=3.0.5,>=2.0.2
+  Downloading pyparsing-3.0.6-py3-none-any.whl (97 kB)
+Collecting python-dateutil>=2.7.3
+  Downloading python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+Collecting pytz>=2017.3
+  Downloading pytz-2021.3-py2.py3-none-any.whl (503 kB)
+Requirement already satisfied: numpy>=1.17.3 in ./frameworks/H2OAutoML/venv/lib/python3.8/site-packages (from pandas->-r /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/requirements.txt (line 6)) (1.21.0)
+Collecting six>=1.5
+  Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Building wheels for collected packages: future
+  Building wheel for future (setup.py): started
+  Building wheel for future (setup.py): finished with status 'done'
+  Created wheel for future: filename=future-0.18.2-py3-none-any.whl size=491058 sha256=24f1dbc35acf348a9f8724323cc6fb7d56f931ca99e3c2db9bef9bf9c6203d7e
+  Stored in directory: /scratch/pip-ephem-wheel-cache-3dog0tts/wheels/8e/70/28/3d6ccd6e315f65f245da085482a2e1c7d14b90b30f239e2cf4
+Successfully built future
+Installing collected packages: six, urllib3, pytz, python-dateutil, pyparsing, idna, charset-normalizer, certifi, tabulate, requests, pandas, packaging, future, colorama
+WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+Successfully installed certifi-2021.10.8 charset-normalizer-2.0.9 colorama-0.4.4 future idna-3.3 packaging-21.3 pandas-1.3.4 pyparsing-3.0.6 python-dateutil-2.8.2 pytz-2021.3 requests-2.26.0 six-1.16.0 tabulate-0.8.9 urllib3-1.26.7
+WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+installing H2O-3 stable
+WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+Collecting h2o
+  Downloading h2o-3.34.0.3.tar.gz (175.8 MB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting requests
+  Downloading requests-2.26.0-py2.py3-none-any.whl (62 kB)
+Collecting tabulate
+  Downloading tabulate-0.8.9-py3-none-any.whl (25 kB)
+Collecting future
+  Downloading future-0.18.2.tar.gz (829 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting charset-normalizer~=2.0.0
+  Downloading charset_normalizer-2.0.9-py3-none-any.whl (39 kB)
+Collecting certifi>=2017.4.17
+  Downloading certifi-2021.10.8-py2.py3-none-any.whl (149 kB)
+Collecting idna<4,>=2.5
+  Downloading idna-3.3-py3-none-any.whl (61 kB)
+Collecting urllib3<1.27,>=1.21.1
+  Downloading urllib3-1.26.7-py2.py3-none-any.whl (138 kB)
+Building wheels for collected packages: h2o, future
+  Building wheel for h2o (setup.py): started
+  Building wheel for h2o (setup.py): finished with status 'done'
+  Created wheel for h2o: filename=h2o-3.34.0.3-py2.py3-none-any.whl size=175832480 sha256=78bc0b259975b723bbdbf94d08a8a3238d945e7125679faf100c00806d586af4
+  Stored in directory: /scratch/pip-ephem-wheel-cache-rcg0wipz/wheels/01/74/09/0809b5c344d8a157cc8e5e56e5c071c7d157ac42bd0619a91e
+  Building wheel for future (setup.py): started
+  Building wheel for future (setup.py): finished with status 'done'
+  Created wheel for future: filename=future-0.18.2-py3-none-any.whl size=491058 sha256=8f2291afbd9af6af81f10dc51c41e91dad2c3941cd7c827b29d172d95c301582
+  Stored in directory: /scratch/pip-ephem-wheel-cache-rcg0wipz/wheels/8e/70/28/3d6ccd6e315f65f245da085482a2e1c7d14b90b30f239e2cf4
+Successfully built h2o future
+WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+WARNING: Error parsing requirements for requests: [Errno 2] No such file or directory: '/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/requests-2.26.0.dist-info/METADATA'
+Installing collected packages: urllib3, idna, charset-normalizer, certifi, tabulate, requests, future, h2o
+  Attempting uninstall: urllib3
+    WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+    Found existing installation: urllib3 1.26.7
+    Uninstalling urllib3-1.26.7:
+      Successfully uninstalled urllib3-1.26.7
+  Attempting uninstall: idna
+    WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+    Found existing installation: idna 3.3
+    Uninstalling idna-3.3:
+      Successfully uninstalled idna-3.3
+  Attempting uninstall: charset-normalizer
+    WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+    Found existing installation: charset-normalizer 2.0.9
+    Uninstalling charset-normalizer-2.0.9:
+      Successfully uninstalled charset-normalizer-2.0.9
+  Attempting uninstall: certifi
+    Found existing installation: certifi 2021.10.8
+    WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+    Uninstalling certifi-2021.10.8:
+      Successfully uninstalled certifi-2021.10.8
+  Attempting uninstall: tabulate
+    Found existing installation: tabulate 0.8.9
+    WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+    Uninstalling tabulate-0.8.9:
+      Successfully uninstalled tabulate-0.8.9
+  Attempting uninstall: requests
+    Found existing installation: requests 2.26.0
+    WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+    Uninstalling requests-2.26.0:
+      Successfully uninstalled requests-2.26.0
+Successfully installed certifi-2021.10.8 charset-normalizer-2.0.9 future-0.18.2 h2o-3.34.0.3 idna-3.3 requests-2.26.0 tabulate-0.8.9 urllib3-1.26.7
+WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+
+WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+
+
+
+
+We trust you have received the usual lecture from the local System
+Administrator. It usually boils down to these three things:
+
+    #1) Respect the privacy of others.
+    #2) Think before you type.
+    #3) With great power comes great responsibility.
+
+sudo: no tty present and no askpass program specified
+
+We trust you have received the usual lecture from the local System
+Administrator. It usually boils down to these three things:
+
+    #1) Respect the privacy of others.
+    #2) Think before you type.
+    #3) With great power comes great responsibility.
+
+sudo: no tty present and no askpass program specified
+WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+WARNING: Error parsing requirements for requests: [Errno 2] No such file or directory: '/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/requests-2.26.0.dist-info/METADATA'
+    WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+    WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+    WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+    WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+    WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+    WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+WARNING: Ignoring invalid distribution -uture (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+
+Setup of framework H2OAutoML completed successfully.
+
+-----------------------------------------------------------
+Starting job local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML.
+Assigning 16 cores (total=16) for new task yeast.
+Assigning 91153 MB (total=95302 MB) for new yeast task.
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 5.9%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 2.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+Running task yeast on framework H2OAutoML with config:
+TaskConfig({})
+Running cmd `/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py`
+INFO:__main__:
+**** H2O AutoML [v3.34.0.3] ****
+
+INFO:__main__:Starting H2O cluster with 16 cores, 60769M memory.
+Checking whether there is an H2O instance running at http://localhost:3804 ..... not found.
+Attempting to start a local H2O server...
+  Java Version: openjdk version "11.0.12" 2021-07-20; OpenJDK Runtime Environment (build 11.0.12+7-post-Debian-2deb10u1); OpenJDK 64-Bit Server VM (build 11.0.12+7-post-Debian-2deb10u1, mixed mode, sharing)
+  Starting server from /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/backend/bin/h2o.jar
+  Ice root: /tmp/tmpj644l8_w
+  JVM stdout: /tmp/tmpj644l8_w/h2o_unknownUser_started_from_python.out
+  JVM stderr: /tmp/tmpj644l8_w/h2o_unknownUser_started_from_python.err
+ERROR:frameworks.shared.callee:Server process terminated with error code 1: ScriptEngineManager providers.next(): javax.script.ScriptEngineFactory: Error accessing configuration file
+Exception in thread "main" java.util.ServiceConfigurationError: ai.h2o.xgboost4j.java.INativeLibLoader: Error accessing configuration file
+	at java.base/java.util.ServiceLoader.fail(ServiceLoader.java:582)
+	at java.base/java.util.ServiceLoader$LazyClassPathLookupIterator.parse(ServiceLoader.java:1173)
+	at java.base/java.util.ServiceLoader$LazyClassPathLookupIterator.nextProviderClass(ServiceLoader.java:1206)
+	at java.base/java.util.ServiceLoader$LazyClassPathLookupIterator.hasNextService(ServiceLoader.java:1221)
+	at java.base/java.util.ServiceLoader$LazyClassPathLookupIterator.hasNext(ServiceLoader.java:1265)
+	at java.base/java.util.ServiceLoader$2.hasNext(ServiceLoader.java:1300)
+	at java.base/java.util.ServiceLoader$3.hasNext(ServiceLoader.java:1385)
+	at ai.h2o.xgboost4j.java.NativeLibLoaderService.findLoaderByPriority(NativeLibLoaderService.java:59)
+	at ai.h2o.xgboost4j.java.NativeLibLoaderService.createLoader(NativeLibLoaderService.java:42)
+	at ai.h2o.xgboost4j.java.NativeLibLoader.initXGBoost(NativeLibLoader.java:51)
+	at ai.h2o.xgboost4j.java.NativeLibLoader.getLoader(NativeLibLoader.java:66)
+	at hex.tree.xgboost.XGBoostExtension.getLoader(XGBoostExtension.java:70)
+	at hex.tree.xgboost.XGBoostExtension.initXgboost(XGBoostExtension.java:95)
+	at hex.tree.xgboost.XGBoostExtension.isEnabled(XGBoostExtension.java:52)
+	at water.ExtensionManager.isEnabled(ExtensionManager.java:189)
+	at water.ExtensionManager.registerCoreExtensions(ExtensionManager.java:103)
+	at water.H2O.main(H2O.java:2295)
+	at water.H2OStarter.start(H2OStarter.java:22)
+	at water.H2OStarter.start(H2OStarter.java:48)
+	at water.H2OApp.main(H2OApp.java:12)
+Caused by: java.util.zip.ZipException: zip file is empty
+	at java.base/java.util.zip.ZipFile$Source.zerror(ZipFile.java:1607)
+	at java.base/java.util.zip.ZipFile$Source.findEND(ZipFile.java:1410)
+	at java.base/java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1504)
+	at java.base/java.util.zip.ZipFile$Source.<init>(ZipFile.java:1308)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1271)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:831)
+	at java.base/java.util.zip.ZipFile$CleanableResource$FinalizableResource.<init>(ZipFile.java:857)
+	at java.base/java.util.zip.ZipFile$CleanableResource.get(ZipFile.java:846)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:248)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:177)
+	at java.base/java.util.jar.JarFile.<init>(JarFile.java:348)
+	at java.base/sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:103)
+	at java.base/sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:72)
+	at java.base/sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:99)
+	at java.base/sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:125)
+	at java.base/sun.net.www.protocol.jar.JarURLConnection.getInputStream(JarURLConnection.java:155)
+	at java.base/java.util.ServiceLoader$LazyClassPathLookupIterator.parse(ServiceLoader.java:1165)
+	... 18 more
+Traceback (most recent call last):
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/h2o.py", line 250, in init
+    h2oconn = H2OConnection.open(url=url, ip=ip, port=port, name=name, https=https,
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/backend/connection.py", line 385, in open
+    conn._cluster = conn._test_connection(retries, messages=msgs)
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/backend/connection.py", line 681, in _test_connection
+    raise H2OConnectionError("Could not establish link to the H2O cloud %s after %d retries\n%s"
+h2o.exceptions.H2OConnectionError: Could not establish link to the H2O cloud http://localhost:3804 after 5 retries
+[03:02.76] H2OConnectionError: Unexpected HTTP error: HTTPConnectionPool(host='localhost', port=3804): Max retries exceeded with url: /3/Metadata/schemas/CloudV3 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1543f39206a0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[03:02.98] H2OConnectionError: Unexpected HTTP error: HTTPConnectionPool(host='localhost', port=3804): Max retries exceeded with url: /3/Metadata/schemas/CloudV3 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1543f3920fa0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[03:03.19] H2OConnectionError: Unexpected HTTP error: HTTPConnectionPool(host='localhost', port=3804): Max retries exceeded with url: /3/Metadata/schemas/CloudV3 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1543f38ae7f0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[03:03.41] H2OConnectionError: Unexpected HTTP error: HTTPConnectionPool(host='localhost', port=3804): Max retries exceeded with url: /3/Metadata/schemas/CloudV3 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1543f38b8040>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[03:03.63] H2OConnectionError: Unexpected HTTP error: HTTPConnectionPool(host='localhost', port=3804): Max retries exceeded with url: /3/Metadata/schemas/CloudV3 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1543f38b8850>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/shared/callee.py", line 70, in call_run
+    result = run_fn(ds, config)
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py", line 66, in run
+    h2o.init(nthreads=nthreads,
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/h2o.py", line 267, in init
+    hs = H2OLocalServer.start(nthreads=nthreads, enable_assertions=enable_assertions, max_mem_size=mmax,
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/backend/server.py", line 140, in start
+    hs._launch_server(port=port, baseport=baseport, nthreads=int(nthreads), ea=enable_assertions,
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/backend/server.py", line 363, in _launch_server
+    raise H2OServerError(error_message)
+h2o.exceptions.H2OServerError: Server process terminated with error code 1: ScriptEngineManager providers.next(): javax.script.ScriptEngineFactory: Error accessing configuration file
+Exception in thread "main" java.util.ServiceConfigurationError: ai.h2o.xgboost4j.java.INativeLibLoader: Error accessing configuration file
+	at java.base/java.util.ServiceLoader.fail(ServiceLoader.java:582)
+	at java.base/java.util.ServiceLoader$LazyClassPathLookupIterator.parse(ServiceLoader.java:1173)
+	at java.base/java.util.ServiceLoader$LazyClassPathLookupIterator.nextProviderClass(ServiceLoader.java:1206)
+	at java.base/java.util.ServiceLoader$LazyClassPathLookupIterator.hasNextService(ServiceLoader.java:1221)
+	at java.base/java.util.ServiceLoader$LazyClassPathLookupIterator.hasNext(ServiceLoader.java:1265)
+	at java.base/java.util.ServiceLoader$2.hasNext(ServiceLoader.java:1300)
+	at java.base/java.util.ServiceLoader$3.hasNext(ServiceLoader.java:1385)
+	at ai.h2o.xgboost4j.java.NativeLibLoaderService.findLoaderByPriority(NativeLibLoaderService.java:59)
+
+	at ai.h2o.xgboost4j.java.NativeLibLoaderService.createLoader(NativeLibLoaderService.java:42)
+
+	at ai.h2o.xgboost4j.java.NativeLibLoader.initXGBoost(NativeLibLoader.java:51)
+
+	at ai.h2o.xgboost4j.java.NativeLibLoader.getLoader(NativeLibLoader.java:66)
+
+	at hex.tree.xgboost.XGBoostExtension.getLoader(XGBoostExtension.java:70)
+
+	at hex.tree.xgboost.XGBoostExtension.initXgboost(XGBoostExtension.java:95)
+
+	at hex.tree.xgboost.XGBoostExtension.isEnabled(XGBoostExtension.java:52)
+
+	at water.ExtensionManager.isEnabled(ExtensionManager.java:189)
+
+	at water.ExtensionManager.registerCoreExtensions(ExtensionManager.java:103)
+
+	at water.H2O.main(H2O.java:2295)
+
+	at water.H2OStarter.start(H2OStarter.java:22)
+
+	at water.H2OStarter.start(H2OStarter.java:48)
+
+	at water.H2OApp.main(H2OApp.java:12)
+
+Caused by: java.util.zip.ZipException: zip file is empty
+
+	at java.base/java.util.zip.ZipFile$Source.zerror(ZipFile.java:1607)
+
+	at java.base/java.util.zip.ZipFile$Source.findEND(ZipFile.java:1410)
+
+	at java.base/java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1504)
+
+	at java.base/java.util.zip.ZipFile$Source.<init>(ZipFile.java:1308)
+
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1271)
+
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:831)
+
+	at java.base/java.util.zip.ZipFile$CleanableResource$FinalizableResource.<init>(ZipFile.java:857)
+
+	at java.base/java.util.zip.ZipFile$CleanableResource.get(ZipFile.java:846)
+
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:248)
+
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:177)
+
+	at java.base/java.util.jar.JarFile.<init>(JarFile.java:348)
+
+	at java.base/sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:103)
+
+	at java.base/sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:72)
+
+	at java.base/sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:99)
+
+	at java.base/sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:125)
+
+	at java.base/sun.net.www.protocol.jar.JarURLConnection.getInputStream(JarURLConnection.java:155)
+
+	at java.base/java.util.ServiceLoader$LazyClassPathLookupIterator.parse(ServiceLoader.java:1165)
+
+	... 18 more
+
+
+
+
+
+
+Server process terminated with error code 1: ScriptEngineManager providers.next(): javax.script.ScriptEngineFactory: Error accessing configuration file
+Exception in thread "main" java.util.ServiceConfigurationError: ai.h2o.xgboost4j.java.INativeLibLoader: Error accessing configuration file
+	at java.base/java.util.ServiceLoader.fail(ServiceLoader.java:582)
+	at java.base/java.util.ServiceLoader$LazyClassPathLookupIterator.parse(ServiceLoader.java:1173)
+	at java.base/java.util.ServiceLoader$LazyClassPathLookupIterator.nextProviderClass(ServiceLoader.java:1206)
+	at java.base/java.util.ServiceLoader$LazyClassPathLookupIterator.hasNextService(ServiceLoader.java:1221)
+	at java.base/java.util.ServiceLoader$LazyClassPathLookupIterator.hasNext(ServiceLoader.java:1265)
+	at java.base/java.util.ServiceLoader$2.hasNext(ServiceLoader.java:1300)
+	at java.base/java.util.ServiceLoader$3.hasNext(ServiceLoader.java:1385)
+	at ai.h2o.xgboost4j.java.NativeLibLoaderService.findLoaderByPriority(NativeLibLoaderService.java:59)
+	at ai.h2o.xgboost4j.java.NativeLibLoaderService.createLoader(NativeLibLoaderService.java:42)
+	at ai.h2o.xgboost4j.java.NativeLibLoader.initXGBoost(NativeLibLoader.java:51)
+	at ai.h2o.xgboost4j.java.NativeLibLoader.getLoader(NativeLibLoader.java:66)
+	at hex.tree.xgboost.XGBoostExtension.getLoader(XGBoostExtension.java:70)
+	at hex.tree.xgboost.XGBoostExtension.initXgboost(XGBoostExtension.java:95)
+	at hex.tree.xgboost.XGBoostExtension.isEnabled(XGBoostExtension.java:52)
+	at water.ExtensionManager.isEnabled(ExtensionManager.java:189)
+	at water.ExtensionManager.registerCoreExtensions(ExtensionManager.java:103)
+	at water.H2O.main(H2O.java:2295)
+	at water.H2OStarter.start(H2OStarter.java:22)
+	at water.H2OStarter.start(H2OStarter.java:48)
+	at water.H2OApp.main(H2OApp.java:12)
+Caused by: java.util.zip.ZipException: zip file is empty
+	at java.base/java.util.zip.ZipFile$Source.zerror(ZipFile.java:1607)
+	at java.base/java.util.zip.ZipFile$Source.findEND(ZipFile.java:1410)
+	at java.base/java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1504)
+	at java.base/java.util.zip.ZipFile$Source.<init>(ZipFile.java:1308)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1271)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:831)
+	at java.base/java.util.zip.ZipFile$CleanableResource$FinalizableResource.<init>(ZipFile.java:857)
+	at java.base/java.util.zip.ZipFile$CleanableResource.get(ZipFile.java:846)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:248)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:177)
+	at java.base/java.util.jar.JarFile.<init>(JarFile.java:348)
+	at java.base/sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:103)
+	at java.base/sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:72)
+	at java.base/sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:99)
+	at java.base/sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:125)
+	at java.base/sun.net.www.protocol.jar.JarURLConnection.getInputStream(JarURLConnection.java:155)
+	at java.base/java.util.ServiceLoader$LazyClassPathLookupIterator.parse(ServiceLoader.java:1165)
+	... 18 more
+Traceback (most recent call last):
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 542, in run
+    meta_result = self.benchmark.framework_module.run(self._dataset, task_config)
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/__init__.py", line 30, in run
+    return run_in_venv(__file__, "exec.py",
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/shared/caller.py", line 142, in run_in_venv
+    raise NoResultError(res.error_message)
+amlb.results.NoResultError: Server process terminated with error code 1: ScriptEngineManager providers.next(): javax.script.ScriptEngineFactory: Error accessing configuration file
+Exception in thread "main" java.util.ServiceConfigurationError: ai.h2o.xgboost4j.java.INativeLibLoader: Error accessing configuration file
+	at java.base/java.util.ServiceLoader.fail(ServiceLoader.java:582)
+	at java.base/java.util.ServiceLoader$LazyClassPathLookupIterator.parse(ServiceLoader.java:1173)
+	at java.base/java.util.ServiceLoader$LazyClassPathLookupIterator.nextProviderClass(ServiceLoader.java:1206)
+	at java.base/java.util.ServiceLoader$LazyClassPathLookupIterator.hasNextService(ServiceLoader.java:1221)
+	at java.base/java.util.ServiceLoader$LazyClassPathLookupIterator.hasNext(ServiceLoader.java:1265)
+	at java.base/java.util.ServiceLoader$2.hasNext(ServiceLoader.java:1300)
+	at java.base/java.util.ServiceLoader$3.hasNext(ServiceLoader.java:1385)
+	at ai.h2o.xgboost4j.java.NativeLibLoaderService.findLoaderByPriority(NativeLibLoaderService.java:59)
+	at ai.h2o.xgboost4j.java.NativeLibLoaderService.createLoader(NativeLibLoaderService.java:42)
+	at ai.h2o.xgboost4j.java.NativeLibLoader.initXGBoost(NativeLibLoader.java:51)
+	at ai.h2o.xgboost4j.java.NativeLibLoader.getLoader(NativeLibLoader.java:66)
+	at hex.tree.xgboost.XGBoostExtension.getLoader(XGBoostExtension.java:70)
+	at hex.tree.xgboost.XGBoostExtension.initXgboost(XGBoostExtension.java:95)
+	at hex.tree.xgboost.XGBoostExtension.isEnabled(XGBoostExtension.java:52)
+	at water.ExtensionManager.isEnabled(ExtensionManager.java:189)
+	at water.ExtensionManager.registerCoreExtensions(ExtensionManager.java:103)
+	at water.H2O.main(H2O.java:2295)
+	at water.H2OStarter.start(H2OStarter.java:22)
+	at water.H2OStarter.start(H2OStarter.java:48)
+	at water.H2OApp.main(H2OApp.java:12)
+Caused by: java.util.zip.ZipException: zip file is empty
+	at java.base/java.util.zip.ZipFile$Source.zerror(ZipFile.java:1607)
+	at java.base/java.util.zip.ZipFile$Source.findEND(ZipFile.java:1410)
+	at java.base/java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1504)
+	at java.base/java.util.zip.ZipFile$Source.<init>(ZipFile.java:1308)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1271)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:831)
+	at java.base/java.util.zip.ZipFile$CleanableResource$FinalizableResource.<init>(ZipFile.java:857)
+	at java.base/java.util.zip.ZipFile$CleanableResource.get(ZipFile.java:846)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:248)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:177)
+	at java.base/java.util.jar.JarFile.<init>(JarFile.java:348)
+	at java.base/sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:103)
+	at java.base/sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:72)
+	at java.base/sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:99)
+	at java.base/sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:125)
+	at java.base/sun.net.www.protocol.jar.JarURLConnection.getInputStream(JarURLConnection.java:155)
+	at java.base/java.util.ServiceLoader$LazyClassPathLookupIterator.parse(ServiceLoader.java:1165)
+	... 18 more
+
+Loading metadata from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_2073.pygmo_c.local.20211209T170131/predictions/yeast/0/metadata.json`.
+Metric scores: { 'acc': nan,
+  'app_version': 'dev [master, beef024]',
+  'balacc': nan,
+  'constraint': 'pygmo_c',
+  'duration': nan,
+  'fold': 0,
+  'framework': 'H2OAutoML',
+  'id': 'openml.org/t/2073',
+  'info': 'NoResultError: Server process terminated with error code 1: '
+          'ScriptEngineManager providers.next(): '
+          'javax.script.ScriptEngineFactory: Error accessing configuration '
+          'file\n'
+          'Exception in thread "main" java.\u2026',
+  'logloss': nan,
+  'metric': 'neg_logloss',
+  'mode': 'local',
+  'models_count': nan,
+  'params': '',
+  'predict_duration': nan,
+  'result': nan,
+  'seed': 1903329687,
+  'task': 'yeast',
+  'training_duration': nan,
+  'type': 'multiclass',
+  'utc': '2021-12-09T17:03:06',
+  'version': '3.34.0.3'}
+--- Logging error ---
+Traceback (most recent call last):
+
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/logging/__init__.py", line 1088, in emit
+    stream.write(msg + self.terminator)
+
+UnicodeEncodeError: 'latin-1' codec can't encode character '\u2026' in position 502: ordinal not in range(256)
+
+Call stack:
+  File "runbenchmark.py", line 184, in <module>
+    res = bench.run(args.task, args.fold)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 208, in run
+    results = self._run_jobs(jobs)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 251, in _run_jobs
+    self.job_runner.start()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 219, in start
+    self._run()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 311, in _run
+    result = job.start()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 115, in start
+    result = self._run()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/utils/process.py", line 702, in profiler
+    return fn(*args, **kwargs)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 550, in run
+    return results.compute_score(result=result, meta_result=meta_result)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/utils/process.py", line 702, in profiler
+    return fn(*args, **kwargs)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/results.py", line 453, in compute_score
+    log.info("Metric scores: %s", entry)
+
+Message: 'Metric scores: %s'
+Arguments: ({'id': 'openml.org/t/2073', 'task': 'yeast', 'type': 'multiclass', 'constraint': 'pygmo_c', 'framework': 'H2OAutoML', 'version': '3.34.0.3', 'params': '', 'fold': 0, 'mode': 'local', 'seed': 1903329687, 'app_version': 'dev [master, beef024]', 'utc': '2021-12-09T17:03:06', 'metric': 'neg_logloss', 'duration': nan, 'training_duration': nan, 'predict_duration': nan, 'models_count': nan, 'logloss': nan, 'result': nan, 'acc': nan, 'balacc': nan, 'info': 'NoResultError: Server process terminated with error code 1: ScriptEngineManager providers.next(): javax.script.ScriptEngineFactory: Error accessing configuration file\nException in thread "main" java.\u2026'},)
+--- Logging error ---
+Traceback (most recent call last):
+
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/logging/__init__.py", line 1088, in emit
+    stream.write(msg + self.terminator)
+
+UnicodeEncodeError: 'latin-1' codec can't encode character '\u2026' in position 502: ordinal not in range(256)
+
+Call stack:
+  File "runbenchmark.py", line 184, in <module>
+    res = bench.run(args.task, args.fold)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 208, in run
+    results = self._run_jobs(jobs)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 251, in _run_jobs
+    self.job_runner.start()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 219, in start
+    self._run()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 311, in _run
+    result = job.start()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 115, in start
+    result = self._run()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/utils/process.py", line 702, in profiler
+    return fn(*args, **kwargs)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 550, in run
+    return results.compute_score(result=result, meta_result=meta_result)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/utils/process.py", line 702, in profiler
+    return fn(*args, **kwargs)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/results.py", line 453, in compute_score
+    log.info("Metric scores: %s", entry)
+
+Message: 'Metric scores: %s'
+Arguments: ({'id': 'openml.org/t/2073', 'task': 'yeast', 'type': 'multiclass', 'constraint': 'pygmo_c', 'framework': 'H2OAutoML', 'version': '3.34.0.3', 'params': '', 'fold': 0, 'mode': 'local', 'seed': 1903329687, 'app_version': 'dev [master, beef024]', 'utc': '2021-12-09T17:03:06', 'metric': 'neg_logloss', 'duration': nan, 'training_duration': nan, 'predict_duration': nan, 'models_count': nan, 'logloss': nan, 'result': nan, 'acc': nan, 'balacc': nan, 'info': 'NoResultError: Server process terminated with error code 1: ScriptEngineManager providers.next(): javax.script.ScriptEngineFactory: Error accessing configuration file\nException in thread "main" java.\u2026'},)
+Job `local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML` executed in 5.969 seconds.
+--- Logging error ---
+Traceback (most recent call last):
+
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/logging/__init__.py", line 1088, in emit
+    stream.write(msg + self.terminator)
+
+UnicodeEncodeError: 'latin-1' codec can't encode character '\u2026' in position 546: ordinal not in range(256)
+
+Call stack:
+  File "runbenchmark.py", line 184, in <module>
+    res = bench.run(args.task, args.fold)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 208, in run
+    results = self._run_jobs(jobs)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 251, in _run_jobs
+    self.job_runner.start()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 219, in start
+    self._run()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 311, in _run
+    result = job.start()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 117, in start
+    log.debug("Job `%s` returned: %s", self.name, result)
+
+Message: 'Job `%s` returned: %s'
+Arguments: ('local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML', {'id': 'openml.org/t/2073', 'task': 'yeast', 'type': 'multiclass', 'constraint': 'pygmo_c', 'framework': 'H2OAutoML', 'version': '3.34.0.3', 'params': '', 'fold': 0, 'mode': 'local', 'seed': 1903329687, 'app_version': 'dev [master, beef024]', 'utc': '2021-12-09T17:03:06', 'metric': 'neg_logloss', 'duration': nan, 'training_duration': nan, 'predict_duration': nan, 'models_count': nan, 'logloss': nan, 'result': nan, 'acc': nan, 'balacc': nan, 'info': 'NoResultError: Server process terminated with error code 1: ScriptEngineManager providers.next(): javax.script.ScriptEngineFactory: Error accessing configuration file\nException in thread "main" java.\u2026'})
+All jobs executed in 5.993 seconds.
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 6.3%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 2.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+Processing results for h2oautoml.openml_t_2073.pygmo_c.local.20211209T170131
+--- Logging error ---
+Traceback (most recent call last):
+
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/logging/__init__.py", line 1088, in emit
+    stream.write(msg + self.terminator)
+
+UnicodeEncodeError: 'latin-1' codec can't encode character '\u2026' in position 775: ordinal not in range(256)
+
+Call stack:
+  File "runbenchmark.py", line 184, in <module>
+    res = bench.run(args.task, args.fold)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 210, in run
+    log.debug(results)
+
+Message: [{'name': 'local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML', 'result': {'id': 'openml.org/t/2073', 'task': 'yeast', 'type': 'multiclass', 'constraint': 'pygmo_c', 'framework': 'H2OAutoML', 'version': '3.34.0.3', 'params': '', 'fold': 0, 'mode': 'local', 'seed': 1903329687, 'app_version': 'dev [master, beef024]', 'utc': '2021-12-09T17:03:06', 'metric': 'neg_logloss', 'duration': 5.969459056854248, 'training_duration': nan, 'predict_duration': nan, 'models_count': nan, 'logloss': nan, 'result': nan, 'acc': nan, 'balacc': nan, 'info': 'NoResultError: Server process terminated with error code 1: ScriptEngineManager providers.next(): javax.script.ScriptEngineFactory: Error accessing configuration file\nException in thread "main" java.\u2026'}, 'duration': 5.969459056854248}]
+Arguments: ()
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_2073.pygmo_c.local.20211209T170131/scores/H2OAutoML.benchmark_openml_t_2073.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_2073.pygmo_c.local.20211209T170131/scores/results.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/results.csv`.
+Summing up scores for current run:
+               id  task fold framework constraint      metric  duration       seed                                                                                                                                                                                                      info
+openml.org/t/2073 yeast    0 H2OAutoML    pygmo_c neg_logloss       6.0 1903329687 NoResultError: Server process terminated with error code 1: ScriptEngineManager providers.next(): javax.script.ScriptEngineFactory: Error accessing configuration file\nException in thread "main" java.\u2026
+--- Logging error ---
+Traceback (most recent call last):
+
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/logging/__init__.py", line 1088, in emit
+    stream.write(msg + self.terminator)
+
+UnicodeEncodeError: 'latin-1' codec can't encode character '\u2026' in position 640: ordinal not in range(256)
+
+Call stack:
+  File "runbenchmark.py", line 184, in <module>
+    res = bench.run(args.task, args.fold)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 212, in run
+    scoreboard = self._process_results(results)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 346, in _process_results
+    log.info("Summing up scores for current run:\n%s",
+
+Message: 'Summing up scores for current run:\n%s'
+Arguments: ('               id  task fold framework constraint      metric  duration       seed                                                                                                                                                                                                      info\nopenml.org/t/2073 yeast    0 H2OAutoML    pygmo_c neg_logloss       6.0 1903329687 NoResultError: Server process terminated with error code 1: ScriptEngineManager providers.next(): javax.script.ScriptEngineFactory: Error accessing configuration file\\nException in thread "main" java.\u2026',)
+--- Logging error ---
+Traceback (most recent call last):
+
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/logging/__init__.py", line 1088, in emit
+    stream.write(msg + self.terminator)
+
+UnicodeEncodeError: 'latin-1' codec can't encode character '\u2026' in position 640: ordinal not in range(256)
+
+Call stack:
+  File "runbenchmark.py", line 184, in <module>
+    res = bench.run(args.task, args.fold)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 212, in run
+    scoreboard = self._process_results(results)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 346, in _process_results
+    log.info("Summing up scores for current run:\n%s",
+
+Message: 'Summing up scores for current run:\n%s'
+Arguments: ('               id  task fold framework constraint      metric  duration       seed                                                                                                                                                                                                      info\nopenml.org/t/2073 yeast    0 H2OAutoML    pygmo_c neg_logloss       6.0 1903329687 NoResultError: Server process terminated with error code 1: ScriptEngineManager providers.next(): javax.script.ScriptEngineFactory: Error accessing configuration file\\nException in thread "main" java.\u2026',)

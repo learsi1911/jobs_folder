@@ -1,0 +1,332 @@
+/var/spool/slurm/slurmd/job8496231/slurm_script: line 8: activate: No such file or directory
+Running benchmark `H2OAutoML` on `openml/t/359976` framework in `local` mode.
+Loading frameworks definitions from ['/home/juradoi/experiments/automlbenchmark/resources/frameworks.yaml'].
+Loading benchmark constraint definitions from ['/home/juradoi/experiments/automlbenchmark/resources/constraints.yaml'].
+Loading openml task 359976.
+
+---------------------------------------------------------------------
+Starting job local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML.
+Assigning 16 cores (total=16) for new task Fashion-MNIST.
+Assigning 91122 MB (total=95302 MB) for new Fashion-MNIST task.
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] CPU Utilization: 18.3%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Memory Usage: 2.2%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Disk Usage: 43.2%
+Running task Fashion-MNIST on framework H2OAutoML with config:
+TaskConfig({})
+Running cmd `/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py`
+INFO:__main__:
+**** H2O AutoML [v3.34.0.3] ****
+
+INFO:__main__:Starting H2O cluster with 16 cores, 60748M memory.
+Checking whether there is an H2O instance running at http://localhost:10664 ..... not found.
+Attempting to start a local H2O server...
+  Java Version: openjdk version "11.0.12" 2021-07-20; OpenJDK Runtime Environment (build 11.0.12+7-post-Debian-2deb10u1); OpenJDK 64-Bit Server VM (build 11.0.12+7-post-Debian-2deb10u1, mixed mode, sharing)
+  Starting server from /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/backend/bin/h2o.jar
+  Ice root: /tmp/tmpijl_zbp2
+  JVM stdout: /tmp/tmpijl_zbp2/h2o_unknownUser_started_from_python.out
+  JVM stderr: /tmp/tmpijl_zbp2/h2o_unknownUser_started_from_python.err
+  Server is running at http://127.0.0.1:10664
+Connecting to H2O server at http://127.0.0.1:10664 ... successful.
+--------------------------  ------------------------------------------------------------------
+H2O_cluster_uptime:         02 secs
+H2O_cluster_timezone:       Europe/Amsterdam
+H2O_data_parsing_timezone:  UTC
+H2O_cluster_version:        3.34.0.3
+H2O_cluster_version_age:    2 months and 2 days
+H2O_cluster_name:           H2O_from_python_unknownUser_pnp6p3
+H2O_cluster_total_nodes:    1
+H2O_cluster_free_memory:    59.33 Gb
+H2O_cluster_total_cores:    16
+H2O_cluster_allowed_cores:  16
+H2O_cluster_status:         locked, healthy
+H2O_connection_url:         http://127.0.0.1:10664
+H2O_connection_proxy:       {"http": null, "https": null}
+H2O_internal_security:      False
+H2O_API_Extensions:         Amazon S3, XGBoost, Algos, AutoML, Core V3, TargetEncoder, Core V4
+Python_version:             3.8.12 final
+--------------------------  ------------------------------------------------------------------
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+H2O session _sid_a068 closed.
+
+ERROR:frameworks.shared.callee:Server error water.exceptions.H2OIllegalArgumentException:
+
+  Error: No file names given for parsing.
+
+  Request: POST /3/ParseSetup
+
+    data: {'check_header': '0', 'source_frames': '[]', 'single_quotes': 'False', 'escapechar': '92'}
+
+Traceback (most recent call last):
+
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/shared/callee.py", line 70, in call_run
+
+    result = run_fn(ds, config)
+
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py", line 88, in run
+
+    test = h2o.import_file(dataset.test.path, destination_frame=frame_name('test', config), **import_kwargs)
+
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/h2o.py", line 458, in import_file
+
+    return H2OFrame()._import_parse(path, pattern, destination_frame, header, sep, col_names, col_types, na_strings,
+
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/frame.py", line 457, in _import_parse
+
+    self._parse(rawkey, destination_frame, header, separator, column_names, column_types, na_strings,
+
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/frame.py", line 474, in _parse
+
+    setup = h2o.parse_setup(rawkey, destination_frame, header, separator, column_names, column_types, na_strings,
+
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/h2o.py", line 792, in parse_setup
+
+    j = api("POST /3/ParseSetup", data=kwargs)
+
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/h2o.py", line 113, in api
+
+    return h2oconn.request(endpoint, data=data, json=json, filename=filename, save_to=save_to)
+
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/backend/connection.py", line 481, in request
+
+    return self._process_response(resp, save_to)
+
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/backend/connection.py", line 819, in _process_response
+
+    raise H2OResponseError(data)
+
+h2o.exceptions.H2OResponseError: Server error water.exceptions.H2OIllegalArgumentException:
+
+  Error: No file names given for parsing.
+
+  Request: POST /3/ParseSetup
+
+    data: {'check_header': '0', 'source_frames': '[]', 'single_quotes': 'False', 'escapechar': '92'}
+
+
+
+
+
+
+Server error water.exceptions.H2OIllegalArgumentException:
+  Error: No file names given for parsing.
+  Request: POST /3/ParseSetup
+    data: {'check_header': '0', 'source_frames': '[]', 'single_quotes': 'False', 'escapechar': '92'}
+Traceback (most recent call last):
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 542, in run
+    meta_result = self.benchmark.framework_module.run(self._dataset, task_config)
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/__init__.py", line 30, in run
+    return run_in_venv(__file__, "exec.py",
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/shared/caller.py", line 142, in run_in_venv
+    raise NoResultError(res.error_message)
+amlb.results.NoResultError: Server error water.exceptions.H2OIllegalArgumentException:
+  Error: No file names given for parsing.
+  Request: POST /3/ParseSetup
+    data: {'check_header': '0', 'source_frames': '[]', 'single_quotes': 'False', 'escapechar': '92'}
+
+Loading metadata from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359976.pygmo_c.local.20211210T063637/predictions/Fashion-MNIST/0/metadata.json`.
+Metric scores: { 'acc': nan,
+  'app_version': 'dev [master, beef024]',
+  'balacc': nan,
+  'constraint': 'pygmo_c',
+  'duration': nan,
+  'fold': 0,
+  'framework': 'H2OAutoML',
+  'id': 'openml.org/t/359976',
+  'info': 'NoResultError: Server error '
+          'water.exceptions.H2OIllegalArgumentException:\n'
+          '  Error: No file names given for parsing.\n'
+          '  Request: POST /3/ParseSetup\n'
+          "    data: {'check_header': '0', 'source_frames': '[]'\u2026",
+  'logloss': nan,
+  'metric': 'neg_logloss',
+  'mode': 'local',
+  'models_count': nan,
+  'params': '',
+  'predict_duration': nan,
+  'result': nan,
+  'seed': 1161232912,
+  'task': 'Fashion-MNIST',
+  'training_duration': nan,
+  'type': 'multiclass',
+  'utc': '2021-12-10T06:37:35',
+  'version': '3.34.0.3'}
+--- Logging error ---
+Traceback (most recent call last):
+
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/logging/__init__.py", line 1088, in emit
+    stream.write(msg + self.terminator)
+
+UnicodeEncodeError: 'latin-1' codec can't encode character '\u2026' in position 506: ordinal not in range(256)
+
+Call stack:
+  File "runbenchmark.py", line 184, in <module>
+    res = bench.run(args.task, args.fold)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 208, in run
+    results = self._run_jobs(jobs)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 251, in _run_jobs
+    self.job_runner.start()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 219, in start
+    self._run()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 311, in _run
+    result = job.start()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 115, in start
+    result = self._run()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/utils/process.py", line 702, in profiler
+    return fn(*args, **kwargs)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 550, in run
+    return results.compute_score(result=result, meta_result=meta_result)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/utils/process.py", line 702, in profiler
+    return fn(*args, **kwargs)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/results.py", line 453, in compute_score
+    log.info("Metric scores: %s", entry)
+
+Message: 'Metric scores: %s'
+Arguments: ({'id': 'openml.org/t/359976', 'task': 'Fashion-MNIST', 'type': 'multiclass', 'constraint': 'pygmo_c', 'framework': 'H2OAutoML', 'version': '3.34.0.3', 'params': '', 'fold': 0, 'mode': 'local', 'seed': 1161232912, 'app_version': 'dev [master, beef024]', 'utc': '2021-12-10T06:37:35', 'metric': 'neg_logloss', 'duration': nan, 'training_duration': nan, 'predict_duration': nan, 'models_count': nan, 'logloss': nan, 'result': nan, 'acc': nan, 'balacc': nan, 'info': "NoResultError: Server error water.exceptions.H2OIllegalArgumentException:\n  Error: No file names given for parsing.\n  Request: POST /3/ParseSetup\n    data: {'check_header': '0', 'source_frames': '[]'\u2026"},)
+--- Logging error ---
+Traceback (most recent call last):
+
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/logging/__init__.py", line 1088, in emit
+    stream.write(msg + self.terminator)
+
+UnicodeEncodeError: 'latin-1' codec can't encode character '\u2026' in position 506: ordinal not in range(256)
+
+Call stack:
+  File "runbenchmark.py", line 184, in <module>
+    res = bench.run(args.task, args.fold)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 208, in run
+    results = self._run_jobs(jobs)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 251, in _run_jobs
+    self.job_runner.start()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 219, in start
+    self._run()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 311, in _run
+    result = job.start()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 115, in start
+    result = self._run()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/utils/process.py", line 702, in profiler
+    return fn(*args, **kwargs)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 550, in run
+    return results.compute_score(result=result, meta_result=meta_result)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/utils/process.py", line 702, in profiler
+    return fn(*args, **kwargs)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/results.py", line 453, in compute_score
+    log.info("Metric scores: %s", entry)
+
+Message: 'Metric scores: %s'
+Arguments: ({'id': 'openml.org/t/359976', 'task': 'Fashion-MNIST', 'type': 'multiclass', 'constraint': 'pygmo_c', 'framework': 'H2OAutoML', 'version': '3.34.0.3', 'params': '', 'fold': 0, 'mode': 'local', 'seed': 1161232912, 'app_version': 'dev [master, beef024]', 'utc': '2021-12-10T06:37:35', 'metric': 'neg_logloss', 'duration': nan, 'training_duration': nan, 'predict_duration': nan, 'models_count': nan, 'logloss': nan, 'result': nan, 'acc': nan, 'balacc': nan, 'info': "NoResultError: Server error water.exceptions.H2OIllegalArgumentException:\n  Error: No file names given for parsing.\n  Request: POST /3/ParseSetup\n    data: {'check_header': '0', 'source_frames': '[]'\u2026"},)
+Job `local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML` executed in 57.769 seconds.
+--- Logging error ---
+Traceback (most recent call last):
+
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/logging/__init__.py", line 1088, in emit
+    stream.write(msg + self.terminator)
+
+UnicodeEncodeError: 'latin-1' codec can't encode character '\u2026' in position 560: ordinal not in range(256)
+
+Call stack:
+  File "runbenchmark.py", line 184, in <module>
+    res = bench.run(args.task, args.fold)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 208, in run
+    results = self._run_jobs(jobs)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 251, in _run_jobs
+    self.job_runner.start()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 219, in start
+    self._run()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 311, in _run
+    result = job.start()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 117, in start
+    log.debug("Job `%s` returned: %s", self.name, result)
+
+Message: 'Job `%s` returned: %s'
+Arguments: ('local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML', {'id': 'openml.org/t/359976', 'task': 'Fashion-MNIST', 'type': 'multiclass', 'constraint': 'pygmo_c', 'framework': 'H2OAutoML', 'version': '3.34.0.3', 'params': '', 'fold': 0, 'mode': 'local', 'seed': 1161232912, 'app_version': 'dev [master, beef024]', 'utc': '2021-12-10T06:37:35', 'metric': 'neg_logloss', 'duration': nan, 'training_duration': nan, 'predict_duration': nan, 'models_count': nan, 'logloss': nan, 'result': nan, 'acc': nan, 'balacc': nan, 'info': "NoResultError: Server error water.exceptions.H2OIllegalArgumentException:\n  Error: No file names given for parsing.\n  Request: POST /3/ParseSetup\n    data: {'check_header': '0', 'source_frames': '[]'\u2026"})
+All jobs executed in 57.806 seconds.
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] CPU Utilization: 11.1%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Memory Usage: 2.7%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Disk Usage: 43.2%
+Processing results for h2oautoml.openml_t_359976.pygmo_c.local.20211210T063637
+--- Logging error ---
+Traceback (most recent call last):
+
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/logging/__init__.py", line 1088, in emit
+    stream.write(msg + self.terminator)
+
+UnicodeEncodeError: 'latin-1' codec can't encode character '\u2026' in position 797: ordinal not in range(256)
+
+Call stack:
+  File "runbenchmark.py", line 184, in <module>
+    res = bench.run(args.task, args.fold)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 210, in run
+    log.debug(results)
+
+Message: [{'name': 'local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML', 'result': {'id': 'openml.org/t/359976', 'task': 'Fashion-MNIST', 'type': 'multiclass', 'constraint': 'pygmo_c', 'framework': 'H2OAutoML', 'version': '3.34.0.3', 'params': '', 'fold': 0, 'mode': 'local', 'seed': 1161232912, 'app_version': 'dev [master, beef024]', 'utc': '2021-12-10T06:37:35', 'metric': 'neg_logloss', 'duration': 57.76851844787598, 'training_duration': nan, 'predict_duration': nan, 'models_count': nan, 'logloss': nan, 'result': nan, 'acc': nan, 'balacc': nan, 'info': "NoResultError: Server error water.exceptions.H2OIllegalArgumentException:\n  Error: No file names given for parsing.\n  Request: POST /3/ParseSetup\n    data: {'check_header': '0', 'source_frames': '[]'\u2026"}, 'duration': 57.76851844787598}]
+Arguments: ()
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359976.pygmo_c.local.20211210T063637/scores/H2OAutoML.benchmark_openml_t_359976.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359976.pygmo_c.local.20211210T063637/scores/results.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/results.csv`.
+Summing up scores for current run:
+                 id          task fold framework constraint      metric  duration       seed                                                                                                                                                                                                        info
+openml.org/t/359976 Fashion-MNIST    0 H2OAutoML    pygmo_c neg_logloss      57.8 1161232912 NoResultError: Server error water.exceptions.H2OIllegalArgumentException:\n  Error: No file names given for parsing.\n  Request: POST /3/ParseSetup\n    data: {'check_header': '0', 'source_frames': '[]'\u2026
+--- Logging error ---
+Traceback (most recent call last):
+
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/logging/__init__.py", line 1088, in emit
+    stream.write(msg + self.terminator)
+
+UnicodeEncodeError: 'latin-1' codec can't encode character '\u2026' in position 664: ordinal not in range(256)
+
+Call stack:
+  File "runbenchmark.py", line 184, in <module>
+    res = bench.run(args.task, args.fold)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 212, in run
+    scoreboard = self._process_results(results)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 346, in _process_results
+    log.info("Summing up scores for current run:\n%s",
+
+Message: 'Summing up scores for current run:\n%s'
+Arguments: ("                 id          task fold framework constraint      metric  duration       seed                                                                                                                                                                                                        info\nopenml.org/t/359976 Fashion-MNIST    0 H2OAutoML    pygmo_c neg_logloss      57.8 1161232912 NoResultError: Server error water.exceptions.H2OIllegalArgumentException:\\n  Error: No file names given for parsing.\\n  Request: POST /3/ParseSetup\\n    data: {'check_header': '0', 'source_frames': '[]'\u2026",)
+--- Logging error ---
+Traceback (most recent call last):
+
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/logging/__init__.py", line 1088, in emit
+    stream.write(msg + self.terminator)
+
+UnicodeEncodeError: 'latin-1' codec can't encode character '\u2026' in position 664: ordinal not in range(256)
+
+Call stack:
+  File "runbenchmark.py", line 184, in <module>
+    res = bench.run(args.task, args.fold)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 212, in run
+    scoreboard = self._process_results(results)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 346, in _process_results
+    log.info("Summing up scores for current run:\n%s",
+
+Message: 'Summing up scores for current run:\n%s'
+Arguments: ("                 id          task fold framework constraint      metric  duration       seed                                                                                                                                                                                                        info\nopenml.org/t/359976 Fashion-MNIST    0 H2OAutoML    pygmo_c neg_logloss      57.8 1161232912 NoResultError: Server error water.exceptions.H2OIllegalArgumentException:\\n  Error: No file names given for parsing.\\n  Request: POST /3/ParseSetup\\n    data: {'check_header': '0', 'source_frames': '[]'\u2026",)

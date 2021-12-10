@@ -1,0 +1,207 @@
+/var/spool/slurm/slurmd/job8493740/slurm_script: line 8: activate: No such file or directory
+Running benchmark `H2OAutoML` on `openml/t/190392` framework in `local` mode.
+Loading frameworks definitions from ['/home/juradoi/experiments/automlbenchmark/resources/frameworks.yaml'].
+Loading benchmark constraint definitions from ['/home/juradoi/experiments/automlbenchmark/resources/constraints.yaml'].
+Loading openml task 190392.
+
+----------------------------------------------------------------
+Starting job local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML.
+Assigning 16 cores (total=16) for new task madeline.
+Assigning 91304 MB (total=95302 MB) for new madeline task.
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] CPU Utilization: 15.5%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Memory Usage: 2.0%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Disk Usage: 43.2%
+Running task madeline on framework H2OAutoML with config:
+TaskConfig({})
+Running cmd `/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py`
+INFO:__main__:
+**** H2O AutoML [v3.34.0.3] ****
+
+INFO:__main__:Starting H2O cluster with 16 cores, 60869M memory.
+Checking whether there is an H2O instance running at http://localhost:3501 ..... not found.
+Attempting to start a local H2O server...
+  Java Version: openjdk version "11.0.12" 2021-07-20; OpenJDK Runtime Environment (build 11.0.12+7-post-Debian-2deb10u1); OpenJDK 64-Bit Server VM (build 11.0.12+7-post-Debian-2deb10u1, mixed mode, sharing)
+  Starting server from /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/backend/bin/h2o.jar
+  Ice root: /tmp/tmpjcqxzr4w
+  JVM stdout: /tmp/tmpjcqxzr4w/h2o_unknownUser_started_from_python.out
+  JVM stderr: /tmp/tmpjcqxzr4w/h2o_unknownUser_started_from_python.err
+  Server is running at http://127.0.0.1:3501
+Connecting to H2O server at http://127.0.0.1:3501 ... successful.
+--------------------------  ------------------------------------------------------------------
+H2O_cluster_uptime:         01 secs
+H2O_cluster_timezone:       Europe/Amsterdam
+H2O_data_parsing_timezone:  UTC
+H2O_cluster_version:        3.34.0.3
+H2O_cluster_version_age:    2 months and 2 days
+H2O_cluster_name:           H2O_from_python_unknownUser_9kmxnf
+H2O_cluster_total_nodes:    1
+H2O_cluster_free_memory:    59.45 Gb
+H2O_cluster_total_cores:    16
+H2O_cluster_allowed_cores:  16
+H2O_cluster_status:         locked, healthy
+H2O_connection_url:         http://127.0.0.1:3501
+H2O_connection_proxy:       {"http": null, "https": null}
+H2O_internal_security:      False
+H2O_API_Extensions:         Amazon S3, XGBoost, Algos, AutoML, Core V3, TargetEncoder, Core V4
+Python_version:             3.8.12 final
+--------------------------  ------------------------------------------------------------------
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+INFO:__main__:Running model on task madeline, fold 0.
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] CPU Utilization: 59.7%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Memory Usage: 44.6%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] CPU Utilization: 74.0%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Memory Usage: 44.7%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] CPU Utilization: 72.5%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Memory Usage: 45.4%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] CPU Utilization: 73.5%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Memory Usage: 46.3%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] CPU Utilization: 78.8%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Memory Usage: 46.5%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] CPU Utilization: 81.7%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Memory Usage: 47.7%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] CPU Utilization: 81.2%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Memory Usage: 47.9%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] CPU Utilization: 80.5%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Memory Usage: 48.6%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] CPU Utilization: 79.2%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Memory Usage: 48.9%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] CPU Utilization: 80.1%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Memory Usage: 49.0%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] CPU Utilization: 79.4%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Memory Usage: 49.6%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] CPU Utilization: 79.3%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Memory Usage: 49.6%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] CPU Utilization: 80.0%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Memory Usage: 50.5%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] CPU Utilization: 79.9%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Memory Usage: 51.1%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] CPU Utilization: 74.7%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Memory Usage: 51.2%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] CPU Utilization: 67.8%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Memory Usage: 51.5%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] CPU Utilization: 71.6%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Memory Usage: 51.5%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] CPU Utilization: 71.5%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Memory Usage: 52.0%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] CPU Utilization: 71.9%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Memory Usage: 52.0%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] CPU Utilization: 75.5%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Memory Usage: 52.0%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] CPU Utilization: 74.6%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Memory Usage: 52.3%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] CPU Utilization: 73.5%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Memory Usage: 52.3%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] CPU Utilization: 72.6%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Memory Usage: 52.3%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] CPU Utilization: 82.8%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Memory Usage: 52.3%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] CPU Utilization: 91.9%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Memory Usage: 52.3%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] CPU Utilization: 92.7%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Memory Usage: 52.7%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] CPU Utilization: 91.8%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Memory Usage: 53.0%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] CPU Utilization: 90.0%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Memory Usage: 53.0%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] CPU Utilization: 91.4%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Memory Usage: 53.1%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] CPU Utilization: 79.8%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Memory Usage: 53.2%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Disk Usage: 43.2%
+AutoML progress: |███████████████████████████████████████████████████████████████| (done) 100%
+stackedensemble prediction progress: |███████████████████████████████████████████| (done) 100%
+H2O session _sid_82ce closed.
+
+
+
+Predictions preview:
+                        0                     1 predictions truth
+0    0.03944508464832985    0.9605549153516701           1     1
+1    0.06759136362386609    0.9324086363761339           1     1
+2    0.05295391672583871    0.9470460832741613           1     1
+3    0.03842044435133196     0.961579555648668           1     1
+4   0.045351824656986506    0.9546481753430135           1     1
+5     0.2711057497893069    0.7288942502106931           1     1
+6      0.950271455475608  0.049728544524392036           0     1
+7    0.04766862280068784    0.9523313771993122           1     1
+8    0.10285973091828848    0.8971402690817115           1     1
+9     0.7359588518789373    0.2640411481210627           0     1
+10   0.19825526652288372    0.8017447334771163           1     1
+11   0.03944508464832985    0.9605549153516701           1     1
+12  0.037456986295605676    0.9625430137043943           1     1
+13   0.04543242088514432    0.9545675791148557           1     1
+14  0.037456986295605676    0.9625430137043943           1     1
+15     0.943110908305172   0.05688909169482798           0     1
+16   0.21998905101126898     0.780010948988731           1     1
+17    0.3473456525644274    0.6526543474355726           1     1
+18   0.07338661146513337    0.9266133885348666           1     1
+19   0.19457515155575655    0.8054248484442434           1     1
+
+Predictions saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_190392.pygmo_c.local.20211209T212954/predictions/madeline/0/predictions.csv`.
+Loading metadata from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_190392.pygmo_c.local.20211209T212954/predictions/madeline/0/metadata.json`.
+Loading predictions from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_190392.pygmo_c.local.20211209T212954/predictions/madeline/0/predictions.csv`.
+Metric scores: { 'acc': 0.856687898089172,
+  'app_version': 'dev [master, beef024]',
+  'auc': 0.9205615060045441,
+  'balacc': 0.8567023693605972,
+  'constraint': 'pygmo_c',
+  'duration': nan,
+  'fold': 0,
+  'framework': 'H2OAutoML',
+  'id': 'openml.org/t/190392',
+  'info': None,
+  'logloss': 0.35580121900166334,
+  'metric': 'auc',
+  'mode': 'local',
+  'models_count': 553,
+  'params': '',
+  'predict_duration': 0.5875265598297119,
+  'result': 0.9205615060045441,
+  'seed': 781300416,
+  'task': 'madeline',
+  'training_duration': 3602.9774916172028,
+  'type': 'binary',
+  'utc': '2021-12-09T22:30:10',
+  'version': '3.34.0.3'}
+Job `local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML` executed in 3614.573 seconds.
+All jobs executed in 3615.975 seconds.
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] CPU Utilization: 56.8%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Memory Usage: 2.1%
+[MONITORING] [local.openml_t_190392.pygmo_c.madeline.0.H2OAutoML] Disk Usage: 43.2%
+Processing results for h2oautoml.openml_t_190392.pygmo_c.local.20211209T212954
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_190392.pygmo_c.local.20211209T212954/scores/H2OAutoML.benchmark_openml_t_190392.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_190392.pygmo_c.local.20211209T212954/scores/results.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/results.csv`.
+Summing up scores for current run:
+                 id     task fold framework constraint   result metric  duration      seed
+openml.org/t/190392 madeline    0 H2OAutoML    pygmo_c 0.920562    auc    3614.6 781300416

@@ -1,0 +1,8 @@
+/var/spool/slurm/slurmd/job8492661/slurm_script: line 8: activate: No such file or directory
+Running benchmark `H2OAutoML` on `openml/t/2073` framework in `local` mode.
+Loading frameworks definitions from ['/home/juradoi/experiments/automlbenchmark/resources/frameworks.yaml'].
+Loading benchmark constraint definitions from ['/home/juradoi/experiments/automlbenchmark/resources/constraints.yaml'].
+Loading openml task 2073.
+
+ERROR:
+Cannot remove faulty tasks cache directory /home/juradoi/.cache/openml/org/openml/www/tasks/2073.Please do this manually!

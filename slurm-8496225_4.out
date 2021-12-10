@@ -1,0 +1,206 @@
+/var/spool/slurm/slurmd/job8496230/slurm_script: line 8: activate: No such file or directory
+Running benchmark `H2OAutoML` on `openml/t/359974` framework in `local` mode.
+Loading frameworks definitions from ['/home/juradoi/experiments/automlbenchmark/resources/frameworks.yaml'].
+Loading benchmark constraint definitions from ['/home/juradoi/experiments/automlbenchmark/resources/constraints.yaml'].
+Loading openml task 359974.
+
+--------------------------------------------------------------------------
+Starting job local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML.
+Assigning 16 cores (total=16) for new task wine-quality-white.
+Assigning 91084 MB (total=95302 MB) for new wine-quality-white task.
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] CPU Utilization: 19.1%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Memory Usage: 2.3%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Disk Usage: 43.3%
+Running task wine-quality-white on framework H2OAutoML with config:
+TaskConfig({})
+Running cmd `/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py`
+INFO:__main__:
+**** H2O AutoML [v3.34.0.3] ****
+
+INFO:__main__:Starting H2O cluster with 16 cores, 60723M memory.
+Checking whether there is an H2O instance running at http://localhost:26550 ..... not found.
+Attempting to start a local H2O server...
+  Java Version: openjdk version "11.0.12" 2021-07-20; OpenJDK Runtime Environment (build 11.0.12+7-post-Debian-2deb10u1); OpenJDK 64-Bit Server VM (build 11.0.12+7-post-Debian-2deb10u1, mixed mode, sharing)
+  Starting server from /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/backend/bin/h2o.jar
+  Ice root: /tmp/tmpua7lrllc
+  JVM stdout: /tmp/tmpua7lrllc/h2o_unknownUser_started_from_python.out
+  JVM stderr: /tmp/tmpua7lrllc/h2o_unknownUser_started_from_python.err
+  Server is running at http://127.0.0.1:26550
+Connecting to H2O server at http://127.0.0.1:26550 ... successful.
+--------------------------  ------------------------------------------------------------------
+H2O_cluster_uptime:         01 secs
+H2O_cluster_timezone:       Europe/Amsterdam
+H2O_data_parsing_timezone:  UTC
+H2O_cluster_version:        3.34.0.3
+H2O_cluster_version_age:    2 months and 2 days
+H2O_cluster_name:           H2O_from_python_unknownUser_95r7g7
+H2O_cluster_total_nodes:    1
+H2O_cluster_free_memory:    59.31 Gb
+H2O_cluster_total_cores:    16
+H2O_cluster_allowed_cores:  16
+H2O_cluster_status:         locked, healthy
+H2O_connection_url:         http://127.0.0.1:26550
+H2O_connection_proxy:       {"http": null, "https": null}
+H2O_internal_security:      False
+H2O_API_Extensions:         Amazon S3, XGBoost, Algos, AutoML, Core V3, TargetEncoder, Core V4
+Python_version:             3.8.12 final
+--------------------------  ------------------------------------------------------------------
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+INFO:__main__:Running model on task wine-quality-white, fold 0.
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] CPU Utilization: 71.2%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Memory Usage: 44.6%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] CPU Utilization: 75.2%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Memory Usage: 45.1%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] CPU Utilization: 75.1%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Memory Usage: 45.6%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] CPU Utilization: 75.7%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Memory Usage: 47.1%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] CPU Utilization: 75.1%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Memory Usage: 47.5%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] CPU Utilization: 93.3%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Memory Usage: 50.0%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] CPU Utilization: 98.6%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Memory Usage: 50.7%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] CPU Utilization: 98.9%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Memory Usage: 50.7%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] CPU Utilization: 98.2%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Memory Usage: 50.9%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] CPU Utilization: 98.4%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Memory Usage: 50.9%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] CPU Utilization: 98.6%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Memory Usage: 50.9%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] CPU Utilization: 98.1%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Memory Usage: 50.9%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] CPU Utilization: 97.9%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Memory Usage: 50.9%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] CPU Utilization: 98.9%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Memory Usage: 50.9%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] CPU Utilization: 97.7%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Memory Usage: 50.9%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] CPU Utilization: 98.5%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Memory Usage: 50.9%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] CPU Utilization: 97.7%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Memory Usage: 50.9%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] CPU Utilization: 98.4%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Memory Usage: 50.9%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] CPU Utilization: 98.2%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Memory Usage: 50.9%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] CPU Utilization: 98.5%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Memory Usage: 50.9%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] CPU Utilization: 98.1%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Memory Usage: 50.9%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] CPU Utilization: 96.6%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Memory Usage: 50.9%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] CPU Utilization: 93.8%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Memory Usage: 50.9%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] CPU Utilization: 97.6%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Memory Usage: 50.9%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] CPU Utilization: 97.9%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Memory Usage: 50.9%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] CPU Utilization: 97.0%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Memory Usage: 50.9%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] CPU Utilization: 97.4%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Memory Usage: 50.9%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] CPU Utilization: 98.3%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Memory Usage: 50.9%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] CPU Utilization: 92.4%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Memory Usage: 51.0%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] CPU Utilization: 86.3%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Memory Usage: 51.1%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Disk Usage: 43.3%
+AutoML progress: |███████████████████████████████████████████████████████████████| (done) 100%
+stackedensemble prediction progress: |███████████████████████████████████████████| (done) 100%
+H2O session _sid_9238 closed.
+
+
+
+Predictions preview:
+                         1                      2                     3                   4                      5                      6                      7 predictions truth
+0   0.0021112127598867337    0.01665549431494934    0.2882192345846824   0.540548239458841     0.1447835596368555  0.0059611448756175045  0.0017211143691673652           4     4
+1    6.241650147342847E-4  0.0023945858262429376   0.01917774355007836  0.9582738485727497   0.016110395042528036  0.0029258177336057307   4.934442600612086E-4           4     4
+2     0.00265483396040149   0.006008885339099519    0.1310466860518496  0.7897986471358166     0.0632102403182003   0.005685381629366934  0.0015953255652656887           4     4
+3    0.001031379015763146   0.004251432857978137   0.06278584982528643  0.9078758350811493   0.013383210779346627    0.00984963517666051   8.226572638158072E-4           4     4
+4   0.0028057127640212834  0.0071621003678424226   0.25661349933126576  0.5187240863634316    0.20713368323713077   0.006152874932974334  0.0014080430033336802           4     4
+5    9.103433414169325E-4   0.003368029391119664   0.08279110204684428  0.8865781734195182   0.022976415152618366  0.0026597292168158665   7.162074316667465E-4           4     4
+6   3.6526997043489665E-4  0.0014067891762609848  0.022354474146106404  0.9701699120348589   0.004343262890205843   0.001070747870787701  2.8954391134535965E-4           4     4
+7     6.76695855416921E-4  0.0027312407868058356  0.022536386082548068   0.946643379574195   0.024323938963680198   0.002553562550375605   5.347961869781676E-4           4     4
+8   0.0019516892328217503   0.008932088253680592   0.24360726189527174  0.7118160059459884   0.025320883209432522   0.006732980180707747  0.0016390912820972018           4     4
+9   0.0019233603768542232   0.007983001863763878   0.23630473731614174  0.6244743109207442    0.12241353427289293   0.005418043360255286  0.0014830118893476652           4     4
+10   7.866842660522988E-4   0.009201185639751622  0.008614101687419789  0.9244851339574294   0.029019276995294264    0.02721969109847451   6.739263555780913E-4           4     4
+11   4.229439265969386E-4  0.0020303408246090827  0.026221298784303886  0.9651190748517577  0.0046942741944620515  0.0011757624688856993  3.3630494938465997E-4           4     4
+12   6.307170331155182E-4    0.00415395244540904   0.03145974610770953   0.952796264276512   0.008658219779324957  0.0018038524238330707   4.972479340956524E-4           4     4
+13   0.002547752036072218   0.010876449442531107    0.1397732875846336  0.6442901293181235    0.11593290612732846    0.08456570319890241   0.002013772292408657           4     4
+14  0.0029571181987593435    0.01109345835085891    0.0416937061606333  0.5495840892538105     0.3638395591842068    0.02895594017190095  0.0018761286798302842           4     4
+15   6.263439614517566E-4   0.002869693801947255  0.014263616740052184  0.9566675203610423   0.022903653595067214   0.002171779238463351   4.973923019758844E-4           4     4
+16  3.4280294739793014E-4   0.001059870958391757  0.010855097294149747   0.977581631454087   0.007053355147413697  0.0028369041853637585  2.7033801319585886E-4           4     4
+17  0.0017118137656458238    0.00879692217030157   0.12118429418341345  0.6919802315884266    0.14170781326137316    0.03318856624026387   0.001430358790575583           4     4
+18  0.0015576006591438464   0.008382407532887829   0.39751798537979105  0.5607194456259803    0.02616375878545685   0.004350487736204119  0.0013083142805360216           4     4
+19  0.0016475519431158585    0.00864085816993039   0.08651872615776834    0.67482592820727    0.21651349983262744   0.010476772846600358   0.001376662842687545           4     4
+
+Predictions saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359974.pygmo_c.local.20211210T063457/predictions/wine-quality-white/0/predictions.csv`.
+Loading metadata from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359974.pygmo_c.local.20211210T063457/predictions/wine-quality-white/0/metadata.json`.
+Loading predictions from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359974.pygmo_c.local.20211210T063457/predictions/wine-quality-white/0/predictions.csv`.
+Metric scores: { 'acc': 0.6979591836734694,
+  'app_version': 'dev [master, beef024]',
+  'balacc': 0.4575806412228652,
+  'constraint': 'pygmo_c',
+  'duration': nan,
+  'fold': 0,
+  'framework': 'H2OAutoML',
+  'id': 'openml.org/t/359974',
+  'info': None,
+  'logloss': 0.7388883816507228,
+  'metric': 'neg_logloss',
+  'mode': 'local',
+  'models_count': 228,
+  'params': '',
+  'predict_duration': 0.2914738655090332,
+  'result': -0.7388883816507228,
+  'seed': 196164726,
+  'task': 'wine-quality-white',
+  'training_duration': 3607.0563344955444,
+  'type': 'multiclass',
+  'utc': '2021-12-10T07:35:14',
+  'version': '3.34.0.3'}
+Job `local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML` executed in 3616.033 seconds.
+All jobs executed in 3616.041 seconds.
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] CPU Utilization: 71.6%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Memory Usage: 2.3%
+[MONITORING] [local.openml_t_359974.pygmo_c.wine-quality-white.0.H2OAutoML] Disk Usage: 43.3%
+Processing results for h2oautoml.openml_t_359974.pygmo_c.local.20211210T063457
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359974.pygmo_c.local.20211210T063457/scores/H2OAutoML.benchmark_openml_t_359974.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359974.pygmo_c.local.20211210T063457/scores/results.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/results.csv`.
+Summing up scores for current run:
+                 id               task fold framework constraint    result      metric  duration      seed
+openml.org/t/359974 wine-quality-white    0 H2OAutoML    pygmo_c -0.738888 neg_logloss    3616.0 196164726

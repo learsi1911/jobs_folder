@@ -1,0 +1,419 @@
+/var/spool/slurm/slurmd/job8492662/slurm_script: line 8: activate: No such file or directory
+Running benchmark `H2OAutoML` on `openml/t/2073` framework in `local` mode.
+Loading frameworks definitions from ['/home/juradoi/experiments/automlbenchmark/resources/frameworks.yaml'].
+Loading benchmark constraint definitions from ['/home/juradoi/experiments/automlbenchmark/resources/constraints.yaml'].
+Loading openml task 2073.
+Setting up framework H2OAutoML.
+Running cmd `/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/setup.sh stable`
+setting up H2O version stable
+shared/setup.sh /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML true
+Requirement already satisfied: pip in ./frameworks/H2OAutoML/venv/lib/python3.8/site-packages (21.3.1)
+Requirement already satisfied: wheel in ./frameworks/H2OAutoML/venv/lib/python3.8/site-packages (0.37.0)
+PY=/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore
+PIP=/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -m pip
+Requirement already satisfied: numpy==1.21.0 in ./frameworks/H2OAutoML/venv/lib/python3.8/site-packages (from -r /home/juradoi/experiments/automlbenchmark/frameworks/shared/requirements.txt (line 7)) (1.21.0)
+Collecting psutil==5.8.0
+  Downloading psutil-5.8.0-cp38-cp38-manylinux2010_x86_64.whl (296 kB)
+Collecting pyarrow==4.0.1
+  Downloading pyarrow-4.0.1-cp38-cp38-manylinux2014_x86_64.whl (21.9 MB)
+Requirement already satisfied: ruamel.yaml.clib==0.2.2 in ./frameworks/H2OAutoML/venv/lib/python3.8/site-packages (from -r /home/juradoi/experiments/automlbenchmark/frameworks/shared/requirements.txt (line 13)) (0.2.2)
+Requirement already satisfied: ruamel.yaml==0.17.4 in ./frameworks/H2OAutoML/venv/lib/python3.8/site-packages (from -r /home/juradoi/experiments/automlbenchmark/frameworks/shared/requirements.txt (line 15)) (0.17.4)
+Installing collected packages: pyarrow, psutil
+Successfully installed psutil-5.8.0 pyarrow-4.0.1
+
+We trust you have received the usual lecture from the local System
+Administrator. It usually boils down to these three things:
+
+    #1) Respect the privacy of others.
+    #2) Think before you type.
+    #3) With great power comes great responsibility.
+
+sudo: no tty present and no askpass program specified
+
+We trust you have received the usual lecture from the local System
+Administrator. It usually boils down to these three things:
+
+    #1) Respect the privacy of others.
+    #2) Think before you type.
+    #3) With great power comes great responsibility.
+
+sudo: no tty present and no askpass program specified
+Requirement already satisfied: requests>=2.10 in ./frameworks/H2OAutoML/venv/lib/python3.8/site-packages (from -r /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/requirements.txt (line 1)) (2.26.0)
+Requirement already satisfied: tabulate in ./frameworks/H2OAutoML/venv/lib/python3.8/site-packages (from -r /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/requirements.txt (line 2)) (0.8.9)
+Collecting future
+  Downloading future-0.18.2.tar.gz (829 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting colorama>=0.3.8
+  Downloading colorama-0.4.4-py2.py3-none-any.whl (16 kB)
+Collecting packaging
+  Downloading packaging-21.3-py3-none-any.whl (40 kB)
+Requirement already satisfied: pandas in ./frameworks/H2OAutoML/venv/lib/python3.8/site-packages (from -r /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/requirements.txt (line 6)) (1.3.4)
+Requirement already satisfied: idna<4,>=2.5 in ./frameworks/H2OAutoML/venv/lib/python3.8/site-packages (from requests>=2.10->-r /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/requirements.txt (line 1)) (3.3)
+Requirement already satisfied: certifi>=2017.4.17 in ./frameworks/H2OAutoML/venv/lib/python3.8/site-packages (from requests>=2.10->-r /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/requirements.txt (line 1)) (2021.10.8)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in ./frameworks/H2OAutoML/venv/lib/python3.8/site-packages (from requests>=2.10->-r /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/requirements.txt (line 1)) (1.26.7)
+Requirement already satisfied: charset-normalizer~=2.0.0 in ./frameworks/H2OAutoML/venv/lib/python3.8/site-packages (from requests>=2.10->-r /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/requirements.txt (line 1)) (2.0.9)
+Requirement already satisfied: pyparsing!=3.0.5,>=2.0.2 in ./frameworks/H2OAutoML/venv/lib/python3.8/site-packages (from packaging->-r /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/requirements.txt (line 5)) (3.0.6)
+Requirement already satisfied: numpy>=1.17.3 in ./frameworks/H2OAutoML/venv/lib/python3.8/site-packages (from pandas->-r /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/requirements.txt (line 6)) (1.21.0)
+Requirement already satisfied: pytz>=2017.3 in ./frameworks/H2OAutoML/venv/lib/python3.8/site-packages (from pandas->-r /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/requirements.txt (line 6)) (2021.3)
+Requirement already satisfied: python-dateutil>=2.7.3 in ./frameworks/H2OAutoML/venv/lib/python3.8/site-packages (from pandas->-r /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/requirements.txt (line 6)) (2.8.2)
+Requirement already satisfied: six>=1.5 in ./frameworks/H2OAutoML/venv/lib/python3.8/site-packages (from python-dateutil>=2.7.3->pandas->-r /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/requirements.txt (line 6)) (1.16.0)
+Building wheels for collected packages: future
+  Building wheel for future (setup.py): started
+  Building wheel for future (setup.py): finished with status 'done'
+  Created wheel for future: filename=future-0.18.2-py3-none-any.whl size=491058 sha256=0b745ee299aa9a6d413a845be2aee18b9ce4633bd94f3e5cea15373f8a1a6543
+  Stored in directory: /scratch/pip-ephem-wheel-cache-3aewblzu/wheels/8e/70/28/3d6ccd6e315f65f245da085482a2e1c7d14b90b30f239e2cf4
+Successfully built future
+Installing collected packages: packaging, future, colorama
+Successfully installed colorama-0.4.4 future-0.18.2 packaging-21.3
+installing H2O-3 stable
+Collecting h2o
+  Downloading h2o-3.34.0.3.tar.gz (175.8 MB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting requests
+  Downloading requests-2.26.0-py2.py3-none-any.whl (62 kB)
+Collecting tabulate
+  Downloading tabulate-0.8.9-py3-none-any.whl (25 kB)
+Collecting future
+  Downloading future-0.18.2.tar.gz (829 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting charset-normalizer~=2.0.0
+  Downloading charset_normalizer-2.0.9-py3-none-any.whl (39 kB)
+Collecting urllib3<1.27,>=1.21.1
+  Downloading urllib3-1.26.7-py2.py3-none-any.whl (138 kB)
+Collecting certifi>=2017.4.17
+  Downloading certifi-2021.10.8-py2.py3-none-any.whl (149 kB)
+Collecting idna<4,>=2.5
+  Downloading idna-3.3-py3-none-any.whl (61 kB)
+Building wheels for collected packages: h2o, future
+  Building wheel for h2o (setup.py): started
+  Building wheel for h2o (setup.py): finished with status 'done'
+  Created wheel for h2o: filename=h2o-3.34.0.3-py2.py3-none-any.whl size=175832480 sha256=3b8beb36f32424a906601262ab4c031b7a85382ea012f89390a2c8734110c3d2
+  Stored in directory: /scratch/pip-ephem-wheel-cache-s_stvoee/wheels/01/74/09/0809b5c344d8a157cc8e5e56e5c071c7d157ac42bd0619a91e
+  Building wheel for future (setup.py): started
+  Building wheel for future (setup.py): finished with status 'done'
+  Created wheel for future: filename=future-0.18.2-py3-none-any.whl size=491058 sha256=8f25af2d58045eb333931e424eb3af528c9ed5541f60eae253be1cf37bbc03df
+  Stored in directory: /scratch/pip-ephem-wheel-cache-s_stvoee/wheels/8e/70/28/3d6ccd6e315f65f245da085482a2e1c7d14b90b30f239e2cf4
+Successfully built h2o future
+Installing collected packages: urllib3, idna, charset-normalizer, certifi, tabulate, requests, future, h2o
+  Attempting uninstall: urllib3
+    Found existing installation: urllib3 1.26.7
+    Uninstalling urllib3-1.26.7:
+      Successfully uninstalled urllib3-1.26.7
+  Attempting uninstall: idna
+    Found existing installation: idna 3.3
+    Uninstalling idna-3.3:
+      Successfully uninstalled idna-3.3
+  Attempting uninstall: charset-normalizer
+    Found existing installation: charset-normalizer 2.0.9
+    Uninstalling charset-normalizer-2.0.9:
+      Successfully uninstalled charset-normalizer-2.0.9
+  Attempting uninstall: certifi
+    Found existing installation: certifi 2021.10.8
+    Uninstalling certifi-2021.10.8:
+      Successfully uninstalled certifi-2021.10.8
+  Attempting uninstall: tabulate
+    Found existing installation: tabulate 0.8.9
+    Uninstalling tabulate-0.8.9:
+      Successfully uninstalled tabulate-0.8.9
+  Attempting uninstall: requests
+    Found existing installation: requests 2.26.0
+    Uninstalling requests-2.26.0:
+      Successfully uninstalled requests-2.26.0
+  Attempting uninstall: future
+    Found existing installation: future 0.18.2
+    Uninstalling future-0.18.2:
+      Successfully uninstalled future-0.18.2
+Successfully installed certifi-2021.10.8 charset-normalizer-2.0.9 future-0.18.2 h2o-3.34.0.3 idna-3.3 requests-2.26.0 tabulate-0.8.9 urllib3-1.26.7
+
+
+
+
+We trust you have received the usual lecture from the local System
+Administrator. It usually boils down to these three things:
+
+    #1) Respect the privacy of others.
+    #2) Think before you type.
+    #3) With great power comes great responsibility.
+
+sudo: no tty present and no askpass program specified
+
+We trust you have received the usual lecture from the local System
+Administrator. It usually boils down to these three things:
+
+    #1) Respect the privacy of others.
+    #2) Think before you type.
+    #3) With great power comes great responsibility.
+
+sudo: no tty present and no askpass program specified
+
+Setup of framework H2OAutoML completed successfully.
+
+-----------------------------------------------------------
+Starting job local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML.
+Assigning 16 cores (total=16) for new task yeast.
+Assigning 91174 MB (total=95302 MB) for new yeast task.
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 3.1%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 2.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+Running task yeast on framework H2OAutoML with config:
+TaskConfig({})
+Running cmd `/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py`
+Traceback (most recent call last):
+
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py", line 10, in <module>
+
+    import h2o
+
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/__init__.py", line 14, in <module>
+
+    from h2o.h2o import (connect, init, api, connection, resume,
+
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/h2o.py", line 16, in <module>
+
+    from .backend import H2OConnection
+
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/backend/__init__.py", line 47, in <module>
+
+    from .connection import H2OConnection
+
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/backend/connection.py", line 28, in <module>
+
+    import requests
+
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/requests/__init__.py", line 45, in <module>
+
+    from .exceptions import RequestsDependencyWarning
+
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/requests/exceptions.py", line 9, in <module>
+
+    from urllib3.exceptions import HTTPError as BaseHTTPError
+
+ModuleNotFoundError: No module named 'urllib3.exceptions'
+
+
+
+Command '/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 542, in run
+    meta_result = self.benchmark.framework_module.run(self._dataset, task_config)
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/__init__.py", line 30, in run
+    return run_in_venv(__file__, "exec.py",
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/shared/caller.py", line 124, in run_in_venv
+    output, err = run_cmd(cmd, *args,
+  File "/home/juradoi/experiments/automlbenchmark/amlb/utils/process.py", line 245, in run_cmd
+    raise e
+  File "/home/juradoi/experiments/automlbenchmark/amlb/utils/process.py", line 219, in run_cmd
+    completed = run_subprocess(str_cmd if params.shell else full_cmd,
+  File "/home/juradoi/experiments/automlbenchmark/amlb/utils/process.py", line 77, in run_subprocess
+    raise subprocess.CalledProcessError(retcode, process.args, output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py' returned non-zero exit status 1.
+Loading metadata from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_2073.pygmo_c.local.20211209T170151/predictions/yeast/0/metadata.json`.
+Metric scores: { 'acc': nan,
+  'app_version': 'dev [master, beef024]',
+  'balacc': nan,
+  'constraint': 'pygmo_c',
+  'duration': nan,
+  'fold': 0,
+  'framework': 'H2OAutoML',
+  'id': 'openml.org/t/2073',
+  'info': 'CalledProcessError: Command '
+          "'/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python "
+          '-W ignore '
+          "/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py' "
+          'returned \u2026',
+  'logloss': nan,
+  'metric': 'neg_logloss',
+  'mode': 'local',
+  'models_count': nan,
+  'params': '',
+  'predict_duration': nan,
+  'result': nan,
+  'seed': 793492601,
+  'task': 'yeast',
+  'training_duration': nan,
+  'type': 'multiclass',
+  'utc': '2021-12-09T17:02:54',
+  'version': '3.34.0.3'}
+--- Logging error ---
+Traceback (most recent call last):
+
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/logging/__init__.py", line 1088, in emit
+    stream.write(msg + self.terminator)
+
+UnicodeEncodeError: 'latin-1' codec can't encode character '\u2026' in position 501: ordinal not in range(256)
+
+Call stack:
+  File "runbenchmark.py", line 184, in <module>
+    res = bench.run(args.task, args.fold)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 208, in run
+    results = self._run_jobs(jobs)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 251, in _run_jobs
+    self.job_runner.start()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 219, in start
+    self._run()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 311, in _run
+    result = job.start()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 115, in start
+    result = self._run()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/utils/process.py", line 702, in profiler
+    return fn(*args, **kwargs)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 550, in run
+    return results.compute_score(result=result, meta_result=meta_result)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/utils/process.py", line 702, in profiler
+    return fn(*args, **kwargs)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/results.py", line 453, in compute_score
+    log.info("Metric scores: %s", entry)
+
+Message: 'Metric scores: %s'
+Arguments: ({'id': 'openml.org/t/2073', 'task': 'yeast', 'type': 'multiclass', 'constraint': 'pygmo_c', 'framework': 'H2OAutoML', 'version': '3.34.0.3', 'params': '', 'fold': 0, 'mode': 'local', 'seed': 793492601, 'app_version': 'dev [master, beef024]', 'utc': '2021-12-09T17:02:54', 'metric': 'neg_logloss', 'duration': nan, 'training_duration': nan, 'predict_duration': nan, 'models_count': nan, 'logloss': nan, 'result': nan, 'acc': nan, 'balacc': nan, 'info': "CalledProcessError: Command '/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py' returned \u2026"},)
+--- Logging error ---
+Traceback (most recent call last):
+
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/logging/__init__.py", line 1088, in emit
+    stream.write(msg + self.terminator)
+
+UnicodeEncodeError: 'latin-1' codec can't encode character '\u2026' in position 501: ordinal not in range(256)
+
+Call stack:
+  File "runbenchmark.py", line 184, in <module>
+    res = bench.run(args.task, args.fold)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 208, in run
+    results = self._run_jobs(jobs)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 251, in _run_jobs
+    self.job_runner.start()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 219, in start
+    self._run()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 311, in _run
+    result = job.start()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 115, in start
+    result = self._run()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/utils/process.py", line 702, in profiler
+    return fn(*args, **kwargs)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 550, in run
+    return results.compute_score(result=result, meta_result=meta_result)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/utils/process.py", line 702, in profiler
+    return fn(*args, **kwargs)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/results.py", line 453, in compute_score
+    log.info("Metric scores: %s", entry)
+
+Message: 'Metric scores: %s'
+Arguments: ({'id': 'openml.org/t/2073', 'task': 'yeast', 'type': 'multiclass', 'constraint': 'pygmo_c', 'framework': 'H2OAutoML', 'version': '3.34.0.3', 'params': '', 'fold': 0, 'mode': 'local', 'seed': 793492601, 'app_version': 'dev [master, beef024]', 'utc': '2021-12-09T17:02:54', 'metric': 'neg_logloss', 'duration': nan, 'training_duration': nan, 'predict_duration': nan, 'models_count': nan, 'logloss': nan, 'result': nan, 'acc': nan, 'balacc': nan, 'info': "CalledProcessError: Command '/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py' returned \u2026"},)
+Job `local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML` executed in 1.425 seconds.
+--- Logging error ---
+Traceback (most recent call last):
+
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/logging/__init__.py", line 1088, in emit
+    stream.write(msg + self.terminator)
+
+UnicodeEncodeError: 'latin-1' codec can't encode character '\u2026' in position 545: ordinal not in range(256)
+
+Call stack:
+  File "runbenchmark.py", line 184, in <module>
+    res = bench.run(args.task, args.fold)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 208, in run
+    results = self._run_jobs(jobs)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 251, in _run_jobs
+    self.job_runner.start()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 219, in start
+    self._run()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 311, in _run
+    result = job.start()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 117, in start
+    log.debug("Job `%s` returned: %s", self.name, result)
+
+Message: 'Job `%s` returned: %s'
+Arguments: ('local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML', {'id': 'openml.org/t/2073', 'task': 'yeast', 'type': 'multiclass', 'constraint': 'pygmo_c', 'framework': 'H2OAutoML', 'version': '3.34.0.3', 'params': '', 'fold': 0, 'mode': 'local', 'seed': 793492601, 'app_version': 'dev [master, beef024]', 'utc': '2021-12-09T17:02:54', 'metric': 'neg_logloss', 'duration': nan, 'training_duration': nan, 'predict_duration': nan, 'models_count': nan, 'logloss': nan, 'result': nan, 'acc': nan, 'balacc': nan, 'info': "CalledProcessError: Command '/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py' returned \u2026"})
+All jobs executed in 2.039 seconds.
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 7.6%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 2.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+Processing results for h2oautoml.openml_t_2073.pygmo_c.local.20211209T170151
+--- Logging error ---
+Traceback (most recent call last):
+
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/logging/__init__.py", line 1088, in emit
+    stream.write(msg + self.terminator)
+
+UnicodeEncodeError: 'latin-1' codec can't encode character '\u2026' in position 773: ordinal not in range(256)
+
+Call stack:
+  File "runbenchmark.py", line 184, in <module>
+    res = bench.run(args.task, args.fold)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 210, in run
+    log.debug(results)
+
+Message: [{'name': 'local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML', 'result': {'id': 'openml.org/t/2073', 'task': 'yeast', 'type': 'multiclass', 'constraint': 'pygmo_c', 'framework': 'H2OAutoML', 'version': '3.34.0.3', 'params': '', 'fold': 0, 'mode': 'local', 'seed': 793492601, 'app_version': 'dev [master, beef024]', 'utc': '2021-12-09T17:02:54', 'metric': 'neg_logloss', 'duration': 1.425492286682129, 'training_duration': nan, 'predict_duration': nan, 'models_count': nan, 'logloss': nan, 'result': nan, 'acc': nan, 'balacc': nan, 'info': "CalledProcessError: Command '/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py' returned \u2026"}, 'duration': 1.425492286682129}]
+Arguments: ()
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_2073.pygmo_c.local.20211209T170151/scores/H2OAutoML.benchmark_openml_t_2073.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_2073.pygmo_c.local.20211209T170151/scores/results.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/results.csv`.
+Summing up scores for current run:
+               id  task fold framework constraint      metric  duration      seed                                                                                                                                                                                                     info
+openml.org/t/2073 yeast    0 H2OAutoML    pygmo_c neg_logloss       1.4 793492601 CalledProcessError: Command '/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py' returned \u2026
+--- Logging error ---
+Traceback (most recent call last):
+
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/logging/__init__.py", line 1088, in emit
+    stream.write(msg + self.terminator)
+
+UnicodeEncodeError: 'latin-1' codec can't encode character '\u2026' in position 636: ordinal not in range(256)
+
+Call stack:
+  File "runbenchmark.py", line 184, in <module>
+    res = bench.run(args.task, args.fold)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 212, in run
+    scoreboard = self._process_results(results)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 346, in _process_results
+    log.info("Summing up scores for current run:\n%s",
+
+Message: 'Summing up scores for current run:\n%s'
+Arguments: ("               id  task fold framework constraint      metric  duration      seed                                                                                                                                                                                                     info\nopenml.org/t/2073 yeast    0 H2OAutoML    pygmo_c neg_logloss       1.4 793492601 CalledProcessError: Command '/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py' returned \u2026",)
+--- Logging error ---
+Traceback (most recent call last):
+
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/logging/__init__.py", line 1088, in emit
+    stream.write(msg + self.terminator)
+
+UnicodeEncodeError: 'latin-1' codec can't encode character '\u2026' in position 636: ordinal not in range(256)
+
+Call stack:
+  File "runbenchmark.py", line 184, in <module>
+    res = bench.run(args.task, args.fold)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 212, in run
+    scoreboard = self._process_results(results)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 346, in _process_results
+    log.info("Summing up scores for current run:\n%s",
+
+Message: 'Summing up scores for current run:\n%s'
+Arguments: ("               id  task fold framework constraint      metric  duration      seed                                                                                                                                                                                                     info\nopenml.org/t/2073 yeast    0 H2OAutoML    pygmo_c neg_logloss       1.4 793492601 CalledProcessError: Command '/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py' returned \u2026",)

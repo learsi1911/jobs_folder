@@ -1,0 +1,113 @@
+/var/spool/slurm/slurmd/job8497022/slurm_script: line 8: activate: No such file or directory
+Running benchmark `H2OAutoML` on `openml/t/359990` framework in `local` mode.
+Loading frameworks definitions from ['/home/juradoi/experiments/automlbenchmark/resources/frameworks.yaml'].
+Loading benchmark constraint definitions from ['/home/juradoi/experiments/automlbenchmark/resources/constraints.yaml'].
+Loading openml task 359990.
+
+-----------------------------------------------------------------
+Starting job local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML.
+Assigning 16 cores (total=16) for new task MiniBooNE.
+Assigning 91015 MB (total=95302 MB) for new MiniBooNE task.
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] CPU Utilization: 18.5%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] Memory Usage: 2.3%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] Disk Usage: 43.2%
+Running task MiniBooNE on framework H2OAutoML with config:
+TaskConfig({})
+Running cmd `/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py`
+INFO:__main__:
+**** H2O AutoML [v3.34.0.3] ****
+
+INFO:__main__:Starting H2O cluster with 16 cores, 60677M memory.
+Checking whether there is an H2O instance running at http://localhost:2583 ..... not found.
+Attempting to start a local H2O server...
+  Java Version: openjdk version "11.0.12" 2021-07-20; OpenJDK Runtime Environment (build 11.0.12+7-post-Debian-2deb10u1); OpenJDK 64-Bit Server VM (build 11.0.12+7-post-Debian-2deb10u1, mixed mode, sharing)
+  Starting server from /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/backend/bin/h2o.jar
+  Ice root: /tmp/tmp0ge8jgr6
+  JVM stdout: /tmp/tmp0ge8jgr6/h2o_unknownUser_started_from_python.out
+  JVM stderr: /tmp/tmp0ge8jgr6/h2o_unknownUser_started_from_python.err
+  Server is running at http://127.0.0.1:2583
+Connecting to H2O server at http://127.0.0.1:2583 ... successful.
+--------------------------  ------------------------------------------------------------------
+H2O_cluster_uptime:         01 secs
+H2O_cluster_timezone:       Europe/Amsterdam
+H2O_data_parsing_timezone:  UTC
+H2O_cluster_version:        3.34.0.3
+H2O_cluster_version_age:    2 months and 2 days
+H2O_cluster_name:           H2O_from_python_unknownUser_oulx9z
+H2O_cluster_total_nodes:    1
+H2O_cluster_free_memory:    59.27 Gb
+H2O_cluster_total_cores:    16
+H2O_cluster_allowed_cores:  16
+H2O_cluster_status:         locked, healthy
+H2O_connection_url:         http://127.0.0.1:2583
+H2O_connection_proxy:       {"http": null, "https": null}
+H2O_internal_security:      False
+H2O_API_Extensions:         Amazon S3, XGBoost, Algos, AutoML, Core V3, TargetEncoder, Core V4
+Python_version:             3.8.12 final
+--------------------------  ------------------------------------------------------------------
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+INFO:__main__:Running model on task MiniBooNE, fold 0.
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] CPU Utilization: 79.1%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] Memory Usage: 44.4%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] CPU Utilization: 67.7%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] Memory Usage: 44.8%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] CPU Utilization: 76.7%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] Memory Usage: 45.0%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] CPU Utilization: 71.9%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] Memory Usage: 45.0%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] CPU Utilization: 83.6%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] Memory Usage: 45.4%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] CPU Utilization: 84.6%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] Memory Usage: 45.4%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] CPU Utilization: 83.5%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] Memory Usage: 45.4%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] CPU Utilization: 86.2%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] Memory Usage: 45.4%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] CPU Utilization: 89.2%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] Memory Usage: 45.5%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] CPU Utilization: 86.1%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] Memory Usage: 45.5%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] CPU Utilization: 87.7%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] Memory Usage: 45.5%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] CPU Utilization: 84.5%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] Memory Usage: 45.6%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] CPU Utilization: 84.7%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] Memory Usage: 45.9%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] CPU Utilization: 84.3%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] Memory Usage: 45.9%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] CPU Utilization: 85.1%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] Memory Usage: 46.1%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] CPU Utilization: 84.2%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] Memory Usage: 46.0%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] CPU Utilization: 76.8%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] Memory Usage: 46.1%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] CPU Utilization: 77.5%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] Memory Usage: 46.4%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] CPU Utilization: 84.4%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] Memory Usage: 46.4%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] CPU Utilization: 84.6%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] Memory Usage: 46.9%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] CPU Utilization: 53.6%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] Memory Usage: 46.9%
+[MONITORING] [local.openml_t_359990.pygmo_c.MiniBooNE.0.H2OAutoML] Disk Usage: 43.2%

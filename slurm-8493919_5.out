@@ -1,0 +1,203 @@
+/var/spool/slurm/slurmd/job8493919/slurm_script: line 8: activate: No such file or directory
+Running benchmark `H2OAutoML` on `openml/t/359954` framework in `local` mode.
+Loading frameworks definitions from ['/home/juradoi/experiments/automlbenchmark/resources/frameworks.yaml'].
+Loading benchmark constraint definitions from ['/home/juradoi/experiments/automlbenchmark/resources/constraints.yaml'].
+Loading openml task 359954.
+
+------------------------------------------------------------------
+Starting job local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML.
+Assigning 16 cores (total=16) for new task eucalyptus.
+Assigning 90928 MB (total=95302 MB) for new eucalyptus task.
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] CPU Utilization: 19.0%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Memory Usage: 2.4%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Disk Usage: 43.2%
+Running task eucalyptus on framework H2OAutoML with config:
+TaskConfig({})
+Running cmd `/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py`
+INFO:__main__:
+**** H2O AutoML [v3.34.0.3] ****
+
+INFO:__main__:Starting H2O cluster with 16 cores, 60619M memory.
+Checking whether there is an H2O instance running at http://localhost:28685 ..... not found.
+Attempting to start a local H2O server...
+  Java Version: openjdk version "11.0.12" 2021-07-20; OpenJDK Runtime Environment (build 11.0.12+7-post-Debian-2deb10u1); OpenJDK 64-Bit Server VM (build 11.0.12+7-post-Debian-2deb10u1, mixed mode, sharing)
+  Starting server from /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/backend/bin/h2o.jar
+  Ice root: /tmp/tmp0f1ppzmv
+  JVM stdout: /tmp/tmp0f1ppzmv/h2o_unknownUser_started_from_python.out
+  JVM stderr: /tmp/tmp0f1ppzmv/h2o_unknownUser_started_from_python.err
+  Server is running at http://127.0.0.1:28685
+Connecting to H2O server at http://127.0.0.1:28685 ... successful.
+--------------------------  ------------------------------------------------------------------
+H2O_cluster_uptime:         01 secs
+H2O_cluster_timezone:       Europe/Amsterdam
+H2O_data_parsing_timezone:  UTC
+H2O_cluster_version:        3.34.0.3
+H2O_cluster_version_age:    2 months and 2 days
+H2O_cluster_name:           H2O_from_python_unknownUser_u489vz
+H2O_cluster_total_nodes:    1
+H2O_cluster_free_memory:    59.20 Gb
+H2O_cluster_total_cores:    16
+H2O_cluster_allowed_cores:  16
+H2O_cluster_status:         locked, healthy
+H2O_connection_url:         http://127.0.0.1:28685
+H2O_connection_proxy:       {"http": null, "https": null}
+H2O_internal_security:      False
+H2O_API_Extensions:         Amazon S3, XGBoost, Algos, AutoML, Core V3, TargetEncoder, Core V4
+Python_version:             3.8.12 final
+--------------------------  ------------------------------------------------------------------
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+INFO:__main__:Running model on task eucalyptus, fold 0.
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] CPU Utilization: 74.8%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Memory Usage: 34.0%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] CPU Utilization: 97.9%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Memory Usage: 37.3%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] CPU Utilization: 96.7%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Memory Usage: 40.4%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] CPU Utilization: 97.7%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Memory Usage: 44.3%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] CPU Utilization: 97.8%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Memory Usage: 44.3%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] CPU Utilization: 96.9%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Memory Usage: 44.9%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] CPU Utilization: 97.1%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Memory Usage: 45.0%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] CPU Utilization: 96.9%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Memory Usage: 45.0%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] CPU Utilization: 97.0%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Memory Usage: 45.0%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] CPU Utilization: 97.7%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Memory Usage: 45.0%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] CPU Utilization: 97.1%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Memory Usage: 45.1%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] CPU Utilization: 97.9%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Memory Usage: 45.1%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] CPU Utilization: 97.6%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Memory Usage: 45.1%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] CPU Utilization: 96.9%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Memory Usage: 45.1%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] CPU Utilization: 98.1%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Memory Usage: 45.1%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] CPU Utilization: 97.5%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Memory Usage: 45.2%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] CPU Utilization: 97.3%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Memory Usage: 45.2%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] CPU Utilization: 97.1%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Memory Usage: 45.2%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] CPU Utilization: 96.8%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Memory Usage: 45.2%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] CPU Utilization: 97.5%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Memory Usage: 45.3%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] CPU Utilization: 94.9%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Memory Usage: 45.3%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] CPU Utilization: 97.9%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Memory Usage: 45.4%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] CPU Utilization: 97.0%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Memory Usage: 45.5%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] CPU Utilization: 97.9%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Memory Usage: 45.5%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] CPU Utilization: 97.5%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Memory Usage: 45.5%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] CPU Utilization: 97.5%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Memory Usage: 45.5%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] CPU Utilization: 97.4%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Memory Usage: 45.6%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] CPU Utilization: 97.3%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Memory Usage: 45.6%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] CPU Utilization: 63.5%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Memory Usage: 45.9%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Disk Usage: 43.2%
+AutoML progress: |███████████████████████████████████████████████████████████████| (done) 100%
+stackedensemble prediction progress: |███████████████████████████████████████████| (done) 100%
+H2O session _sid_a64e closed.
+
+
+
+Predictions preview:
+                   average                   best                   good                    low                 none predictions truth
+0   2.0478540902541778E-7   4.364446441305191E-6  3.1175421806109143E-7    0.01305074986745058   0.9869443691464809        none  none
+1    9.600732542765587E-8   6.499682690401513E-8  3.1313653295020315E-8   1.947200116156402E-6   0.9999978604820782        none  none
+2    1.659161453833952E-7  1.5743270010498698E-7   6.473130891944319E-8   0.009667828232389736   0.9903317836874559        none  none
+3    4.731623263560109E-4   1.043783264041241E-6  1.2709936481120562E-5    0.07056030992432837   0.9289527740295705        none  none
+4    0.044769446182728184  4.0992149173485254E-4  0.0020731337506760075     0.6970169045105425   0.2557305940643184         low  none
+5   1.3081600753927488E-7   9.830145520163075E-8    4.35679244153955E-8   1.823199160771807E-6   0.9999979041154521        none  none
+6    1.685611662320151E-8   3.755697930570332E-9  6.053951155544851E-10   6.269083552852483E-7    0.999999351874435        none  none
+7   1.0516518397049913E-7  1.0552160687425126E-7  4.7075833503080125E-8  2.5477065571634216E-6   0.9999971945308185        none  none
+8    2.906750607174821E-7  1.4641960812185949E-8  1.4149915240308163E-7    7.70248190994328E-5   0.9999225283647266        none  none
+9   1.2439375130648632E-5  1.0494232129465555E-7   3.770877113171091E-7    0.01023086144544978    0.989756217149387        none  none
+10  1.3171708161370644E-7  1.9556901836825412E-8  1.2458057350878128E-7  2.2621782415427417E-6   0.9999974619672015        none  none
+11  0.0036088340692398456   4.782604263572785E-6  1.9320492012591127E-4      0.173528608506459   0.8226645698999117        none  none
+12    0.00105715399350534   2.045019502282634E-4  1.8398846334809454E-4     0.1371114506167406   0.8614429049761777        none  none
+13   9.401508326965236E-8   7.433127400696417E-8  2.9562619447967346E-8  1.8533619063190818E-6   0.9999979487291171        none  none
+14   3.226487599466519E-8  5.3877857231671365E-8   1.415785257689349E-8  0.0027189489800022166   0.9972809507194119        none  none
+15   1.578588233760508E-5  1.0419216050118037E-5   2.569357510025646E-8   0.015480194424127387   0.9844935747839098        none  none
+16  0.0028628035396514513   7.915453495864507E-5  1.1874166633883119E-4     0.4923181740626083   0.5046211261964428        none  none
+17  1.8884795346818442E-7     3.7692034051597E-8    2.92789377996694E-7   2.987905465142382E-6   0.9999964927651693        none  none
+18    0.23768968999176537   0.005627892860603158    0.03563672886744453     0.4912613131620149  0.22978437511817199         low   low
+19   0.002643888683987987  6.8222068321009865E-6  4.3878409512865305E-5     0.1977181280294362   0.7995872826702309        none   low
+
+Predictions saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359954.pygmo_c.local.20211209T220707/predictions/eucalyptus/0/predictions.csv`.
+Loading metadata from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359954.pygmo_c.local.20211209T220707/predictions/eucalyptus/0/metadata.json`.
+Loading predictions from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359954.pygmo_c.local.20211209T220707/predictions/eucalyptus/0/predictions.csv`.
+Metric scores: { 'acc': 0.6891891891891891,
+  'app_version': 'dev [master, beef024]',
+  'balacc': 0.652025752025752,
+  'constraint': 'pygmo_c',
+  'duration': nan,
+  'fold': 0,
+  'framework': 'H2OAutoML',
+  'id': 'openml.org/t/359954',
+  'info': None,
+  'logloss': 0.7001480537408795,
+  'metric': 'neg_logloss',
+  'mode': 'local',
+  'models_count': 223,
+  'params': '',
+  'predict_duration': 0.2892184257507324,
+  'result': -0.7001480537408795,
+  'seed': 1742637815,
+  'task': 'eucalyptus',
+  'training_duration': 3578.0168964862823,
+  'type': 'multiclass',
+  'utc': '2021-12-09T23:06:55',
+  'version': '3.34.0.3'}
+Job `local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML` executed in 3587.239 seconds.
+All jobs executed in 3587.246 seconds.
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] CPU Utilization: 60.8%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Memory Usage: 2.4%
+[MONITORING] [local.openml_t_359954.pygmo_c.eucalyptus.0.H2OAutoML] Disk Usage: 43.2%
+Processing results for h2oautoml.openml_t_359954.pygmo_c.local.20211209T220707
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359954.pygmo_c.local.20211209T220707/scores/H2OAutoML.benchmark_openml_t_359954.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359954.pygmo_c.local.20211209T220707/scores/results.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/results.csv`.
+Summing up scores for current run:
+                 id       task fold framework constraint    result      metric  duration       seed
+openml.org/t/359954 eucalyptus    0 H2OAutoML    pygmo_c -0.700148 neg_logloss    3587.2 1742637815

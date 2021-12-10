@@ -1,0 +1,207 @@
+/var/spool/slurm/slurmd/job8494823/slurm_script: line 8: activate: No such file or directory
+Running benchmark `H2OAutoML` on `openml/t/359971` framework in `local` mode.
+Loading frameworks definitions from ['/home/juradoi/experiments/automlbenchmark/resources/frameworks.yaml'].
+Loading benchmark constraint definitions from ['/home/juradoi/experiments/automlbenchmark/resources/constraints.yaml'].
+Loading openml task 359971.
+
+------------------------------------------------------------------------
+Starting job local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML.
+Assigning 16 cores (total=16) for new task PhishingWebsites.
+Assigning 91235 MB (total=95302 MB) for new PhishingWebsites task.
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] CPU Utilization: 15.4%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Memory Usage: 2.1%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Disk Usage: 43.2%
+Running task PhishingWebsites on framework H2OAutoML with config:
+TaskConfig({})
+Running cmd `/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py`
+INFO:__main__:
+**** H2O AutoML [v3.34.0.3] ****
+
+INFO:__main__:Starting H2O cluster with 16 cores, 60823M memory.
+Checking whether there is an H2O instance running at http://localhost:2628 ..... not found.
+Attempting to start a local H2O server...
+  Java Version: openjdk version "11.0.12" 2021-07-20; OpenJDK Runtime Environment (build 11.0.12+7-post-Debian-2deb10u1); OpenJDK 64-Bit Server VM (build 11.0.12+7-post-Debian-2deb10u1, mixed mode, sharing)
+  Starting server from /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/backend/bin/h2o.jar
+  Ice root: /tmp/tmpautr4wh7
+  JVM stdout: /tmp/tmpautr4wh7/h2o_unknownUser_started_from_python.out
+  JVM stderr: /tmp/tmpautr4wh7/h2o_unknownUser_started_from_python.err
+  Server is running at http://127.0.0.1:2628
+Connecting to H2O server at http://127.0.0.1:2628 ... successful.
+--------------------------  ------------------------------------------------------------------
+H2O_cluster_uptime:         01 secs
+H2O_cluster_timezone:       Europe/Amsterdam
+H2O_data_parsing_timezone:  UTC
+H2O_cluster_version:        3.34.0.3
+H2O_cluster_version_age:    2 months and 2 days
+H2O_cluster_name:           H2O_from_python_unknownUser_q6lkvy
+H2O_cluster_total_nodes:    1
+H2O_cluster_free_memory:    59.41 Gb
+H2O_cluster_total_cores:    16
+H2O_cluster_allowed_cores:  16
+H2O_cluster_status:         locked, healthy
+H2O_connection_url:         http://127.0.0.1:2628
+H2O_connection_proxy:       {"http": null, "https": null}
+H2O_internal_security:      False
+H2O_API_Extensions:         Amazon S3, XGBoost, Algos, AutoML, Core V3, TargetEncoder, Core V4
+Python_version:             3.8.12 final
+--------------------------  ------------------------------------------------------------------
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+INFO:__main__:Running model on task PhishingWebsites, fold 0.
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] CPU Utilization: 62.5%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Memory Usage: 29.3%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] CPU Utilization: 75.3%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Memory Usage: 43.5%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] CPU Utilization: 69.8%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Memory Usage: 45.5%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] CPU Utilization: 69.8%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Memory Usage: 45.5%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] CPU Utilization: 69.5%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Memory Usage: 45.8%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] CPU Utilization: 67.2%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Memory Usage: 45.9%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] CPU Utilization: 67.6%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Memory Usage: 46.5%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] CPU Utilization: 67.8%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Memory Usage: 47.1%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] CPU Utilization: 70.3%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Memory Usage: 47.2%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] CPU Utilization: 71.5%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Memory Usage: 47.3%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] CPU Utilization: 71.2%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Memory Usage: 48.1%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] CPU Utilization: 73.6%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Memory Usage: 48.2%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] CPU Utilization: 73.3%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Memory Usage: 49.0%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] CPU Utilization: 72.3%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Memory Usage: 49.0%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] CPU Utilization: 66.6%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Memory Usage: 49.1%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] CPU Utilization: 64.5%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Memory Usage: 49.5%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] CPU Utilization: 60.9%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Memory Usage: 49.6%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] CPU Utilization: 65.7%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Memory Usage: 50.4%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] CPU Utilization: 60.1%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Memory Usage: 50.4%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] CPU Utilization: 64.4%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Memory Usage: 50.4%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] CPU Utilization: 63.6%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Memory Usage: 50.9%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] CPU Utilization: 57.8%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Memory Usage: 50.9%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] CPU Utilization: 65.4%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Memory Usage: 51.4%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] CPU Utilization: 77.2%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Memory Usage: 51.3%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] CPU Utilization: 94.0%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Memory Usage: 51.3%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] CPU Utilization: 94.3%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Memory Usage: 51.6%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] CPU Utilization: 92.4%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Memory Usage: 51.6%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] CPU Utilization: 90.4%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Memory Usage: 51.6%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] CPU Utilization: 92.4%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Memory Usage: 51.7%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] CPU Utilization: 82.4%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Memory Usage: 51.7%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Disk Usage: 43.2%
+AutoML progress: |███████████████████████████████████████████████████████████████| (done) 100%
+stackedensemble prediction progress: |███████████████████████████████████████████| (done) 100%
+H2O session _sid_8726 closed.
+
+
+
+Predictions preview:
+                        -1                   1 predictions truth
+0    0.002853104508834803  0.9971468954911652           1     1
+1    2.774589090792645E-4  0.9997225410909207           1     1
+2     0.10106637122791406  0.8989336287720859           1     1
+3    7.970938896117996E-5  0.9999202906110388           1     1
+4   0.0028620695168201093  0.9971379304831799           1     1
+5    5.939874138199963E-4    0.99940601258618           1     1
+6    7.942579423654283E-4  0.9992057420576346           1     1
+7   0.0012832869032765037  0.9987167130967235           1     1
+8      0.6880202130547424  0.3119797869452576          -1     1
+9   2.0277394333867438E-4  0.9997972260566613           1     1
+10   0.011890643171186821  0.9881093568288132           1     1
+11   5.616404508090866E-4  0.9994383595491909           1     1
+12  0.0011425556731077258  0.9988574443268923           1     1
+13   5.475297944090851E-4  0.9994524702055909           1     1
+14   4.412318164006557E-4  0.9995587681835993           1     1
+15    0.02277458295677759  0.9772254170432224           1     1
+16   2.052020898791751E-4  0.9997947979101208           1     1
+17  2.5302577454466846E-4  0.9997469742254553           1     1
+18  1.3512253549063935E-4  0.9998648774645094           1     1
+19   4.044497043247386E-4  0.9995955502956753           1     1
+
+Predictions saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359971.pygmo_c.local.20211210T013248/predictions/PhishingWebsites/0/predictions.csv`.
+Loading metadata from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359971.pygmo_c.local.20211210T013248/predictions/PhishingWebsites/0/metadata.json`.
+Loading predictions from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359971.pygmo_c.local.20211210T013248/predictions/PhishingWebsites/0/predictions.csv`.
+Metric scores: { 'acc': 0.9665461121157324,
+  'app_version': 'dev [master, beef024]',
+  'auc': 0.9964070368407103,
+  'balacc': 0.9637059369202227,
+  'constraint': 'pygmo_c',
+  'duration': nan,
+  'fold': 0,
+  'framework': 'H2OAutoML',
+  'id': 'openml.org/t/359971',
+  'info': None,
+  'logloss': 0.07826206492451537,
+  'metric': 'auc',
+  'mode': 'local',
+  'models_count': 239,
+  'params': '',
+  'predict_duration': 0.3789689540863037,
+  'result': 0.9964070368407103,
+  'seed': 50707570,
+  'task': 'PhishingWebsites',
+  'training_duration': 3605.432478904724,
+  'type': 'binary',
+  'utc': '2021-12-10T02:33:05',
+  'version': '3.34.0.3'}
+Job `local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML` executed in 3616.972 seconds.
+All jobs executed in 3616.985 seconds.
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] CPU Utilization: 69.3%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Memory Usage: 2.1%
+[MONITORING] [local.openml_t_359971.pygmo_c.PhishingWebsites.0.H2OAutoML] Disk Usage: 43.2%
+Processing results for h2oautoml.openml_t_359971.pygmo_c.local.20211210T013248
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359971.pygmo_c.local.20211210T013248/scores/H2OAutoML.benchmark_openml_t_359971.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359971.pygmo_c.local.20211210T013248/scores/results.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/results.csv`.
+Summing up scores for current run:
+                 id             task fold framework constraint   result metric  duration     seed
+openml.org/t/359971 PhishingWebsites    0 H2OAutoML    pygmo_c 0.996407    auc    3617.0 50707570

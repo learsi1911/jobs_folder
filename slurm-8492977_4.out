@@ -1,0 +1,211 @@
+/var/spool/slurm/slurmd/job8492981/slurm_script: line 8: activate: No such file or directory
+Running benchmark `H2OAutoML` on `openml/t/3945` framework in `local` mode.
+Loading frameworks definitions from ['/home/juradoi/experiments/automlbenchmark/resources/frameworks.yaml'].
+Loading benchmark constraint definitions from ['/home/juradoi/experiments/automlbenchmark/resources/constraints.yaml'].
+Loading openml task 3945.
+
+------------------------------------------------------------------------
+Starting job local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML.
+Assigning 16 cores (total=16) for new task KDDCup09_appetency.
+Assigning 91209 MB (total=95302 MB) for new KDDCup09_appetency task.
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] CPU Utilization: 19.1%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Memory Usage: 2.1%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Disk Usage: 43.2%
+Running task KDDCup09_appetency on framework H2OAutoML with config:
+TaskConfig({})
+Running cmd `/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py`
+INFO:__main__:
+**** H2O AutoML [v3.34.0.3] ****
+
+INFO:__main__:Starting H2O cluster with 16 cores, 60806M memory.
+Checking whether there is an H2O instance running at http://localhost:6727 ..... not found.
+Attempting to start a local H2O server...
+  Java Version: openjdk version "11.0.12" 2021-07-20; OpenJDK Runtime Environment (build 11.0.12+7-post-Debian-2deb10u1); OpenJDK 64-Bit Server VM (build 11.0.12+7-post-Debian-2deb10u1, mixed mode, sharing)
+  Starting server from /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/backend/bin/h2o.jar
+  Ice root: /tmp/tmpou7wbepu
+  JVM stdout: /tmp/tmpou7wbepu/h2o_unknownUser_started_from_python.out
+  JVM stderr: /tmp/tmpou7wbepu/h2o_unknownUser_started_from_python.err
+  Server is running at http://127.0.0.1:6727
+Connecting to H2O server at http://127.0.0.1:6727 ... successful.
+--------------------------  ------------------------------------------------------------------
+H2O_cluster_uptime:         01 secs
+H2O_cluster_timezone:       Europe/Amsterdam
+H2O_data_parsing_timezone:  UTC
+H2O_cluster_version:        3.34.0.3
+H2O_cluster_version_age:    2 months and 2 days
+H2O_cluster_name:           H2O_from_python_unknownUser_o83fev
+H2O_cluster_total_nodes:    1
+H2O_cluster_free_memory:    59.39 Gb
+H2O_cluster_total_cores:    16
+H2O_cluster_allowed_cores:  16
+H2O_cluster_status:         locked, healthy
+H2O_connection_url:         http://127.0.0.1:6727
+H2O_connection_proxy:       {"http": null, "https": null}
+H2O_internal_security:      False
+H2O_API_Extensions:         Amazon S3, XGBoost, Algos, AutoML, Core V3, TargetEncoder, Core V4
+Python_version:             3.8.12 final
+--------------------------  ------------------------------------------------------------------
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+INFO:__main__:Running model on task KDDCup09_appetency, fold 0.
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] CPU Utilization: 48.0%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Memory Usage: 47.9%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] CPU Utilization: 60.7%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Memory Usage: 49.5%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Disk Usage: 43.2%
+AutoML progress: |█████████████████
+19:28:42.683: XRT_1_AutoML_1_20211209_192405 [DRF XRT (Extremely Randomized Trees)] failed: java.lang.AssertionError
+
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] CPU Utilization: 71.1%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Memory Usage: 50.0%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] CPU Utilization: 79.8%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Memory Usage: 50.3%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] CPU Utilization: 66.1%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Memory Usage: 50.5%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] CPU Utilization: 56.8%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Memory Usage: 50.9%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] CPU Utilization: 64.2%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Memory Usage: 51.0%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] CPU Utilization: 62.1%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Memory Usage: 51.2%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] CPU Utilization: 58.5%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Memory Usage: 51.3%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] CPU Utilization: 61.7%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Memory Usage: 51.5%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] CPU Utilization: 63.2%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Memory Usage: 51.6%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] CPU Utilization: 61.9%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Memory Usage: 51.8%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] CPU Utilization: 62.8%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Memory Usage: 52.0%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] CPU Utilization: 62.7%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Memory Usage: 52.1%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] CPU Utilization: 63.8%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Memory Usage: 52.2%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] CPU Utilization: 59.7%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Memory Usage: 52.2%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] CPU Utilization: 66.7%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Memory Usage: 52.4%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] CPU Utilization: 66.2%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Memory Usage: 52.4%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] CPU Utilization: 65.9%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Memory Usage: 52.4%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] CPU Utilization: 70.4%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Memory Usage: 52.4%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] CPU Utilization: 66.7%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Memory Usage: 52.4%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] CPU Utilization: 68.5%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Memory Usage: 52.4%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] CPU Utilization: 68.3%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Memory Usage: 52.4%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] CPU Utilization: 70.8%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Memory Usage: 52.4%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] CPU Utilization: 80.1%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Memory Usage: 56.4%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] CPU Utilization: 80.6%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Memory Usage: 58.2%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] CPU Utilization: 79.0%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Memory Usage: 62.0%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] CPU Utilization: 82.7%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Memory Usage: 62.1%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] CPU Utilization: 78.4%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Memory Usage: 62.1%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] CPU Utilization: 72.1%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Memory Usage: 62.1%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Disk Usage: 43.2%
+██████████████████████████████████████████████| (done) 100%
+stackedensemble prediction progress: |███████████████████████████████████████████| (done) 100%
+H2O session _sid_b151 closed.
+
+
+
+Predictions preview:
+                     -1                      1 predictions truth
+0   0.9845837079624583   0.015416292037541655          -1    -1
+1   0.9787753504862946   0.021224649513705396          -1    -1
+2   0.9919086413061337   0.008091358693866374          -1    -1
+3   0.9862659865893184   0.013734013410681608          -1    -1
+4    0.986143137717506   0.013856862282494017          -1    -1
+5   0.9273794544457875    0.07262054555421252          -1    -1
+6   0.9982589093229361  0.0017410906770638683          -1    -1
+7    0.991002108385644   0.008997891614355998          -1    -1
+8   0.9944210626966911   0.005578937303308932          -1    -1
+9   0.9978829027254212  0.0021170972745787994          -1    -1
+10  0.9964735057738917  0.0035264942261083437          -1    -1
+11  0.9967143515931434  0.0032856484068566304          -1    -1
+12  0.9812064553141598   0.018793544685840127          -1    -1
+13  0.9697555126675131    0.03024448733248687          -1    -1
+14   0.997727275127242   0.002272724872758019          -1    -1
+15  0.9910363825876887   0.008963617412311362          -1    -1
+16  0.9883559357065343   0.011644064293465676          -1    -1
+17  0.9899507325678527   0.010049267432147277          -1    -1
+18  0.9943902185669622   0.005609781433037821          -1    -1
+19    0.98429590689398   0.015704093106019983          -1    -1
+
+Predictions saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_3945.pygmo_c.local.20211209T182353/predictions/KDDCup09_appetency/0/predictions.csv`.
+Loading metadata from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_3945.pygmo_c.local.20211209T182353/predictions/KDDCup09_appetency/0/metadata.json`.
+Loading predictions from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_3945.pygmo_c.local.20211209T182353/predictions/KDDCup09_appetency/0/predictions.csv`.
+Metric scores: { 'acc': 0.9658,
+  'app_version': 'dev [master, beef024]',
+  'auc': 0.8327258916580299,
+  'balacc': 0.6240393613053933,
+  'constraint': 'pygmo_c',
+  'duration': nan,
+  'fold': 0,
+  'framework': 'H2OAutoML',
+  'id': 'openml.org/t/3945',
+  'info': None,
+  'logloss': 0.07471258770570502,
+  'metric': 'auc',
+  'mode': 'local',
+  'models_count': 141,
+  'params': '',
+  'predict_duration': 1.7189702987670898,
+  'result': 0.8327258916580299,
+  'seed': 1551959041,
+  'task': 'KDDCup09_appetency',
+  'training_duration': 3605.3342685699463,
+  'type': 'binary',
+  'utc': '2021-12-09T19:24:13',
+  'version': '3.34.0.3'}
+Job `local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML` executed in 3620.410 seconds.
+All jobs executed in 3620.446 seconds.
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] CPU Utilization: 41.0%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Memory Usage: 2.1%
+[MONITORING] [local.openml_t_3945.pygmo_c.KDDCup09_appetency.0.H2OAutoML] Disk Usage: 43.2%
+Processing results for h2oautoml.openml_t_3945.pygmo_c.local.20211209T182353
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_3945.pygmo_c.local.20211209T182353/scores/H2OAutoML.benchmark_openml_t_3945.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_3945.pygmo_c.local.20211209T182353/scores/results.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/results.csv`.
+Summing up scores for current run:
+               id               task fold framework constraint   result metric  duration       seed
+openml.org/t/3945 KDDCup09_appetency    0 H2OAutoML    pygmo_c 0.832726    auc    3620.4 1551959041

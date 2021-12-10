@@ -1,0 +1,48 @@
+/var/spool/slurm/slurmd/job8493657/slurm_script: line 8: activate: No such file or directory
+Running benchmark `H2OAutoML` on `openml/t/189354` framework in `local` mode.
+Loading frameworks definitions from ['/home/juradoi/experiments/automlbenchmark/resources/frameworks.yaml'].
+Loading benchmark constraint definitions from ['/home/juradoi/experiments/automlbenchmark/resources/constraints.yaml'].
+Loading openml task 189354.
+
+----------------------------------------------------------------
+Starting job local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML.
+Assigning 16 cores (total=16) for new task airlines.
+Assigning 91193 MB (total=95302 MB) for new airlines task.
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] CPU Utilization: 16.0%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Memory Usage: 2.2%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Disk Usage: 43.2%
+Job `local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML` failed with error: invalid load key, '\x00'.
+Traceback (most recent call last):
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 92, in start
+    self._setup()
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 512, in setup
+    self.load_data()
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 482, in load_data
+    self._dataset = Benchmark.data_loader.load(DataSourceType.openml_task, task_id=self._task_def.openml_task_id, fold=self.fold)
+  File "/home/juradoi/experiments/automlbenchmark/amlb/datasets/__init__.py", line 21, in load
+    return self.openml_loader.load(*args, **kwargs)
+  File "/home/juradoi/experiments/automlbenchmark/amlb/utils/process.py", line 702, in profiler
+    return fn(*args, **kwargs)
+  File "/home/juradoi/experiments/automlbenchmark/amlb/datasets/openml.py", line 45, in load
+    _, nfolds, _ = task.get_split_dimensions()
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/site-packages/openml/tasks/task.py", line 162, in get_split_dimensions
+    self.split = self.download_split()
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/site-packages/openml/tasks/task.py", line 151, in download_split
+    split = OpenMLSplit._from_arff_file(cached_split_file)
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/site-packages/openml/tasks/split.py", line 82, in _from_arff_file
+    _ = pickle.load(fh)
+_pickle.UnpicklingError: invalid load key, '\x00'.
+Job `local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML` did not stop gracefully: Job `local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML` was interrupted.
+Traceback (most recent call last):
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 142, in stop
+    self._cancel()
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 179, in _cancel
+    raise_in_thread(self.thread_id, CancelledError(f"Job `{self.name}` was interrupted."))
+  File "/home/juradoi/experiments/automlbenchmark/amlb/utils/process.py", line 395, in raise_in_thread
+    ret = ctypes.pythonapi.PyThreadState_SetAsyncExc(tid, exc_class)
+amlb.utils.process.CancelledError: Job `local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML` was interrupted.
+All jobs executed in 28.746 seconds.
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] CPU Utilization: 4.5%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Memory Usage: 2.3%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Disk Usage: 43.2%
+Processing results for h2oautoml.openml_t_189354.pygmo_c.local.20211209T210928

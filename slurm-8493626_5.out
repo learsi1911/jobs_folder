@@ -1,0 +1,206 @@
+/var/spool/slurm/slurmd/job8493626/slurm_script: line 8: activate: No such file or directory
+Running benchmark `H2OAutoML` on `openml/t/168784` framework in `local` mode.
+Loading frameworks definitions from ['/home/juradoi/experiments/automlbenchmark/resources/frameworks.yaml'].
+Loading benchmark constraint definitions from ['/home/juradoi/experiments/automlbenchmark/resources/constraints.yaml'].
+Loading openml task 168784.
+
+--------------------------------------------------------------------------
+Starting job local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML.
+Assigning 16 cores (total=16) for new task steel-plates-fault.
+Assigning 91576 MB (total=95302 MB) for new steel-plates-fault task.
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] CPU Utilization: 17.4%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Memory Usage: 1.8%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Disk Usage: 43.2%
+Running task steel-plates-fault on framework H2OAutoML with config:
+TaskConfig({})
+Running cmd `/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py`
+INFO:__main__:
+**** H2O AutoML [v3.34.0.3] ****
+
+INFO:__main__:Starting H2O cluster with 16 cores, 61051M memory.
+Checking whether there is an H2O instance running at http://localhost:32133 ..... not found.
+Attempting to start a local H2O server...
+  Java Version: openjdk version "11.0.12" 2021-07-20; OpenJDK Runtime Environment (build 11.0.12+7-post-Debian-2deb10u1); OpenJDK 64-Bit Server VM (build 11.0.12+7-post-Debian-2deb10u1, mixed mode, sharing)
+  Starting server from /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/backend/bin/h2o.jar
+  Ice root: /tmp/tmp930ltph6
+  JVM stdout: /tmp/tmp930ltph6/h2o_unknownUser_started_from_python.out
+  JVM stderr: /tmp/tmp930ltph6/h2o_unknownUser_started_from_python.err
+  Server is running at http://127.0.0.1:32133
+Connecting to H2O server at http://127.0.0.1:32133 ... successful.
+--------------------------  ------------------------------------------------------------------
+H2O_cluster_uptime:         01 secs
+H2O_cluster_timezone:       Europe/Amsterdam
+H2O_data_parsing_timezone:  UTC
+H2O_cluster_version:        3.34.0.3
+H2O_cluster_version_age:    2 months and 2 days
+H2O_cluster_name:           H2O_from_python_unknownUser_bfnmpf
+H2O_cluster_total_nodes:    1
+H2O_cluster_free_memory:    59.62 Gb
+H2O_cluster_total_cores:    16
+H2O_cluster_allowed_cores:  16
+H2O_cluster_status:         locked, healthy
+H2O_connection_url:         http://127.0.0.1:32133
+H2O_connection_proxy:       {"http": null, "https": null}
+H2O_internal_security:      False
+H2O_API_Extensions:         Amazon S3, XGBoost, Algos, AutoML, Core V3, TargetEncoder, Core V4
+Python_version:             3.8.12 final
+--------------------------  ------------------------------------------------------------------
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+INFO:__main__:Running model on task steel-plates-fault, fold 0.
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] CPU Utilization: 72.3%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Memory Usage: 27.1%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] CPU Utilization: 75.3%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Memory Usage: 27.3%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] CPU Utilization: 78.1%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Memory Usage: 34.0%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] CPU Utilization: 92.0%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Memory Usage: 46.6%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] CPU Utilization: 95.4%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Memory Usage: 46.7%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] CPU Utilization: 97.1%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Memory Usage: 47.4%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] CPU Utilization: 97.1%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Memory Usage: 47.5%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] CPU Utilization: 97.7%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Memory Usage: 47.5%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] CPU Utilization: 96.3%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Memory Usage: 47.5%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] CPU Utilization: 97.2%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Memory Usage: 47.5%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] CPU Utilization: 97.7%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Memory Usage: 47.6%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] CPU Utilization: 97.4%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Memory Usage: 47.6%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] CPU Utilization: 97.2%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Memory Usage: 47.6%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] CPU Utilization: 97.1%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Memory Usage: 47.6%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] CPU Utilization: 96.9%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Memory Usage: 47.6%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] CPU Utilization: 97.2%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Memory Usage: 47.6%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] CPU Utilization: 96.7%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Memory Usage: 47.6%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] CPU Utilization: 97.0%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Memory Usage: 47.6%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] CPU Utilization: 96.6%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Memory Usage: 47.6%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] CPU Utilization: 96.9%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Memory Usage: 47.6%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] CPU Utilization: 96.6%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Memory Usage: 47.7%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] CPU Utilization: 94.0%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Memory Usage: 47.8%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] CPU Utilization: 97.0%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Memory Usage: 47.8%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] CPU Utilization: 96.5%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Memory Usage: 47.9%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] CPU Utilization: 96.2%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Memory Usage: 47.9%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] CPU Utilization: 97.0%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Memory Usage: 47.9%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] CPU Utilization: 97.1%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Memory Usage: 47.9%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] CPU Utilization: 97.0%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Memory Usage: 47.9%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] CPU Utilization: 83.3%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Memory Usage: 48.0%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] CPU Utilization: 93.5%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Memory Usage: 48.0%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Disk Usage: 43.2%
+AutoML progress: |███████████████████████████████████████████████████████████████| (done) 100%
+stackedensemble prediction progress: |███████████████████████████████████████████| (done) 100%
+H2O session _sid_b2e4 closed.
+
+
+
+Predictions preview:
+                  Bumps              Dirtiness              K_Scratch         Other_Faults                 Pastry                 Stains              Z_Scratch   predictions  truth
+0   0.9630331007934173  1.8870947130299122E-4   3.476608437591793E-4  0.03357665998539964  0.0010307918025745833  0.0015150195957675913   3.080575077784011E-4         Bumps  Bumps
+1   0.4416829537430198   7.826545112067716E-4   0.015589266235705194   0.5383121236284548   7.339300037006553E-4  0.0022162918271538008   6.827800507588445E-4  Other_Faults  Bumps
+2   0.8109257499949408  4.4473229627419044E-4   0.004352260391621466  0.17797214598231512  0.0036185534691645436  0.0011531893343190284  0.0015333685313649143         Bumps  Bumps
+3   0.9094531294353342  1.7398277386074658E-4  0.0018653127030408747  0.08701376900417838   4.895884374198319E-4   7.243806396850856E-4  2.7983700648095185E-4         Bumps  Bumps
+4   0.9239758688713823  2.4203732705907672E-4  2.2748529601828137E-4  0.07312884365407253  0.0015797906255445538   5.762970436589868E-4   2.696771822642462E-4         Bumps  Bumps
+5   0.9708403598751233  1.6078200982070642E-4  1.8265452232323664E-4  0.02771364023544995    9.01456721557903E-4   1.607165503258579E-4  4.0390085399175935E-5         Bumps  Bumps
+6   0.6946330163742652   5.139418113699686E-4   7.980062283264483E-4   0.1985183107223222    0.10380586049909389   6.156153382929327E-4  0.0011152490263292801         Bumps  Bumps
+7    0.947948309868978   7.750269092765511E-5  2.8979505705467297E-4  0.04987248000220985   9.559815194633617E-4   6.824891256441115E-4  1.7344173572242497E-4         Bumps  Bumps
+8   0.6250933373290932    4.86653218834803E-4  0.0014631560661708554  0.34677233668669005  0.0049535561792010815   0.005771790962653299   0.015459169557356805         Bumps  Bumps
+9    0.320637900072594    0.20216447470773083   0.003257393022588089  0.39645601987404916     0.0754174879552847    8.87351394114389E-4  0.0011793729736389708  Other_Faults  Bumps
+10  0.2445601615364274   3.769098799872531E-4  0.0013465294404001252   0.7285292127118014   0.006343275011815706  0.0012118661710504503   0.017632045248517636  Other_Faults  Bumps
+11  0.6970685760840462  4.3407938386449767E-4   0.002179832325247105   0.2905534986872809   0.006691188228354448  0.0020875509401605593    9.85274351046333E-4         Bumps  Bumps
+12  0.9167405487139252   6.117655037319983E-5   6.287584282722968E-4  0.07957628213315232   4.054648117151003E-4  0.0011299763177456395   0.001457793044816305         Bumps  Bumps
+13  0.5320714195807505  0.0052348167971602855   7.192056013204212E-4  0.37793803833203515     0.0644990689706124   2.856841044387192E-4    0.01925176661368245         Bumps  Bumps
+14  0.7848482711986807  3.0334547647695344E-4   3.562250726328884E-4  0.16028839487465282   0.053391084241534624  4.7941748316719524E-5   7.647373877052118E-4         Bumps  Bumps
+15  0.7630049789302606   3.897918931981264E-4    7.68274420406567E-4  0.22779493649148913  0.0031877903843126076   0.003562355500995713   0.001291872379337037         Bumps  Bumps
+16  0.6273141343364442    0.05383676781464928  0.0024438266766659647  0.30386867488332103   0.008542541481144948    5.62903351363054E-4   0.003431151456411519         Bumps  Bumps
+17  0.8365234720912968  0.0032376738691523564   0.005008749527823506  0.12566075609533078     0.0252380948185019   6.894908932146305E-5   0.004262304508573104         Bumps  Bumps
+18  0.7779284618148129  1.4969854668913705E-4   0.004414000059975647   0.2097578262187473   0.006433513730817684   6.362587795176539E-4   6.802408494396342E-4         Bumps  Bumps
+19  0.1666990038969503  3.4179485327766296E-4    0.03379927782209771   0.7909225804534679   0.004255123983287743  0.0021721784247288184  0.0018100405661897747  Other_Faults  Bumps
+
+Predictions saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_168784.pygmo_c.local.20211209T210153/predictions/steel-plates-fault/0/predictions.csv`.
+Loading metadata from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_168784.pygmo_c.local.20211209T210153/predictions/steel-plates-fault/0/metadata.json`.
+Loading predictions from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_168784.pygmo_c.local.20211209T210153/predictions/steel-plates-fault/0/predictions.csv`.
+Metric scores: { 'acc': 0.8564102564102564,
+  'app_version': 'dev [master, beef024]',
+  'balacc': 0.8494858140984058,
+  'constraint': 'pygmo_c',
+  'duration': nan,
+  'fold': 0,
+  'framework': 'H2OAutoML',
+  'id': 'openml.org/t/168784',
+  'info': None,
+  'logloss': 0.45381799603530265,
+  'metric': 'neg_logloss',
+  'mode': 'local',
+  'models_count': 189,
+  'params': '',
+  'predict_duration': 0.30089282989501953,
+  'result': -0.45381799603530265,
+  'seed': 1368563545,
+  'task': 'steel-plates-fault',
+  'training_duration': 3605.665587902069,
+  'type': 'multiclass',
+  'utc': '2021-12-09T22:02:10',
+  'version': '3.34.0.3'}
+Job `local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML` executed in 3616.552 seconds.
+All jobs executed in 3616.560 seconds.
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] CPU Utilization: 71.4%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Memory Usage: 1.7%
+[MONITORING] [local.openml_t_168784.pygmo_c.steel-plates-fault.0.H2OAutoML] Disk Usage: 43.2%
+Processing results for h2oautoml.openml_t_168784.pygmo_c.local.20211209T210153
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_168784.pygmo_c.local.20211209T210153/scores/H2OAutoML.benchmark_openml_t_168784.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_168784.pygmo_c.local.20211209T210153/scores/results.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/results.csv`.
+Summing up scores for current run:
+                 id               task fold framework constraint    result      metric  duration       seed
+openml.org/t/168784 steel-plates-fault    0 H2OAutoML    pygmo_c -0.453818 neg_logloss    3616.6 1368563545

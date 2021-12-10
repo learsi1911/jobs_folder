@@ -1,0 +1,206 @@
+/var/spool/slurm/slurmd/job8494812/slurm_script: line 8: activate: No such file or directory
+Running benchmark `H2OAutoML` on `openml/t/359970` framework in `local` mode.
+Loading frameworks definitions from ['/home/juradoi/experiments/automlbenchmark/resources/frameworks.yaml'].
+Loading benchmark constraint definitions from ['/home/juradoi/experiments/automlbenchmark/resources/constraints.yaml'].
+Loading openml task 359970.
+
+-----------------------------------------------------------------------------------------
+Starting job local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML.
+Assigning 16 cores (total=16) for new task GesturePhaseSegmentationProcessed.
+Assigning 91243 MB (total=95302 MB) for new GesturePhaseSegmentationProcessed task.
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] CPU Utilization: 18.0%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Memory Usage: 2.1%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Disk Usage: 43.2%
+Running task GesturePhaseSegmentationProcessed on framework H2OAutoML with config:
+TaskConfig({})
+Running cmd `/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py`
+INFO:__main__:
+**** H2O AutoML [v3.34.0.3] ****
+
+INFO:__main__:Starting H2O cluster with 16 cores, 60829M memory.
+Checking whether there is an H2O instance running at http://localhost:4290 ..... not found.
+Attempting to start a local H2O server...
+  Java Version: openjdk version "11.0.12" 2021-07-20; OpenJDK Runtime Environment (build 11.0.12+7-post-Debian-2deb10u1); OpenJDK 64-Bit Server VM (build 11.0.12+7-post-Debian-2deb10u1, mixed mode, sharing)
+  Starting server from /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/backend/bin/h2o.jar
+  Ice root: /tmp/tmp3ni05t7z
+  JVM stdout: /tmp/tmp3ni05t7z/h2o_unknownUser_started_from_python.out
+  JVM stderr: /tmp/tmp3ni05t7z/h2o_unknownUser_started_from_python.err
+  Server is running at http://127.0.0.1:4290
+Connecting to H2O server at http://127.0.0.1:4290 ... successful.
+--------------------------  ------------------------------------------------------------------
+H2O_cluster_uptime:         01 secs
+H2O_cluster_timezone:       Europe/Amsterdam
+H2O_data_parsing_timezone:  UTC
+H2O_cluster_version:        3.34.0.3
+H2O_cluster_version_age:    2 months and 2 days
+H2O_cluster_name:           H2O_from_python_unknownUser_06v998
+H2O_cluster_total_nodes:    1
+H2O_cluster_free_memory:    59.41 Gb
+H2O_cluster_total_cores:    16
+H2O_cluster_allowed_cores:  16
+H2O_cluster_status:         locked, healthy
+H2O_connection_url:         http://127.0.0.1:4290
+H2O_connection_proxy:       {"http": null, "https": null}
+H2O_internal_security:      False
+H2O_API_Extensions:         Amazon S3, XGBoost, Algos, AutoML, Core V3, TargetEncoder, Core V4
+Python_version:             3.8.12 final
+--------------------------  ------------------------------------------------------------------
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+INFO:__main__:Running model on task GesturePhaseSegmentationProcessed, fold 0.
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] CPU Utilization: 72.9%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Memory Usage: 44.8%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] CPU Utilization: 75.3%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Memory Usage: 44.8%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] CPU Utilization: 78.3%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Memory Usage: 44.9%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] CPU Utilization: 77.6%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Memory Usage: 45.4%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] CPU Utilization: 78.5%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Memory Usage: 45.4%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] CPU Utilization: 76.8%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Memory Usage: 45.7%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] CPU Utilization: 76.8%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Memory Usage: 47.1%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] CPU Utilization: 79.4%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Memory Usage: 47.1%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] CPU Utilization: 76.9%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Memory Usage: 47.3%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] CPU Utilization: 75.2%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Memory Usage: 47.3%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] CPU Utilization: 77.8%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Memory Usage: 48.0%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] CPU Utilization: 77.4%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Memory Usage: 48.0%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] CPU Utilization: 78.1%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Memory Usage: 48.0%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] CPU Utilization: 78.0%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Memory Usage: 48.2%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] CPU Utilization: 78.0%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Memory Usage: 48.4%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] CPU Utilization: 76.7%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Memory Usage: 49.6%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] CPU Utilization: 77.4%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Memory Usage: 49.6%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] CPU Utilization: 70.7%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Memory Usage: 49.7%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] CPU Utilization: 78.5%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Memory Usage: 50.0%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] CPU Utilization: 78.0%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Memory Usage: 50.0%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] CPU Utilization: 75.6%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Memory Usage: 50.2%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] CPU Utilization: 78.9%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Memory Usage: 50.2%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] CPU Utilization: 81.0%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Memory Usage: 50.2%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] CPU Utilization: 86.9%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Memory Usage: 50.6%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] CPU Utilization: 95.0%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Memory Usage: 50.6%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] CPU Utilization: 95.3%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Memory Usage: 50.7%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] CPU Utilization: 95.0%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Memory Usage: 50.7%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] CPU Utilization: 93.0%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Memory Usage: 50.7%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] CPU Utilization: 93.5%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Memory Usage: 50.7%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] CPU Utilization: 86.6%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Memory Usage: 50.8%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Disk Usage: 43.2%
+AutoML progress: |███████████████████████████████████████████████████████████████| (done) 100%
+stackedensemble prediction progress: |███████████████████████████████████████████| (done) 100%
+H2O session _sid_b94e closed.
+
+
+
+Predictions preview:
+                         D                      H                    P                     R                     S predictions truth
+0      0.2593452496922178   0.048370417965972655   0.5954010913335682  0.018524045512022465   0.07835919549621875           P     P
+1   0.0010118523102145016   7.889990692737937E-5   0.9679309809313074  5.600076557273397E-4  0.030418259195823413           P     P
+2    0.016022539426388958    0.00942746128328825   0.6902632702920478   0.01419844398282175    0.2700882850154533           P     P
+3     0.22993164769950622    0.34152537112040504  0.10437927802156566    0.2249411337966191   0.09922256936190402           H     P
+4    0.025557291289576987     0.0615483920756622   0.8407753799093288  0.008472884031893054   0.06364605269353879           P     P
+5     0.15864079516806553    0.25913846308063904   0.4586198287200234   0.04843509928957634   0.07516581374169573           P     P
+6    0.060182191359282204     0.5954485384273585  0.24494480249707662   0.05407701597311092   0.04534745174317195           H     P
+7     0.05937226099533553    0.02243255976071658   0.1781053991863519   0.10910849887441945    0.6309812811831765           S     P
+8       0.061388157037786   0.013850825814650901   0.6806919540956917  0.058061124196001644    0.1860079388558697           P     P
+9    0.018218391675566697    0.08157807686627297   0.3976163594804263  0.011736135873896257   0.49085103610383773           S     P
+10   0.013654945765840167   0.005714849655015721   0.9345437283088687  0.003847288489446435     0.042239187780829           P     P
+11  4.5826841681083813E-4   0.006285168120838878  0.29694687668866837  0.003493021606662686    0.6928166651670191           S     P
+12  0.0012813600736275698   7.880594279956354E-4  0.17675807348519554   0.02764062625512202    0.7935318807580591           S     P
+13    0.05869187745408769    0.08315065538811622   0.7730262737794522  0.009454095836808956    0.0756770975415348           P     P
+14     0.3809593371230134     0.1688005676319594    0.368598054123852  0.012359218312908272   0.06928282280826686           D     P
+15     0.8596899210049992   0.008810951444741788  0.09468760977288997  0.012680661079363331   0.02413085669800574           D     P
+16    0.05785596005699819   0.020659647451128773   0.7514149181137095  0.017633575293682913   0.15243589908448055           P     P
+17  0.0016671341365471213  0.0011291379309060414   0.9852295988244203  0.004421110311646017  0.007553018796480465           P     P
+18    0.02602217979809903    0.01742759262271078   0.2507974492726265   0.07881920038557882    0.6269335779209849           S     P
+19     0.3674783166096808    0.17120009589368398  0.14906088465856077   0.18360056843861855   0.12866013439945595           D     P
+
+Predictions saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359970.pygmo_c.local.20211210T013218/predictions/GesturePhaseSegmentationProcessed/0/predictions.csv`.
+Loading metadata from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359970.pygmo_c.local.20211210T013218/predictions/GesturePhaseSegmentationProcessed/0/metadata.json`.
+Loading predictions from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359970.pygmo_c.local.20211210T013218/predictions/GesturePhaseSegmentationProcessed/0/predictions.csv`.
+Metric scores: { 'acc': 0.7267206477732794,
+  'app_version': 'dev [master, beef024]',
+  'balacc': 0.684115111852581,
+  'constraint': 'pygmo_c',
+  'duration': nan,
+  'fold': 0,
+  'framework': 'H2OAutoML',
+  'id': 'openml.org/t/359970',
+  'info': None,
+  'logloss': 0.7330481696617744,
+  'metric': 'neg_logloss',
+  'mode': 'local',
+  'models_count': 193,
+  'params': '',
+  'predict_duration': 0.2895236015319824,
+  'result': -0.7330481696617744,
+  'seed': 1646919623,
+  'task': 'GesturePhaseSegmentationProcessed',
+  'training_duration': 3601.693854570389,
+  'type': 'multiclass',
+  'utc': '2021-12-10T02:32:29',
+  'version': '3.34.0.3'}
+Job `local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML` executed in 3611.507 seconds.
+All jobs executed in 3611.516 seconds.
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] CPU Utilization: 61.9%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Memory Usage: 2.1%
+[MONITORING] [local.openml_t_359970.pygmo_c.GesturePhaseSegmentationProcessed.0.H2OAutoML] Disk Usage: 43.2%
+Processing results for h2oautoml.openml_t_359970.pygmo_c.local.20211210T013218
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359970.pygmo_c.local.20211210T013218/scores/H2OAutoML.benchmark_openml_t_359970.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359970.pygmo_c.local.20211210T013218/scores/results.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/results.csv`.
+Summing up scores for current run:
+                 id                              task fold framework constraint    result      metric  duration       seed
+openml.org/t/359970 GesturePhaseSegmentationProcessed    0 H2OAutoML    pygmo_c -0.733048 neg_logloss    3611.5 1646919623

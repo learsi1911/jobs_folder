@@ -1,0 +1,88 @@
+/var/spool/slurm/slurmd/job8496233/slurm_script: line 8: activate: No such file or directory
+Running benchmark `H2OAutoML` on `openml/t/359975` framework in `local` mode.
+Loading frameworks definitions from ['/home/juradoi/experiments/automlbenchmark/resources/frameworks.yaml'].
+Loading benchmark constraint definitions from ['/home/juradoi/experiments/automlbenchmark/resources/constraints.yaml'].
+Loading openml task 359975.
+
+-----------------------------------------------------------------
+Starting job local.openml_t_359975.pygmo_c.Satellite.0.H2OAutoML.
+Assigning 16 cores (total=16) for new task Satellite.
+Assigning 91141 MB (total=95302 MB) for new Satellite task.
+[MONITORING] [local.openml_t_359975.pygmo_c.Satellite.0.H2OAutoML] CPU Utilization: 15.8%
+[MONITORING] [local.openml_t_359975.pygmo_c.Satellite.0.H2OAutoML] Memory Usage: 2.2%
+[MONITORING] [local.openml_t_359975.pygmo_c.Satellite.0.H2OAutoML] Disk Usage: 43.2%
+Job `local.openml_t_359975.pygmo_c.Satellite.0.H2OAutoML` failed with error: Cannot remove faulty tasks cache directory /home/juradoi/.cache/openml/org/openml/www/org/openml/www/tasks/359975.Please do this manually!
+Traceback (most recent call last):
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/site-packages/openml/tasks/functions.py", line 71, in _get_cached_task
+    with io.open(os.path.join(tid_cache_dir, "task.xml"), encoding="utf8") as fh:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/juradoi/.cache/openml/org/openml/www/org/openml/www/tasks/359975/task.xml'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/site-packages/openml/utils.py", line 331, in _remove_cache_dir_for_id
+    shutil.rmtree(cache_dir)
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/shutil.py", line 722, in rmtree
+    onerror(os.rmdir, path, sys.exc_info())
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/shutil.py", line 720, in rmtree
+    os.rmdir(path)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/juradoi/.cache/openml/org/openml/www/org/openml/www/tasks/359975'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/site-packages/openml/tasks/functions.py", line 360, in get_task
+    task = _get_task_description(task_id)
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/site-packages/openml/tasks/functions.py", line 384, in _get_task_description
+    return _get_cached_task(task_id)
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/site-packages/openml/tasks/functions.py", line 74, in _get_cached_task
+    openml.utils._remove_cache_dir_for_id(TASKS_CACHE_DIR_NAME, tid_cache_dir)
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/site-packages/openml/utils.py", line 333, in _remove_cache_dir_for_id
+    raise ValueError(
+ValueError: Cannot remove faulty tasks cache directory /home/juradoi/.cache/openml/org/openml/www/org/openml/www/tasks/359975.Please do this manually!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/site-packages/openml/utils.py", line 331, in _remove_cache_dir_for_id
+    shutil.rmtree(cache_dir)
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/shutil.py", line 709, in rmtree
+    onerror(os.lstat, path, sys.exc_info())
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/shutil.py", line 707, in rmtree
+    orig_st = os.lstat(path)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/juradoi/.cache/openml/org/openml/www/org/openml/www/tasks/359975'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 92, in start
+    self._setup()
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 512, in setup
+    self.load_data()
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 482, in load_data
+    self._dataset = Benchmark.data_loader.load(DataSourceType.openml_task, task_id=self._task_def.openml_task_id, fold=self.fold)
+  File "/home/juradoi/experiments/automlbenchmark/amlb/datasets/__init__.py", line 21, in load
+    return self.openml_loader.load(*args, **kwargs)
+  File "/home/juradoi/experiments/automlbenchmark/amlb/utils/process.py", line 702, in profiler
+    return fn(*args, **kwargs)
+  File "/home/juradoi/experiments/automlbenchmark/amlb/datasets/openml.py", line 43, in load
+    task = oml.tasks.get_task(task_id, download_qualities=False)
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/site-packages/openml/tasks/functions.py", line 373, in get_task
+    openml.utils._remove_cache_dir_for_id(
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/site-packages/openml/utils.py", line 333, in _remove_cache_dir_for_id
+    raise ValueError(
+ValueError: Cannot remove faulty tasks cache directory /home/juradoi/.cache/openml/org/openml/www/org/openml/www/tasks/359975.Please do this manually!
+Job `local.openml_t_359975.pygmo_c.Satellite.0.H2OAutoML` did not stop gracefully: Job `local.openml_t_359975.pygmo_c.Satellite.0.H2OAutoML` was interrupted.
+Traceback (most recent call last):
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 142, in stop
+    self._cancel()
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 179, in _cancel
+    raise_in_thread(self.thread_id, CancelledError(f"Job `{self.name}` was interrupted."))
+  File "/home/juradoi/experiments/automlbenchmark/amlb/utils/process.py", line 395, in raise_in_thread
+    ret = ctypes.pythonapi.PyThreadState_SetAsyncExc(tid, exc_class)
+amlb.utils.process.CancelledError: Job `local.openml_t_359975.pygmo_c.Satellite.0.H2OAutoML` was interrupted.
+All jobs executed in 0.008 seconds.
+[MONITORING] [local.openml_t_359975.pygmo_c.Satellite.0.H2OAutoML] CPU Utilization: 21.4%
+[MONITORING] [local.openml_t_359975.pygmo_c.Satellite.0.H2OAutoML] Memory Usage: 2.2%
+[MONITORING] [local.openml_t_359975.pygmo_c.Satellite.0.H2OAutoML] Disk Usage: 43.2%
+Processing results for h2oautoml.openml_t_359975.pygmo_c.local.20211210T063537

@@ -1,0 +1,207 @@
+/var/spool/slurm/slurmd/job8493876/slurm_script: line 8: activate: No such file or directory
+Running benchmark `H2OAutoML` on `openml/t/211986` framework in `local` mode.
+Loading frameworks definitions from ['/home/juradoi/experiments/automlbenchmark/resources/frameworks.yaml'].
+Loading benchmark constraint definitions from ['/home/juradoi/experiments/automlbenchmark/resources/constraints.yaml'].
+Loading openml task 211986.
+
+---------------------------------------------------------------------
+Starting job local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML.
+Assigning 16 cores (total=16) for new task Diabetes130US.
+Assigning 91315 MB (total=95302 MB) for new Diabetes130US task.
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] CPU Utilization: 17.4%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Memory Usage: 2.0%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Disk Usage: 43.2%
+Running task Diabetes130US on framework H2OAutoML with config:
+TaskConfig({})
+Running cmd `/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py`
+INFO:__main__:
+**** H2O AutoML [v3.34.0.3] ****
+
+INFO:__main__:Starting H2O cluster with 16 cores, 60877M memory.
+Checking whether there is an H2O instance running at http://localhost:1383 ..... not found.
+Attempting to start a local H2O server...
+  Java Version: openjdk version "11.0.12" 2021-07-20; OpenJDK Runtime Environment (build 11.0.12+7-post-Debian-2deb10u1); OpenJDK 64-Bit Server VM (build 11.0.12+7-post-Debian-2deb10u1, mixed mode, sharing)
+  Starting server from /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/backend/bin/h2o.jar
+  Ice root: /tmp/tmpsirrgku8
+  JVM stdout: /tmp/tmpsirrgku8/h2o_unknownUser_started_from_python.out
+  JVM stderr: /tmp/tmpsirrgku8/h2o_unknownUser_started_from_python.err
+  Server is running at http://127.0.0.1:1383
+Connecting to H2O server at http://127.0.0.1:1383 ... successful.
+--------------------------  ------------------------------------------------------------------
+H2O_cluster_uptime:         01 secs
+H2O_cluster_timezone:       Europe/Amsterdam
+H2O_data_parsing_timezone:  UTC
+H2O_cluster_version:        3.34.0.3
+H2O_cluster_version_age:    2 months and 2 days
+H2O_cluster_name:           H2O_from_python_unknownUser_kqebwd
+H2O_cluster_total_nodes:    1
+H2O_cluster_free_memory:    59.45 Gb
+H2O_cluster_total_cores:    16
+H2O_cluster_allowed_cores:  16
+H2O_cluster_status:         locked, healthy
+H2O_connection_url:         http://127.0.0.1:1383
+H2O_connection_proxy:       {"http": null, "https": null}
+H2O_internal_security:      False
+H2O_API_Extensions:         Amazon S3, XGBoost, Algos, AutoML, Core V3, TargetEncoder, Core V4
+Python_version:             3.8.12 final
+--------------------------  ------------------------------------------------------------------
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+INFO:__main__:Running model on task Diabetes130US, fold 0.
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] CPU Utilization: 55.2%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Memory Usage: 25.8%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] CPU Utilization: 81.3%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Memory Usage: 44.7%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] CPU Utilization: 81.0%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Memory Usage: 44.8%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] CPU Utilization: 81.0%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Memory Usage: 44.8%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] CPU Utilization: 77.4%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Memory Usage: 45.1%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] CPU Utilization: 62.8%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Memory Usage: 45.7%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] CPU Utilization: 66.6%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Memory Usage: 45.9%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] CPU Utilization: 71.0%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Memory Usage: 46.3%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] CPU Utilization: 59.9%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Memory Usage: 46.3%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] CPU Utilization: 76.5%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Memory Usage: 47.2%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] CPU Utilization: 79.3%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Memory Usage: 48.5%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] CPU Utilization: 79.0%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Memory Usage: 48.9%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] CPU Utilization: 79.4%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Memory Usage: 49.1%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] CPU Utilization: 78.5%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Memory Usage: 50.5%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] CPU Utilization: 80.1%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Memory Usage: 50.8%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] CPU Utilization: 76.2%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Memory Usage: 50.9%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] CPU Utilization: 74.8%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Memory Usage: 51.1%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] CPU Utilization: 78.2%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Memory Usage: 51.2%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] CPU Utilization: 77.7%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Memory Usage: 51.3%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] CPU Utilization: 73.7%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Memory Usage: 51.3%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] CPU Utilization: 67.0%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Memory Usage: 51.3%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] CPU Utilization: 66.9%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Memory Usage: 51.3%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] CPU Utilization: 78.1%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Memory Usage: 51.3%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] CPU Utilization: 74.5%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Memory Usage: 51.3%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] CPU Utilization: 65.0%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Memory Usage: 51.3%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] CPU Utilization: 78.7%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Memory Usage: 51.3%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] CPU Utilization: 93.0%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Memory Usage: 51.3%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] CPU Utilization: 92.1%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Memory Usage: 51.4%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] CPU Utilization: 89.3%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Memory Usage: 51.4%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] CPU Utilization: 91.6%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Memory Usage: 51.4%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Disk Usage: 43.2%
+AutoML progress: |███████████████████████████████████████████████████████████████| (done) 100%
+stackedensemble prediction progress: |███████████████████████████████████████████| (done) 100%
+H2O session _sid_aaae closed.
+
+
+
+Predictions preview:
+                      <30                  >30                   NO predictions truth
+0    0.09227487375146463  0.30989576205114633   0.5978293641973892          NO    NO
+1     0.3359252842786212  0.45041532161714765  0.21365939410423118         >30    NO
+2    0.12283812781851136  0.33524745739365325   0.5419144147878352          NO    NO
+3    0.14556298735304088   0.6055361343675464   0.2489008782794126         >30    NO
+4    0.06909068304484665   0.3404133488925006   0.5904959680626529          NO    NO
+5     0.1561352000723378   0.5248805510795466   0.3189842488481156         >30    NO
+6    0.13443084447247095   0.3756316883370303  0.48993746719049874          NO    NO
+7    0.08069422027682778   0.3851777120496936   0.5341280676734788          NO    NO
+8    0.12008991172661918   0.4700879156979817   0.4098221725753993         >30    NO
+9    0.05954911878815972  0.21894495979226766   0.7215059214195726          NO    NO
+10   0.11306879739792228   0.5058632559241388   0.3810679466779389         >30    NO
+11   0.07783928005097461  0.31863123657188247   0.6035294833771429          NO    NO
+12   0.08101755991353733  0.35889209239085923   0.5600903476956034          NO    NO
+13   0.10281733935299978    0.601868697431061  0.29531396321593917         >30    NO
+14   0.04080424041626457  0.13368457589161237   0.8255111836921232          NO    NO
+15   0.08181850556531675  0.46487563834013385   0.4533058560945493         >30    NO
+16   0.10421421868544578   0.2945983660116846   0.6011874153028696          NO    NO
+17  0.045630508848271155  0.10639496155959134   0.8479745295921376          NO    NO
+18   0.21422854154092266  0.45571729904132957   0.3300541594177478         >30    NO
+19   0.07508951466215442   0.2198538019034413   0.7050566834344042          NO    NO
+
+Predictions saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_211986.pygmo_c.local.20211209T220455/predictions/Diabetes130US/0/predictions.csv`.
+Loading metadata from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_211986.pygmo_c.local.20211209T220455/predictions/Diabetes130US/0/metadata.json`.
+Loading predictions from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_211986.pygmo_c.local.20211209T220455/predictions/Diabetes130US/0/predictions.csv`.
+Metric scores: { 'acc': 0.6172742458484819,
+  'app_version': 'dev [master, beef024]',
+  'balacc': 0.4663659904374964,
+  'constraint': 'pygmo_c',
+  'duration': nan,
+  'fold': 0,
+  'framework': 'H2OAutoML',
+  'id': 'openml.org/t/211986',
+  'info': None,
+  'logloss': 0.831085611663811,
+  'metric': 'neg_logloss',
+  'mode': 'local',
+  'models_count': 70,
+  'params': '',
+  'predict_duration': 4.0325562953948975,
+  'result': -0.831085611663811,
+  'seed': 1013432128,
+  'task': 'Diabetes130US',
+  'training_duration': 3611.9599034786224,
+  'type': 'multiclass',
+  'utc': '2021-12-09T23:05:41',
+  'version': '3.34.0.3'}
+Job `local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML` executed in 3645.876 seconds.
+All jobs executed in 3645.936 seconds.
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] CPU Utilization: 84.7%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Memory Usage: 2.0%
+[MONITORING] [local.openml_t_211986.pygmo_c.Diabetes130US.0.H2OAutoML] Disk Usage: 43.2%
+Processing results for h2oautoml.openml_t_211986.pygmo_c.local.20211209T220455
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_211986.pygmo_c.local.20211209T220455/scores/H2OAutoML.benchmark_openml_t_211986.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_211986.pygmo_c.local.20211209T220455/scores/results.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/results.csv`.
+Summing up scores for current run:
+                 id          task fold framework constraint    result      metric  duration       seed
+openml.org/t/211986 Diabetes130US    0 H2OAutoML    pygmo_c -0.831086 neg_logloss    3645.9 1013432128

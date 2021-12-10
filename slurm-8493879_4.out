@@ -1,0 +1,206 @@
+/var/spool/slurm/slurmd/job8493884/slurm_script: line 8: activate: No such file or directory
+Running benchmark `H2OAutoML` on `openml/t/359953` framework in `local` mode.
+Loading frameworks definitions from ['/home/juradoi/experiments/automlbenchmark/resources/frameworks.yaml'].
+Loading benchmark constraint definitions from ['/home/juradoi/experiments/automlbenchmark/resources/constraints.yaml'].
+Loading openml task 359953.
+
+------------------------------------------------------------------
+Starting job local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML.
+Assigning 16 cores (total=16) for new task micro-mass.
+Assigning 91177 MB (total=95302 MB) for new micro-mass task.
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] CPU Utilization: 14.7%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Memory Usage: 2.2%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Disk Usage: 43.2%
+Running task micro-mass on framework H2OAutoML with config:
+TaskConfig({})
+Running cmd `/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py`
+INFO:__main__:
+**** H2O AutoML [v3.34.0.3] ****
+
+INFO:__main__:Starting H2O cluster with 16 cores, 60785M memory.
+Checking whether there is an H2O instance running at http://localhost:31374 ..... not found.
+Attempting to start a local H2O server...
+  Java Version: openjdk version "11.0.12" 2021-07-20; OpenJDK Runtime Environment (build 11.0.12+7-post-Debian-2deb10u1); OpenJDK 64-Bit Server VM (build 11.0.12+7-post-Debian-2deb10u1, mixed mode, sharing)
+  Starting server from /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/backend/bin/h2o.jar
+  Ice root: /tmp/tmpbvzlh_6g
+  JVM stdout: /tmp/tmpbvzlh_6g/h2o_unknownUser_started_from_python.out
+  JVM stderr: /tmp/tmpbvzlh_6g/h2o_unknownUser_started_from_python.err
+  Server is running at http://127.0.0.1:31374
+Connecting to H2O server at http://127.0.0.1:31374 ... successful.
+--------------------------  ------------------------------------------------------------------
+H2O_cluster_uptime:         01 secs
+H2O_cluster_timezone:       Europe/Amsterdam
+H2O_data_parsing_timezone:  UTC
+H2O_cluster_version:        3.34.0.3
+H2O_cluster_version_age:    2 months and 2 days
+H2O_cluster_name:           H2O_from_python_unknownUser_dk9a79
+H2O_cluster_total_nodes:    1
+H2O_cluster_free_memory:    59.38 Gb
+H2O_cluster_total_cores:    16
+H2O_cluster_allowed_cores:  16
+H2O_cluster_status:         locked, healthy
+H2O_connection_url:         http://127.0.0.1:31374
+H2O_connection_proxy:       {"http": null, "https": null}
+H2O_internal_security:      False
+H2O_API_Extensions:         Amazon S3, XGBoost, Algos, AutoML, Core V3, TargetEncoder, Core V4
+Python_version:             3.8.12 final
+--------------------------  ------------------------------------------------------------------
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+INFO:__main__:Running model on task micro-mass, fold 0.
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] CPU Utilization: 61.6%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Memory Usage: 44.5%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] CPU Utilization: 81.8%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Memory Usage: 45.5%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] CPU Utilization: 90.7%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Memory Usage: 45.5%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] CPU Utilization: 95.0%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Memory Usage: 45.5%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] CPU Utilization: 94.4%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Memory Usage: 45.5%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] CPU Utilization: 94.2%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Memory Usage: 45.5%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] CPU Utilization: 94.8%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Memory Usage: 45.5%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] CPU Utilization: 94.3%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Memory Usage: 45.6%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] CPU Utilization: 95.2%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Memory Usage: 45.6%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] CPU Utilization: 95.2%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Memory Usage: 45.6%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] CPU Utilization: 91.1%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Memory Usage: 45.6%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] CPU Utilization: 93.7%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Memory Usage: 45.6%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] CPU Utilization: 94.1%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Memory Usage: 45.6%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] CPU Utilization: 84.9%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Memory Usage: 45.9%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] CPU Utilization: 80.3%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Memory Usage: 46.2%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] CPU Utilization: 80.8%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Memory Usage: 47.6%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] CPU Utilization: 76.7%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Memory Usage: 49.2%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] CPU Utilization: 87.5%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Memory Usage: 50.0%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] CPU Utilization: 93.3%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Memory Usage: 50.7%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] CPU Utilization: 95.3%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Memory Usage: 50.7%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] CPU Utilization: 95.3%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Memory Usage: 50.7%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] CPU Utilization: 93.8%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Memory Usage: 50.8%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] CPU Utilization: 93.0%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Memory Usage: 50.8%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] CPU Utilization: 94.9%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Memory Usage: 51.0%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] CPU Utilization: 92.9%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Memory Usage: 51.0%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] CPU Utilization: 87.4%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Memory Usage: 51.0%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] CPU Utilization: 89.2%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Memory Usage: 51.1%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] CPU Utilization: 88.1%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Memory Usage: 51.1%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] CPU Utilization: 78.8%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Memory Usage: 52.0%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] CPU Utilization: 79.7%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Memory Usage: 52.2%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Disk Usage: 43.2%
+AutoML progress: |███████████████████████████████████████████████████████████████| (done) 100%
+gbm prediction progress: |███████████████████████████████████████████████████████| (done) 100%
+H2O session _sid_8040 closed.
+
+
+
+Predictions preview:
+                         1                     10                     11                     12                     13                     14                     15                     16                     17                     18                     19                      2                     20                      3                      4                      5                      6                      7                      8                      9 predictions truth
+0    8.429745586955853E-5   3.665988982918578E-5  2.9871650734297157E-6  2.6419961432404845E-6   7.014870176167227E-5  1.0174043709404793E-5   2.169977326708453E-5   4.020075435967064E-6    1.42565190553892E-4  5.0759086630166516E-6  2.2106911575016695E-6    6.22260951879776E-4     0.9987378730627617  1.8959950393818565E-4  1.0015132231908147E-5   2.075136790282984E-6   7.624757161634835E-6  1.1708048759613867E-5   4.969220929597027E-6  3.1393294083299016E-5          20    20
+1    6.639240749682722E-6   3.904257737663089E-6   3.430285203903828E-6    8.94086121621446E-6   5.362398049344275E-6   5.605430073767261E-6   5.133964363373564E-5   7.822875191487958E-6  1.5060318814680702E-4    3.50563712779968E-6   3.872996084531939E-6   7.906157505661795E-5     0.9995288113080517   6.587019985310488E-5  4.8597369561462984E-5   4.086009100663983E-6  4.7955978143978575E-6   6.805829501692505E-6   4.906058499330577E-6   6.039239346281981E-6          20    20
+2   2.0159745499602996E-5   3.638190408475272E-6  4.2095565431302244E-6  3.6487798967217555E-6   6.343663400893796E-6  4.1755333331387065E-6    3.88450439734938E-5   8.482388038417758E-6  1.2118644955446055E-4  3.3098035513858522E-6  3.6738346863421515E-6   0.004671824268353879     0.9942854584479726   7.055050169403643E-4   1.366289550006154E-5    3.81710346995472E-6   8.355858570704087E-5   4.939952103309939E-6   4.697503508488648E-6   8.863237558102028E-6          20    20
+3   0.0033139659835668056      0.541695875799715  0.0026417890735876623  0.0034997374553217544   0.002664903653343542   0.029382260485157716   0.002564402482760198  0.0028174165595243167   0.021933694088838655   0.003035334721757179  0.0027444038224290696    0.00811365025259626    0.00620144394123739   0.006590727027949363   0.004021869553727503   0.003566991435385372  0.0031313115467517254   0.005397707143234916  0.0028449211649892742     0.3438375938081263          10    10
+4    8.398292064704402E-5     0.9911790783177387  2.4263576461858867E-5   9.861109637290687E-6    6.70548308772281E-6  2.4730856708173266E-5   5.843909210657845E-5  1.0508072359640916E-5   4.942848193194094E-4    9.76202370002262E-6    1.74960457414401E-5   9.140049361069591E-6   6.056009863017074E-5   2.858229126207335E-4   4.968519302295681E-5   7.436359003033902E-6   9.342501328118614E-6   5.328584433070462E-5  2.3157116931248384E-5   0.007582457607264052          10    10
+5    0.002262971855551802     0.3652887996401253  1.4700536502821335E-4  1.7271729351582885E-4  1.3165244765766423E-4  0.0017814763897454741   0.005605157780640607  1.7436112675747105E-4  0.0028006337740076846   3.469276176458095E-4  1.3342101241264656E-4  2.7558660428759964E-4  1.8204242544606557E-4   0.014144608200966009   3.161581484187905E-4   3.095256727656365E-4  1.5435681353064587E-4  3.4519096555017816E-4  2.4504633658008765E-4     0.6051823605293665           9    10
+6      0.9999679907070059  2.3835766252489995E-6   2.573750910516467E-7   3.947369353918717E-6  3.9837708369882987E-7   1.118684936526279E-6   4.721644474036161E-7   2.640167968866938E-7   4.088453878771539E-6  4.5299865903988683E-7   9.113344248845828E-7   2.279526238736635E-7  4.2418492499242695E-7  1.3210645050059654E-5   5.698189596602746E-7    7.79191519431906E-7  2.9248536749667277E-7   1.249571145906329E-6   3.440177249499531E-7   6.170743806535149E-7           1     1
+7      0.9997746951963531   4.865212764166495E-6  4.8635918129435505E-6   2.495309308878123E-5   4.585880432061061E-6    6.48637866834558E-6  3.7643656416366983E-6   3.566466555319794E-6  1.0618926909607185E-4   4.983487539560579E-6  3.4273576079003258E-6   4.299498944987513E-6   5.014095798629727E-6   2.153982219546647E-5   3.915709131418911E-6   4.011736959038171E-6  3.4543589221200125E-6     6.9500353198441E-6   3.416399567970285E-6   5.018043600303497E-6           1     1
+8      0.9985374840698562  1.8626310790121575E-5  1.4061159430933827E-5  1.7441655405475495E-4  2.3587636642598553E-5  1.0190636876760914E-4  2.1356826515872118E-5  1.3040109335316802E-5   3.562625340207218E-4  1.5209127843957064E-5  1.9525103582454995E-5   4.242272060459011E-5  2.2492438821239875E-5  3.6489799777726704E-4   4.719941185616245E-5  1.7611666765227484E-5   7.511287121665861E-6  1.3314269491919326E-5  1.0693981317416512E-4   8.213459354742206E-5           1     1
+9      0.9996652591499686   5.215803701781628E-6   6.391160307279195E-6   4.765789584163175E-5   9.667494047600398E-6   8.144320174932033E-6  3.3166949838939345E-6   5.128829111893104E-6   4.842783893673808E-5  1.1396110443812526E-5   4.863185835333739E-6   2.595244369642738E-6   5.653674308791348E-6   1.405708229934238E-4   7.379390747584477E-6   9.180399135619944E-6  2.5355626893259925E-6   4.834134237007379E-6  4.8216916721181156E-6   6.960596492581259E-6           1     1
+10     0.9999375311481168   5.676393506346224E-7   3.958017785955616E-7   4.089002885897901E-6   7.268484745254142E-7  1.3880250822559852E-6   5.281103049769467E-7   4.860745798560014E-7   1.915401471908237E-5   1.150870161451864E-6   7.906587476119952E-7   6.149452855530268E-7   9.913607620675044E-7  2.4374413286115916E-5  3.0547858591126753E-6  1.6334598702907737E-6   6.187236348917559E-7   7.009584645583263E-7   4.826335076966156E-7   7.205251282413631E-7           1     1
+11   3.606033609215458E-5  1.3638526314010061E-6  1.3051254438295602E-6     0.9999257376826782  3.0550236427514444E-6  1.0838041305434818E-6  1.8072950137017277E-6   5.304103741400296E-7   9.625911484576706E-6   8.226673336828654E-7  4.4276296511239946E-7  2.3588719912285179E-7  3.0328689327574064E-6   6.510702509625384E-6   3.327956497438043E-6   3.140727189153834E-7  2.3302964593003498E-7  1.3894290218286325E-6   1.547062534857935E-6  1.5741191489326547E-6          12    12
+12  1.0578321652711559E-4  2.8828158908115214E-7   5.024574332364587E-7     0.9998307254646733  2.7902996014157165E-7   5.607910741401576E-7  2.2638277769823687E-7  2.1246674353542293E-7     3.9599337595892E-5   4.858797831541702E-7  2.0743470945992516E-7  3.0278174598276674E-7   5.836990083911665E-7  1.0324752949266738E-5  4.1032442857602344E-7   2.875902976147309E-7  2.0773168275247033E-7   4.656184899174533E-6  3.7816617047683696E-6   5.745304166152703E-7          12    12
+13   7.415020138666272E-5  2.0808181791569795E-5   2.124381164947375E-5   2.107244837941921E-5   3.855612590905965E-5  2.0885099219689452E-5  3.7366527692675154E-5   2.180592911919676E-5  2.9404246000863665E-4   2.307217429912554E-5   2.102992857084497E-5  2.1474511352286176E-5   7.273480562301404E-5       0.99848974917121   6.482262830417293E-4  2.0999941156016304E-5  2.2507729769001146E-5   5.362371132749424E-5   4.957330968844432E-5   2.707764880561629E-5           3     3
+14  1.4911777263109207E-5  2.4320970374227153E-5  1.1740693956914075E-5   1.683033584320865E-5  1.1815681803859394E-5  1.6545283010121697E-5  2.3506670896942908E-5     3.7897039356475E-5   4.001989374776255E-4  1.2541878168338604E-5  1.1739450565824641E-5  1.3984345452294473E-5  1.7248573151767534E-5     0.9992660657030268   5.377800945709678E-5  1.1774907241313163E-5  1.1757377219286958E-5    1.42483588174682E-5  1.1646168008996538E-5   1.744783890853214E-5           3     3
+15  1.0027451956608788E-4  1.3030147039346747E-6   2.625440724365477E-4   7.189993175099864E-6   1.557870591329164E-5   4.243648332543332E-6   1.102679242443336E-5    1.52243041911935E-6  2.4181690135817332E-4    5.78331739920185E-6   7.528680375390643E-5   2.104181200512405E-6  1.5100453203000473E-4     0.9982883914583843    7.99139091512334E-4  1.2337153654672294E-6   8.105352919994118E-6   1.398180733680517E-5   8.002944503380723E-6  1.4667172649414617E-6           3     3
+16  5.6128052049033115E-5    7.52868365032306E-5  3.0176766253867764E-5   4.884939388750455E-5   3.592406583809539E-5   5.064900979156878E-5   7.365861932470279E-5   3.979208657770113E-5   3.317063248676326E-4   3.635837119975409E-5  3.0295862519918095E-5   4.384705172562193E-5   4.838807303087886E-5     0.9932326389867209   0.005649200821723813   3.055856676976331E-5   3.248017499504009E-5   3.525741955320535E-5  3.0124102078322074E-5   8.867941458935095E-5           3     3
+17  0.0030090047500007377  0.0016258941280146925  0.0016892402705517829   0.002854735328576893  0.0016499190033545058   0.001636707832889999   0.004320822274100526  0.0023066750337556287   0.021353627985025974   0.002012449925634745  0.0016502081812171977  0.0016882204599785024  0.0017193774507371705    0.25438256350570426     0.6883494137137542  0.0016634163206455175  0.0016416888193637638   0.003009935062352232  0.0016309824426868243  0.0018051175116547808           4     3
+18  0.0025410573434767217  1.4170379501920617E-4   7.348692352525849E-5  1.1893889594042511E-4  1.4042861959076978E-4   0.017687555550491764     0.8242809959968023   7.022846054472331E-4    0.15136754788163898  1.7716548574442509E-4  1.0096809085622154E-4  1.6542775736245948E-4   4.989967894521819E-4   0.001091616471322767   3.017155473731199E-4   7.867541040673773E-5  1.0057285300127912E-4  1.5306709916502935E-4   1.359845530487962E-4  1.4181033033413412E-4          15    17
+19   2.389984645236531E-5  2.7932578781766234E-5   1.843502453316864E-5  2.3567643229707033E-5   3.236738921746359E-4   3.953423086745104E-5   2.501578860062254E-4   4.751644699109687E-5       0.99865974836412  5.3114540799460714E-5  1.8967701723317247E-5  2.7462324090110226E-5  2.3105810023753896E-5   7.459997100933995E-5   1.895487727830288E-5  2.4518668314219647E-5  2.1064018880383767E-4   6.994180493693705E-5   2.546498108230575E-5   3.876321878237463E-5          17    17
+
+Predictions saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359953.pygmo_c.local.20211209T220432/predictions/micro-mass/0/predictions.csv`.
+Loading metadata from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359953.pygmo_c.local.20211209T220432/predictions/micro-mass/0/metadata.json`.
+Loading predictions from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359953.pygmo_c.local.20211209T220432/predictions/micro-mass/0/predictions.csv`.
+Metric scores: { 'acc': 0.896551724137931,
+  'app_version': 'dev [master, beef024]',
+  'balacc': 0.9025000000000001,
+  'constraint': 'pygmo_c',
+  'duration': nan,
+  'fold': 0,
+  'framework': 'H2OAutoML',
+  'id': 'openml.org/t/359953',
+  'info': None,
+  'logloss': 0.22281611140195137,
+  'metric': 'neg_logloss',
+  'mode': 'local',
+  'models_count': 99,
+  'params': '',
+  'predict_duration': 0.30062317848205566,
+  'result': -0.22281611140195137,
+  'seed': 512321218,
+  'task': 'micro-mass',
+  'training_duration': 3611.4934084415436,
+  'type': 'multiclass',
+  'utc': '2021-12-09T23:04:56',
+  'version': '3.34.0.3'}
+Job `local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML` executed in 3622.589 seconds.
+All jobs executed in 3623.551 seconds.
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] CPU Utilization: 63.5%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Memory Usage: 2.2%
+[MONITORING] [local.openml_t_359953.pygmo_c.micro-mass.0.H2OAutoML] Disk Usage: 43.2%
+Processing results for h2oautoml.openml_t_359953.pygmo_c.local.20211209T220432
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359953.pygmo_c.local.20211209T220432/scores/H2OAutoML.benchmark_openml_t_359953.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359953.pygmo_c.local.20211209T220432/scores/results.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/results.csv`.
+Summing up scores for current run:
+                 id       task fold framework constraint    result      metric  duration      seed
+openml.org/t/359953 micro-mass    0 H2OAutoML    pygmo_c -0.222816 neg_logloss    3622.6 512321218

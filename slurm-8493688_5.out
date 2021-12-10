@@ -1,0 +1,207 @@
+/var/spool/slurm/slurmd/job8493688/slurm_script: line 8: activate: No such file or directory
+Running benchmark `H2OAutoML` on `openml/t/189922` framework in `local` mode.
+Loading frameworks definitions from ['/home/juradoi/experiments/automlbenchmark/resources/frameworks.yaml'].
+Loading benchmark constraint definitions from ['/home/juradoi/experiments/automlbenchmark/resources/constraints.yaml'].
+Loading openml task 189922.
+
+------------------------------------------------------------
+Starting job local.openml_t_189922.pygmo_c.gina.0.H2OAutoML.
+Assigning 16 cores (total=16) for new task gina.
+Assigning 91047 MB (total=95302 MB) for new gina task.
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] CPU Utilization: 18.8%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Memory Usage: 2.3%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Disk Usage: 43.6%
+Running task gina on framework H2OAutoML with config:
+TaskConfig({})
+Running cmd `/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py`
+INFO:__main__:
+**** H2O AutoML [v3.34.0.3] ****
+
+INFO:__main__:Starting H2O cluster with 16 cores, 60698M memory.
+Checking whether there is an H2O instance running at http://localhost:15076 ..... not found.
+Attempting to start a local H2O server...
+  Java Version: openjdk version "11.0.12" 2021-07-20; OpenJDK Runtime Environment (build 11.0.12+7-post-Debian-2deb10u1); OpenJDK 64-Bit Server VM (build 11.0.12+7-post-Debian-2deb10u1, mixed mode, sharing)
+  Starting server from /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/backend/bin/h2o.jar
+  Ice root: /tmp/tmp2prb6bbq
+  JVM stdout: /tmp/tmp2prb6bbq/h2o_unknownUser_started_from_python.out
+  JVM stderr: /tmp/tmp2prb6bbq/h2o_unknownUser_started_from_python.err
+  Server is running at http://127.0.0.1:15076
+Connecting to H2O server at http://127.0.0.1:15076 ... successful.
+--------------------------  ------------------------------------------------------------------
+H2O_cluster_uptime:         01 secs
+H2O_cluster_timezone:       Europe/Amsterdam
+H2O_data_parsing_timezone:  UTC
+H2O_cluster_version:        3.34.0.3
+H2O_cluster_version_age:    2 months and 2 days
+H2O_cluster_name:           H2O_from_python_unknownUser_hq9bmv
+H2O_cluster_total_nodes:    1
+H2O_cluster_free_memory:    59.28 Gb
+H2O_cluster_total_cores:    16
+H2O_cluster_allowed_cores:  16
+H2O_cluster_status:         locked, healthy
+H2O_connection_url:         http://127.0.0.1:15076
+H2O_connection_proxy:       {"http": null, "https": null}
+H2O_internal_security:      False
+H2O_API_Extensions:         Amazon S3, XGBoost, Algos, AutoML, Core V3, TargetEncoder, Core V4
+Python_version:             3.8.12 final
+--------------------------  ------------------------------------------------------------------
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+INFO:__main__:Running model on task gina, fold 0.
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] CPU Utilization: 68.5%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Memory Usage: 44.7%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Disk Usage: 43.6%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] CPU Utilization: 73.3%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Memory Usage: 44.9%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Disk Usage: 43.6%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] CPU Utilization: 83.0%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Memory Usage: 45.0%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Disk Usage: 43.6%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] CPU Utilization: 71.4%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Memory Usage: 45.3%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Disk Usage: 43.6%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] CPU Utilization: 78.4%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Memory Usage: 45.7%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Disk Usage: 43.6%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] CPU Utilization: 78.5%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Memory Usage: 46.2%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Disk Usage: 43.6%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] CPU Utilization: 77.4%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Memory Usage: 46.6%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Disk Usage: 43.6%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] CPU Utilization: 81.1%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Memory Usage: 47.3%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Disk Usage: 43.6%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] CPU Utilization: 80.3%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Memory Usage: 47.4%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Disk Usage: 43.6%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] CPU Utilization: 78.9%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Memory Usage: 47.5%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Disk Usage: 43.6%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] CPU Utilization: 79.8%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Memory Usage: 48.2%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Disk Usage: 43.6%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] CPU Utilization: 83.0%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Memory Usage: 48.3%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Disk Usage: 43.6%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] CPU Utilization: 83.1%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Memory Usage: 49.1%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Disk Usage: 43.6%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] CPU Utilization: 82.2%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Memory Usage: 49.5%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Disk Usage: 43.6%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] CPU Utilization: 83.1%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Memory Usage: 49.5%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Disk Usage: 43.6%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] CPU Utilization: 84.0%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Memory Usage: 50.2%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Disk Usage: 43.6%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] CPU Utilization: 85.8%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Memory Usage: 50.2%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Disk Usage: 43.6%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] CPU Utilization: 90.1%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Memory Usage: 50.9%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Disk Usage: 43.6%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] CPU Utilization: 77.5%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Memory Usage: 50.9%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Disk Usage: 43.6%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] CPU Utilization: 79.6%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Memory Usage: 50.9%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Disk Usage: 43.6%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] CPU Utilization: 93.7%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Memory Usage: 51.0%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Disk Usage: 43.6%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] CPU Utilization: 77.7%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Memory Usage: 51.0%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Disk Usage: 43.6%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] CPU Utilization: 82.5%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Memory Usage: 51.0%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Disk Usage: 43.6%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] CPU Utilization: 77.5%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Memory Usage: 51.0%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Disk Usage: 43.6%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] CPU Utilization: 87.4%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Memory Usage: 51.0%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Disk Usage: 43.6%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] CPU Utilization: 88.7%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Memory Usage: 51.1%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Disk Usage: 43.6%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] CPU Utilization: 88.4%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Memory Usage: 51.1%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Disk Usage: 43.6%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] CPU Utilization: 89.4%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Memory Usage: 51.1%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Disk Usage: 43.6%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] CPU Utilization: 85.9%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Memory Usage: 51.3%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Disk Usage: 43.6%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] CPU Utilization: 77.0%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Memory Usage: 51.2%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Disk Usage: 43.6%
+AutoML progress: |███████████████████████████████████████████████████████████████| (done) 100%
+stackedensemble prediction progress: |███████████████████████████████████████████| (done) 100%
+H2O session _sid_9e49 closed.
+
+
+
+Predictions preview:
+                         0                   1 predictions truth
+0    0.006767201993837624  0.9932327980061624           1     1
+1    0.015162183934552265  0.9848378160654477           1     1
+2    0.004828186446658167  0.9951718135533418           1     1
+3    0.004925358856768147  0.9950746411432319           1     1
+4    0.009612047811501045   0.990387952188499           1     1
+5    0.006538551532550341  0.9934614484674497           1     1
+6    0.019165968586114634  0.9808340314138854           1     1
+7    7.854943065679354E-4  0.9992145056934321           1     1
+8    0.005546738652088545  0.9944532613479115           1     1
+9    0.014634179697009642  0.9853658203029904           1     1
+10    0.15610935285920835  0.8438906471407916           1     1
+11  0.0028912531455900226    0.99710874685441           1     1
+12  0.0019380933504310471   0.998061906649569           1     1
+13   0.006312840627309302  0.9936871593726907           1     1
+14  0.0037081626980135507  0.9962918373019864           1     1
+15     0.4931906790777423  0.5068093209222577           1     1
+16    0.00872410913929833  0.9912758908607017           1     1
+17    0.00410639480635655  0.9958936051936434           1     1
+18   0.005430176941537024   0.994569823058463           1     1
+19   0.018797731839435783  0.9812022681605642           1     1
+
+Predictions saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_189922.pygmo_c.local.20211209T211531/predictions/gina/0/predictions.csv`.
+Loading metadata from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_189922.pygmo_c.local.20211209T211531/predictions/gina/0/metadata.json`.
+Loading predictions from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_189922.pygmo_c.local.20211209T211531/predictions/gina/0/predictions.csv`.
+Metric scores: { 'acc': 0.9651898734177216,
+  'app_version': 'dev [master, beef024]',
+  'auc': 0.9924263674614305,
+  'balacc': 0.9652374273692648,
+  'constraint': 'pygmo_c',
+  'duration': nan,
+  'fold': 0,
+  'framework': 'H2OAutoML',
+  'id': 'openml.org/t/189922',
+  'info': None,
+  'logloss': 0.11548244728652057,
+  'metric': 'auc',
+  'mode': 'local',
+  'models_count': 211,
+  'params': '',
+  'predict_duration': 0.31739330291748047,
+  'result': 0.9924263674614305,
+  'seed': 192557552,
+  'task': 'gina',
+  'training_duration': 3603.6631836891174,
+  'type': 'binary',
+  'utc': '2021-12-09T22:15:46',
+  'version': '3.34.0.3'}
+Job `local.openml_t_189922.pygmo_c.gina.0.H2OAutoML` executed in 3614.269 seconds.
+All jobs executed in 3614.278 seconds.
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] CPU Utilization: 27.5%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Memory Usage: 2.3%
+[MONITORING] [local.openml_t_189922.pygmo_c.gina.0.H2OAutoML] Disk Usage: 43.6%
+Processing results for h2oautoml.openml_t_189922.pygmo_c.local.20211209T211531
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_189922.pygmo_c.local.20211209T211531/scores/H2OAutoML.benchmark_openml_t_189922.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_189922.pygmo_c.local.20211209T211531/scores/results.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/results.csv`.
+Summing up scores for current run:
+                 id task fold framework constraint   result metric  duration      seed
+openml.org/t/189922 gina    0 H2OAutoML    pygmo_c 0.992426    auc    3614.3 192557552

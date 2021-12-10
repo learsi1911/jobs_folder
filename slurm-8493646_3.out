@@ -1,0 +1,205 @@
+/var/spool/slurm/slurmd/job8493654/slurm_script: line 8: activate: No such file or directory
+Running benchmark `H2OAutoML` on `openml/t/168911` framework in `local` mode.
+Loading frameworks definitions from ['/home/juradoi/experiments/automlbenchmark/resources/frameworks.yaml'].
+Loading benchmark constraint definitions from ['/home/juradoi/experiments/automlbenchmark/resources/constraints.yaml'].
+Loading openml task 168911.
+
+---------------------------------------------------------------
+Starting job local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML.
+Assigning 16 cores (total=16) for new task jasmine.
+Assigning 91407 MB (total=95302 MB) for new jasmine task.
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] CPU Utilization: 12.5%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Memory Usage: 1.9%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Disk Usage: 43.1%
+Running task jasmine on framework H2OAutoML with config:
+TaskConfig({})
+Running cmd `/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py`
+INFO:__main__:
+**** H2O AutoML [v3.34.0.3] ****
+
+INFO:__main__:Starting H2O cluster with 16 cores, 60938M memory.
+Checking whether there is an H2O instance running at http://localhost:15984 ..... not found.
+Attempting to start a local H2O server...
+  Java Version: openjdk version "11.0.12" 2021-07-20; OpenJDK Runtime Environment (build 11.0.12+7-post-Debian-2deb10u1); OpenJDK 64-Bit Server VM (build 11.0.12+7-post-Debian-2deb10u1, mixed mode, sharing)
+  Starting server from /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/backend/bin/h2o.jar
+  Ice root: /tmp/tmp1dt61cwb
+  JVM stdout: /tmp/tmp1dt61cwb/h2o_unknownUser_started_from_python.out
+  JVM stderr: /tmp/tmp1dt61cwb/h2o_unknownUser_started_from_python.err
+  Server is running at http://127.0.0.1:15984
+Connecting to H2O server at http://127.0.0.1:15984 ... successful.
+--------------------------  ------------------------------------------------------------------
+H2O_cluster_uptime:         01 secs
+H2O_cluster_timezone:       Europe/Amsterdam
+H2O_data_parsing_timezone:  UTC
+H2O_cluster_version:        3.34.0.3
+H2O_cluster_version_age:    2 months and 2 days
+H2O_cluster_name:           H2O_from_python_unknownUser_rubzon
+H2O_cluster_total_nodes:    1
+H2O_cluster_free_memory:    59.52 Gb
+H2O_cluster_total_cores:    16
+H2O_cluster_allowed_cores:  16
+H2O_cluster_status:         locked, healthy
+H2O_connection_url:         http://127.0.0.1:15984
+H2O_connection_proxy:       {"http": null, "https": null}
+H2O_internal_security:      False
+H2O_API_Extensions:         Amazon S3, XGBoost, Algos, AutoML, Core V3, TargetEncoder, Core V4
+Python_version:             3.8.12 final
+--------------------------  ------------------------------------------------------------------
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+INFO:__main__:Running model on task jasmine, fold 0.
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] CPU Utilization: 59.3%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Memory Usage: 23.9%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] CPU Utilization: 63.6%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Memory Usage: 40.1%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] CPU Utilization: 80.3%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Memory Usage: 44.9%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] CPU Utilization: 89.4%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Memory Usage: 45.1%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] CPU Utilization: 89.0%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Memory Usage: 45.2%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] CPU Utilization: 89.9%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Memory Usage: 45.1%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] CPU Utilization: 90.2%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Memory Usage: 45.2%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] CPU Utilization: 90.7%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Memory Usage: 45.2%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] CPU Utilization: 91.4%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Memory Usage: 45.1%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] CPU Utilization: 90.4%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Memory Usage: 45.1%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] CPU Utilization: 89.3%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Memory Usage: 45.1%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] CPU Utilization: 89.0%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Memory Usage: 45.2%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] CPU Utilization: 89.6%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Memory Usage: 45.2%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] CPU Utilization: 90.4%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Memory Usage: 45.2%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] CPU Utilization: 90.3%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Memory Usage: 45.2%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] CPU Utilization: 89.7%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Memory Usage: 45.2%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] CPU Utilization: 89.2%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Memory Usage: 45.2%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] CPU Utilization: 89.4%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Memory Usage: 45.2%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] CPU Utilization: 91.7%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Memory Usage: 45.2%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] CPU Utilization: 93.3%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Memory Usage: 45.3%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] CPU Utilization: 89.0%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Memory Usage: 45.3%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] CPU Utilization: 89.8%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Memory Usage: 45.4%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] CPU Utilization: 92.0%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Memory Usage: 45.4%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] CPU Utilization: 91.2%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Memory Usage: 45.4%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] CPU Utilization: 90.6%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Memory Usage: 45.4%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] CPU Utilization: 90.2%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Memory Usage: 45.4%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] CPU Utilization: 91.1%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Memory Usage: 45.4%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] CPU Utilization: 91.6%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Memory Usage: 45.4%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] CPU Utilization: 67.6%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Memory Usage: 45.7%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Disk Usage: 43.1%
+AutoML progress: |███████████████████████████████████████████████████████████████| (done) 100%
+stackedensemble prediction progress: |███████████████████████████████████████████| (done) 100%
+H2O session _sid_b049 closed.
+
+
+
+Predictions preview:
+                       0                    1 predictions truth
+0   0.25470694669497174   0.7452930533050283           1     1
+1   0.11489151051782054   0.8851084894821795           1     1
+2   0.10774872799933832   0.8922512720006617           1     1
+3   0.43169576021285416   0.5683042397871458           1     1
+4   0.11560839761168551   0.8843916023883145           1     1
+5    0.1331894537509719   0.8668105462490281           1     1
+6   0.24059320907266635   0.7594067909273337           1     1
+7   0.37662438041353297    0.623375619586467           1     1
+8   0.23451490720916146   0.7654850927908385           1     1
+9     0.404475536882717    0.595524463117283           1     1
+10  0.28402885265300215   0.7159711473469978           1     1
+11   0.7052074357099882  0.29479256429001177           0     1
+12  0.07696506728598762   0.9230349327140124           1     1
+13   0.5321682581480432  0.46783174185195675           1     1
+14  0.37414969266283415   0.6258503073371658           1     1
+15  0.17742990871517184   0.8225700912848282           1     1
+16  0.11084361440949864   0.8891563855905014           1     1
+17   0.1698085836204608   0.8301914163795392           1     1
+18   0.3495004639964667   0.6504995360035333           1     1
+19  0.06494141745263016   0.9350585825473698           1     1
+
+Predictions saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_168911.pygmo_c.local.20211209T210954/predictions/jasmine/0/predictions.csv`.
+Loading metadata from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_168911.pygmo_c.local.20211209T210954/predictions/jasmine/0/metadata.json`.
+Loading predictions from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_168911.pygmo_c.local.20211209T210954/predictions/jasmine/0/predictions.csv`.
+Metric scores: { 'acc': 0.8160535117056856,
+  'app_version': 'dev [master, beef024]',
+  'auc': 0.8724832214765101,
+  'balacc': 0.8156599552572708,
+  'constraint': 'pygmo_c',
+  'duration': nan,
+  'fold': 0,
+  'framework': 'H2OAutoML',
+  'id': 'openml.org/t/168911',
+  'info': None,
+  'logloss': 0.4026299725878837,
+  'metric': 'auc',
+  'mode': 'local',
+  'models_count': 105,
+  'params': '',
+  'predict_duration': 0.3421671390533447,
+  'result': 0.8724832214765101,
+  'seed': 885464724,
+  'task': 'jasmine',
+  'training_duration': 3541.1773068904877,
+  'type': 'binary',
+  'utc': '2021-12-09T22:09:09',
+  'version': '3.34.0.3'}
+Job `local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML` executed in 3554.641 seconds.
+All jobs executed in 3554.650 seconds.
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] CPU Utilization: 63.3%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Memory Usage: 1.9%
+[MONITORING] [local.openml_t_168911.pygmo_c.jasmine.0.H2OAutoML] Disk Usage: 43.1%
+Processing results for h2oautoml.openml_t_168911.pygmo_c.local.20211209T210954
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_168911.pygmo_c.local.20211209T210954/scores/H2OAutoML.benchmark_openml_t_168911.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_168911.pygmo_c.local.20211209T210954/scores/results.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/results.csv`.
+Summing up scores for current run:
+                 id    task fold framework constraint   result metric  duration      seed
+openml.org/t/168911 jasmine    0 H2OAutoML    pygmo_c 0.872483    auc    3554.6 885464724

@@ -1,0 +1,207 @@
+/var/spool/slurm/slurmd/job8494800/slurm_script: line 8: activate: No such file or directory
+Running benchmark `H2OAutoML` on `openml/t/359967` framework in `local` mode.
+Loading frameworks definitions from ['/home/juradoi/experiments/automlbenchmark/resources/frameworks.yaml'].
+Loading benchmark constraint definitions from ['/home/juradoi/experiments/automlbenchmark/resources/constraints.yaml'].
+Loading openml task 359967.
+
+-------------------------------------------------------------------
+Starting job local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML.
+Assigning 16 cores (total=16) for new task Bioresponse.
+Assigning 91221 MB (total=95302 MB) for new Bioresponse task.
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] CPU Utilization: 18.6%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Memory Usage: 2.1%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Disk Usage: 42.6%
+Running task Bioresponse on framework H2OAutoML with config:
+TaskConfig({})
+Running cmd `/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py`
+INFO:__main__:
+**** H2O AutoML [v3.34.0.3] ****
+
+INFO:__main__:Starting H2O cluster with 16 cores, 60814M memory.
+Checking whether there is an H2O instance running at http://localhost:18764 ..... not found.
+Attempting to start a local H2O server...
+  Java Version: openjdk version "11.0.12" 2021-07-20; OpenJDK Runtime Environment (build 11.0.12+7-post-Debian-2deb10u1); OpenJDK 64-Bit Server VM (build 11.0.12+7-post-Debian-2deb10u1, mixed mode, sharing)
+  Starting server from /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/backend/bin/h2o.jar
+  Ice root: /tmp/tmpmo7ged1_
+  JVM stdout: /tmp/tmpmo7ged1_/h2o_unknownUser_started_from_python.out
+  JVM stderr: /tmp/tmpmo7ged1_/h2o_unknownUser_started_from_python.err
+  Server is running at http://127.0.0.1:18764
+Connecting to H2O server at http://127.0.0.1:18764 ... successful.
+--------------------------  ------------------------------------------------------------------
+H2O_cluster_uptime:         01 secs
+H2O_cluster_timezone:       Europe/Amsterdam
+H2O_data_parsing_timezone:  UTC
+H2O_cluster_version:        3.34.0.3
+H2O_cluster_version_age:    2 months and 2 days
+H2O_cluster_name:           H2O_from_python_unknownUser_y53sy0
+H2O_cluster_total_nodes:    1
+H2O_cluster_free_memory:    59.39 Gb
+H2O_cluster_total_cores:    16
+H2O_cluster_allowed_cores:  16
+H2O_cluster_status:         locked, healthy
+H2O_connection_url:         http://127.0.0.1:18764
+H2O_connection_proxy:       {"http": null, "https": null}
+H2O_internal_security:      False
+H2O_API_Extensions:         Amazon S3, XGBoost, Algos, AutoML, Core V3, TargetEncoder, Core V4
+Python_version:             3.8.12 final
+--------------------------  ------------------------------------------------------------------
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+INFO:__main__:Running model on task Bioresponse, fold 0.
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] CPU Utilization: 77.7%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Memory Usage: 45.3%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Disk Usage: 42.6%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] CPU Utilization: 66.0%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Memory Usage: 45.5%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Disk Usage: 42.6%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] CPU Utilization: 88.1%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Memory Usage: 45.5%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Disk Usage: 42.6%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] CPU Utilization: 87.0%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Memory Usage: 45.7%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Disk Usage: 42.6%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] CPU Utilization: 68.9%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Memory Usage: 45.7%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Disk Usage: 42.6%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] CPU Utilization: 77.5%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Memory Usage: 46.0%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Disk Usage: 42.6%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] CPU Utilization: 80.1%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Memory Usage: 46.0%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Disk Usage: 42.6%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] CPU Utilization: 93.1%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Memory Usage: 46.0%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Disk Usage: 42.6%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] CPU Utilization: 88.5%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Memory Usage: 46.3%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Disk Usage: 42.6%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] CPU Utilization: 90.9%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Memory Usage: 46.3%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Disk Usage: 42.6%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] CPU Utilization: 86.9%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Memory Usage: 46.4%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Disk Usage: 42.6%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] CPU Utilization: 86.8%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Memory Usage: 46.4%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Disk Usage: 42.6%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] CPU Utilization: 92.5%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Memory Usage: 46.4%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Disk Usage: 42.6%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] CPU Utilization: 95.9%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Memory Usage: 46.5%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Disk Usage: 42.6%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] CPU Utilization: 83.7%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Memory Usage: 46.5%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Disk Usage: 42.6%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] CPU Utilization: 86.4%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Memory Usage: 46.6%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Disk Usage: 42.6%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] CPU Utilization: 95.4%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Memory Usage: 46.6%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Disk Usage: 42.6%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] CPU Utilization: 84.3%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Memory Usage: 46.6%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Disk Usage: 42.6%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] CPU Utilization: 80.5%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Memory Usage: 46.6%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Disk Usage: 42.6%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] CPU Utilization: 84.7%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Memory Usage: 46.6%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Disk Usage: 42.6%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] CPU Utilization: 89.6%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Memory Usage: 46.6%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Disk Usage: 42.6%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] CPU Utilization: 90.7%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Memory Usage: 46.6%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Disk Usage: 42.6%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] CPU Utilization: 91.7%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Memory Usage: 46.6%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Disk Usage: 42.6%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] CPU Utilization: 90.9%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Memory Usage: 46.7%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Disk Usage: 42.6%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] CPU Utilization: 89.8%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Memory Usage: 46.7%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Disk Usage: 42.6%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] CPU Utilization: 90.5%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Memory Usage: 46.7%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Disk Usage: 42.6%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] CPU Utilization: 91.9%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Memory Usage: 46.7%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Disk Usage: 42.6%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] CPU Utilization: 92.0%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Memory Usage: 46.7%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Disk Usage: 42.6%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] CPU Utilization: 91.5%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Memory Usage: 46.7%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Disk Usage: 42.6%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] CPU Utilization: 75.3%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Memory Usage: 46.7%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Disk Usage: 42.6%
+AutoML progress: |███████████████████████████████████████████████████████████████| (done) 100%
+stackedensemble prediction progress: |███████████████████████████████████████████| (done) 100%
+H2O session _sid_8420 closed.
+
+
+
+Predictions preview:
+                       0                    1 predictions truth
+0    0.6086950069327703   0.3913049930672297           0     0
+1    0.8160785308713947  0.18392146912860535           0     0
+2    0.8197319613860788  0.18026803861392118           0     0
+3    0.9587005880377739  0.04129941196222612           0     0
+4    0.6362154436706087   0.3637845563293914           0     0
+5    0.3308615947870279   0.6691384052129721           1     0
+6    0.5644117819863208  0.43558821801367914           0     0
+7    0.7417984890287728   0.2582015109712272           0     0
+8    0.9421041361056305  0.05789586389436951           0     0
+9   0.39483769376306754   0.6051623062369325           1     0
+10   0.6245857363819621  0.37541426361803787           0     0
+11   0.7718815402216077  0.22811845977839235           0     0
+12   0.8549100375742984  0.14508996242570163           0     0
+13   0.8388326415469288  0.16116735845307115           0     0
+14   0.9464837479636536  0.05351625203634631           0     0
+15   0.8745198328134083  0.12548016718659172           0     0
+16   0.6684608221347399  0.33153917786526005           0     0
+17   0.8823817763926308  0.11761822360736918           0     0
+18    0.898355585434655  0.10164441456534497           0     0
+19   0.7681998946965787  0.23180010530342138           0     0
+
+Predictions saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359967.pygmo_c.local.20211210T012706/predictions/Bioresponse/0/predictions.csv`.
+Loading metadata from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359967.pygmo_c.local.20211210T012706/predictions/Bioresponse/0/metadata.json`.
+Loading predictions from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359967.pygmo_c.local.20211210T012706/predictions/Bioresponse/0/predictions.csv`.
+Metric scores: { 'acc': 0.824468085106383,
+  'app_version': 'dev [master, beef024]',
+  'auc': 0.8858869129046968,
+  'balacc': 0.8236434108527132,
+  'constraint': 'pygmo_c',
+  'duration': nan,
+  'fold': 0,
+  'framework': 'H2OAutoML',
+  'id': 'openml.org/t/359967',
+  'info': None,
+  'logloss': 0.42377412728536407,
+  'metric': 'auc',
+  'mode': 'local',
+  'models_count': 84,
+  'params': '',
+  'predict_duration': 0.32242608070373535,
+  'result': 0.8858869129046968,
+  'seed': 1545400535,
+  'task': 'Bioresponse',
+  'training_duration': 3596.809470653534,
+  'type': 'binary',
+  'utc': '2021-12-10T02:27:14',
+  'version': '3.34.0.3'}
+Job `local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML` executed in 3608.141 seconds.
+All jobs executed in 3608.152 seconds.
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] CPU Utilization: 37.1%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Memory Usage: 2.1%
+[MONITORING] [local.openml_t_359967.pygmo_c.Bioresponse.0.H2OAutoML] Disk Usage: 42.6%
+Processing results for h2oautoml.openml_t_359967.pygmo_c.local.20211210T012706
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359967.pygmo_c.local.20211210T012706/scores/H2OAutoML.benchmark_openml_t_359967.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359967.pygmo_c.local.20211210T012706/scores/results.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/results.csv`.
+Summing up scores for current run:
+                 id        task fold framework constraint   result metric  duration       seed
+openml.org/t/359967 Bioresponse    0 H2OAutoML    pygmo_c 0.885887    auc    3608.1 1545400535

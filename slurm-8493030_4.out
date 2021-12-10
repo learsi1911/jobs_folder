@@ -1,0 +1,204 @@
+/var/spool/slurm/slurmd/job8493034/slurm_script: line 8: activate: No such file or directory
+Running benchmark `H2OAutoML` on `openml/t/146818` framework in `local` mode.
+Loading frameworks definitions from ['/home/juradoi/experiments/automlbenchmark/resources/frameworks.yaml'].
+Loading benchmark constraint definitions from ['/home/juradoi/experiments/automlbenchmark/resources/constraints.yaml'].
+Loading openml task 146818.
+
+------------------------------------------------------------------
+Starting job local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML.
+Assigning 16 cores (total=16) for new task Australian.
+Assigning 91461 MB (total=95302 MB) for new Australian task.
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] CPU Utilization: 14.9%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Memory Usage: 1.9%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Disk Usage: 43.1%
+Running task Australian on framework H2OAutoML with config:
+TaskConfig({})
+Running cmd `/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py`
+INFO:__main__:
+**** H2O AutoML [v3.34.0.3] ****
+
+INFO:__main__:Starting H2O cluster with 16 cores, 60974M memory.
+Checking whether there is an H2O instance running at http://localhost:9539 ..... not found.
+Attempting to start a local H2O server...
+  Java Version: openjdk version "11.0.12" 2021-07-20; OpenJDK Runtime Environment (build 11.0.12+7-post-Debian-2deb10u1); OpenJDK 64-Bit Server VM (build 11.0.12+7-post-Debian-2deb10u1, mixed mode, sharing)
+  Starting server from /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/backend/bin/h2o.jar
+  Ice root: /tmp/tmp48i2_w1i
+  JVM stdout: /tmp/tmp48i2_w1i/h2o_unknownUser_started_from_python.out
+  JVM stderr: /tmp/tmp48i2_w1i/h2o_unknownUser_started_from_python.err
+  Server is running at http://127.0.0.1:9539
+Connecting to H2O server at http://127.0.0.1:9539 ... successful.
+--------------------------  ------------------------------------------------------------------
+H2O_cluster_uptime:         02 secs
+H2O_cluster_timezone:       Europe/Amsterdam
+H2O_data_parsing_timezone:  UTC
+H2O_cluster_version:        3.34.0.3
+H2O_cluster_version_age:    2 months and 2 days
+H2O_cluster_name:           H2O_from_python_unknownUser_lktvvk
+H2O_cluster_total_nodes:    1
+H2O_cluster_free_memory:    59.55 Gb
+H2O_cluster_total_cores:    16
+H2O_cluster_allowed_cores:  16
+H2O_cluster_status:         locked, healthy
+H2O_connection_url:         http://127.0.0.1:9539
+H2O_connection_proxy:       {"http": null, "https": null}
+H2O_internal_security:      False
+H2O_API_Extensions:         Amazon S3, XGBoost, Algos, AutoML, Core V3, TargetEncoder, Core V4
+Python_version:             3.8.12 final
+--------------------------  ------------------------------------------------------------------
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+INFO:__main__:Running model on task Australian, fold 0.
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] CPU Utilization: 69.6%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Memory Usage: 16.3%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] CPU Utilization: 96.1%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Memory Usage: 39.9%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] CPU Utilization: 96.9%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Memory Usage: 43.9%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] CPU Utilization: 96.5%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Memory Usage: 44.2%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] CPU Utilization: 96.2%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Memory Usage: 44.2%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] CPU Utilization: 95.7%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Memory Usage: 44.3%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] CPU Utilization: 95.8%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Memory Usage: 44.3%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] CPU Utilization: 96.5%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Memory Usage: 44.3%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] CPU Utilization: 96.3%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Memory Usage: 44.3%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] CPU Utilization: 97.2%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Memory Usage: 44.3%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] CPU Utilization: 97.2%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Memory Usage: 44.5%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] CPU Utilization: 97.3%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Memory Usage: 44.5%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] CPU Utilization: 96.5%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Memory Usage: 44.5%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] CPU Utilization: 96.6%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Memory Usage: 44.5%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] CPU Utilization: 96.6%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Memory Usage: 44.5%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] CPU Utilization: 95.6%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Memory Usage: 44.5%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] CPU Utilization: 96.5%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Memory Usage: 44.5%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] CPU Utilization: 96.4%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Memory Usage: 44.5%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] CPU Utilization: 96.7%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Memory Usage: 44.5%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] CPU Utilization: 96.6%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Memory Usage: 44.5%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] CPU Utilization: 94.7%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Memory Usage: 44.5%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] CPU Utilization: 97.2%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Memory Usage: 44.5%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] CPU Utilization: 96.3%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Memory Usage: 44.5%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] CPU Utilization: 96.6%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Memory Usage: 44.5%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] CPU Utilization: 95.8%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Memory Usage: 44.5%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] CPU Utilization: 96.6%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Memory Usage: 44.5%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] CPU Utilization: 97.0%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Memory Usage: 44.5%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] CPU Utilization: 95.7%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Memory Usage: 44.6%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] CPU Utilization: 46.3%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Memory Usage: 44.8%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Disk Usage: 43.1%
+AutoML progress: |███████████████████████████████████████████████████████████████| (done) 100%
+gbm prediction progress: |███████████████████████████████████████████████████████| (done) 100%
+H2O session _sid_a2bc closed.
+
+
+
+Predictions preview:
+                        0                     1 predictions truth
+0   0.039054190841031344    0.9609458091589687           1     1
+1    0.04059467374086689    0.9594053262591331           1     1
+2   0.044209728161933026     0.955790271838067           1     1
+3    0.04029901728901142    0.9597009827109886           1     1
+4    0.29056205117835054    0.7094379488216495           1     1
+5    0.08003974131007097     0.919960258689929           1     1
+6   0.023801171038550062    0.9761988289614499           1     1
+7    0.09982484857183938    0.9001751514281606           1     1
+8    0.11507757000572794    0.8849224299942721           1     1
+9    0.03345247587497957    0.9665475241250204           1     1
+10    0.3476187932192012    0.6523812067807988           1     1
+11  0.057508309430253646    0.9424916905697464           1     1
+12   0.09370044773116137    0.9062995522688386           1     1
+13     0.643888699501951    0.3561113004980489           0     1
+14   0.09697050795150797     0.903029492048492           1     1
+15   0.03180477278030802     0.968195227219692           1     1
+16   0.02676490404039733    0.9732350959596027           1     1
+17   0.04629486649750636    0.9537051335024936           1     1
+18    0.1205126964963783    0.8794873035036217           1     1
+19    0.9761037029607678  0.023896297039232243           0     1
+
+Predictions saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_146818.pygmo_c.local.20211209T183554/predictions/Australian/0/predictions.csv`.
+Loading metadata from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_146818.pygmo_c.local.20211209T183554/predictions/Australian/0/metadata.json`.
+Loading predictions from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_146818.pygmo_c.local.20211209T183554/predictions/Australian/0/predictions.csv`.
+Metric scores: { 'acc': 0.8985507246376812,
+  'app_version': 'dev [master, beef024]',
+  'auc': 0.9346349745331071,
+  'balacc': 0.898981324278438,
+  'constraint': 'pygmo_c',
+  'duration': nan,
+  'fold': 0,
+  'framework': 'H2OAutoML',
+  'id': 'openml.org/t/146818',
+  'info': None,
+  'logloss': 0.3129806152819656,
+  'metric': 'auc',
+  'mode': 'local',
+  'models_count': 361,
+  'params': '',
+  'predict_duration': 0.1282501220703125,
+  'result': 0.9346349745331071,
+  'seed': 42994580,
+  'task': 'Australian',
+  'training_duration': 3531.7296752929688,
+  'type': 'binary',
+  'utc': '2021-12-09T19:34:57',
+  'version': '3.34.0.3'}
+Job `local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML` executed in 3543.449 seconds.
+All jobs executed in 3543.457 seconds.
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] CPU Utilization: 48.6%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Memory Usage: 1.9%
+[MONITORING] [local.openml_t_146818.pygmo_c.Australian.0.H2OAutoML] Disk Usage: 43.1%
+Processing results for h2oautoml.openml_t_146818.pygmo_c.local.20211209T183554
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_146818.pygmo_c.local.20211209T183554/scores/H2OAutoML.benchmark_openml_t_146818.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_146818.pygmo_c.local.20211209T183554/scores/results.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/results.csv`.
+Summing up scores for current run:
+                 id       task fold framework constraint   result metric  duration     seed
+openml.org/t/146818 Australian    0 H2OAutoML    pygmo_c 0.934635    auc    3543.4 42994580

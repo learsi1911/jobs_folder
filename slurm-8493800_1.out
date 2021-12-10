@@ -1,0 +1,201 @@
+/var/spool/slurm/slurmd/job8493803/slurm_script: line 8: activate: No such file or directory
+Running benchmark `H2OAutoML` on `openml/t/190412` framework in `local` mode.
+Loading frameworks definitions from ['/home/juradoi/experiments/automlbenchmark/resources/frameworks.yaml'].
+Loading benchmark constraint definitions from ['/home/juradoi/experiments/automlbenchmark/resources/constraints.yaml'].
+Loading openml task 190412.
+
+--------------------------------------------------------------
+Starting job local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML.
+Assigning 16 cores (total=16) for new task arcene.
+Assigning 91190 MB (total=95302 MB) for new arcene task.
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] CPU Utilization: 11.9%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Memory Usage: 2.2%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Disk Usage: 43.2%
+Running task arcene on framework H2OAutoML with config:
+TaskConfig({})
+Running cmd `/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py`
+INFO:__main__:
+**** H2O AutoML [v3.34.0.3] ****
+
+INFO:__main__:Starting H2O cluster with 16 cores, 60793M memory.
+Checking whether there is an H2O instance running at http://localhost:31651 ..... not found.
+Attempting to start a local H2O server...
+  Java Version: openjdk version "11.0.12" 2021-07-20; OpenJDK Runtime Environment (build 11.0.12+7-post-Debian-2deb10u1); OpenJDK 64-Bit Server VM (build 11.0.12+7-post-Debian-2deb10u1, mixed mode, sharing)
+  Starting server from /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/backend/bin/h2o.jar
+  Ice root: /tmp/tmp_b619k8j
+  JVM stdout: /tmp/tmp_b619k8j/h2o_unknownUser_started_from_python.out
+  JVM stderr: /tmp/tmp_b619k8j/h2o_unknownUser_started_from_python.err
+  Server is running at http://127.0.0.1:31651
+Connecting to H2O server at http://127.0.0.1:31651 ... successful.
+--------------------------  ------------------------------------------------------------------
+H2O_cluster_uptime:         01 secs
+H2O_cluster_timezone:       Europe/Amsterdam
+H2O_data_parsing_timezone:  UTC
+H2O_cluster_version:        3.34.0.3
+H2O_cluster_version_age:    2 months and 2 days
+H2O_cluster_name:           H2O_from_python_unknownUser_vzfmnc
+H2O_cluster_total_nodes:    1
+H2O_cluster_free_memory:    59.38 Gb
+H2O_cluster_total_cores:    16
+H2O_cluster_allowed_cores:  16
+H2O_cluster_status:         locked, healthy
+H2O_connection_url:         http://127.0.0.1:31651
+H2O_connection_proxy:       {"http": null, "https": null}
+H2O_internal_security:      False
+H2O_API_Extensions:         Amazon S3, XGBoost, Algos, AutoML, Core V3, TargetEncoder, Core V4
+Python_version:             3.8.12 final
+--------------------------  ------------------------------------------------------------------
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+INFO:__main__:Running model on task arcene, fold 0.
+AutoML progress: |████████
+22:53:11.197: Skipping training of model GBM_1_AutoML_1_20211209_225158 due to exception: water.exceptions.H2OModelBuilderIllegalArgumentException: Illegal argument(s) for GBM model: GBM_1_AutoML_1_20211209_225158.  Details: ERRR on field: _min_rows: The dataset size is too small to split for min_rows=100.0: must have at least 200.0 (weighted) rows, but have only 90.0.
+
+
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] CPU Utilization: 32.4%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Memory Usage: 28.9%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] CPU Utilization: 54.4%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Memory Usage: 44.8%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] CPU Utilization: 50.6%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Memory Usage: 45.2%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] CPU Utilization: 53.3%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Memory Usage: 47.6%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] CPU Utilization: 42.2%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Memory Usage: 47.7%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] CPU Utilization: 45.6%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Memory Usage: 48.2%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] CPU Utilization: 43.0%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Memory Usage: 48.2%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] CPU Utilization: 40.2%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Memory Usage: 48.4%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] CPU Utilization: 42.7%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Memory Usage: 48.5%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] CPU Utilization: 47.9%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Memory Usage: 48.5%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] CPU Utilization: 48.5%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Memory Usage: 48.7%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] CPU Utilization: 48.4%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Memory Usage: 48.8%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] CPU Utilization: 47.9%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Memory Usage: 49.0%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] CPU Utilization: 61.9%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Memory Usage: 49.0%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] CPU Utilization: 57.5%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Memory Usage: 49.1%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] CPU Utilization: 55.0%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Memory Usage: 49.5%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] CPU Utilization: 67.9%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Memory Usage: 49.5%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] CPU Utilization: 51.6%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Memory Usage: 49.6%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] CPU Utilization: 61.4%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Memory Usage: 49.6%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] CPU Utilization: 57.4%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Memory Usage: 49.6%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] CPU Utilization: 50.0%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Memory Usage: 49.7%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] CPU Utilization: 59.5%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Memory Usage: 49.7%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] CPU Utilization: 52.4%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Memory Usage: 50.1%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] CPU Utilization: 50.5%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Memory Usage: 57.4%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] CPU Utilization: 46.8%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Memory Usage: 65.3%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] CPU Utilization: 51.4%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Memory Usage: 69.4%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] CPU Utilization: 52.7%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Memory Usage: 69.5%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] CPU Utilization: 45.0%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Memory Usage: 69.6%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] CPU Utilization: 49.1%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Memory Usage: 69.7%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] CPU Utilization: 43.2%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Memory Usage: 69.9%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Disk Usage: 43.2%
+███████████████████████████████████████████████████████| (done) 100%
+stackedensemble prediction progress: |███████████████████████████████████████████| (done) 100%
+H2O session _sid_9074 closed.
+
+
+
+Predictions preview:
+                      0                     1 predictions truth
+0   0.9500200313026381    0.0499799686973619           0     0
+1    0.930206266154575   0.06979373384542496           0     0
+2   0.7597059284601433   0.24029407153985677           0     0
+3   0.6703072323435271     0.329692767656473           0     0
+4   0.9470496610520912   0.05295033894790881           0     0
+5   0.9513049518431227   0.04869504815687731           0     0
+6   0.9498447195034818  0.050155280496518226           0     1
+7  0.03981410769347582    0.9601858923065242           1     1
+8  0.24936982591728685    0.7506301740827132           1     1
+9  0.05096276154027257    0.9490372384597274           1     1
+
+Predictions saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_190412.pygmo_c.local.20211209T215140/predictions/arcene/0/predictions.csv`.
+Loading metadata from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_190412.pygmo_c.local.20211209T215140/predictions/arcene/0/metadata.json`.
+Loading predictions from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_190412.pygmo_c.local.20211209T215140/predictions/arcene/0/predictions.csv`.
+Metric scores: { 'acc': 0.9,
+  'app_version': 'dev [master, beef024]',
+  'auc': 0.8333333333333334,
+  'balacc': 0.875,
+  'constraint': 'pygmo_c',
+  'duration': nan,
+  'fold': 0,
+  'framework': 'H2OAutoML',
+  'id': 'openml.org/t/190412',
+  'info': None,
+  'logloss': 0.42751977440043687,
+  'metric': 'auc',
+  'mode': 'local',
+  'models_count': 236,
+  'params': '',
+  'predict_duration': 0.3133707046508789,
+  'result': 0.8333333333333334,
+  'seed': 1329992406,
+  'task': 'arcene',
+  'training_duration': 3605.0322999954224,
+  'type': 'binary',
+  'utc': '2021-12-09T22:52:05',
+  'version': '3.34.0.3'}
+Job `local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML` executed in 3623.177 seconds.
+All jobs executed in 3624.515 seconds.
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] CPU Utilization: 26.5%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Memory Usage: 2.2%
+[MONITORING] [local.openml_t_190412.pygmo_c.arcene.0.H2OAutoML] Disk Usage: 43.2%
+Processing results for h2oautoml.openml_t_190412.pygmo_c.local.20211209T215140
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_190412.pygmo_c.local.20211209T215140/scores/H2OAutoML.benchmark_openml_t_190412.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_190412.pygmo_c.local.20211209T215140/scores/results.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/results.csv`.
+Summing up scores for current run:
+                 id   task fold framework constraint   result metric  duration       seed
+openml.org/t/190412 arcene    0 H2OAutoML    pygmo_c 0.833333    auc    3623.2 1329992406

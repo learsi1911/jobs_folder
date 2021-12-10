@@ -1,0 +1,206 @@
+/var/spool/slurm/slurmd/job8496252/slurm_script: line 8: activate: No such file or directory
+Running benchmark `H2OAutoML` on `openml/t/359976` framework in `local` mode.
+Loading frameworks definitions from ['/home/juradoi/experiments/automlbenchmark/resources/frameworks.yaml'].
+Loading benchmark constraint definitions from ['/home/juradoi/experiments/automlbenchmark/resources/constraints.yaml'].
+Loading openml task 359976.
+
+---------------------------------------------------------------------
+Starting job local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML.
+Assigning 16 cores (total=16) for new task Fashion-MNIST.
+Assigning 91143 MB (total=95302 MB) for new Fashion-MNIST task.
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] CPU Utilization: 18.6%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Memory Usage: 2.2%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Disk Usage: 44.9%
+Running task Fashion-MNIST on framework H2OAutoML with config:
+TaskConfig({})
+Running cmd `/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py`
+INFO:__main__:
+**** H2O AutoML [v3.34.0.3] ****
+
+INFO:__main__:Starting H2O cluster with 16 cores, 60762M memory.
+Checking whether there is an H2O instance running at http://localhost:19357 ..... not found.
+Attempting to start a local H2O server...
+  Java Version: openjdk version "11.0.12" 2021-07-20; OpenJDK Runtime Environment (build 11.0.12+7-post-Debian-2deb10u1); OpenJDK 64-Bit Server VM (build 11.0.12+7-post-Debian-2deb10u1, mixed mode, sharing)
+  Starting server from /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/backend/bin/h2o.jar
+  Ice root: /tmp/tmp1k7yun4e
+  JVM stdout: /tmp/tmp1k7yun4e/h2o_unknownUser_started_from_python.out
+  JVM stderr: /tmp/tmp1k7yun4e/h2o_unknownUser_started_from_python.err
+  Server is running at http://127.0.0.1:19357
+Connecting to H2O server at http://127.0.0.1:19357 ... successful.
+--------------------------  ------------------------------------------------------------------
+H2O_cluster_uptime:         01 secs
+H2O_cluster_timezone:       Europe/Amsterdam
+H2O_data_parsing_timezone:  UTC
+H2O_cluster_version:        3.34.0.3
+H2O_cluster_version_age:    2 months and 2 days
+H2O_cluster_name:           H2O_from_python_unknownUser_r28zeo
+H2O_cluster_total_nodes:    1
+H2O_cluster_free_memory:    59.34 Gb
+H2O_cluster_total_cores:    16
+H2O_cluster_allowed_cores:  16
+H2O_cluster_status:         locked, healthy
+H2O_connection_url:         http://127.0.0.1:19357
+H2O_connection_proxy:       {"http": null, "https": null}
+H2O_internal_security:      False
+H2O_API_Extensions:         Amazon S3, XGBoost, Algos, AutoML, Core V3, TargetEncoder, Core V4
+Python_version:             3.8.12 final
+--------------------------  ------------------------------------------------------------------
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+INFO:__main__:Running model on task Fashion-MNIST, fold 0.
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] CPU Utilization: 51.3%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Memory Usage: 10.5%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Disk Usage: 44.9%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] CPU Utilization: 89.6%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Memory Usage: 11.0%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Disk Usage: 44.9%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] CPU Utilization: 89.6%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Memory Usage: 11.0%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Disk Usage: 44.9%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] CPU Utilization: 89.2%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Memory Usage: 11.1%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Disk Usage: 44.9%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] CPU Utilization: 92.2%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Memory Usage: 10.4%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Disk Usage: 44.9%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] CPU Utilization: 94.1%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Memory Usage: 10.7%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Disk Usage: 44.9%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] CPU Utilization: 93.9%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Memory Usage: 37.1%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Disk Usage: 44.9%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] CPU Utilization: 91.6%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Memory Usage: 44.9%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Disk Usage: 44.9%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] CPU Utilization: 91.7%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Memory Usage: 45.2%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Disk Usage: 44.9%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] CPU Utilization: 91.7%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Memory Usage: 45.2%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Disk Usage: 44.9%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] CPU Utilization: 91.8%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Memory Usage: 45.2%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Disk Usage: 44.9%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] CPU Utilization: 91.6%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Memory Usage: 45.2%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Disk Usage: 44.9%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] CPU Utilization: 91.6%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Memory Usage: 45.2%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Disk Usage: 44.9%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] CPU Utilization: 91.1%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Memory Usage: 45.3%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Disk Usage: 44.9%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] CPU Utilization: 91.6%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Memory Usage: 45.3%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Disk Usage: 44.9%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] CPU Utilization: 91.7%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Memory Usage: 45.3%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Disk Usage: 44.9%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] CPU Utilization: 91.7%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Memory Usage: 45.3%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Disk Usage: 44.9%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] CPU Utilization: 96.3%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Memory Usage: 45.3%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Disk Usage: 44.9%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] CPU Utilization: 97.3%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Memory Usage: 45.4%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Disk Usage: 44.9%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] CPU Utilization: 97.2%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Memory Usage: 45.4%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Disk Usage: 44.9%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] CPU Utilization: 97.2%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Memory Usage: 45.4%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Disk Usage: 44.9%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] CPU Utilization: 97.4%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Memory Usage: 45.4%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Disk Usage: 44.9%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] CPU Utilization: 97.4%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Memory Usage: 45.4%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Disk Usage: 44.9%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] CPU Utilization: 97.3%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Memory Usage: 45.4%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Disk Usage: 44.9%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] CPU Utilization: 97.4%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Memory Usage: 45.4%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Disk Usage: 44.9%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] CPU Utilization: 97.2%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Memory Usage: 45.5%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Disk Usage: 44.9%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] CPU Utilization: 85.7%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Memory Usage: 46.8%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Disk Usage: 44.9%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] CPU Utilization: 90.1%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Memory Usage: 45.6%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Disk Usage: 44.9%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] CPU Utilization: 97.3%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Memory Usage: 45.8%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Disk Usage: 44.9%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] CPU Utilization: 94.1%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Memory Usage: 46.0%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Disk Usage: 44.9%
+AutoML progress: |███████████████████████████████████████████████████████████████| (done) 100%
+stackedensemble prediction progress: |███████████████████████████████████████████| (done) 100%
+H2O session _sid_bffe closed.
+
+
+
+Predictions preview:
+                         0                      1                      2                      3                      4                   5                      6                      7                      8                      9 predictions truth
+0    4.947368705933897E-7  1.1202330282781022E-7  3.0942146252166666E-7  1.2458137926983039E-7   9.506104612113499E-8  0.9999542541812366  2.2766915739962475E-6  1.2699389449549807E-5   5.661379269563935E-7  2.9067775751266313E-5           5     5
+1   3.3802241006606523E-6   8.335243829881794E-7  3.6308836200856246E-6  1.1134453311434023E-6  2.1130917704388822E-6  0.9997054158618366  1.7230018877231913E-5   2.249862347085874E-4   7.898888537141773E-6  3.3397826835206895E-5           5     5
+2   3.7820914143765554E-5  1.0125661639263504E-5   4.175989231708537E-5   1.724223595579354E-5  2.2268950215743445E-5  0.9931781038875204  1.6178006618209083E-4    0.00571188292032731   3.590083894477911E-5   7.831146327539339E-4           5     5
+3    0.002033737636108149  0.0012784026368697133   0.001644669148283624  0.0023656928918269725   9.992974063385372E-4  0.9586796801971721   0.005567176451672551  0.0038558787756009178  0.0069693908219415086    0.01660607403418571           5     5
+4    1.626118012365566E-4  3.8660657472298066E-5  1.4180127620465156E-4    6.49819037656243E-5   8.194286154694632E-5  0.9876778474978458  4.2500235804205337E-4   0.006158484073756006   3.508868607972735E-4   0.004897780709332749           5     5
+5    3.310006732485683E-5    8.38248582372024E-6    3.03167179405072E-5   1.109536635643583E-5   7.024359944512241E-6  0.9978757398533163  1.0470823425216403E-4   0.001000928275737214  1.0649699831750052E-4   8.222076409868436E-4           5     5
+6   1.1764123215300305E-4  2.6477855400766486E-5   9.875135176126204E-5  2.3031603070404718E-5  2.0587641329359117E-5  0.9858274160223265  2.7253596946055775E-4   0.006076657330499296   6.000658995454646E-4   0.006936835094453421           5     5
+7    3.378075370691194E-5   7.793876052151193E-6  2.5939971531224285E-5  1.2646664752069505E-5   2.304429243279178E-5  0.9994661395905209   8.818954595667706E-5  2.2984382688440757E-4  1.8646304726604255E-5   9.397517343613879E-5           5     5
+8   4.5389688345346065E-7   8.180415757128386E-8   4.312288529472914E-7  1.5272231554215356E-7   3.318833373939216E-7  0.9999838609215377  2.1548945766489692E-6   6.752390469103208E-6  2.7181422160243287E-7   5.508443648121419E-6           5     5
+9    5.552585902171695E-5  1.0318860234160843E-5  4.1083847972113953E-5  2.1859591042599942E-5   3.463043976278839E-5  0.9988019450878343  1.3952260003276116E-4    6.00222184828738E-4  5.6462581854981835E-5  2.3842894741580626E-4           5     5
+10  1.2239020902323704E-6  1.6683943272659665E-7   1.152341146908752E-6   4.063847383409359E-7   9.207713650653327E-7  0.9999607080750011   5.072690692934356E-6  2.0857268700599745E-5   4.731678164261551E-7   9.018559015689203E-6           5     5
+11   3.826786230167734E-6  1.3776840299290665E-6   1.904240613604042E-6  1.2452642856818784E-6   4.257782921605767E-7  0.9998036567574664  1.0927172918674865E-5   7.059493243462973E-5   2.344077147744615E-6  1.0369730658102418E-4           5     5
+12   5.243249626496886E-7  1.1149367951900749E-7  4.6286398052204085E-7  1.1485202398922174E-7   2.503243188062124E-7  0.9999430829146668  2.8652245255682854E-6  2.4452703083094517E-5  3.7519314335164497E-7  2.7760105615664586E-5           5     5
+13   5.579179961740636E-6  1.1600083698620475E-6   5.862283038571484E-6  1.4965367865328526E-6   3.890685010155984E-6  0.9998297382901798  2.0994188183830927E-5   9.532052377042895E-5    4.02078022970607E-6    3.19375244691837E-5           5     5
+14   4.564216050877985E-7   1.483441349578542E-7   7.819863864660414E-7   6.477436723149605E-8   5.337862658887441E-8    0.99996941867484   1.725444131562515E-6  7.2061303912235804E-6  3.4508814226715336E-7   1.979975737472422E-5           5     5
+15   6.400485809893886E-6  1.6676835577982823E-6   5.874888220161483E-6   1.640255527430978E-6  2.3187134872098395E-6  0.9997061248856234  2.0704076675232797E-5  1.0878515112267326E-4   7.955198613877688E-6  1.3852866136223815E-4           5     5
+16  4.3074483749062147E-7  1.0668691304980744E-7  3.2504420224297315E-7  1.8289096437320396E-7  1.6057112551569618E-7  0.9999834250239029  1.8471568747816462E-6   6.126411821362829E-6   5.609050869959654E-7   6.834564271275367E-6           5     5
+17  1.1387241657129551E-7    3.53809132522579E-8   9.705124009616133E-8    2.46077612259526E-8  1.9162011677447323E-8  0.9999920652864157   5.113579339203076E-7  2.8882244347263422E-6  1.6383644252843283E-7   4.081220430277727E-6           5     5
+18  1.5148318812004035E-4   4.800711059462431E-5   1.452245296832355E-4     7.7950111679038E-5   7.244155709964533E-5  0.9888594547990686   5.468174929481576E-4  0.0020086612957018776   4.988730434774162E-4   0.007591086871627458           5     5
+19  1.1917810726039314E-5  2.0839431825880677E-6   8.843234813259352E-6  3.7019599107492417E-6   6.981031404832851E-6  0.9995492725935258  4.9004697803526225E-5      1.471950425034E-4   4.698022851938429E-6  2.1630166327773093E-4           5     5
+
+Predictions saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359976.pygmo_c.local.20211210T063637/predictions/Fashion-MNIST/0/predictions.csv`.
+Loading metadata from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359976.pygmo_c.local.20211210T063637/predictions/Fashion-MNIST/0/metadata.json`.
+Loading predictions from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359976.pygmo_c.local.20211210T063637/predictions/Fashion-MNIST/0/predictions.csv`.
+Metric scores: { 'acc': 0.903,
+  'app_version': 'dev [master, beef024]',
+  'balacc': 0.9029999999999999,
+  'constraint': 'pygmo_c',
+  'duration': nan,
+  'fold': 0,
+  'framework': 'H2OAutoML',
+  'id': 'openml.org/t/359976',
+  'info': None,
+  'logloss': 0.2650534888115159,
+  'metric': 'neg_logloss',
+  'mode': 'local',
+  'models_count': 11,
+  'params': '',
+  'predict_duration': 0.28704833984375,
+  'result': -0.2650534888115159,
+  'seed': 1161232912,
+  'task': 'Fashion-MNIST',
+  'training_duration': 3641.782570838928,
+  'type': 'multiclass',
+  'utc': '2021-12-10T07:38:17',
+  'version': '3.34.0.3'}
+Job `local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML` executed in 3700.088 seconds.
+All jobs executed in 3700.124 seconds.
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] CPU Utilization: 84.4%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Memory Usage: 2.6%
+[MONITORING] [local.openml_t_359976.pygmo_c.Fashion-MNIST.0.H2OAutoML] Disk Usage: 44.9%
+Processing results for h2oautoml.openml_t_359976.pygmo_c.local.20211210T063637
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359976.pygmo_c.local.20211210T063637/scores/H2OAutoML.benchmark_openml_t_359976.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359976.pygmo_c.local.20211210T063637/scores/results.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/results.csv`.
+Summing up scores for current run:
+                 id          task fold framework constraint    result      metric  duration       seed
+openml.org/t/359976 Fashion-MNIST    0 H2OAutoML    pygmo_c -0.265053 neg_logloss    3700.1 1161232912

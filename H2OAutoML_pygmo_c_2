@@ -1,0 +1,11 @@
+#!/bin/bash
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=16
+#SBATCH --partition=normal
+#SBATCH --time=01:05:00
+source /home/juradoi/miniconda3/etc/profile.d/conda.sh
+source activate venv
+cd  /home/juradoi/experiments/automlbenchmark
+python3 runbenchmark.py H2OAutoML openml/t/3945 pygmo_c
+conda deactivate

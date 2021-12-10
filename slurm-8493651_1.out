@@ -1,0 +1,207 @@
+/var/spool/slurm/slurmd/job8493656/slurm_script: line 8: activate: No such file or directory
+Running benchmark `H2OAutoML` on `openml/t/189354` framework in `local` mode.
+Loading frameworks definitions from ['/home/juradoi/experiments/automlbenchmark/resources/frameworks.yaml'].
+Loading benchmark constraint definitions from ['/home/juradoi/experiments/automlbenchmark/resources/constraints.yaml'].
+Loading openml task 189354.
+
+----------------------------------------------------------------
+Starting job local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML.
+Assigning 16 cores (total=16) for new task airlines.
+Assigning 91321 MB (total=95302 MB) for new airlines task.
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] CPU Utilization: 14.8%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Memory Usage: 2.0%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Disk Usage: 43.1%
+Running task airlines on framework H2OAutoML with config:
+TaskConfig({})
+Running cmd `/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py`
+INFO:__main__:
+**** H2O AutoML [v3.34.0.3] ****
+
+INFO:__main__:Starting H2O cluster with 16 cores, 60881M memory.
+Checking whether there is an H2O instance running at http://localhost:10723 ..... not found.
+Attempting to start a local H2O server...
+  Java Version: openjdk version "11.0.12" 2021-07-20; OpenJDK Runtime Environment (build 11.0.12+7-post-Debian-2deb10u1); OpenJDK 64-Bit Server VM (build 11.0.12+7-post-Debian-2deb10u1, mixed mode, sharing)
+  Starting server from /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/backend/bin/h2o.jar
+  Ice root: /tmp/tmpajb7titb
+  JVM stdout: /tmp/tmpajb7titb/h2o_unknownUser_started_from_python.out
+  JVM stderr: /tmp/tmpajb7titb/h2o_unknownUser_started_from_python.err
+  Server is running at http://127.0.0.1:10723
+Connecting to H2O server at http://127.0.0.1:10723 ... successful.
+--------------------------  ------------------------------------------------------------------
+H2O_cluster_uptime:         01 secs
+H2O_cluster_timezone:       Europe/Amsterdam
+H2O_data_parsing_timezone:  UTC
+H2O_cluster_version:        3.34.0.3
+H2O_cluster_version_age:    2 months and 2 days
+H2O_cluster_name:           H2O_from_python_unknownUser_clo65p
+H2O_cluster_total_nodes:    1
+H2O_cluster_free_memory:    59.47 Gb
+H2O_cluster_total_cores:    16
+H2O_cluster_allowed_cores:  16
+H2O_cluster_status:         locked, healthy
+H2O_connection_url:         http://127.0.0.1:10723
+H2O_connection_proxy:       {"http": null, "https": null}
+H2O_internal_security:      False
+H2O_API_Extensions:         Amazon S3, XGBoost, Algos, AutoML, Core V3, TargetEncoder, Core V4
+Python_version:             3.8.12 final
+--------------------------  ------------------------------------------------------------------
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+INFO:__main__:Running model on task airlines, fold 0.
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] CPU Utilization: 39.5%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Memory Usage: 9.4%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] CPU Utilization: 73.2%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Memory Usage: 45.1%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] CPU Utilization: 36.4%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Memory Usage: 46.0%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] CPU Utilization: 41.5%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Memory Usage: 46.1%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] CPU Utilization: 71.8%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Memory Usage: 47.0%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] CPU Utilization: 54.9%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Memory Usage: 47.1%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] CPU Utilization: 86.0%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Memory Usage: 47.9%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] CPU Utilization: 87.1%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Memory Usage: 48.0%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] CPU Utilization: 88.2%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Memory Usage: 48.2%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] CPU Utilization: 88.9%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Memory Usage: 48.6%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] CPU Utilization: 79.5%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Memory Usage: 48.7%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] CPU Utilization: 83.2%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Memory Usage: 48.8%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] CPU Utilization: 84.2%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Memory Usage: 48.8%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] CPU Utilization: 86.5%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Memory Usage: 48.9%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] CPU Utilization: 81.1%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Memory Usage: 49.1%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] CPU Utilization: 81.5%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Memory Usage: 49.2%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] CPU Utilization: 81.2%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Memory Usage: 50.1%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] CPU Utilization: 76.2%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Memory Usage: 50.1%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] CPU Utilization: 60.1%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Memory Usage: 50.1%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] CPU Utilization: 72.4%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Memory Usage: 50.6%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] CPU Utilization: 69.1%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Memory Usage: 50.6%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] CPU Utilization: 70.1%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Memory Usage: 51.2%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] CPU Utilization: 56.3%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Memory Usage: 51.3%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] CPU Utilization: 75.0%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Memory Usage: 51.3%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] CPU Utilization: 76.0%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Memory Usage: 51.9%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] CPU Utilization: 94.1%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Memory Usage: 51.9%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] CPU Utilization: 93.7%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Memory Usage: 52.2%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] CPU Utilization: 94.3%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Memory Usage: 52.2%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] CPU Utilization: 92.5%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Memory Usage: 52.2%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] CPU Utilization: 94.0%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Memory Usage: 52.3%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Disk Usage: 43.1%
+AutoML progress: |███████████████████████████████████████████████████████████████| (done) 100%
+stackedensemble prediction progress: |███████████████████████████████████████████| (done) 100%
+H2O session _sid_a328 closed.
+
+
+
+Predictions preview:
+                       0                    1 predictions truth
+0    0.7182648050952938   0.2817351949047063           0     0
+1    0.7552516009465443   0.2447483990534557           0     0
+2       0.6394357923894  0.36056420761060004           1     0
+3    0.5730871252740739  0.42691287472592615           1     0
+4   0.47199397057506054   0.5280060294249395           1     0
+5    0.8792800892235515  0.12071991077644856           0     0
+6   0.15240343556738123   0.8475965644326188           1     0
+7    0.6675724233654512  0.33242757663454886           1     0
+8    0.9106875073070028  0.08931249269299722           0     0
+9    0.7490604614354981  0.25093953856450185           0     0
+10   0.8297447025792724  0.17025529742072762           0     0
+11    0.624340020952205    0.375659979047795           1     0
+12    0.668862748879522    0.331137251120478           1     0
+13   0.7379384086766383  0.26206159132336165           0     0
+14   0.4308900595636316   0.5691099404363684           1     0
+15   0.6938752543156669   0.3061247456843331           0     0
+16   0.5500166489088076   0.4499833510911923           1     0
+17    0.611237612011731    0.388762387988269           1     0
+18  0.33359313239043076   0.6664068676095692           1     0
+19   0.9052299498302736   0.0947700501697264           0     0
+
+Predictions saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_189354.pygmo_c.local.20211209T210928/predictions/airlines/0/predictions.csv`.
+Loading metadata from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_189354.pygmo_c.local.20211209T210928/predictions/airlines/0/metadata.json`.
+Loading predictions from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_189354.pygmo_c.local.20211209T210928/predictions/airlines/0/predictions.csv`.
+Metric scores: { 'acc': 0.6236118578394112,
+  'app_version': 'dev [master, beef024]',
+  'auc': 0.7331780052691681,
+  'balacc': 0.6436509407492927,
+  'constraint': 'pygmo_c',
+  'duration': nan,
+  'fold': 0,
+  'framework': 'H2OAutoML',
+  'id': 'openml.org/t/189354',
+  'info': None,
+  'logloss': 0.5977237042064445,
+  'metric': 'auc',
+  'mode': 'local',
+  'models_count': 81,
+  'params': '',
+  'predict_duration': 1.6837642192840576,
+  'result': 0.7331780052691681,
+  'seed': 1495594635,
+  'task': 'airlines',
+  'training_duration': 3602.281116247177,
+  'type': 'binary',
+  'utc': '2021-12-09T22:10:20',
+  'version': '3.34.0.3'}
+Job `local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML` executed in 3622.782 seconds.
+All jobs executed in 3652.207 seconds.
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] CPU Utilization: 65.5%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Memory Usage: 2.1%
+[MONITORING] [local.openml_t_189354.pygmo_c.airlines.0.H2OAutoML] Disk Usage: 43.1%
+Processing results for h2oautoml.openml_t_189354.pygmo_c.local.20211209T210928
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_189354.pygmo_c.local.20211209T210928/scores/H2OAutoML.benchmark_openml_t_189354.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_189354.pygmo_c.local.20211209T210928/scores/results.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/results.csv`.
+Summing up scores for current run:
+                 id     task fold framework constraint   result metric  duration       seed
+openml.org/t/189354 airlines    0 H2OAutoML    pygmo_c 0.733178    auc    3622.8 1495594635

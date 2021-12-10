@@ -1,0 +1,206 @@
+/var/spool/slurm/slurmd/job8494811/slurm_script: line 8: activate: No such file or directory
+Running benchmark `H2OAutoML` on `openml/t/359969` framework in `local` mode.
+Loading frameworks definitions from ['/home/juradoi/experiments/automlbenchmark/resources/frameworks.yaml'].
+Loading benchmark constraint definitions from ['/home/juradoi/experiments/automlbenchmark/resources/constraints.yaml'].
+Loading openml task 359969.
+
+-----------------------------------------------------------------------------------
+Starting job local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML.
+Assigning 16 cores (total=16) for new task first-order-theorem-proving.
+Assigning 91030 MB (total=95302 MB) for new first-order-theorem-proving task.
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] CPU Utilization: 16.0%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Memory Usage: 2.3%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Disk Usage: 43.3%
+Running task first-order-theorem-proving on framework H2OAutoML with config:
+TaskConfig({})
+Running cmd `/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py`
+INFO:__main__:
+**** H2O AutoML [v3.34.0.3] ****
+
+INFO:__main__:Starting H2O cluster with 16 cores, 60687M memory.
+Checking whether there is an H2O instance running at http://localhost:13612 ..... not found.
+Attempting to start a local H2O server...
+  Java Version: openjdk version "11.0.12" 2021-07-20; OpenJDK Runtime Environment (build 11.0.12+7-post-Debian-2deb10u1); OpenJDK 64-Bit Server VM (build 11.0.12+7-post-Debian-2deb10u1, mixed mode, sharing)
+  Starting server from /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/backend/bin/h2o.jar
+  Ice root: /tmp/tmpyckt94tb
+  JVM stdout: /tmp/tmpyckt94tb/h2o_unknownUser_started_from_python.out
+  JVM stderr: /tmp/tmpyckt94tb/h2o_unknownUser_started_from_python.err
+  Server is running at http://127.0.0.1:13612
+Connecting to H2O server at http://127.0.0.1:13612 ... successful.
+--------------------------  ------------------------------------------------------------------
+H2O_cluster_uptime:         01 secs
+H2O_cluster_timezone:       Europe/Amsterdam
+H2O_data_parsing_timezone:  UTC
+H2O_cluster_version:        3.34.0.3
+H2O_cluster_version_age:    2 months and 2 days
+H2O_cluster_name:           H2O_from_python_unknownUser_t66ccs
+H2O_cluster_total_nodes:    1
+H2O_cluster_free_memory:    59.27 Gb
+H2O_cluster_total_cores:    16
+H2O_cluster_allowed_cores:  16
+H2O_cluster_status:         locked, healthy
+H2O_connection_url:         http://127.0.0.1:13612
+H2O_connection_proxy:       {"http": null, "https": null}
+H2O_internal_security:      False
+H2O_API_Extensions:         Amazon S3, XGBoost, Algos, AutoML, Core V3, TargetEncoder, Core V4
+Python_version:             3.8.12 final
+--------------------------  ------------------------------------------------------------------
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+INFO:__main__:Running model on task first-order-theorem-proving, fold 0.
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] CPU Utilization: 69.7%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Memory Usage: 44.8%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] CPU Utilization: 73.0%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Memory Usage: 45.1%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] CPU Utilization: 77.4%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Memory Usage: 45.4%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] CPU Utilization: 75.7%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Memory Usage: 46.0%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] CPU Utilization: 78.0%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Memory Usage: 46.8%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] CPU Utilization: 94.2%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Memory Usage: 46.8%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] CPU Utilization: 96.6%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Memory Usage: 46.8%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] CPU Utilization: 96.8%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Memory Usage: 46.8%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] CPU Utilization: 96.1%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Memory Usage: 46.8%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] CPU Utilization: 95.9%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Memory Usage: 46.8%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] CPU Utilization: 95.1%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Memory Usage: 46.8%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] CPU Utilization: 95.9%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Memory Usage: 46.8%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] CPU Utilization: 95.8%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Memory Usage: 46.8%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] CPU Utilization: 96.5%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Memory Usage: 46.8%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] CPU Utilization: 96.8%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Memory Usage: 46.8%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] CPU Utilization: 96.7%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Memory Usage: 46.9%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] CPU Utilization: 96.5%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Memory Usage: 46.9%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] CPU Utilization: 94.8%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Memory Usage: 46.9%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] CPU Utilization: 95.2%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Memory Usage: 46.9%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] CPU Utilization: 95.4%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Memory Usage: 46.9%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] CPU Utilization: 95.6%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Memory Usage: 46.9%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] CPU Utilization: 93.4%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Memory Usage: 46.9%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] CPU Utilization: 94.6%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Memory Usage: 47.1%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] CPU Utilization: 95.5%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Memory Usage: 47.1%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] CPU Utilization: 96.4%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Memory Usage: 47.1%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] CPU Utilization: 92.9%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Memory Usage: 47.1%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] CPU Utilization: 94.3%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Memory Usage: 47.1%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] CPU Utilization: 96.1%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Memory Usage: 47.1%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] CPU Utilization: 83.1%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Memory Usage: 47.2%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Disk Usage: 43.3%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] CPU Utilization: 85.9%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Memory Usage: 47.2%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Disk Usage: 43.3%
+AutoML progress: |███████████████████████████████████████████████████████████████| (done) 100%
+stackedensemble prediction progress: |███████████████████████████████████████████| (done) 100%
+H2O session _sid_93ff closed.
+
+
+
+Predictions preview:
+                        1                     2                     3                     4                     5                     6 predictions truth
+0   0.040681216592085234  0.061424518042902235    0.7502362308141202  0.034415891219572316   0.09003678419603599  0.023205359135284067           3     4
+1       0.69821545791385  0.016594748617936264   0.01748678137545664    0.1178983878893433   0.09062407015529847  0.059180554048115355           1     4
+2    0.15896512238180865     0.216282419706756   0.07790520126726924   0.16460743676164347    0.3238511681958615  0.058388651686661165           5     4
+3    0.04477686182153981  0.020282130155759703  0.024096477447850675    0.2277584605972184   0.18296319069483288    0.5001228792827985           6     4
+4    0.23068482937410242   0.04606088410282705   0.05835717930697994   0.33726183433192813   0.26400361769414477   0.06363165519001762           4     4
+5    0.37380440416909166   0.29082478475532947   0.14835442104648933    0.1322550963693369   0.03592689257841455  0.018834401081338232           1     4
+6     0.6195106264477779   0.01963405246227746  0.018847526327554383    0.2996318171787488  0.021054834666700512  0.021321142916940906           1     4
+7     0.5011477788288061   0.09858910374925897   0.03810563733603746  0.053927627155738886   0.08445357667503291   0.22377627625512558           1     4
+8    0.32927059187927715    0.2997331448251407    0.2451950035406815   0.04705881082081056   0.05636483079396091  0.022377618140129313           1     4
+9    0.46115480652647467   0.06581508754821805  0.055045099818393166   0.22656920352740526   0.14095019276363716   0.05046560981587154           1     4
+10    0.5227265820045728  0.027274811961901107   0.03547664815654449   0.24374259323594932   0.12047115772521289  0.050308206915819505           1     4
+11   0.10933643960705683  0.050143678377901395    0.6395606709916375   0.09706971035938809  0.046435341061968095   0.05745415960204804           3     4
+12   0.03390390144033126  0.014176189958684643   0.01652683430599271    0.3678560552310336   0.42588802498830813   0.14164899407564963           5     4
+13   0.08253227202488965   0.02613109145999861  0.033113656182879835    0.2505673970449756   0.46255530445009596   0.14510027883716023           5     4
+14   0.04801774648044102   0.01789164571395638  0.019844773741922284    0.5626868311206817   0.05054891139704258   0.30101009154595604           4     4
+15    0.2579891549281898   0.12925050971638305   0.26566578208343417   0.28240727288320505   0.03294980322143975  0.031737477167348156           4     4
+16    0.7300019548782305   0.02492827346860064  0.030458049431584956   0.17731406559559115    0.0235455077084273  0.013752148917565482           1     4
+17   0.07646540422734685  0.014670219176384757   0.01933099258557716      0.31341328260023   0.49258498807439616   0.08353511333606518           5     4
+18   0.04766975692527228    0.8909581184343891  0.009934298984226788  0.034619592308376884  0.010739040721937439   0.00607919262579773           2     4
+19   0.09904352299543417  0.053198237587637434   0.08171462463929295    0.1889505849811048   0.14431612431900293    0.4327769054775276           6     4
+
+Predictions saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359969.pygmo_c.local.20211210T012816/predictions/first-order-theorem-proving/0/predictions.csv`.
+Loading metadata from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359969.pygmo_c.local.20211210T012816/predictions/first-order-theorem-proving/0/metadata.json`.
+Loading predictions from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359969.pygmo_c.local.20211210T012816/predictions/first-order-theorem-proving/0/predictions.csv`.
+Metric scores: { 'acc': 0.6111111111111112,
+  'app_version': 'dev [master, beef024]',
+  'balacc': 0.4744433704919195,
+  'constraint': 'pygmo_c',
+  'duration': nan,
+  'fold': 0,
+  'framework': 'H2OAutoML',
+  'id': 'openml.org/t/359969',
+  'info': None,
+  'logloss': 1.0942619898009167,
+  'metric': 'neg_logloss',
+  'mode': 'local',
+  'models_count': 96,
+  'params': '',
+  'predict_duration': 0.5088768005371094,
+  'result': -1.0942619898009167,
+  'seed': 1002197803,
+  'task': 'first-order-theorem-proving',
+  'training_duration': 3601.986173391342,
+  'type': 'multiclass',
+  'utc': '2021-12-10T02:28:29',
+  'version': '3.34.0.3'}
+Job `local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML` executed in 3612.479 seconds.
+All jobs executed in 3613.379 seconds.
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] CPU Utilization: 61.1%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Memory Usage: 2.3%
+[MONITORING] [local.openml_t_359969.pygmo_c.first-order-theorem-proving.0.H2OAutoML] Disk Usage: 43.3%
+Processing results for h2oautoml.openml_t_359969.pygmo_c.local.20211210T012816
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359969.pygmo_c.local.20211210T012816/scores/H2OAutoML.benchmark_openml_t_359969.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359969.pygmo_c.local.20211210T012816/scores/results.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/results.csv`.
+Summing up scores for current run:
+                 id                        task fold framework constraint   result      metric  duration       seed
+openml.org/t/359969 first-order-theorem-proving    0 H2OAutoML    pygmo_c -1.09426 neg_logloss    3612.5 1002197803

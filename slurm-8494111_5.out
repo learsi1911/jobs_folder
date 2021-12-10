@@ -1,0 +1,206 @@
+/var/spool/slurm/slurmd/job8494111/slurm_script: line 8: activate: No such file or directory
+Running benchmark `H2OAutoML` on `openml/t/359963` framework in `local` mode.
+Loading frameworks definitions from ['/home/juradoi/experiments/automlbenchmark/resources/frameworks.yaml'].
+Loading benchmark constraint definitions from ['/home/juradoi/experiments/automlbenchmark/resources/constraints.yaml'].
+Loading openml task 359963.
+
+---------------------------------------------------------------
+Starting job local.openml_t_359963.pygmo_c.segment.0.H2OAutoML.
+Assigning 16 cores (total=16) for new task segment.
+Assigning 91166 MB (total=95302 MB) for new segment task.
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] CPU Utilization: 18.0%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Memory Usage: 2.2%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Disk Usage: 43.2%
+Running task segment on framework H2OAutoML with config:
+TaskConfig({})
+Running cmd `/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py`
+INFO:__main__:
+**** H2O AutoML [v3.34.0.3] ****
+
+INFO:__main__:Starting H2O cluster with 16 cores, 60777M memory.
+Checking whether there is an H2O instance running at http://localhost:31291 ..... not found.
+Attempting to start a local H2O server...
+  Java Version: openjdk version "11.0.12" 2021-07-20; OpenJDK Runtime Environment (build 11.0.12+7-post-Debian-2deb10u1); OpenJDK 64-Bit Server VM (build 11.0.12+7-post-Debian-2deb10u1, mixed mode, sharing)
+  Starting server from /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/backend/bin/h2o.jar
+  Ice root: /tmp/tmpvh4y9iuc
+  JVM stdout: /tmp/tmpvh4y9iuc/h2o_unknownUser_started_from_python.out
+  JVM stderr: /tmp/tmpvh4y9iuc/h2o_unknownUser_started_from_python.err
+  Server is running at http://127.0.0.1:31291
+Connecting to H2O server at http://127.0.0.1:31291 ... successful.
+--------------------------  ------------------------------------------------------------------
+H2O_cluster_uptime:         01 secs
+H2O_cluster_timezone:       Europe/Amsterdam
+H2O_data_parsing_timezone:  UTC
+H2O_cluster_version:        3.34.0.3
+H2O_cluster_version_age:    2 months and 2 days
+H2O_cluster_name:           H2O_from_python_unknownUser_igqvec
+H2O_cluster_total_nodes:    1
+H2O_cluster_free_memory:    59.36 Gb
+H2O_cluster_total_cores:    16
+H2O_cluster_allowed_cores:  16
+H2O_cluster_status:         locked, healthy
+H2O_connection_url:         http://127.0.0.1:31291
+H2O_connection_proxy:       {"http": null, "https": null}
+H2O_internal_security:      False
+H2O_API_Extensions:         Amazon S3, XGBoost, Algos, AutoML, Core V3, TargetEncoder, Core V4
+Python_version:             3.8.12 final
+--------------------------  ------------------------------------------------------------------
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+INFO:__main__:Running model on task segment, fold 0.
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] CPU Utilization: 71.4%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Memory Usage: 40.8%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] CPU Utilization: 72.9%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Memory Usage: 41.6%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] CPU Utilization: 89.5%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Memory Usage: 48.6%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] CPU Utilization: 92.0%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Memory Usage: 48.7%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] CPU Utilization: 91.7%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Memory Usage: 48.8%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] CPU Utilization: 91.2%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Memory Usage: 49.6%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] CPU Utilization: 91.8%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Memory Usage: 49.7%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] CPU Utilization: 91.1%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Memory Usage: 51.2%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] CPU Utilization: 90.8%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Memory Usage: 51.2%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] CPU Utilization: 95.3%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Memory Usage: 51.2%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] CPU Utilization: 98.0%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Memory Usage: 51.6%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] CPU Utilization: 97.6%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Memory Usage: 51.6%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] CPU Utilization: 96.9%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Memory Usage: 51.6%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] CPU Utilization: 97.9%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Memory Usage: 51.6%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] CPU Utilization: 97.4%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Memory Usage: 51.6%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] CPU Utilization: 97.0%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Memory Usage: 51.7%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] CPU Utilization: 97.3%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Memory Usage: 51.7%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] CPU Utilization: 98.1%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Memory Usage: 51.7%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] CPU Utilization: 97.3%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Memory Usage: 51.7%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] CPU Utilization: 98.2%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Memory Usage: 51.7%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] CPU Utilization: 97.5%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Memory Usage: 51.8%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] CPU Utilization: 98.3%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Memory Usage: 51.8%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] CPU Utilization: 97.2%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Memory Usage: 51.8%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] CPU Utilization: 90.3%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Memory Usage: 51.8%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] CPU Utilization: 98.0%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Memory Usage: 51.8%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] CPU Utilization: 96.6%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Memory Usage: 52.1%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] CPU Utilization: 97.7%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Memory Usage: 52.1%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] CPU Utilization: 96.0%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Memory Usage: 52.1%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] CPU Utilization: 93.1%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Memory Usage: 52.1%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] CPU Utilization: 81.0%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Memory Usage: 52.4%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Disk Usage: 43.2%
+AutoML progress: |███████████████████████████████████████████████████████████████| (done) 100%
+gbm prediction progress: |███████████████████████████████████████████████████████| (done) 100%
+H2O session _sid_87af closed.
+
+
+
+Predictions preview:
+                 brickface                 cement                foliage                  grass                 path                    sky                 window predictions truth
+0    5.016745642937736E-4     0.7380604811497927   9.304500123492863E-4    5.01216041584342E-4  0.25875021814305904   5.002910908518603E-4   7.556689980689948E-4      cement  path
+1   3.3990688098825257E-4     0.8318390309313355    3.91738601913989E-4   3.564371343086951E-4  0.16620336025011062  3.4642299966176394E-4   5.231032016812747E-4      cement  path
+2    1.092208845810783E-4   0.011874424886424264   8.983472388807601E-5    7.79353226439834E-5   0.9876780178322391   8.255249262973963E-5   8.801385759375243E-5        path  path
+3   2.7087854247287043E-5  4.3553256156985196E-4   8.487418741161485E-5   3.230681689321584E-5   0.9993489538146705   2.725518001662839E-5  4.3989585190767875E-5        path  path
+4   1.3006376195129444E-4    0.01953243462655668  2.5973663545195705E-4  1.3011287398127439E-4   0.9796637288128648  1.3012980109354232E-4  1.5379348810048293E-4        path  path
+5   1.0622460355088355E-4   0.035946643554690225   9.101732180335884E-5   9.529665542884084E-5    0.963529320733193   9.677271202899546E-5   1.347244193047399E-4        path  path
+6    0.001874083264483409      0.817396779369945   8.951686319413061E-4   7.690382332017692E-4  0.17574562860855006   6.475251667457611E-4   0.002671776725132711      cement  path
+7    5.567852352465654E-4    0.16977858287780645   3.824672492685079E-4  3.4024078545682595E-4   0.8281996230281935  3.4023396893324983E-4   4.020668550948454E-4        path  path
+8   1.3428087296371653E-4  0.0025706473801385484   7.265638254152504E-5    7.05204687995953E-5   0.9970109401068672   7.061114912158244E-5    7.03436395680964E-5        path  path
+9    2.505812977646144E-5   4.747939666208324E-4   3.256987579202971E-5  2.4999716990832566E-5   0.9993912146979264  2.6105969297257857E-5  2.5257643596351423E-5        path  path
+10  4.7370337043088394E-5    8.91890962673285E-4   8.211107592381164E-5   7.247501664634382E-5   0.9971790198188923   4.802735723407835E-5  0.0016791054315871898        path  path
+11  1.4317382583328288E-4    0.03542488508680199  3.6980868467636525E-4    1.71340600787507E-4   0.9635127029542168  1.4424140713829463E-4  2.3384744054567072E-4        path  path
+12  0.0011515839080056527     0.5484437718969914   6.599996120714473E-4   6.700568494293264E-4  0.44768718562560916   6.414281028536798E-4   7.459740050393265E-4      cement  path
+13   2.583281523110456E-4    0.12522280772984407   3.056697748355191E-4   2.585167025922187E-4   0.8734287690432627  2.5825950564821947E-4  2.6764909150638885E-4        path  path
+14  1.6281860156978185E-4   0.006317615489224054  1.8986558321379543E-4  1.2038005478100141E-4   0.9929530707336465  1.2035604802417929E-4  1.3589348954059125E-4        path  path
+15  2.5591597901596043E-4    0.01090930145821876   1.662351360513183E-4   1.651259443914963E-4   0.9881510433459224   1.655541515747888E-4  1.8682398482525327E-4        path  path
+16   2.743078416816367E-4     0.8511357175237987  2.7105002208938344E-4  2.6594074387353633E-4  0.14734411414320275   2.660448300266348E-4  4.4282489532764045E-4      cement  path
+17  2.1776505345767446E-4     0.0183902748807907   1.884760112042085E-4   1.562302537728818E-4   0.9807142512698473  1.5594732853298763E-4  1.7705520239422512E-4        path  path
+18  0.0011925706972990076    0.06566265943972957   3.859923922129433E-4  3.4116918591332683E-4   0.9316774696332702   2.887238172435493E-4  4.5141483433154165E-4        path  path
+19  3.8271728283002454E-5   0.002482675470149155  3.9396442925118925E-5   3.826547438858523E-5   0.9973181308345948   3.982177340431873E-5   4.343827625494887E-5        path  path
+
+Predictions saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359963.pygmo_c.local.20211209T223929/predictions/segment/0/predictions.csv`.
+Loading metadata from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359963.pygmo_c.local.20211209T223929/predictions/segment/0/metadata.json`.
+Loading predictions from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359963.pygmo_c.local.20211209T223929/predictions/segment/0/predictions.csv`.
+Metric scores: { 'acc': 0.935064935064935,
+  'app_version': 'dev [master, beef024]',
+  'balacc': 0.9350649350649352,
+  'constraint': 'pygmo_c',
+  'duration': nan,
+  'fold': 0,
+  'framework': 'H2OAutoML',
+  'id': 'openml.org/t/359963',
+  'info': None,
+  'logloss': 0.15038826690103776,
+  'metric': 'neg_logloss',
+  'mode': 'local',
+  'models_count': 401,
+  'params': '',
+  'predict_duration': 0.29143548011779785,
+  'result': -0.15038826690103776,
+  'seed': 1469508796,
+  'task': 'segment',
+  'training_duration': 3610.9569132328033,
+  'type': 'multiclass',
+  'utc': '2021-12-09T23:39:49',
+  'version': '3.34.0.3'}
+Job `local.openml_t_359963.pygmo_c.segment.0.H2OAutoML` executed in 3620.127 seconds.
+All jobs executed in 3620.134 seconds.
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] CPU Utilization: 72.2%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Memory Usage: 2.2%
+[MONITORING] [local.openml_t_359963.pygmo_c.segment.0.H2OAutoML] Disk Usage: 43.2%
+Processing results for h2oautoml.openml_t_359963.pygmo_c.local.20211209T223929
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359963.pygmo_c.local.20211209T223929/scores/H2OAutoML.benchmark_openml_t_359963.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359963.pygmo_c.local.20211209T223929/scores/results.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/results.csv`.
+Summing up scores for current run:
+                 id    task fold framework constraint    result      metric  duration       seed
+openml.org/t/359963 segment    0 H2OAutoML    pygmo_c -0.150388 neg_logloss    3620.1 1469508796

@@ -1,0 +1,207 @@
+/var/spool/slurm/slurmd/job8494799/slurm_script: line 8: activate: No such file or directory
+Running benchmark `H2OAutoML` on `openml/t/359966` framework in `local` mode.
+Loading frameworks definitions from ['/home/juradoi/experiments/automlbenchmark/resources/frameworks.yaml'].
+Loading benchmark constraint definitions from ['/home/juradoi/experiments/automlbenchmark/resources/constraints.yaml'].
+Loading openml task 359966.
+
+-------------------------------------------------------------------------------
+Starting job local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML.
+Assigning 16 cores (total=16) for new task Internet-Advertisements.
+Assigning 91328 MB (total=95302 MB) for new Internet-Advertisements task.
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] CPU Utilization: 13.4%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Memory Usage: 2.0%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Disk Usage: 43.2%
+Running task Internet-Advertisements on framework H2OAutoML with config:
+TaskConfig({})
+Running cmd `/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py`
+INFO:__main__:
+**** H2O AutoML [v3.34.0.3] ****
+
+INFO:__main__:Starting H2O cluster with 16 cores, 60885M memory.
+Checking whether there is an H2O instance running at http://localhost:29015 ..... not found.
+Attempting to start a local H2O server...
+  Java Version: openjdk version "11.0.12" 2021-07-20; OpenJDK Runtime Environment (build 11.0.12+7-post-Debian-2deb10u1); OpenJDK 64-Bit Server VM (build 11.0.12+7-post-Debian-2deb10u1, mixed mode, sharing)
+  Starting server from /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/backend/bin/h2o.jar
+  Ice root: /tmp/tmpqoczbg6i
+  JVM stdout: /tmp/tmpqoczbg6i/h2o_unknownUser_started_from_python.out
+  JVM stderr: /tmp/tmpqoczbg6i/h2o_unknownUser_started_from_python.err
+  Server is running at http://127.0.0.1:29015
+Connecting to H2O server at http://127.0.0.1:29015 ... successful.
+--------------------------  ------------------------------------------------------------------
+H2O_cluster_uptime:         01 secs
+H2O_cluster_timezone:       Europe/Amsterdam
+H2O_data_parsing_timezone:  UTC
+H2O_cluster_version:        3.34.0.3
+H2O_cluster_version_age:    2 months and 2 days
+H2O_cluster_name:           H2O_from_python_unknownUser_la30t4
+H2O_cluster_total_nodes:    1
+H2O_cluster_free_memory:    59.47 Gb
+H2O_cluster_total_cores:    16
+H2O_cluster_allowed_cores:  16
+H2O_cluster_status:         locked, healthy
+H2O_connection_url:         http://127.0.0.1:29015
+H2O_connection_proxy:       {"http": null, "https": null}
+H2O_internal_security:      False
+H2O_API_Extensions:         Amazon S3, XGBoost, Algos, AutoML, Core V3, TargetEncoder, Core V4
+Python_version:             3.8.12 final
+--------------------------  ------------------------------------------------------------------
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+INFO:__main__:Running model on task Internet-Advertisements, fold 0.
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] CPU Utilization: 64.8%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Memory Usage: 60.3%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] CPU Utilization: 71.7%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Memory Usage: 61.2%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] CPU Utilization: 76.4%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Memory Usage: 62.0%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] CPU Utilization: 70.8%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Memory Usage: 62.0%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] CPU Utilization: 76.6%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Memory Usage: 62.7%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] CPU Utilization: 81.8%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Memory Usage: 63.2%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] CPU Utilization: 85.2%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Memory Usage: 63.2%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] CPU Utilization: 84.8%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Memory Usage: 63.2%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] CPU Utilization: 81.8%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Memory Usage: 63.5%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] CPU Utilization: 82.7%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Memory Usage: 63.7%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] CPU Utilization: 83.9%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Memory Usage: 63.8%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] CPU Utilization: 84.2%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Memory Usage: 63.8%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] CPU Utilization: 83.6%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Memory Usage: 64.1%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] CPU Utilization: 84.7%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Memory Usage: 64.1%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] CPU Utilization: 82.6%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Memory Usage: 63.9%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] CPU Utilization: 82.0%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Memory Usage: 64.4%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] CPU Utilization: 82.9%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Memory Usage: 64.4%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] CPU Utilization: 83.1%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Memory Usage: 64.9%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] CPU Utilization: 88.2%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Memory Usage: 64.6%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] CPU Utilization: 83.7%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Memory Usage: 64.7%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] CPU Utilization: 82.6%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Memory Usage: 65.2%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] CPU Utilization: 86.8%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Memory Usage: 65.2%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] CPU Utilization: 86.8%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Memory Usage: 65.3%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] CPU Utilization: 89.6%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Memory Usage: 65.3%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] CPU Utilization: 84.1%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Memory Usage: 65.3%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] CPU Utilization: 87.9%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Memory Usage: 66.6%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] CPU Utilization: 89.7%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Memory Usage: 67.6%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] CPU Utilization: 88.7%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Memory Usage: 67.6%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] CPU Utilization: 87.5%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Memory Usage: 67.6%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] CPU Utilization: 84.3%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Memory Usage: 67.7%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Disk Usage: 43.2%
+AutoML progress: |███████████████████████████████████████████████████████████████| (done) 100%
+stackedensemble prediction progress: |███████████████████████████████████████████| (done) 100%
+H2O session _sid_97bf closed.
+
+
+
+Predictions preview:
+                        ad                   noad predictions truth
+0      0.9994583470550281   5.416529449718446E-4          ad    ad
+1      0.9488635572931015     0.0511364427068986          ad    ad
+2      0.9931704127569543   0.006829587243045762          ad    ad
+3      0.9079467454439079    0.09205325455609217          ad    ad
+4     0.12311004601821263     0.8768899539817874        noad    ad
+5     0.31025256291376235     0.6897474370862376        noad    ad
+6   0.0032375525331740374      0.996762447466826        noad    ad
+7      0.9935290979306461   0.006470902069353881          ad    ad
+8      0.9986022731051275   0.001397726894872552          ad    ad
+9      0.9961080199021517  0.0038919800978483143          ad    ad
+10     0.9988004220511176  0.0011995779488823475          ad    ad
+11     0.9974565182579883   0.002543481742011736          ad    ad
+12     0.9993597671264666   6.402328735334347E-4          ad    ad
+13     0.9994610321295117   5.389678704883826E-4          ad    ad
+14     0.9982732168821774  0.0017267831178225752          ad    ad
+15     0.8137536093450783    0.18624639065492166          ad    ad
+16     0.8832157543857431    0.11678424561425699          ad    ad
+17    0.11994761752994632     0.8800523824700537        noad    ad
+18     0.9974373580027024  0.0025626419972976373          ad    ad
+19     0.9980348115746525  0.0019651884253475936          ad    ad
+
+Predictions saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359966.pygmo_c.local.20211210T012517/predictions/Internet-Advertisements/0/predictions.csv`.
+Loading metadata from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359966.pygmo_c.local.20211210T012517/predictions/Internet-Advertisements/0/metadata.json`.
+Loading predictions from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359966.pygmo_c.local.20211210T012517/predictions/Internet-Advertisements/0/predictions.csv`.
+Metric scores: { 'acc': 0.9695121951219512,
+  'app_version': 'dev [master, beef024]',
+  'auc': 0.9791859389454208,
+  'balacc': 0.9094973789700894,
+  'constraint': 'pygmo_c',
+  'duration': nan,
+  'fold': 0,
+  'framework': 'H2OAutoML',
+  'id': 'openml.org/t/359966',
+  'info': None,
+  'logloss': 0.10006198323228974,
+  'metric': 'auc',
+  'mode': 'local',
+  'models_count': 126,
+  'params': '',
+  'predict_duration': 0.537773609161377,
+  'result': 0.9791859389454208,
+  'seed': 2129783821,
+  'task': 'Internet-Advertisements',
+  'training_duration': 3603.367623090744,
+  'type': 'binary',
+  'utc': '2021-12-10T02:25:47',
+  'version': '3.34.0.3'}
+Job `local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML` executed in 3627.306 seconds.
+All jobs executed in 3629.267 seconds.
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] CPU Utilization: 63.2%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Memory Usage: 2.1%
+[MONITORING] [local.openml_t_359966.pygmo_c.Internet-Advertisements.0.H2OAutoML] Disk Usage: 43.2%
+Processing results for h2oautoml.openml_t_359966.pygmo_c.local.20211210T012517
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359966.pygmo_c.local.20211210T012517/scores/H2OAutoML.benchmark_openml_t_359966.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359966.pygmo_c.local.20211210T012517/scores/results.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/results.csv`.
+Summing up scores for current run:
+                 id                    task fold framework constraint   result metric  duration       seed
+openml.org/t/359966 Internet-Advertisements    0 H2OAutoML    pygmo_c 0.979186    auc    3627.3 2129783821

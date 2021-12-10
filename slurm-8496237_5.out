@@ -1,0 +1,208 @@
+/var/spool/slurm/slurmd/job8496237/slurm_script: line 8: activate: No such file or directory
+Running benchmark `H2OAutoML` on `openml/t/359979` framework in `local` mode.
+Loading frameworks definitions from ['/home/juradoi/experiments/automlbenchmark/resources/frameworks.yaml'].
+Loading benchmark constraint definitions from ['/home/juradoi/experiments/automlbenchmark/resources/constraints.yaml'].
+Loading openml task 359979.
+
+------------------------------------------------------------------------------
+Starting job local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML.
+Assigning 16 cores (total=16) for new task Amazon_employee_access.
+Assigning 91148 MB (total=95302 MB) for new Amazon_employee_access task.
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] CPU Utilization: 18.5%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Memory Usage: 2.2%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Disk Usage: 43.2%
+Running task Amazon_employee_access on framework H2OAutoML with config:
+TaskConfig({})
+Running cmd `/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py`
+INFO:__main__:
+**** H2O AutoML [v3.34.0.3] ****
+
+INFO:__main__:Starting H2O cluster with 16 cores, 60765M memory.
+Checking whether there is an H2O instance running at http://localhost:9211 ..... not found.
+Attempting to start a local H2O server...
+  Java Version: openjdk version "11.0.12" 2021-07-20; OpenJDK Runtime Environment (build 11.0.12+7-post-Debian-2deb10u1); OpenJDK 64-Bit Server VM (build 11.0.12+7-post-Debian-2deb10u1, mixed mode, sharing)
+  Starting server from /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/backend/bin/h2o.jar
+  Ice root: /tmp/tmp_jpc9s5y
+  JVM stdout: /tmp/tmp_jpc9s5y/h2o_unknownUser_started_from_python.out
+  JVM stderr: /tmp/tmp_jpc9s5y/h2o_unknownUser_started_from_python.err
+  Server is running at http://127.0.0.1:9211
+Connecting to H2O server at http://127.0.0.1:9211 ... successful.
+--------------------------  ------------------------------------------------------------------
+H2O_cluster_uptime:         01 secs
+H2O_cluster_timezone:       Europe/Amsterdam
+H2O_data_parsing_timezone:  UTC
+H2O_cluster_version:        3.34.0.3
+H2O_cluster_version_age:    2 months and 2 days
+H2O_cluster_name:           H2O_from_python_unknownUser_2qk6fv
+H2O_cluster_total_nodes:    1
+H2O_cluster_free_memory:    59.34 Gb
+H2O_cluster_total_cores:    16
+H2O_cluster_allowed_cores:  16
+H2O_cluster_status:         locked, healthy
+H2O_connection_url:         http://127.0.0.1:9211
+H2O_connection_proxy:       {"http": null, "https": null}
+H2O_internal_security:      False
+H2O_API_Extensions:         Amazon S3, XGBoost, Algos, AutoML, Core V3, TargetEncoder, Core V4
+Python_version:             3.8.12 final
+--------------------------  ------------------------------------------------------------------
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+INFO:__main__:Running model on task Amazon_employee_access, fold 0.
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] CPU Utilization: 37.6%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Memory Usage: 45.0%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] CPU Utilization: 53.8%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Memory Usage: 45.6%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] CPU Utilization: 58.5%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Memory Usage: 45.6%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] CPU Utilization: 58.1%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Memory Usage: 45.7%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] CPU Utilization: 56.0%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Memory Usage: 45.8%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] CPU Utilization: 56.9%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Memory Usage: 45.9%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] CPU Utilization: 55.4%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Memory Usage: 46.0%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] CPU Utilization: 55.5%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Memory Usage: 46.1%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] CPU Utilization: 55.4%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Memory Usage: 46.2%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] CPU Utilization: 59.0%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Memory Usage: 46.2%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] CPU Utilization: 55.6%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Memory Usage: 46.4%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] CPU Utilization: 58.4%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Memory Usage: 46.4%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] CPU Utilization: 56.0%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Memory Usage: 46.6%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] CPU Utilization: 54.4%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Memory Usage: 46.6%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] CPU Utilization: 55.6%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Memory Usage: 46.7%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] CPU Utilization: 34.4%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Memory Usage: 46.9%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] CPU Utilization: 36.7%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Memory Usage: 46.9%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] CPU Utilization: 45.0%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Memory Usage: 47.6%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] CPU Utilization: 86.8%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Memory Usage: 51.9%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] CPU Utilization: 86.5%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Memory Usage: 53.0%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] CPU Utilization: 83.9%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Memory Usage: 53.6%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] CPU Utilization: 90.3%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Memory Usage: 53.8%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] CPU Utilization: 88.2%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Memory Usage: 59.6%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] CPU Utilization: 86.7%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Memory Usage: 62.3%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] CPU Utilization: 88.1%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Memory Usage: 63.3%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] CPU Utilization: 87.6%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Memory Usage: 64.0%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] CPU Utilization: 83.3%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Memory Usage: 64.0%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] CPU Utilization: 85.5%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Memory Usage: 64.0%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] CPU Utilization: 88.5%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Memory Usage: 64.1%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] CPU Utilization: 69.7%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Memory Usage: 64.2%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Disk Usage: 43.2%
+AutoML progress: |███████████████████████████████████████████████████████████████| (done) 100%
+stackedensemble prediction progress: |███████████████████████████████████████████| (done) 100%
+H2O session _sid_8034 closed.
+
+
+
+Predictions preview:
+                        0                   1 predictions truth
+0    0.09562412930487763  0.9043758706951224           1     1
+1   0.012231049580718745  0.9877689504192813           1     1
+2    0.01882127865991734  0.9811787213400827           1     1
+3   0.011798216563696284  0.9882017834363037           1     1
+4   0.012231049580718745  0.9877689504192813           1     1
+5   0.025017751017076373  0.9749822489829236           1     1
+6   0.018151722394459502  0.9818482776055405           1     1
+7   0.014449924763330402  0.9855500752366696           1     1
+8   0.012231049580718745  0.9877689504192813           1     1
+9   0.012231049580718745  0.9877689504192813           1     1
+10  0.020004095880292505  0.9799959041197075           1     1
+11  0.020004095880292505  0.9799959041197075           1     1
+12  0.012231049580718745  0.9877689504192813           1     1
+13  0.019691923854915472  0.9803080761450845           1     1
+14  0.016848369499499194  0.9831516305005008           1     1
+15  0.024452132625826684  0.9755478673741733           1     1
+16  0.012231049580718745  0.9877689504192813           1     1
+17  0.016848369499499194  0.9831516305005008           1     1
+18  0.012231049580718745  0.9877689504192813           1     1
+19   0.02784184399988654  0.9721581560001135           1     1
+
+Predictions saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359979.pygmo_c.local.20211210T063757/predictions/Amazon_employee_access/0/predictions.csv`.
+Loading metadata from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359979.pygmo_c.local.20211210T063757/predictions/Amazon_employee_access/0/metadata.json`.
+Loading predictions from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359979.pygmo_c.local.20211210T063757/predictions/Amazon_employee_access/0/predictions.csv`.
+Metric scores: { 'acc': 0.9478181263350626,
+  'app_version': 'dev [master, beef024]',
+  'auc': 0.8716511431861172,
+  'balacc': 0.6320609562189873,
+  'constraint': 'pygmo_c',
+  'duration': nan,
+  'fold': 0,
+  'framework': 'H2OAutoML',
+  'id': 'openml.org/t/359979',
+  'info': None,
+  'logloss': 0.14896399534158147,
+  'metric': 'auc',
+  'mode': 'local',
+  'models_count': 236,
+  'params': '',
+  'predict_duration': 3.5201408863067627,
+  'result': 0.8716511431861172,
+  'seed': 1444867329,
+  'task': 'Amazon_employee_access',
+  'training_duration': 3604.9891452789307,
+  'type': 'binary',
+  'utc': '2021-12-10T07:38:16',
+  'version': '3.34.0.3'}
+Job `local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML` executed in 3618.545 seconds.
+All jobs executed in 3618.565 seconds.
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] CPU Utilization: 47.8%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Memory Usage: 2.2%
+[MONITORING] [local.openml_t_359979.pygmo_c.Amazon_employee_access.0.H2OAutoML] Disk Usage: 43.2%
+Processing results for h2oautoml.openml_t_359979.pygmo_c.local.20211210T063757
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359979.pygmo_c.local.20211210T063757/scores/H2OAutoML.benchmark_openml_t_359979.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359979.pygmo_c.local.20211210T063757/scores/results.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/results.csv`.
+Summing up scores for current run:
+                 id                   task fold framework constraint   result metric  duration       seed
+openml.org/t/359979 Amazon_employee_access    0 H2OAutoML    pygmo_c 0.871651    auc    3618.5 1444867329

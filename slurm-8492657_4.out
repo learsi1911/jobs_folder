@@ -1,0 +1,346 @@
+/var/spool/slurm/slurmd/job8492663/slurm_script: line 8: activate: No such file or directory
+Running benchmark `H2OAutoML` on `openml/t/2073` framework in `local` mode.
+Loading frameworks definitions from ['/home/juradoi/experiments/automlbenchmark/resources/frameworks.yaml'].
+Loading benchmark constraint definitions from ['/home/juradoi/experiments/automlbenchmark/resources/constraints.yaml'].
+Loading openml task 2073.
+Setting up framework H2OAutoML.
+Running cmd `/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/setup.sh stable`
+setting up H2O version stable
+shared/setup.sh /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML true
+Requirement already satisfied: pip in ./frameworks/H2OAutoML/venv/lib/python3.8/site-packages (21.3.1)
+Requirement already satisfied: wheel in ./frameworks/H2OAutoML/venv/lib/python3.8/site-packages (0.37.0)
+PY=/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore
+WARNING: Ignoring invalid distribution -dna (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+WARNING: Ignoring invalid distribution -dna (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+PIP=/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -m pip
+Requirement already satisfied: numpy==1.21.0 in ./frameworks/H2OAutoML/venv/lib/python3.8/site-packages (from -r /home/juradoi/experiments/automlbenchmark/frameworks/shared/requirements.txt (line 7)) (1.21.0)
+Requirement already satisfied: psutil==5.8.0 in ./frameworks/H2OAutoML/venv/lib/python3.8/site-packages (from -r /home/juradoi/experiments/automlbenchmark/frameworks/shared/requirements.txt (line 9)) (5.8.0)
+Requirement already satisfied: pyarrow==4.0.1 in ./frameworks/H2OAutoML/venv/lib/python3.8/site-packages (from -r /home/juradoi/experiments/automlbenchmark/frameworks/shared/requirements.txt (line 11)) (4.0.1)
+Requirement already satisfied: ruamel.yaml.clib==0.2.2 in ./frameworks/H2OAutoML/venv/lib/python3.8/site-packages (from -r /home/juradoi/experiments/automlbenchmark/frameworks/shared/requirements.txt (line 13)) (0.2.2)
+Requirement already satisfied: ruamel.yaml==0.17.4 in ./frameworks/H2OAutoML/venv/lib/python3.8/site-packages (from -r /home/juradoi/experiments/automlbenchmark/frameworks/shared/requirements.txt (line 15)) (0.17.4)
+WARNING: Ignoring invalid distribution -dna (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+WARNING: Ignoring invalid distribution -dna (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+WARNING: Ignoring invalid distribution -dna (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+
+We trust you have received the usual lecture from the local System
+Administrator. It usually boils down to these three things:
+
+    #1) Respect the privacy of others.
+    #2) Think before you type.
+    #3) With great power comes great responsibility.
+
+sudo: no tty present and no askpass program specified
+
+We trust you have received the usual lecture from the local System
+Administrator. It usually boils down to these three things:
+
+    #1) Respect the privacy of others.
+    #2) Think before you type.
+    #3) With great power comes great responsibility.
+
+sudo: no tty present and no askpass program specified
+Requirement already satisfied: requests>=2.10 in ./frameworks/H2OAutoML/venv/lib/python3.8/site-packages (from -r /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/requirements.txt (line 1)) (2.26.0)
+Requirement already satisfied: tabulate in ./frameworks/H2OAutoML/venv/lib/python3.8/site-packages (from -r /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/requirements.txt (line 2)) (0.8.9)
+Requirement already satisfied: future in ./frameworks/H2OAutoML/venv/lib/python3.8/site-packages (from -r /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/requirements.txt (line 3)) (0.18.2)
+Requirement already satisfied: colorama>=0.3.8 in ./frameworks/H2OAutoML/venv/lib/python3.8/site-packages (from -r /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/requirements.txt (line 4)) (0.4.4)
+Requirement already satisfied: packaging in ./frameworks/H2OAutoML/venv/lib/python3.8/site-packages (from -r /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/requirements.txt (line 5)) (21.3)
+Requirement already satisfied: pandas in ./frameworks/H2OAutoML/venv/lib/python3.8/site-packages (from -r /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/requirements.txt (line 6)) (1.3.4)
+Requirement already satisfied: charset-normalizer~=2.0.0 in ./frameworks/H2OAutoML/venv/lib/python3.8/site-packages (from requests>=2.10->-r /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/requirements.txt (line 1)) (2.0.9)
+Requirement already satisfied: certifi>=2017.4.17 in ./frameworks/H2OAutoML/venv/lib/python3.8/site-packages (from requests>=2.10->-r /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/requirements.txt (line 1)) (2021.10.8)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in ./frameworks/H2OAutoML/venv/lib/python3.8/site-packages (from requests>=2.10->-r /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/requirements.txt (line 1)) (1.26.7)
+Requirement already satisfied: idna<4,>=2.5 in ./frameworks/H2OAutoML/venv/lib/python3.8/site-packages (from requests>=2.10->-r /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/requirements.txt (line 1)) (3.3)
+Requirement already satisfied: pyparsing!=3.0.5,>=2.0.2 in ./frameworks/H2OAutoML/venv/lib/python3.8/site-packages (from packaging->-r /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/requirements.txt (line 5)) (3.0.6)
+Requirement already satisfied: python-dateutil>=2.7.3 in ./frameworks/H2OAutoML/venv/lib/python3.8/site-packages (from pandas->-r /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/requirements.txt (line 6)) (2.8.2)
+Requirement already satisfied: numpy>=1.17.3 in ./frameworks/H2OAutoML/venv/lib/python3.8/site-packages (from pandas->-r /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/requirements.txt (line 6)) (1.21.0)
+Requirement already satisfied: pytz>=2017.3 in ./frameworks/H2OAutoML/venv/lib/python3.8/site-packages (from pandas->-r /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/requirements.txt (line 6)) (2021.3)
+Requirement already satisfied: six>=1.5 in ./frameworks/H2OAutoML/venv/lib/python3.8/site-packages (from python-dateutil>=2.7.3->pandas->-r /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/requirements.txt (line 6)) (1.16.0)
+installing H2O-3 stable
+Collecting h2o
+  Downloading h2o-3.34.0.3.tar.gz (175.8 MB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting requests
+  Downloading requests-2.26.0-py2.py3-none-any.whl (62 kB)
+Collecting tabulate
+  Downloading tabulate-0.8.9-py3-none-any.whl (25 kB)
+Collecting future
+  Downloading future-0.18.2.tar.gz (829 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting charset-normalizer~=2.0.0
+  Downloading charset_normalizer-2.0.9-py3-none-any.whl (39 kB)
+Collecting idna<4,>=2.5
+  Downloading idna-3.3-py3-none-any.whl (61 kB)
+Collecting urllib3<1.27,>=1.21.1
+  Downloading urllib3-1.26.7-py2.py3-none-any.whl (138 kB)
+Collecting certifi>=2017.4.17
+  Downloading certifi-2021.10.8-py2.py3-none-any.whl (149 kB)
+Building wheels for collected packages: h2o, future
+  Building wheel for h2o (setup.py): started
+  Building wheel for h2o (setup.py): finished with status 'done'
+  Created wheel for h2o: filename=h2o-3.34.0.3-py2.py3-none-any.whl size=175832480 sha256=ed531da9075289226242860ce2e15b2b04adf9fe13a6d9fdb6c2d7ad110d2c56
+  Stored in directory: /scratch/pip-ephem-wheel-cache-bxiipf4x/wheels/01/74/09/0809b5c344d8a157cc8e5e56e5c071c7d157ac42bd0619a91e
+  Building wheel for future (setup.py): started
+  Building wheel for future (setup.py): finished with status 'done'
+  Created wheel for future: filename=future-0.18.2-py3-none-any.whl size=491058 sha256=a75aac4595f9187a9ad7b6cd7d0e18636dbc72886d2edd6cf905c2cb1503bdaf
+  Stored in directory: /scratch/pip-ephem-wheel-cache-bxiipf4x/wheels/8e/70/28/3d6ccd6e315f65f245da085482a2e1c7d14b90b30f239e2cf4
+Successfully built h2o future
+Installing collected packages: urllib3, idna, charset-normalizer, certifi, tabulate, requests, future, h2o
+  Attempting uninstall: urllib3
+    Found existing installation: urllib3 1.26.7
+    Uninstalling urllib3-1.26.7:
+      Successfully uninstalled urllib3-1.26.7
+  Attempting uninstall: idna
+    Found existing installation: idna 3.3
+    Uninstalling idna-3.3:
+      Successfully uninstalled idna-3.3
+  Attempting uninstall: charset-normalizer
+    Found existing installation: charset-normalizer 2.0.9
+    Uninstalling charset-normalizer-2.0.9:
+      Successfully uninstalled charset-normalizer-2.0.9
+  Attempting uninstall: certifi
+    Found existing installation: certifi 2021.10.8
+    Uninstalling certifi-2021.10.8:
+      Successfully uninstalled certifi-2021.10.8
+  Attempting uninstall: tabulate
+    Found existing installation: tabulate 0.8.9
+    Uninstalling tabulate-0.8.9:
+      Successfully uninstalled tabulate-0.8.9
+  Attempting uninstall: requests
+    Found existing installation: requests 2.26.0
+    Uninstalling requests-2.26.0:
+      Successfully uninstalled requests-2.26.0
+  Attempting uninstall: future
+    Found existing installation: future 0.18.2
+    Uninstalling future-0.18.2:
+      Successfully uninstalled future-0.18.2
+Successfully installed certifi-2021.10.8 charset-normalizer-2.0.9 future-0.18.2 h2o-3.34.0.3 idna-3.3 requests-2.26.0 tabulate-0.8.9 urllib3-1.26.7
+
+
+
+WARNING: Ignoring invalid distribution -dna (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+WARNING: Ignoring invalid distribution -dna (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+WARNING: Ignoring invalid distribution -dna (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+WARNING: Ignoring invalid distribution -dna (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+WARNING: Ignoring invalid distribution -dna (/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages)
+
+We trust you have received the usual lecture from the local System
+Administrator. It usually boils down to these three things:
+
+    #1) Respect the privacy of others.
+    #2) Think before you type.
+    #3) With great power comes great responsibility.
+
+sudo: no tty present and no askpass program specified
+
+We trust you have received the usual lecture from the local System
+Administrator. It usually boils down to these three things:
+
+    #1) Respect the privacy of others.
+    #2) Think before you type.
+    #3) With great power comes great responsibility.
+
+sudo: no tty present and no askpass program specified
+
+Setup of framework H2OAutoML completed successfully.
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 2.5%
+
+-----------------------------------------------------------
+Starting job local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML.
+Assigning 16 cores (total=16) for new task yeast.
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 2.1%
+Assigning 91289 MB (total=95302 MB) for new yeast task.
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+Running task yeast on framework H2OAutoML with config:
+TaskConfig({})
+Running cmd `/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py`
+INFO:__main__:
+**** H2O AutoML [v3.34.0.3] ****
+
+INFO:__main__:Starting H2O cluster with 16 cores, 60859M memory.
+Checking whether there is an H2O instance running at http://localhost:17820 ..... not found.
+Attempting to start a local H2O server...
+  Java Version: openjdk version "11.0.12" 2021-07-20; OpenJDK Runtime Environment (build 11.0.12+7-post-Debian-2deb10u1); OpenJDK 64-Bit Server VM (build 11.0.12+7-post-Debian-2deb10u1, mixed mode, sharing)
+  Starting server from /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/backend/bin/h2o.jar
+  Ice root: /tmp/tmpiu0j3fi7
+  JVM stdout: /tmp/tmpiu0j3fi7/h2o_unknownUser_started_from_python.out
+  JVM stderr: /tmp/tmpiu0j3fi7/h2o_unknownUser_started_from_python.err
+  Server is running at http://127.0.0.1:17820
+Connecting to H2O server at http://127.0.0.1:17820 ... successful.
+--------------------------  ------------------------------------------------------------------
+H2O_cluster_uptime:         01 secs
+H2O_cluster_timezone:       Europe/Amsterdam
+H2O_data_parsing_timezone:  UTC
+H2O_cluster_version:        3.34.0.3
+H2O_cluster_version_age:    2 months and 2 days
+H2O_cluster_name:           H2O_from_python_unknownUser_5glfuz
+H2O_cluster_total_nodes:    1
+H2O_cluster_free_memory:    59.44 Gb
+H2O_cluster_total_cores:    16
+H2O_cluster_allowed_cores:  16
+H2O_cluster_status:         locked, healthy
+H2O_connection_url:         http://127.0.0.1:17820
+H2O_connection_proxy:       {"http": null, "https": null}
+H2O_internal_security:      False
+H2O_API_Extensions:         Amazon S3, XGBoost, Algos, AutoML, Core V3, TargetEncoder, Core V4
+Python_version:             3.8.12 final
+--------------------------  ------------------------------------------------------------------
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+INFO:__main__:Running model on task yeast, fold 0.
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 46.6%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 44.8%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 98.5%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 44.8%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 98.1%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 44.9%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 98.6%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 44.9%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 98.5%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 44.9%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 98.5%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 44.9%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 98.6%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 44.9%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 98.8%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 44.9%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 98.5%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 44.9%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 98.9%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 44.9%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 98.0%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 45.0%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 98.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 45.0%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 98.1%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 45.0%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 98.1%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 45.0%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 98.0%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 45.0%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 98.4%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 45.0%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 98.7%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 45.0%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 97.9%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 45.0%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 98.5%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 45.1%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 97.9%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 45.1%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 64.3%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 45.1%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 97.7%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 45.1%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 98.4%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 45.1%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 98.0%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 45.1%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 98.4%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 45.1%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 97.6%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 45.1%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 97.6%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 45.1%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 98.1%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 45.1%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 54.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 45.3%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 59.5%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 45.5%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+AutoML progress: |███████████████████████████████████████████████████████████████| (done) 100%
+stackedensemble prediction progress: |███████████████████████████████████████████| (done) 100%
+H2O session _sid_8d78 closed.
+
+
+
+Predictions preview:
+                     CYT                    ERL                    EXC                    ME1                    ME2                    ME3                   MIT                  NUC                    POX                   VAC predictions truth
+0     0.347674897764375   6.503375072992504E-4   6.720979449926624E-4   3.885148653013701E-4   0.018643151846042417    0.11607361154181359   0.04933793606818267   0.4360661516738183   0.008977818145011253  0.021515482643163556         NUC   NUC
+1    0.3735013718206914   6.432407018969194E-5  2.0731170639508477E-4   4.965739261775477E-5  0.0017672892248174166   6.869704895442134E-4   0.09649790841530337   0.5185304706549612   0.004357418277664895  0.004337277947815119         NUC   NUC
+2    0.3754948184981142    9.90797252172406E-5    3.31322199207745E-4   9.237927380079636E-5   0.001614197838160345   0.004268038980549704   0.04390656208519252   0.5634989519852212   0.004621999808973807  0.006072649605562575         NUC   NUC
+3    0.2975004753551112   5.932855299639005E-5   0.005712878486022775   5.021421211322768E-4  0.0034432762042639876   0.003107359527230182   0.04554824270261463   0.6168855933683627    0.01068174496309535  0.016558958719170555         NUC   NUC
+4    0.3192578056154907   7.504120617907468E-5   0.017960949339540365  0.0039533016348551634    0.04459705873237407    0.07190833514394379  0.028180769315505467  0.48267073326235566  0.0031290136910651026  0.028266992058690446         NUC   NUC
+5     0.249152566201357  1.7565605568014558E-4   8.059336594416591E-5  1.3071722711319918E-4    0.00127733168310711   0.031070625515192053  0.029412182691528503   0.6727880168751584   0.002145932954246749  0.013766377430672865         NUC   NUC
+6    0.6758670660237368  0.0012692228966080185   0.001791061402449684  1.7564967659491348E-4   0.003523164149829143   0.012423058711865184   0.07067995005263701  0.19813084646067836   0.022285517217981398  0.013854463407619503         CYT   NUC
+7   0.13684353114923392  0.0020962402408402914   8.173274163446071E-4   6.706116344394682E-4   0.023836609173964105     0.6070667503551684   0.06890042936033318   0.1420837773721872   0.004578309736438114  0.013106413561050573         ME3   NUC
+8    0.6084786226531537  1.9753782515954452E-4  3.8470148473393636E-4   2.765218511270327E-4   0.003484684589910545   0.021470633852255682  0.031411035579462995  0.30757266001411643   0.003965813271906724   0.02275778887817345         CYT   NUC
+9   0.25992853759830487   0.003026322961199416   0.019785732680472404  0.0010320591371936005   0.003203699756363859    0.03956684417884364   0.19094092677322044   0.4233016050906741    0.01940768776113275   0.03980658406259487         NUC   NUC
+10   0.3093214582083759   4.479696247308635E-4   9.427679659553923E-4  1.0245144649871636E-4  0.0018446334546761618   0.008201224360837013     0.103048993549341    0.558703521009347   0.006542647537724102   0.01084433284251393         NUC   NUC
+11   0.5165181239843621  1.2929876408762436E-4   6.808506376796168E-4    9.71233843690107E-5   9.545546465222457E-4   0.001611899917124015   0.06759808999572368   0.3924215277813197   0.005658494568512185  0.014330036320299801         CYT   NUC
+12   0.1850936461909978   9.664459033410705E-4   3.575154269129154E-4   6.745632432653741E-4    0.03763557488772321     0.2060310220025128  0.013797087784017439   0.5221209600940545   0.008241797166952268  0.025081387300222583         NUC   NUC
+13   0.4042669745213168   1.516679985509741E-4  3.6659633625582425E-4   3.809863395154628E-4   0.014633252567712992    0.02502925751075278  8.884676124676835E-4   0.5292444222493605  0.0038878134739855612   0.02115056139008139         NUC   NUC
+14   0.1814765574156133   4.504843798575755E-5   2.710671321468869E-4  2.5990540461592903E-4  0.0013460553087606098   0.008827352709108534   0.02783427000311874   0.7646764950720011  0.0036993233775787196  0.011563925139070246         NUC   NUC
+15   0.1904538014026954  3.2135999655757736E-4  3.4372124210831437E-4  1.2161661837873824E-4   0.001436262116778554   0.010304437050354867  0.019883364618668097   0.7559856167002331    0.00492404124575305   0.01622577900847206         NUC   NUC
+16  0.30065937943554744  0.0011185499486991545    0.02331729775171897   0.001113707766127038   0.006996632050931071  0.0027398857190056845   0.09547934357313945   0.5144996657786653   0.017376861198671906  0.036698676777493965         NUC   NUC
+17  0.36670380748651027  1.9475338654254316E-4   5.249557009292376E-4  1.0775189707640023E-4   0.002332123557112694   0.008103918954614897  0.048240140364370375   0.5594721644293985   0.006343694882278677  0.007976689341166425         NUC   NUC
+18  0.45920254782892733  0.0018278476945727774  0.0011022340349059045   2.548486643281316E-4    0.03546136795462975    0.11007425607824155   0.12351062139581284  0.23851820114784827    0.01655653646071851  0.013491538740014917         CYT   NUC
+19    0.340101912120004   9.559203827448582E-5  0.0012285286345971175  1.6758735550436078E-4  0.0010878904434556197   0.003725493930894508  0.058261338770929975   0.5733113685434726   0.008223961689002912  0.013796326473864312         NUC   NUC
+
+Predictions saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_2073.pygmo_c.local.20211209T170231/predictions/yeast/0/predictions.csv`.
+Loading metadata from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_2073.pygmo_c.local.20211209T170231/predictions/yeast/0/metadata.json`.
+Loading predictions from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_2073.pygmo_c.local.20211209T170231/predictions/yeast/0/predictions.csv`.
+Metric scores: { 'acc': 0.697986577181208,
+  'app_version': 'dev [master, beef024]',
+  'balacc': 0.6151989526636978,
+  'constraint': 'pygmo_c',
+  'duration': nan,
+  'fold': 0,
+  'framework': 'H2OAutoML',
+  'id': 'openml.org/t/2073',
+  'info': None,
+  'logloss': 0.9099051293261852,
+  'metric': 'neg_logloss',
+  'mode': 'local',
+  'models_count': 135,
+  'params': '',
+  'predict_duration': 0.2969951629638672,
+  'result': -0.9099051293261852,
+  'seed': 1037071115,
+  'task': 'yeast',
+  'training_duration': 3626.591149330139,
+  'type': 'multiclass',
+  'utc': '2021-12-09T18:04:02',
+  'version': '3.34.0.3'}
+Job `local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML` executed in 3635.563 seconds.
+All jobs executed in 3635.580 seconds.
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] CPU Utilization: 12.3%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Memory Usage: 2.1%
+[MONITORING] [local.openml_t_2073.pygmo_c.yeast.0.H2OAutoML] Disk Usage: 43.2%
+Processing results for h2oautoml.openml_t_2073.pygmo_c.local.20211209T170231
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_2073.pygmo_c.local.20211209T170231/scores/H2OAutoML.benchmark_openml_t_2073.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_2073.pygmo_c.local.20211209T170231/scores/results.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/results.csv`.
+Summing up scores for current run:
+               id  task fold framework constraint    result      metric  duration       seed
+openml.org/t/2073 yeast    0 H2OAutoML    pygmo_c -0.909905 neg_logloss    3635.6 1037071115

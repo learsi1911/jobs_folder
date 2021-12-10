@@ -1,0 +1,413 @@
+/var/spool/slurm/slurmd/job8497037/slurm_script: line 8: activate: No such file or directory
+Running benchmark `H2OAutoML` on `openml/t/360975` framework in `local` mode.
+Loading frameworks definitions from ['/home/juradoi/experiments/automlbenchmark/resources/frameworks.yaml'].
+Loading benchmark constraint definitions from ['/home/juradoi/experiments/automlbenchmark/resources/constraints.yaml'].
+Loading openml task 360975.
+
+--------------------------------------------------------------------------
+Starting job local.openml_t_360975.pygmo_c.KDDCup09-Upselling.0.H2OAutoML.
+Assigning 16 cores (total=16) for new task KDDCup09-Upselling.
+[MONITORING] [local.openml_t_360975.pygmo_c.KDDCup09-Upselling.0.H2OAutoML] CPU Utilization: 3.7%
+Assigning 91338 MB (total=95302 MB) for new KDDCup09-Upselling task.
+[MONITORING] [local.openml_t_360975.pygmo_c.KDDCup09-Upselling.0.H2OAutoML] Memory Usage: 2.0%
+[MONITORING] [local.openml_t_360975.pygmo_c.KDDCup09-Upselling.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_360975.pygmo_c.KDDCup09-Upselling.0.H2OAutoML] CPU Utilization: 1.1%
+[MONITORING] [local.openml_t_360975.pygmo_c.KDDCup09-Upselling.0.H2OAutoML] Memory Usage: 3.2%
+[MONITORING] [local.openml_t_360975.pygmo_c.KDDCup09-Upselling.0.H2OAutoML] Disk Usage: 43.2%
+Running task KDDCup09-Upselling on framework H2OAutoML with config:
+TaskConfig({})
+[MONITORING] [local.openml_t_360975.pygmo_c.KDDCup09-Upselling.0.H2OAutoML] CPU Utilization: 3.9%
+[MONITORING] [local.openml_t_360975.pygmo_c.KDDCup09-Upselling.0.H2OAutoML] Memory Usage: 4.2%
+[MONITORING] [local.openml_t_360975.pygmo_c.KDDCup09-Upselling.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_360975.pygmo_c.KDDCup09-Upselling.0.H2OAutoML] CPU Utilization: 6.4%
+[MONITORING] [local.openml_t_360975.pygmo_c.KDDCup09-Upselling.0.H2OAutoML] Memory Usage: 8.5%
+[MONITORING] [local.openml_t_360975.pygmo_c.KDDCup09-Upselling.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_360975.pygmo_c.KDDCup09-Upselling.0.H2OAutoML] CPU Utilization: 6.3%
+[MONITORING] [local.openml_t_360975.pygmo_c.KDDCup09-Upselling.0.H2OAutoML] Memory Usage: 19.7%
+[MONITORING] [local.openml_t_360975.pygmo_c.KDDCup09-Upselling.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_360975.pygmo_c.KDDCup09-Upselling.0.H2OAutoML] CPU Utilization: 7.3%
+[MONITORING] [local.openml_t_360975.pygmo_c.KDDCup09-Upselling.0.H2OAutoML] Memory Usage: 19.3%
+[MONITORING] [local.openml_t_360975.pygmo_c.KDDCup09-Upselling.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_360975.pygmo_c.KDDCup09-Upselling.0.H2OAutoML] CPU Utilization: 6.4%
+[MONITORING] [local.openml_t_360975.pygmo_c.KDDCup09-Upselling.0.H2OAutoML] Memory Usage: 19.3%
+[MONITORING] [local.openml_t_360975.pygmo_c.KDDCup09-Upselling.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_360975.pygmo_c.KDDCup09-Upselling.0.H2OAutoML] CPU Utilization: 6.4%
+[MONITORING] [local.openml_t_360975.pygmo_c.KDDCup09-Upselling.0.H2OAutoML] Memory Usage: 12.1%
+[MONITORING] [local.openml_t_360975.pygmo_c.KDDCup09-Upselling.0.H2OAutoML] Disk Usage: 43.2%
+Running cmd `/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py`
+INFO:__main__:
+**** H2O AutoML [v3.34.0.3] ****
+
+INFO:__main__:Starting H2O cluster with 16 cores, 60892M memory.
+Checking whether there is an H2O instance running at http://localhost:19017 ..... not found.
+Attempting to start a local H2O server...
+  Java Version: openjdk version "11.0.12" 2021-07-20; OpenJDK Runtime Environment (build 11.0.12+7-post-Debian-2deb10u1); OpenJDK 64-Bit Server VM (build 11.0.12+7-post-Debian-2deb10u1, mixed mode, sharing)
+  Starting server from /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/backend/bin/h2o.jar
+  Ice root: /tmp/tmp5hhexcmn
+  JVM stdout: /tmp/tmp5hhexcmn/h2o_unknownUser_started_from_python.out
+  JVM stderr: /tmp/tmp5hhexcmn/h2o_unknownUser_started_from_python.err
+  Server is running at http://127.0.0.1:19017
+Connecting to H2O server at http://127.0.0.1:19017 ... successful.
+--------------------------  ------------------------------------------------------------------
+H2O_cluster_uptime:         01 secs
+H2O_cluster_timezone:       Europe/Amsterdam
+H2O_data_parsing_timezone:  UTC
+H2O_cluster_version:        3.34.0.3
+H2O_cluster_version_age:    2 months and 2 days
+H2O_cluster_name:           H2O_from_python_unknownUser_y25khl
+H2O_cluster_total_nodes:    1
+H2O_cluster_free_memory:    59.47 Gb
+H2O_cluster_total_cores:    16
+H2O_cluster_allowed_cores:  16
+H2O_cluster_status:         locked, healthy
+H2O_connection_url:         http://127.0.0.1:19017
+H2O_connection_proxy:       {"http": null, "https": null}
+H2O_internal_security:      False
+H2O_API_Extensions:         Amazon S3, XGBoost, Algos, AutoML, Core V3, TargetEncoder, Core V4
+Python_version:             3.8.12 final
+--------------------------  ------------------------------------------------------------------
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+H2O session _sid_85af closed.
+
+ERROR:frameworks.shared.callee:HTTP 500 Server Error:
+
+Server error water.util.DistributedException:
+
+  Error: DistributedException from /127.0.0.1:19017: 'This H2O node couldn't read data from 'nfs://home/juradoi/.cache/openml/org/openml/www/org/openml/www/datasets/43072/dataset_train_0.arff'. Please make sure the file is available on all H2O nodes and/or check the working directories.'
+
+  Request: None
+
+  Stacktrace: DistributedException from /127.0.0.1:19017: 'This H2O node couldn't read data from 'nfs://home/juradoi/.cache/openml/org/openml/www/org/openml/www/datasets/43072/dataset_train_0.arff'. Please make sure the file is available on all H2O nodes and/or check the working directories.', caused by java.lang.RuntimeException: This H2O node couldn't read data from 'nfs://home/juradoi/.cache/openml/org/openml/www/org/openml/www/datasets/43072/dataset_train_0.arff'. Please make sure the file is available on all H2O nodes and/or check the working directories.
+
+      water.MRTask.getResult(MRTask.java:655)
+
+      water.MRTask.getResult(MRTask.java:665)
+
+      water.MRTask.doAll(MRTask.java:550)
+
+      water.parser.ParseSetup.guessSetup(ParseSetup.java:372)
+
+      water.api.ParseSetupHandler.guessSetup(ParseSetupHandler.java:44)
+
+      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+
+      java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+      java.base/java.lang.reflect.Method.invoke(Method.java:566)
+
+Traceback (most recent call last):
+
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/shared/callee.py", line 70, in call_run
+
+    result = run_fn(ds, config)
+
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py", line 85, in run
+
+    train = h2o.import_file(dataset.train.path, destination_frame=frame_name('train', config), **import_kwargs)
+
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/h2o.py", line 458, in import_file
+
+    return H2OFrame()._import_parse(path, pattern, destination_frame, header, sep, col_names, col_types, na_strings,
+
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/frame.py", line 457, in _import_parse
+
+    self._parse(rawkey, destination_frame, header, separator, column_names, column_types, na_strings,
+
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/frame.py", line 474, in _parse
+
+    setup = h2o.parse_setup(rawkey, destination_frame, header, separator, column_names, column_types, na_strings,
+
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/h2o.py", line 792, in parse_setup
+
+    j = api("POST /3/ParseSetup", data=kwargs)
+
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/h2o.py", line 113, in api
+
+    return h2oconn.request(endpoint, data=data, json=json, filename=filename, save_to=save_to)
+
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/backend/connection.py", line 481, in request
+
+    return self._process_response(resp, save_to)
+
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/backend/connection.py", line 824, in _process_response
+
+    raise H2OServerError("HTTP %d %s:\n%s" % (status_code, response.reason, data))
+
+h2o.exceptions.H2OServerError: HTTP 500 Server Error:
+
+Server error water.util.DistributedException:
+
+  Error: DistributedException from /127.0.0.1:19017: 'This H2O node couldn't read data from 'nfs://home/juradoi/.cache/openml/org/openml/www/org/openml/www/datasets/43072/dataset_train_0.arff'. Please make sure the file is available on all H2O nodes and/or check the working directories.'
+
+  Request: None
+
+  Stacktrace: DistributedException from /127.0.0.1:19017: 'This H2O node couldn't read data from 'nfs://home/juradoi/.cache/openml/org/openml/www/org/openml/www/datasets/43072/dataset_train_0.arff'. Please make sure the file is available on all H2O nodes and/or check the working directories.', caused by java.lang.RuntimeException: This H2O node couldn't read data from 'nfs://home/juradoi/.cache/openml/org/openml/www/org/openml/www/datasets/43072/dataset_train_0.arff'. Please make sure the file is available on all H2O nodes and/or check the working directories.
+
+      water.MRTask.getResult(MRTask.java:655)
+
+      water.MRTask.getResult(MRTask.java:665)
+
+      water.MRTask.doAll(MRTask.java:550)
+
+      water.parser.ParseSetup.guessSetup(ParseSetup.java:372)
+
+      water.api.ParseSetupHandler.guessSetup(ParseSetupHandler.java:44)
+
+      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+
+      java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+      java.base/java.lang.reflect.Method.invoke(Method.java:566)
+
+
+
+
+
+
+HTTP 500 Server Error:
+Server error water.util.DistributedException:
+  Error: DistributedException from /127.0.0.1:19017: 'This H2O node couldn't read data from 'nfs://home/juradoi/.cache/openml/org/openml/www/org/openml/www/datasets/43072/dataset_train_0.arff'. Please make sure the file is available on all H2O nodes and/or check the working directories.'
+  Request: None
+  Stacktrace: DistributedException from /127.0.0.1:19017: 'This H2O node couldn't read data from 'nfs://home/juradoi/.cache/openml/org/openml/www/org/openml/www/datasets/43072/dataset_train_0.arff'. Please make sure the file is available on all H2O nodes and/or check the working directories.', caused by java.lang.RuntimeException: This H2O node couldn't read data from 'nfs://home/juradoi/.cache/openml/org/openml/www/org/openml/www/datasets/43072/dataset_train_0.arff'. Please make sure the file is available on all H2O nodes and/or check the working directories.
+      water.MRTask.getResult(MRTask.java:655)
+      water.MRTask.getResult(MRTask.java:665)
+      water.MRTask.doAll(MRTask.java:550)
+      water.parser.ParseSetup.guessSetup(ParseSetup.java:372)
+      water.api.ParseSetupHandler.guessSetup(ParseSetupHandler.java:44)
+      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+      java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+      java.base/java.lang.reflect.Method.invoke(Method.java:566)
+Traceback (most recent call last):
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 542, in run
+    meta_result = self.benchmark.framework_module.run(self._dataset, task_config)
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/__init__.py", line 30, in run
+    return run_in_venv(__file__, "exec.py",
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/shared/caller.py", line 142, in run_in_venv
+    raise NoResultError(res.error_message)
+amlb.results.NoResultError: HTTP 500 Server Error:
+Server error water.util.DistributedException:
+  Error: DistributedException from /127.0.0.1:19017: 'This H2O node couldn't read data from 'nfs://home/juradoi/.cache/openml/org/openml/www/org/openml/www/datasets/43072/dataset_train_0.arff'. Please make sure the file is available on all H2O nodes and/or check the working directories.'
+  Request: None
+  Stacktrace: DistributedException from /127.0.0.1:19017: 'This H2O node couldn't read data from 'nfs://home/juradoi/.cache/openml/org/openml/www/org/openml/www/datasets/43072/dataset_train_0.arff'. Please make sure the file is available on all H2O nodes and/or check the working directories.', caused by java.lang.RuntimeException: This H2O node couldn't read data from 'nfs://home/juradoi/.cache/openml/org/openml/www/org/openml/www/datasets/43072/dataset_train_0.arff'. Please make sure the file is available on all H2O nodes and/or check the working directories.
+      water.MRTask.getResult(MRTask.java:655)
+      water.MRTask.getResult(MRTask.java:665)
+      water.MRTask.doAll(MRTask.java:550)
+      water.parser.ParseSetup.guessSetup(ParseSetup.java:372)
+      water.api.ParseSetupHandler.guessSetup(ParseSetupHandler.java:44)
+      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+      java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+      java.base/java.lang.reflect.Method.invoke(Method.java:566)
+
+Loading metadata from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_360975.pygmo_c.local.20211210T075451/predictions/KDDCup09-Upselling/0/metadata.json`.
+Metric scores: { 'acc': nan,
+  'app_version': 'dev [master, beef024]',
+  'auc': nan,
+  'balacc': nan,
+  'constraint': 'pygmo_c',
+  'duration': nan,
+  'fold': 0,
+  'framework': 'H2OAutoML',
+  'id': 'openml.org/t/360975',
+  'info': 'NoResultError: HTTP 500 Server Error:\n'
+          'Server error water.util.DistributedException:\n'
+          "  Error: DistributedException from /127.0.0.1:19017: 'This H2O node "
+          "couldn't read data from 'nfs://home/juradoi/.ca\u2026",
+  'logloss': nan,
+  'metric': 'auc',
+  'mode': 'local',
+  'models_count': nan,
+  'params': '',
+  'predict_duration': nan,
+  'result': nan,
+  'seed': 178424298,
+  'task': 'KDDCup09-Upselling',
+  'training_duration': nan,
+  'type': 'binary',
+  'utc': '2021-12-10T08:10:29',
+  'version': '3.34.0.3'}
+--- Logging error ---
+Traceback (most recent call last):
+
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/logging/__init__.py", line 1088, in emit
+    stream.write(msg + self.terminator)
+
+UnicodeEncodeError: 'latin-1' codec can't encode character '\u2026' in position 506: ordinal not in range(256)
+
+Call stack:
+  File "runbenchmark.py", line 184, in <module>
+    res = bench.run(args.task, args.fold)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 208, in run
+    results = self._run_jobs(jobs)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 251, in _run_jobs
+    self.job_runner.start()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 219, in start
+    self._run()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 311, in _run
+    result = job.start()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 115, in start
+    result = self._run()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/utils/process.py", line 702, in profiler
+    return fn(*args, **kwargs)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 550, in run
+    return results.compute_score(result=result, meta_result=meta_result)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/utils/process.py", line 702, in profiler
+    return fn(*args, **kwargs)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/results.py", line 453, in compute_score
+    log.info("Metric scores: %s", entry)
+
+Message: 'Metric scores: %s'
+Arguments: ({'id': 'openml.org/t/360975', 'task': 'KDDCup09-Upselling', 'type': 'binary', 'constraint': 'pygmo_c', 'framework': 'H2OAutoML', 'version': '3.34.0.3', 'params': '', 'fold': 0, 'mode': 'local', 'seed': 178424298, 'app_version': 'dev [master, beef024]', 'utc': '2021-12-10T08:10:29', 'metric': 'auc', 'duration': nan, 'training_duration': nan, 'predict_duration': nan, 'models_count': nan, 'auc': nan, 'result': nan, 'logloss': nan, 'acc': nan, 'balacc': nan, 'info': "NoResultError: HTTP 500 Server Error:\nServer error water.util.DistributedException:\n  Error: DistributedException from /127.0.0.1:19017: 'This H2O node couldn't read data from 'nfs://home/juradoi/.ca\u2026"},)
+--- Logging error ---
+Traceback (most recent call last):
+
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/logging/__init__.py", line 1088, in emit
+    stream.write(msg + self.terminator)
+
+UnicodeEncodeError: 'latin-1' codec can't encode character '\u2026' in position 506: ordinal not in range(256)
+
+Call stack:
+  File "runbenchmark.py", line 184, in <module>
+    res = bench.run(args.task, args.fold)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 208, in run
+    results = self._run_jobs(jobs)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 251, in _run_jobs
+    self.job_runner.start()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 219, in start
+    self._run()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 311, in _run
+    result = job.start()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 115, in start
+    result = self._run()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/utils/process.py", line 702, in profiler
+    return fn(*args, **kwargs)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 550, in run
+    return results.compute_score(result=result, meta_result=meta_result)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/utils/process.py", line 702, in profiler
+    return fn(*args, **kwargs)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/results.py", line 453, in compute_score
+    log.info("Metric scores: %s", entry)
+
+Message: 'Metric scores: %s'
+Arguments: ({'id': 'openml.org/t/360975', 'task': 'KDDCup09-Upselling', 'type': 'binary', 'constraint': 'pygmo_c', 'framework': 'H2OAutoML', 'version': '3.34.0.3', 'params': '', 'fold': 0, 'mode': 'local', 'seed': 178424298, 'app_version': 'dev [master, beef024]', 'utc': '2021-12-10T08:10:29', 'metric': 'auc', 'duration': nan, 'training_duration': nan, 'predict_duration': nan, 'models_count': nan, 'auc': nan, 'result': nan, 'logloss': nan, 'acc': nan, 'balacc': nan, 'info': "NoResultError: HTTP 500 Server Error:\nServer error water.util.DistributedException:\n  Error: DistributedException from /127.0.0.1:19017: 'This H2O node couldn't read data from 'nfs://home/juradoi/.ca\u2026"},)
+Job `local.openml_t_360975.pygmo_c.KDDCup09-Upselling.0.H2OAutoML` executed in 747.880 seconds.
+--- Logging error ---
+Traceback (most recent call last):
+
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/logging/__init__.py", line 1088, in emit
+    stream.write(msg + self.terminator)
+
+UnicodeEncodeError: 'latin-1' codec can't encode character '\u2026' in position 565: ordinal not in range(256)
+
+Call stack:
+  File "runbenchmark.py", line 184, in <module>
+    res = bench.run(args.task, args.fold)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 208, in run
+    results = self._run_jobs(jobs)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 251, in _run_jobs
+    self.job_runner.start()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 219, in start
+    self._run()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 311, in _run
+    result = job.start()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 117, in start
+    log.debug("Job `%s` returned: %s", self.name, result)
+
+Message: 'Job `%s` returned: %s'
+Arguments: ('local.openml_t_360975.pygmo_c.KDDCup09-Upselling.0.H2OAutoML', {'id': 'openml.org/t/360975', 'task': 'KDDCup09-Upselling', 'type': 'binary', 'constraint': 'pygmo_c', 'framework': 'H2OAutoML', 'version': '3.34.0.3', 'params': '', 'fold': 0, 'mode': 'local', 'seed': 178424298, 'app_version': 'dev [master, beef024]', 'utc': '2021-12-10T08:10:29', 'metric': 'auc', 'duration': nan, 'training_duration': nan, 'predict_duration': nan, 'models_count': nan, 'auc': nan, 'result': nan, 'logloss': nan, 'acc': nan, 'balacc': nan, 'info': "NoResultError: HTTP 500 Server Error:\nServer error water.util.DistributedException:\n  Error: DistributedException from /127.0.0.1:19017: 'This H2O node couldn't read data from 'nfs://home/juradoi/.ca\u2026"})
+All jobs executed in 932.071 seconds.
+[MONITORING] [local.openml_t_360975.pygmo_c.KDDCup09-Upselling.0.H2OAutoML] CPU Utilization: 18.9%
+[MONITORING] [local.openml_t_360975.pygmo_c.KDDCup09-Upselling.0.H2OAutoML] Memory Usage: 8.8%
+[MONITORING] [local.openml_t_360975.pygmo_c.KDDCup09-Upselling.0.H2OAutoML] Disk Usage: 43.2%
+Processing results for h2oautoml.openml_t_360975.pygmo_c.local.20211210T075451
+--- Logging error ---
+Traceback (most recent call last):
+
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/logging/__init__.py", line 1088, in emit
+    stream.write(msg + self.terminator)
+
+UnicodeEncodeError: 'latin-1' codec can't encode character '\u2026' in position 805: ordinal not in range(256)
+
+Call stack:
+  File "runbenchmark.py", line 184, in <module>
+    res = bench.run(args.task, args.fold)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 210, in run
+    log.debug(results)
+
+Message: [{'name': 'local.openml_t_360975.pygmo_c.KDDCup09-Upselling.0.H2OAutoML', 'result': {'id': 'openml.org/t/360975', 'task': 'KDDCup09-Upselling', 'type': 'binary', 'constraint': 'pygmo_c', 'framework': 'H2OAutoML', 'version': '3.34.0.3', 'params': '', 'fold': 0, 'mode': 'local', 'seed': 178424298, 'app_version': 'dev [master, beef024]', 'utc': '2021-12-10T08:10:29', 'metric': 'auc', 'duration': 747.8795850276947, 'training_duration': nan, 'predict_duration': nan, 'models_count': nan, 'auc': nan, 'result': nan, 'logloss': nan, 'acc': nan, 'balacc': nan, 'info': "NoResultError: HTTP 500 Server Error:\nServer error water.util.DistributedException:\n  Error: DistributedException from /127.0.0.1:19017: 'This H2O node couldn't read data from 'nfs://home/juradoi/.ca\u2026"}, 'duration': 747.8795850276947}]
+Arguments: ()
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_360975.pygmo_c.local.20211210T075451/scores/H2OAutoML.benchmark_openml_t_360975.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_360975.pygmo_c.local.20211210T075451/scores/results.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/results.csv`.
+Summing up scores for current run:
+                 id               task fold framework constraint metric  duration      seed                                                                                                                                                                                                       info
+openml.org/t/360975 KDDCup09-Upselling    0 H2OAutoML    pygmo_c    auc     747.9 178424298 NoResultError: HTTP 500 Server Error:\nServer error water.util.DistributedException:\n  Error: DistributedException from /127.0.0.1:19017: 'This H2O node couldn't read data from 'nfs://home/juradoi/.ca\u2026
+--- Logging error ---
+Traceback (most recent call last):
+
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/logging/__init__.py", line 1088, in emit
+    stream.write(msg + self.terminator)
+
+UnicodeEncodeError: 'latin-1' codec can't encode character '\u2026' in position 660: ordinal not in range(256)
+
+Call stack:
+  File "runbenchmark.py", line 184, in <module>
+    res = bench.run(args.task, args.fold)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 212, in run
+    scoreboard = self._process_results(results)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 346, in _process_results
+    log.info("Summing up scores for current run:\n%s",
+
+Message: 'Summing up scores for current run:\n%s'
+Arguments: ("                 id               task fold framework constraint metric  duration      seed                                                                                                                                                                                                       info\nopenml.org/t/360975 KDDCup09-Upselling    0 H2OAutoML    pygmo_c    auc     747.9 178424298 NoResultError: HTTP 500 Server Error:\\nServer error water.util.DistributedException:\\n  Error: DistributedException from /127.0.0.1:19017: 'This H2O node couldn't read data from 'nfs://home/juradoi/.ca\u2026",)
+--- Logging error ---
+Traceback (most recent call last):
+
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/logging/__init__.py", line 1088, in emit
+    stream.write(msg + self.terminator)
+
+UnicodeEncodeError: 'latin-1' codec can't encode character '\u2026' in position 660: ordinal not in range(256)
+
+Call stack:
+  File "runbenchmark.py", line 184, in <module>
+    res = bench.run(args.task, args.fold)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 212, in run
+    scoreboard = self._process_results(results)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 346, in _process_results
+    log.info("Summing up scores for current run:\n%s",
+
+Message: 'Summing up scores for current run:\n%s'
+Arguments: ("                 id               task fold framework constraint metric  duration      seed                                                                                                                                                                                                       info\nopenml.org/t/360975 KDDCup09-Upselling    0 H2OAutoML    pygmo_c    auc     747.9 178424298 NoResultError: HTTP 500 Server Error:\\nServer error water.util.DistributedException:\\n  Error: DistributedException from /127.0.0.1:19017: 'This H2O node couldn't read data from 'nfs://home/juradoi/.ca\u2026",)

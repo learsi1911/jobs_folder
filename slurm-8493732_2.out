@@ -1,0 +1,206 @@
+/var/spool/slurm/slurmd/job8493735/slurm_script: line 8: activate: No such file or directory
+Running benchmark `H2OAutoML` on `openml/t/190146` framework in `local` mode.
+Loading frameworks definitions from ['/home/juradoi/experiments/automlbenchmark/resources/frameworks.yaml'].
+Loading benchmark constraint definitions from ['/home/juradoi/experiments/automlbenchmark/resources/constraints.yaml'].
+Loading openml task 190146.
+
+---------------------------------------------------------------
+Starting job local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML.
+Assigning 16 cores (total=16) for new task vehicle.
+Assigning 91203 MB (total=95302 MB) for new vehicle task.
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] CPU Utilization: 16.0%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Memory Usage: 2.2%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Disk Usage: 43.2%
+Running task vehicle on framework H2OAutoML with config:
+TaskConfig({})
+Running cmd `/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py`
+INFO:__main__:
+**** H2O AutoML [v3.34.0.3] ****
+
+INFO:__main__:Starting H2O cluster with 16 cores, 60802M memory.
+Checking whether there is an H2O instance running at http://localhost:28535 ..... not found.
+Attempting to start a local H2O server...
+  Java Version: openjdk version "11.0.12" 2021-07-20; OpenJDK Runtime Environment (build 11.0.12+7-post-Debian-2deb10u1); OpenJDK 64-Bit Server VM (build 11.0.12+7-post-Debian-2deb10u1, mixed mode, sharing)
+  Starting server from /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/backend/bin/h2o.jar
+  Ice root: /tmp/tmpder5bu7a
+  JVM stdout: /tmp/tmpder5bu7a/h2o_unknownUser_started_from_python.out
+  JVM stderr: /tmp/tmpder5bu7a/h2o_unknownUser_started_from_python.err
+  Server is running at http://127.0.0.1:28535
+Connecting to H2O server at http://127.0.0.1:28535 ... successful.
+--------------------------  ------------------------------------------------------------------
+H2O_cluster_uptime:         01 secs
+H2O_cluster_timezone:       Europe/Amsterdam
+H2O_data_parsing_timezone:  UTC
+H2O_cluster_version:        3.34.0.3
+H2O_cluster_version_age:    2 months and 2 days
+H2O_cluster_name:           H2O_from_python_unknownUser_2x5hit
+H2O_cluster_total_nodes:    1
+H2O_cluster_free_memory:    59.39 Gb
+H2O_cluster_total_cores:    16
+H2O_cluster_allowed_cores:  16
+H2O_cluster_status:         locked, healthy
+H2O_connection_url:         http://127.0.0.1:28535
+H2O_connection_proxy:       {"http": null, "https": null}
+H2O_internal_security:      False
+H2O_API_Extensions:         Amazon S3, XGBoost, Algos, AutoML, Core V3, TargetEncoder, Core V4
+Python_version:             3.8.12 final
+--------------------------  ------------------------------------------------------------------
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+INFO:__main__:Running model on task vehicle, fold 0.
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] CPU Utilization: 63.9%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Memory Usage: 29.2%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] CPU Utilization: 97.8%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Memory Usage: 33.6%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] CPU Utilization: 97.3%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Memory Usage: 44.1%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] CPU Utilization: 98.2%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Memory Usage: 44.3%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] CPU Utilization: 98.1%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Memory Usage: 44.4%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] CPU Utilization: 97.5%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Memory Usage: 44.4%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] CPU Utilization: 97.8%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Memory Usage: 44.4%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] CPU Utilization: 98.1%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Memory Usage: 44.4%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] CPU Utilization: 98.3%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Memory Usage: 44.4%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] CPU Utilization: 98.0%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Memory Usage: 44.4%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] CPU Utilization: 98.2%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Memory Usage: 44.4%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] CPU Utilization: 98.3%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Memory Usage: 44.4%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] CPU Utilization: 98.2%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Memory Usage: 44.4%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] CPU Utilization: 98.6%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Memory Usage: 44.4%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] CPU Utilization: 97.7%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Memory Usage: 44.4%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] CPU Utilization: 98.3%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Memory Usage: 44.4%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] CPU Utilization: 97.6%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Memory Usage: 44.4%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] CPU Utilization: 97.6%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Memory Usage: 44.4%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] CPU Utilization: 98.2%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Memory Usage: 44.6%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] CPU Utilization: 97.7%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Memory Usage: 44.6%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] CPU Utilization: 92.8%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Memory Usage: 44.6%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] CPU Utilization: 98.1%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Memory Usage: 44.6%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] CPU Utilization: 97.5%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Memory Usage: 44.6%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] CPU Utilization: 98.1%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Memory Usage: 44.6%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] CPU Utilization: 97.7%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Memory Usage: 44.6%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] CPU Utilization: 97.0%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Memory Usage: 44.6%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] CPU Utilization: 97.7%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Memory Usage: 44.6%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] CPU Utilization: 98.0%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Memory Usage: 44.6%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] CPU Utilization: 31.5%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Memory Usage: 44.7%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] CPU Utilization: 9.2%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Memory Usage: 44.7%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Disk Usage: 43.2%
+AutoML progress: |███████████████████████████████████████████████████████████████| (done) 100%
+stackedensemble prediction progress: |███████████████████████████████████████████| (done) 100%
+H2O session _sid_819a closed.
+
+
+
+Predictions preview:
+                       bus                  opel                 saab                    van predictions truth
+0   3.1895019610476906E-8   0.22790946711651622   0.7711729448481572   9.175561403069458E-4        saab  saab
+1   1.7044319190157197E-5    0.4524831312834646   0.5383549278557613   0.009144896541583859        saab  saab
+2    7.976589112431665E-8    0.7936423466360304  0.20634680203334285  1.0771564735681624E-5        opel  saab
+3     8.96712989815514E-8   0.16074360392924406   0.8392236530939773   3.265330547955304E-5        saab  saab
+4    1.715730914958187E-7    0.2499687628484967   0.7499633808578062   6.768472060561973E-5        saab  saab
+5   0.0019955375318037745   0.19749448292557115   0.7958110307573192  0.0046989487853058365        saab  saab
+6   1.1630387981773978E-4    0.5296265488187551    0.470249724195126   7.423106300990102E-6        opel  saab
+7    7.973126677471142E-9    0.0341976946289943   0.9657971324806587   5.164917220313598E-6        saab  saab
+8    5.737386993991237E-8    0.1285433774107851   0.8714133087661254   4.325644921954832E-5        saab  saab
+9   3.9853211682846144E-7   0.30830248870319515   0.6915642207365955  1.3289202809253027E-4        saab  saab
+10   4.691306908961839E-9   0.11850575121996075   0.8814853049338471   8.939154885167463E-6        saab  saab
+11   5.344903690820924E-8  0.018029647210288064   0.9819633845420596   6.914798615392381E-6        saab  saab
+12   8.107011754110681E-7     0.671351327636467  0.32250764615286115   0.006140215509496545        opel  saab
+13   3.289326824429032E-7    0.9382136119579992  0.06176972490208657  1.6334207231800564E-5        opel  saab
+14  4.3579571482857474E-8  0.007671998037058201   0.9923255514930484  2.4068903218120676E-6        saab  saab
+15  1.3769483217971764E-8   0.03344353144876101   0.9665495811225859   6.873659169938937E-6        saab  saab
+16     9.5440624738281E-8   0.09171676430055078   0.9082688386010542  1.4301657770216113E-5        saab  saab
+17   4.524557655670099E-8   0.20688430538593766   0.7930609776857832  5.4671682702547136E-5        saab  saab
+18  2.2006925272134904E-4    0.3027074825883654   0.6968376563476821  2.3479181123115542E-4        saab  saab
+19  2.8294753063402016E-5    0.3481209822274525   0.6380765683246342   0.013774154694849954        saab  saab
+
+Predictions saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_190146.pygmo_c.local.20211209T212845/predictions/vehicle/0/predictions.csv`.
+Loading metadata from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_190146.pygmo_c.local.20211209T212845/predictions/vehicle/0/metadata.json`.
+Loading predictions from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_190146.pygmo_c.local.20211209T212845/predictions/vehicle/0/predictions.csv`.
+Metric scores: { 'acc': 0.8705882352941177,
+  'app_version': 'dev [master, beef024]',
+  'balacc': 0.8712121212121212,
+  'constraint': 'pygmo_c',
+  'duration': nan,
+  'fold': 0,
+  'framework': 'H2OAutoML',
+  'id': 'openml.org/t/190146',
+  'info': None,
+  'logloss': 0.29269497836772923,
+  'metric': 'neg_logloss',
+  'mode': 'local',
+  'models_count': 154,
+  'params': '',
+  'predict_duration': 0.07052087783813477,
+  'result': -0.29269497836772923,
+  'seed': 1944368112,
+  'task': 'vehicle',
+  'training_duration': 3603.8348293304443,
+  'type': 'multiclass',
+  'utc': '2021-12-09T22:28:59',
+  'version': '3.34.0.3'}
+Job `local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML` executed in 3612.904 seconds.
+All jobs executed in 3613.321 seconds.
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] CPU Utilization: 23.6%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Memory Usage: 2.1%
+[MONITORING] [local.openml_t_190146.pygmo_c.vehicle.0.H2OAutoML] Disk Usage: 43.2%
+Processing results for h2oautoml.openml_t_190146.pygmo_c.local.20211209T212845
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_190146.pygmo_c.local.20211209T212845/scores/H2OAutoML.benchmark_openml_t_190146.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_190146.pygmo_c.local.20211209T212845/scores/results.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/results.csv`.
+Summing up scores for current run:
+                 id    task fold framework constraint    result      metric  duration       seed
+openml.org/t/190146 vehicle    0 H2OAutoML    pygmo_c -0.292695 neg_logloss    3612.9 1944368112

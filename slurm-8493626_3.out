@@ -1,0 +1,24 @@
+/var/spool/slurm/slurmd/job8493629/slurm_script: line 8: activate: No such file or directory
+Running benchmark `H2OAutoML` on `openml/t/168784` framework in `local` mode.
+Loading frameworks definitions from ['/home/juradoi/experiments/automlbenchmark/resources/frameworks.yaml'].
+Loading benchmark constraint definitions from ['/home/juradoi/experiments/automlbenchmark/resources/constraints.yaml'].
+Loading openml task 168784.
+[Errno 17] File exists: '/home/juradoi/.cache/openml/org/openml/www/tasks/168784'
+Traceback (most recent call last):
+  File "runbenchmark.py", line 163, in <module>
+    bench = amlb.Benchmark(args.framework, args.benchmark, args.constraint)
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 84, in __init__
+    self.benchmark_def, self.benchmark_name, self.benchmark_path = rget().benchmark_definition(benchmark_name, self.constraint_def)
+  File "/home/juradoi/experiments/automlbenchmark/amlb/resources.py", line 185, in benchmark_definition
+    hard_defaults, tasks, benchmark_path, benchmark_name = benchmark_load(name, self.config.benchmarks.definition_dir)
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmarks/parser.py", line 19, in benchmark_load
+    benchmark_name, benchmark_path, tasks = load_oml_benchmark(name)
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmarks/openml.py", line 41, in load_oml_benchmark
+    t = openml.tasks.get_task(oml_id, download_data=False, download_qualities=False)
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/site-packages/openml/tasks/functions.py", line 357, in get_task
+    tid_cache_dir = openml.utils._create_cache_directory_for_id(TASKS_CACHE_DIR_NAME, task_id,)
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/site-packages/openml/utils.py", line 315, in _create_cache_directory_for_id
+    os.makedirs(cache_dir)
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/os.py", line 223, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/home/juradoi/.cache/openml/org/openml/www/tasks/168784'

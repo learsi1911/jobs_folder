@@ -1,0 +1,555 @@
+/var/spool/slurm/slurmd/job8497017/slurm_script: line 8: activate: No such file or directory
+Running benchmark `H2OAutoML` on `openml/t/359989` framework in `local` mode.
+Loading frameworks definitions from ['/home/juradoi/experiments/automlbenchmark/resources/frameworks.yaml'].
+Loading benchmark constraint definitions from ['/home/juradoi/experiments/automlbenchmark/resources/constraints.yaml'].
+Loading openml task 359989.
+
+----------------------------------------------------------------
+Starting job local.openml_t_359989.pygmo_c.riccardo.0.H2OAutoML.
+Assigning 16 cores (total=16) for new task riccardo.
+Assigning 91351 MB (total=95302 MB) for new riccardo task.
+[MONITORING] [local.openml_t_359989.pygmo_c.riccardo.0.H2OAutoML] CPU Utilization: 18.3%
+[MONITORING] [local.openml_t_359989.pygmo_c.riccardo.0.H2OAutoML] Memory Usage: 2.0%
+[MONITORING] [local.openml_t_359989.pygmo_c.riccardo.0.H2OAutoML] Disk Usage: 43.2%
+Running task riccardo on framework H2OAutoML with config:
+TaskConfig({})
+[MONITORING] [local.openml_t_359989.pygmo_c.riccardo.0.H2OAutoML] CPU Utilization: 4.9%
+[MONITORING] [local.openml_t_359989.pygmo_c.riccardo.0.H2OAutoML] Memory Usage: 3.6%
+[MONITORING] [local.openml_t_359989.pygmo_c.riccardo.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359989.pygmo_c.riccardo.0.H2OAutoML] CPU Utilization: 6.4%
+[MONITORING] [local.openml_t_359989.pygmo_c.riccardo.0.H2OAutoML] Memory Usage: 4.8%
+[MONITORING] [local.openml_t_359989.pygmo_c.riccardo.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359989.pygmo_c.riccardo.0.H2OAutoML] CPU Utilization: 6.3%
+[MONITORING] [local.openml_t_359989.pygmo_c.riccardo.0.H2OAutoML] Memory Usage: 7.2%
+[MONITORING] [local.openml_t_359989.pygmo_c.riccardo.0.H2OAutoML] Disk Usage: 43.2%
+Running cmd `/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py`
+INFO:__main__:
+**** H2O AutoML [v3.34.0.3] ****
+
+INFO:__main__:Starting H2O cluster with 16 cores, 60901M memory.
+Checking whether there is an H2O instance running at http://localhost:14101 ..... not found.
+Attempting to start a local H2O server...
+  Java Version: openjdk version "11.0.12" 2021-07-20; OpenJDK Runtime Environment (build 11.0.12+7-post-Debian-2deb10u1); OpenJDK 64-Bit Server VM (build 11.0.12+7-post-Debian-2deb10u1, mixed mode, sharing)
+  Starting server from /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/backend/bin/h2o.jar
+  Ice root: /tmp/tmphnnprc9k
+  JVM stdout: /tmp/tmphnnprc9k/h2o_unknownUser_started_from_python.out
+  JVM stderr: /tmp/tmphnnprc9k/h2o_unknownUser_started_from_python.err
+  Server is running at http://127.0.0.1:14101
+Connecting to H2O server at http://127.0.0.1:14101 ... successful.
+--------------------------  ------------------------------------------------------------------
+H2O_cluster_uptime:         01 secs
+H2O_cluster_timezone:       Europe/Amsterdam
+H2O_data_parsing_timezone:  UTC
+H2O_cluster_version:        3.34.0.3
+H2O_cluster_version_age:    2 months and 2 days
+H2O_cluster_name:           H2O_from_python_unknownUser_hay6ad
+H2O_cluster_total_nodes:    1
+H2O_cluster_free_memory:    59.48 Gb
+H2O_cluster_total_cores:    16
+H2O_cluster_allowed_cores:  16
+H2O_cluster_status:         locked, healthy
+H2O_connection_url:         http://127.0.0.1:14101
+H2O_connection_proxy:       {"http": null, "https": null}
+H2O_internal_security:      False
+H2O_API_Extensions:         Amazon S3, XGBoost, Algos, AutoML, Core V3, TargetEncoder, Core V4
+Python_version:             3.8.12 final
+--------------------------  ------------------------------------------------------------------
+Parse progress: | (failed)
+H2O session _sid_b4c2 closed.
+
+ERROR:frameworks.shared.callee:Job with key $03017f0000011637ffffffff$_9303825dcc64ccdbd03960a45c39482a failed with an exception: DistributedException from /127.0.0.1:14101: 'java.io.EOFException: Reading 65536 bytes, AB=[AB read 2nd null NFS 0 <= 0 <= 65536 <= 65536]', caused by water.AutoBuffer$AutoBufferException: java.io.EOFException: Reading 65536 bytes, AB=[AB read 2nd null NFS 0 <= 0 <= 65536 <= 65536]
+
+stacktrace: 
+
+DistributedException from /127.0.0.1:14101: 'java.io.EOFException: Reading 65536 bytes, AB=[AB read 2nd null NFS 0 <= 0 <= 65536 <= 65536]', caused by water.AutoBuffer$AutoBufferException: java.io.EOFException: Reading 65536 bytes, AB=[AB read 2nd null NFS 0 <= 0 <= 65536 <= 65536]
+
+	at water.MRTask.getResult(MRTask.java:655)
+
+	at water.MRTask.getResult(MRTask.java:665)
+
+	at water.MRTask.doAll(MRTask.java:550)
+
+	at water.parser.ParseDataset.parseAllKeys(ParseDataset.java:254)
+
+	at water.parser.ParseDataset.access$000(ParseDataset.java:26)
+
+	at water.parser.ParseDataset$ParserFJTask.compute2(ParseDataset.java:203)
+
+	at water.H2O$H2OCountedCompleter.compute(H2O.java:1652)
+
+	at jsr166y.CountedCompleter.exec(CountedCompleter.java:468)
+
+	at jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:263)
+
+	at jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:974)
+
+	at jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1477)
+
+	at jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104)
+
+Caused by: water.AutoBuffer$AutoBufferException: java.io.EOFException: Reading 65536 bytes, AB=[AB read 2nd null NFS 0 <= 0 <= 65536 <= 65536]
+
+	at water.AutoBuffer.getImpl(AutoBuffer.java:632)
+
+	at water.AutoBuffer.getSp(AutoBuffer.java:608)
+
+	at water.AutoBuffer.getA1(AutoBuffer.java:1099)
+
+	at water.persist.PersistNFS.load(PersistNFS.java:60)
+
+	at water.persist.PersistManager.load(PersistManager.java:209)
+
+	at water.Value.loadPersist(Value.java:260)
+
+	at water.Value.memOrLoad(Value.java:139)
+
+	at water.Value.get(Value.java:153)
+
+	at water.fvec.Vec.chunkForChunkIdx(Vec.java:1108)
+
+	at water.fvec.ByteVec.chunkForChunkIdx(ByteVec.java:17)
+
+	at water.fvec.ByteVec.chunkForChunkIdx(ByteVec.java:13)
+
+	at water.util.FrameUtils.extractChunks(FrameUtils.java:1286)
+
+	at water.MRTask.compute2(MRTask.java:793)
+
+	at water.MRTask.compute2(MRTask.java:770)
+
+	at water.MRTask.compute2(MRTask.java:770)
+
+	at water.MRTask.compute2(MRTask.java:770)
+
+	at water.MRTask.compute2(MRTask.java:770)
+
+	at water.MRTask.compute2(MRTask.java:770)
+
+	at water.MRTask.compute2(MRTask.java:770)
+
+	at water.H2O$H2OCountedCompleter.compute1(H2O.java:1655)
+
+	at water.parser.ParseDataset$MultiFileParseTask$DistributedParse$Icer.compute1(ParseDataset$MultiFileParseTask$DistributedParse$Icer.java)
+
+	at water.H2O$H2OCountedCompleter.compute(H2O.java:1651)
+
+	... 5 more
+
+Caused by: java.io.EOFException: Reading 65536 bytes, AB=[AB read 2nd null NFS 0 <= 0 <= 65536 <= 65536]
+
+	... 27 more
+
+Traceback (most recent call last):
+
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/shared/callee.py", line 70, in call_run
+
+    result = run_fn(ds, config)
+
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py", line 78, in run
+
+    train = h2o.import_file(dataset.train.path, destination_frame=frame_name('train', config), **import_kwargs)
+
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/h2o.py", line 458, in import_file
+
+    return H2OFrame()._import_parse(path, pattern, destination_frame, header, sep, col_names, col_types, na_strings,
+
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/frame.py", line 457, in _import_parse
+
+    self._parse(rawkey, destination_frame, header, separator, column_names, column_types, na_strings,
+
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/frame.py", line 476, in _parse
+
+    return self._parse_raw(setup)
+
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/frame.py", line 505, in _parse_raw
+
+    H2OJob(h2o.api("POST /3/Parse", data=p), "Parse").poll()
+
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/job.py", line 90, in poll
+
+    raise EnvironmentError("Job with key {} failed with an exception: {}\nstacktrace: "
+
+OSError: Job with key $03017f0000011637ffffffff$_9303825dcc64ccdbd03960a45c39482a failed with an exception: DistributedException from /127.0.0.1:14101: 'java.io.EOFException: Reading 65536 bytes, AB=[AB read 2nd null NFS 0 <= 0 <= 65536 <= 65536]', caused by water.AutoBuffer$AutoBufferException: java.io.EOFException: Reading 65536 bytes, AB=[AB read 2nd null NFS 0 <= 0 <= 65536 <= 65536]
+
+stacktrace: 
+
+DistributedException from /127.0.0.1:14101: 'java.io.EOFException: Reading 65536 bytes, AB=[AB read 2nd null NFS 0 <= 0 <= 65536 <= 65536]', caused by water.AutoBuffer$AutoBufferException: java.io.EOFException: Reading 65536 bytes, AB=[AB read 2nd null NFS 0 <= 0 <= 65536 <= 65536]
+
+	at water.MRTask.getResult(MRTask.java:655)
+
+	at water.MRTask.getResult(MRTask.java:665)
+
+	at water.MRTask.doAll(MRTask.java:550)
+
+	at water.parser.ParseDataset.parseAllKeys(ParseDataset.java:254)
+
+	at water.parser.ParseDataset.access$000(ParseDataset.java:26)
+
+	at water.parser.ParseDataset$ParserFJTask.compute2(ParseDataset.java:203)
+
+	at water.H2O$H2OCountedCompleter.compute(H2O.java:1652)
+
+	at jsr166y.CountedCompleter.exec(CountedCompleter.java:468)
+
+	at jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:263)
+
+	at jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:974)
+
+	at jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1477)
+
+	at jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104)
+
+Caused by: water.AutoBuffer$AutoBufferException: java.io.EOFException: Reading 65536 bytes, AB=[AB read 2nd null NFS 0 <= 0 <= 65536 <= 65536]
+
+	at water.AutoBuffer.getImpl(AutoBuffer.java:632)
+
+	at water.AutoBuffer.getSp(AutoBuffer.java:608)
+
+	at water.AutoBuffer.getA1(AutoBuffer.java:1099)
+
+	at water.persist.PersistNFS.load(PersistNFS.java:60)
+
+	at water.persist.PersistManager.load(PersistManager.java:209)
+
+	at water.Value.loadPersist(Value.java:260)
+
+	at water.Value.memOrLoad(Value.java:139)
+
+	at water.Value.get(Value.java:153)
+
+	at water.fvec.Vec.chunkForChunkIdx(Vec.java:1108)
+
+	at water.fvec.ByteVec.chunkForChunkIdx(ByteVec.java:17)
+
+	at water.fvec.ByteVec.chunkForChunkIdx(ByteVec.java:13)
+
+	at water.util.FrameUtils.extractChunks(FrameUtils.java:1286)
+
+	at water.MRTask.compute2(MRTask.java:793)
+
+	at water.MRTask.compute2(MRTask.java:770)
+
+	at water.MRTask.compute2(MRTask.java:770)
+
+	at water.MRTask.compute2(MRTask.java:770)
+
+	at water.MRTask.compute2(MRTask.java:770)
+
+	at water.MRTask.compute2(MRTask.java:770)
+
+	at water.MRTask.compute2(MRTask.java:770)
+
+	at water.H2O$H2OCountedCompleter.compute1(H2O.java:1655)
+
+	at water.parser.ParseDataset$MultiFileParseTask$DistributedParse$Icer.compute1(ParseDataset$MultiFileParseTask$DistributedParse$Icer.java)
+
+	at water.H2O$H2OCountedCompleter.compute(H2O.java:1651)
+
+	... 5 more
+
+Caused by: java.io.EOFException: Reading 65536 bytes, AB=[AB read 2nd null NFS 0 <= 0 <= 65536 <= 65536]
+
+	... 27 more
+
+
+
+
+
+
+Job with key $03017f0000011637ffffffff$_9303825dcc64ccdbd03960a45c39482a failed with an exception: DistributedException from /127.0.0.1:14101: 'java.io.EOFException: Reading 65536 bytes, AB=[AB read 2nd null NFS 0 <= 0 <= 65536 <= 65536]', caused by water.AutoBuffer$AutoBufferException: java.io.EOFException: Reading 65536 bytes, AB=[AB read 2nd null NFS 0 <= 0 <= 65536 <= 65536]
+stacktrace: 
+DistributedException from /127.0.0.1:14101: 'java.io.EOFException: Reading 65536 bytes, AB=[AB read 2nd null NFS 0 <= 0 <= 65536 <= 65536]', caused by water.AutoBuffer$AutoBufferException: java.io.EOFException: Reading 65536 bytes, AB=[AB read 2nd null NFS 0 <= 0 <= 65536 <= 65536]
+	at water.MRTask.getResult(MRTask.java:655)
+	at water.MRTask.getResult(MRTask.java:665)
+	at water.MRTask.doAll(MRTask.java:550)
+	at water.parser.ParseDataset.parseAllKeys(ParseDataset.java:254)
+	at water.parser.ParseDataset.access$000(ParseDataset.java:26)
+	at water.parser.ParseDataset$ParserFJTask.compute2(ParseDataset.java:203)
+	at water.H2O$H2OCountedCompleter.compute(H2O.java:1652)
+	at jsr166y.CountedCompleter.exec(CountedCompleter.java:468)
+	at jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:263)
+	at jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:974)
+	at jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1477)
+	at jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104)
+Caused by: water.AutoBuffer$AutoBufferException: java.io.EOFException: Reading 65536 bytes, AB=[AB read 2nd null NFS 0 <= 0 <= 65536 <= 65536]
+	at water.AutoBuffer.getImpl(AutoBuffer.java:632)
+	at water.AutoBuffer.getSp(AutoBuffer.java:608)
+	at water.AutoBuffer.getA1(AutoBuffer.java:1099)
+	at water.persist.PersistNFS.load(PersistNFS.java:60)
+	at water.persist.PersistManager.load(PersistManager.java:209)
+	at water.Value.loadPersist(Value.java:260)
+	at water.Value.memOrLoad(Value.java:139)
+	at water.Value.get(Value.java:153)
+	at water.fvec.Vec.chunkForChunkIdx(Vec.java:1108)
+	at water.fvec.ByteVec.chunkForChunkIdx(ByteVec.java:17)
+	at water.fvec.ByteVec.chunkForChunkIdx(ByteVec.java:13)
+	at water.util.FrameUtils.extractChunks(FrameUtils.java:1286)
+	at water.MRTask.compute2(MRTask.java:793)
+	at water.MRTask.compute2(MRTask.java:770)
+	at water.MRTask.compute2(MRTask.java:770)
+	at water.MRTask.compute2(MRTask.java:770)
+	at water.MRTask.compute2(MRTask.java:770)
+	at water.MRTask.compute2(MRTask.java:770)
+	at water.MRTask.compute2(MRTask.java:770)
+	at water.H2O$H2OCountedCompleter.compute1(H2O.java:1655)
+	at water.parser.ParseDataset$MultiFileParseTask$DistributedParse$Icer.compute1(ParseDataset$MultiFileParseTask$DistributedParse$Icer.java)
+	at water.H2O$H2OCountedCompleter.compute(H2O.java:1651)
+	... 5 more
+Caused by: java.io.EOFException: Reading 65536 bytes, AB=[AB read 2nd null NFS 0 <= 0 <= 65536 <= 65536]
+	... 27 more
+Traceback (most recent call last):
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 542, in run
+    meta_result = self.benchmark.framework_module.run(self._dataset, task_config)
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/__init__.py", line 30, in run
+    return run_in_venv(__file__, "exec.py",
+  File "/home/juradoi/experiments/automlbenchmark/frameworks/shared/caller.py", line 142, in run_in_venv
+    raise NoResultError(res.error_message)
+amlb.results.NoResultError: Job with key $03017f0000011637ffffffff$_9303825dcc64ccdbd03960a45c39482a failed with an exception: DistributedException from /127.0.0.1:14101: 'java.io.EOFException: Reading 65536 bytes, AB=[AB read 2nd null NFS 0 <= 0 <= 65536 <= 65536]', caused by water.AutoBuffer$AutoBufferException: java.io.EOFException: Reading 65536 bytes, AB=[AB read 2nd null NFS 0 <= 0 <= 65536 <= 65536]
+stacktrace: 
+DistributedException from /127.0.0.1:14101: 'java.io.EOFException: Reading 65536 bytes, AB=[AB read 2nd null NFS 0 <= 0 <= 65536 <= 65536]', caused by water.AutoBuffer$AutoBufferException: java.io.EOFException: Reading 65536 bytes, AB=[AB read 2nd null NFS 0 <= 0 <= 65536 <= 65536]
+	at water.MRTask.getResult(MRTask.java:655)
+	at water.MRTask.getResult(MRTask.java:665)
+	at water.MRTask.doAll(MRTask.java:550)
+	at water.parser.ParseDataset.parseAllKeys(ParseDataset.java:254)
+	at water.parser.ParseDataset.access$000(ParseDataset.java:26)
+	at water.parser.ParseDataset$ParserFJTask.compute2(ParseDataset.java:203)
+	at water.H2O$H2OCountedCompleter.compute(H2O.java:1652)
+	at jsr166y.CountedCompleter.exec(CountedCompleter.java:468)
+	at jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:263)
+	at jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:974)
+	at jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1477)
+	at jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104)
+Caused by: water.AutoBuffer$AutoBufferException: java.io.EOFException: Reading 65536 bytes, AB=[AB read 2nd null NFS 0 <= 0 <= 65536 <= 65536]
+	at water.AutoBuffer.getImpl(AutoBuffer.java:632)
+	at water.AutoBuffer.getSp(AutoBuffer.java:608)
+	at water.AutoBuffer.getA1(AutoBuffer.java:1099)
+	at water.persist.PersistNFS.load(PersistNFS.java:60)
+	at water.persist.PersistManager.load(PersistManager.java:209)
+	at water.Value.loadPersist(Value.java:260)
+	at water.Value.memOrLoad(Value.java:139)
+	at water.Value.get(Value.java:153)
+	at water.fvec.Vec.chunkForChunkIdx(Vec.java:1108)
+	at water.fvec.ByteVec.chunkForChunkIdx(ByteVec.java:17)
+	at water.fvec.ByteVec.chunkForChunkIdx(ByteVec.java:13)
+	at water.util.FrameUtils.extractChunks(FrameUtils.java:1286)
+	at water.MRTask.compute2(MRTask.java:793)
+	at water.MRTask.compute2(MRTask.java:770)
+	at water.MRTask.compute2(MRTask.java:770)
+	at water.MRTask.compute2(MRTask.java:770)
+	at water.MRTask.compute2(MRTask.java:770)
+	at water.MRTask.compute2(MRTask.java:770)
+	at water.MRTask.compute2(MRTask.java:770)
+	at water.H2O$H2OCountedCompleter.compute1(H2O.java:1655)
+	at water.parser.ParseDataset$MultiFileParseTask$DistributedParse$Icer.compute1(ParseDataset$MultiFileParseTask$DistributedParse$Icer.java)
+	at water.H2O$H2OCountedCompleter.compute(H2O.java:1651)
+	... 5 more
+Caused by: java.io.EOFException: Reading 65536 bytes, AB=[AB read 2nd null NFS 0 <= 0 <= 65536 <= 65536]
+	... 27 more
+
+Loading metadata from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359989.pygmo_c.local.20211210T074457/predictions/riccardo/0/metadata.json`.
+Metric scores: { 'acc': nan,
+  'app_version': 'dev [master, beef024]',
+  'auc': nan,
+  'balacc': nan,
+  'constraint': 'pygmo_c',
+  'duration': nan,
+  'fold': 0,
+  'framework': 'H2OAutoML',
+  'id': 'openml.org/t/359989',
+  'info': 'NoResultError: Job with key '
+          '$03017f0000011637ffffffff$_9303825dcc64ccdbd03960a45c39482a failed '
+          'with an exception: DistributedException from /127.0.0.1:14101: '
+          "'java.io.EOFException: Reading 65536 byte\u2026",
+  'logloss': nan,
+  'metric': 'auc',
+  'mode': 'local',
+  'models_count': nan,
+  'params': '',
+  'predict_duration': nan,
+  'result': nan,
+  'seed': 1960536609,
+  'task': 'riccardo',
+  'training_duration': nan,
+  'type': 'binary',
+  'utc': '2021-12-10T07:51:54',
+  'version': '3.34.0.3'}
+--- Logging error ---
+Traceback (most recent call last):
+
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/logging/__init__.py", line 1088, in emit
+    stream.write(msg + self.terminator)
+
+UnicodeEncodeError: 'latin-1' codec can't encode character '\u2026' in position 504: ordinal not in range(256)
+
+Call stack:
+  File "runbenchmark.py", line 184, in <module>
+    res = bench.run(args.task, args.fold)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 208, in run
+    results = self._run_jobs(jobs)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 251, in _run_jobs
+    self.job_runner.start()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 219, in start
+    self._run()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 311, in _run
+    result = job.start()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 115, in start
+    result = self._run()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/utils/process.py", line 702, in profiler
+    return fn(*args, **kwargs)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 550, in run
+    return results.compute_score(result=result, meta_result=meta_result)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/utils/process.py", line 702, in profiler
+    return fn(*args, **kwargs)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/results.py", line 453, in compute_score
+    log.info("Metric scores: %s", entry)
+
+Message: 'Metric scores: %s'
+Arguments: ({'id': 'openml.org/t/359989', 'task': 'riccardo', 'type': 'binary', 'constraint': 'pygmo_c', 'framework': 'H2OAutoML', 'version': '3.34.0.3', 'params': '', 'fold': 0, 'mode': 'local', 'seed': 1960536609, 'app_version': 'dev [master, beef024]', 'utc': '2021-12-10T07:51:54', 'metric': 'auc', 'duration': nan, 'training_duration': nan, 'predict_duration': nan, 'models_count': nan, 'auc': nan, 'result': nan, 'logloss': nan, 'acc': nan, 'balacc': nan, 'info': "NoResultError: Job with key $03017f0000011637ffffffff$_9303825dcc64ccdbd03960a45c39482a failed with an exception: DistributedException from /127.0.0.1:14101: 'java.io.EOFException: Reading 65536 byte\u2026"},)
+--- Logging error ---
+Traceback (most recent call last):
+
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/logging/__init__.py", line 1088, in emit
+    stream.write(msg + self.terminator)
+
+UnicodeEncodeError: 'latin-1' codec can't encode character '\u2026' in position 504: ordinal not in range(256)
+
+Call stack:
+  File "runbenchmark.py", line 184, in <module>
+    res = bench.run(args.task, args.fold)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 208, in run
+    results = self._run_jobs(jobs)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 251, in _run_jobs
+    self.job_runner.start()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 219, in start
+    self._run()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 311, in _run
+    result = job.start()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 115, in start
+    result = self._run()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/utils/process.py", line 702, in profiler
+    return fn(*args, **kwargs)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 550, in run
+    return results.compute_score(result=result, meta_result=meta_result)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/utils/process.py", line 702, in profiler
+    return fn(*args, **kwargs)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/results.py", line 453, in compute_score
+    log.info("Metric scores: %s", entry)
+
+Message: 'Metric scores: %s'
+Arguments: ({'id': 'openml.org/t/359989', 'task': 'riccardo', 'type': 'binary', 'constraint': 'pygmo_c', 'framework': 'H2OAutoML', 'version': '3.34.0.3', 'params': '', 'fold': 0, 'mode': 'local', 'seed': 1960536609, 'app_version': 'dev [master, beef024]', 'utc': '2021-12-10T07:51:54', 'metric': 'auc', 'duration': nan, 'training_duration': nan, 'predict_duration': nan, 'models_count': nan, 'auc': nan, 'result': nan, 'logloss': nan, 'acc': nan, 'balacc': nan, 'info': "NoResultError: Job with key $03017f0000011637ffffffff$_9303825dcc64ccdbd03960a45c39482a failed with an exception: DistributedException from /127.0.0.1:14101: 'java.io.EOFException: Reading 65536 byte\u2026"},)
+Job `local.openml_t_359989.pygmo_c.riccardo.0.H2OAutoML` executed in 360.706 seconds.
+--- Logging error ---
+Traceback (most recent call last):
+
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/logging/__init__.py", line 1088, in emit
+    stream.write(msg + self.terminator)
+
+UnicodeEncodeError: 'latin-1' codec can't encode character '\u2026' in position 553: ordinal not in range(256)
+
+Call stack:
+  File "runbenchmark.py", line 184, in <module>
+    res = bench.run(args.task, args.fold)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 208, in run
+    results = self._run_jobs(jobs)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 251, in _run_jobs
+    self.job_runner.start()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 219, in start
+    self._run()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 311, in _run
+    result = job.start()
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 117, in start
+    log.debug("Job `%s` returned: %s", self.name, result)
+
+Message: 'Job `%s` returned: %s'
+Arguments: ('local.openml_t_359989.pygmo_c.riccardo.0.H2OAutoML', {'id': 'openml.org/t/359989', 'task': 'riccardo', 'type': 'binary', 'constraint': 'pygmo_c', 'framework': 'H2OAutoML', 'version': '3.34.0.3', 'params': '', 'fold': 0, 'mode': 'local', 'seed': 1960536609, 'app_version': 'dev [master, beef024]', 'utc': '2021-12-10T07:51:54', 'metric': 'auc', 'duration': nan, 'training_duration': nan, 'predict_duration': nan, 'models_count': nan, 'auc': nan, 'result': nan, 'logloss': nan, 'acc': nan, 'balacc': nan, 'info': "NoResultError: Job with key $03017f0000011637ffffffff$_9303825dcc64ccdbd03960a45c39482a failed with an exception: DistributedException from /127.0.0.1:14101: 'java.io.EOFException: Reading 65536 byte\u2026"})
+All jobs executed in 416.602 seconds.
+[MONITORING] [local.openml_t_359989.pygmo_c.riccardo.0.H2OAutoML] CPU Utilization: 7.9%
+[MONITORING] [local.openml_t_359989.pygmo_c.riccardo.0.H2OAutoML] Memory Usage: 2.7%
+[MONITORING] [local.openml_t_359989.pygmo_c.riccardo.0.H2OAutoML] Disk Usage: 43.2%
+Processing results for h2oautoml.openml_t_359989.pygmo_c.local.20211210T074457
+--- Logging error ---
+Traceback (most recent call last):
+
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/logging/__init__.py", line 1088, in emit
+    stream.write(msg + self.terminator)
+
+UnicodeEncodeError: 'latin-1' codec can't encode character '\u2026' in position 785: ordinal not in range(256)
+
+Call stack:
+  File "runbenchmark.py", line 184, in <module>
+    res = bench.run(args.task, args.fold)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 210, in run
+    log.debug(results)
+
+Message: [{'name': 'local.openml_t_359989.pygmo_c.riccardo.0.H2OAutoML', 'result': {'id': 'openml.org/t/359989', 'task': 'riccardo', 'type': 'binary', 'constraint': 'pygmo_c', 'framework': 'H2OAutoML', 'version': '3.34.0.3', 'params': '', 'fold': 0, 'mode': 'local', 'seed': 1960536609, 'app_version': 'dev [master, beef024]', 'utc': '2021-12-10T07:51:54', 'metric': 'auc', 'duration': 360.70641684532166, 'training_duration': nan, 'predict_duration': nan, 'models_count': nan, 'auc': nan, 'result': nan, 'logloss': nan, 'acc': nan, 'balacc': nan, 'info': "NoResultError: Job with key $03017f0000011637ffffffff$_9303825dcc64ccdbd03960a45c39482a failed with an exception: DistributedException from /127.0.0.1:14101: 'java.io.EOFException: Reading 65536 byte\u2026"}, 'duration': 360.70641684532166}]
+Arguments: ()
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359989.pygmo_c.local.20211210T074457/scores/H2OAutoML.benchmark_openml_t_359989.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359989.pygmo_c.local.20211210T074457/scores/results.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/results.csv`.
+Summing up scores for current run:
+                 id     task fold framework constraint metric  duration       seed                                                                                                                                                                                                     info
+openml.org/t/359989 riccardo    0 H2OAutoML    pygmo_c    auc     360.7 1960536609 NoResultError: Job with key $03017f0000011637ffffffff$_9303825dcc64ccdbd03960a45c39482a failed with an exception: DistributedException from /127.0.0.1:14101: 'java.io.EOFException: Reading 65536 byte\u2026
+--- Logging error ---
+Traceback (most recent call last):
+
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/logging/__init__.py", line 1088, in emit
+    stream.write(msg + self.terminator)
+
+UnicodeEncodeError: 'latin-1' codec can't encode character '\u2026' in position 638: ordinal not in range(256)
+
+Call stack:
+  File "runbenchmark.py", line 184, in <module>
+    res = bench.run(args.task, args.fold)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 212, in run
+    scoreboard = self._process_results(results)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 346, in _process_results
+    log.info("Summing up scores for current run:\n%s",
+
+Message: 'Summing up scores for current run:\n%s'
+Arguments: ("                 id     task fold framework constraint metric  duration       seed                                                                                                                                                                                                     info\nopenml.org/t/359989 riccardo    0 H2OAutoML    pygmo_c    auc     360.7 1960536609 NoResultError: Job with key $03017f0000011637ffffffff$_9303825dcc64ccdbd03960a45c39482a failed with an exception: DistributedException from /127.0.0.1:14101: 'java.io.EOFException: Reading 65536 byte\u2026",)
+--- Logging error ---
+Traceback (most recent call last):
+
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/logging/__init__.py", line 1088, in emit
+    stream.write(msg + self.terminator)
+
+UnicodeEncodeError: 'latin-1' codec can't encode character '\u2026' in position 638: ordinal not in range(256)
+
+Call stack:
+  File "runbenchmark.py", line 184, in <module>
+    res = bench.run(args.task, args.fold)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 212, in run
+    scoreboard = self._process_results(results)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 346, in _process_results
+    log.info("Summing up scores for current run:\n%s",
+
+Message: 'Summing up scores for current run:\n%s'
+Arguments: ("                 id     task fold framework constraint metric  duration       seed                                                                                                                                                                                                     info\nopenml.org/t/359989 riccardo    0 H2OAutoML    pygmo_c    auc     360.7 1960536609 NoResultError: Job with key $03017f0000011637ffffffff$_9303825dcc64ccdbd03960a45c39482a failed with an exception: DistributedException from /127.0.0.1:14101: 'java.io.EOFException: Reading 65536 byte\u2026",)

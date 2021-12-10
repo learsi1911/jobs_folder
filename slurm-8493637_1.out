@@ -1,0 +1,206 @@
+/var/spool/slurm/slurmd/job8493638/slurm_script: line 8: activate: No such file or directory
+Running benchmark `H2OAutoML` on `openml/t/168909` framework in `local` mode.
+Loading frameworks definitions from ['/home/juradoi/experiments/automlbenchmark/resources/frameworks.yaml'].
+Loading benchmark constraint definitions from ['/home/juradoi/experiments/automlbenchmark/resources/constraints.yaml'].
+Loading openml task 168909.
+
+---------------------------------------------------------------
+Starting job local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML.
+Assigning 16 cores (total=16) for new task dilbert.
+Assigning 91325 MB (total=95302 MB) for new dilbert task.
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] CPU Utilization: 15.9%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Memory Usage: 2.0%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Disk Usage: 43.1%
+Running task dilbert on framework H2OAutoML with config:
+TaskConfig({})
+Running cmd `/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py`
+INFO:__main__:
+**** H2O AutoML [v3.34.0.3] ****
+
+INFO:__main__:Starting H2O cluster with 16 cores, 60883M memory.
+Checking whether there is an H2O instance running at http://localhost:21517 ..... not found.
+Attempting to start a local H2O server...
+  Java Version: openjdk version "11.0.12" 2021-07-20; OpenJDK Runtime Environment (build 11.0.12+7-post-Debian-2deb10u1); OpenJDK 64-Bit Server VM (build 11.0.12+7-post-Debian-2deb10u1, mixed mode, sharing)
+  Starting server from /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/backend/bin/h2o.jar
+  Ice root: /tmp/tmpebhe42up
+  JVM stdout: /tmp/tmpebhe42up/h2o_unknownUser_started_from_python.out
+  JVM stderr: /tmp/tmpebhe42up/h2o_unknownUser_started_from_python.err
+  Server is running at http://127.0.0.1:21517
+Connecting to H2O server at http://127.0.0.1:21517 ... successful.
+--------------------------  ------------------------------------------------------------------
+H2O_cluster_uptime:         01 secs
+H2O_cluster_timezone:       Europe/Amsterdam
+H2O_data_parsing_timezone:  UTC
+H2O_cluster_version:        3.34.0.3
+H2O_cluster_version_age:    2 months and 2 days
+H2O_cluster_name:           H2O_from_python_unknownUser_amivl8
+H2O_cluster_total_nodes:    1
+H2O_cluster_free_memory:    59.47 Gb
+H2O_cluster_total_cores:    16
+H2O_cluster_allowed_cores:  16
+H2O_cluster_status:         locked, healthy
+H2O_connection_url:         http://127.0.0.1:21517
+H2O_connection_proxy:       {"http": null, "https": null}
+H2O_internal_security:      False
+H2O_API_Extensions:         Amazon S3, XGBoost, Algos, AutoML, Core V3, TargetEncoder, Core V4
+Python_version:             3.8.12 final
+--------------------------  ------------------------------------------------------------------
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+INFO:__main__:Running model on task dilbert, fold 0.
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] CPU Utilization: 37.1%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Memory Usage: 10.0%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] CPU Utilization: 91.3%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Memory Usage: 10.1%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] CPU Utilization: 91.0%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Memory Usage: 44.8%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] CPU Utilization: 91.6%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Memory Usage: 44.8%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] CPU Utilization: 91.5%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Memory Usage: 44.8%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] CPU Utilization: 91.5%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Memory Usage: 44.8%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] CPU Utilization: 90.7%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Memory Usage: 44.8%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] CPU Utilization: 91.8%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Memory Usage: 44.9%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] CPU Utilization: 91.7%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Memory Usage: 45.0%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] CPU Utilization: 91.7%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Memory Usage: 45.0%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] CPU Utilization: 91.6%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Memory Usage: 45.3%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] CPU Utilization: 91.4%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Memory Usage: 45.3%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] CPU Utilization: 94.6%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Memory Usage: 45.4%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] CPU Utilization: 95.4%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Memory Usage: 45.4%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] CPU Utilization: 95.5%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Memory Usage: 45.4%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] CPU Utilization: 95.4%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Memory Usage: 45.4%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] CPU Utilization: 95.4%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Memory Usage: 45.4%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] CPU Utilization: 95.5%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Memory Usage: 45.4%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] CPU Utilization: 95.4%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Memory Usage: 45.4%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] CPU Utilization: 95.4%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Memory Usage: 45.4%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] CPU Utilization: 95.4%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Memory Usage: 45.4%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] CPU Utilization: 95.4%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Memory Usage: 45.4%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] CPU Utilization: 95.4%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Memory Usage: 45.4%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] CPU Utilization: 95.3%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Memory Usage: 45.4%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] CPU Utilization: 92.5%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Memory Usage: 46.0%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] CPU Utilization: 91.7%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Memory Usage: 45.5%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] CPU Utilization: 90.9%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Memory Usage: 45.5%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] CPU Utilization: 94.6%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Memory Usage: 45.5%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] CPU Utilization: 95.5%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Memory Usage: 45.6%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Disk Usage: 43.1%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] CPU Utilization: 89.5%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Memory Usage: 45.6%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Disk Usage: 43.1%
+AutoML progress: |███████████████████████████████████████████████████████████████| (done) 100%
+stackedensemble prediction progress: |███████████████████████████████████████████| (done) 100%
+H2O session _sid_a63f closed.
+
+
+
+Predictions preview:
+                         0                   1                      2                      3                      4 predictions truth
+0    5.416996406538601E-6  0.9999760060544289  1.0908747248649406E-5   8.386781916441079E-7  6.8295237243304035E-6           1     1
+1     3.63690260112795E-5  0.9999512400370941  7.0584146689688535E-6  1.1684890946898657E-6   4.164033130700212E-6           1     1
+2    5.953820040597862E-4  0.9992673925341916   3.735877106393812E-5  1.5139412426086984E-5   8.472727825854125E-5           1     1
+3     0.03712914326942667  0.9615587655237287   7.940441984066314E-4   6.715303256809189E-5   4.508939758697492E-4           1     1
+4   1.1952571372323144E-4  0.9998474294010828    7.78139526432814E-6   4.692317987441159E-6  2.0571171942134552E-5           1     1
+5     0.00854378468460352  0.9906484851504807  5.2586877176599105E-5  1.2602487176399237E-4   6.291184159751985E-4           1     1
+6    1.716737662441927E-4  0.9994680367027505   2.768989299477112E-4   3.192354933732283E-5  5.1467051720162414E-5           1     1
+7    1.866238746018438E-7  0.9999981872607202    9.64603985701551E-7    9.91493359958335E-8   5.623620835547107E-7           1     1
+8   1.2203063880761947E-6  0.9999942352576917  1.5972689097740222E-6   3.137971821473366E-7  2.6333698280966192E-6           1     1
+9    5.898577195938196E-7  0.9999974724486326  4.1965757156269014E-7  1.8830095056157153E-7  1.3297351256568615E-6           1     1
+10   7.184635073018412E-5   0.999858616964355  1.5375432817213192E-5   6.908179161174402E-6    4.72530729362219E-5           1     1
+11  0.0020281155542125114  0.9969977794195495   5.650987447499452E-4   9.386902692655966E-5  3.1513725456179943E-4           1     1
+12   7.784847709208751E-4  0.9991672098553764  2.4963629194160557E-5   4.479468980544332E-6  2.4862275527840063E-5           1     1
+13  1.2709746457096848E-5  0.9999823490073252  1.2575607892833126E-6   5.967777908514597E-7  3.0869076375698792E-6           1     1
+14  1.0320366687456347E-6  0.9999931985201153  4.2397096648521283E-7  2.3234257861664722E-7  5.1131296712850155E-6           1     1
+15  4.5704629436597754E-5  0.9999289773585778   7.217100701720887E-6  3.5534844774025734E-6  1.4547426806251557E-5           1     1
+16  1.7671043107589019E-6  0.9999946547138894  1.2500514565770367E-6  3.9867614019243963E-7  1.9294542029540797E-6           1     1
+17  0.0012402420129214715  0.9986348399639378   4.762452872638612E-5  2.4119257661997198E-5   5.317423675225822E-5           1     1
+18   5.464948186978266E-7  0.9999932709755078  1.4071164287713865E-6  2.7089635779125746E-7   4.504516886972689E-6           1     1
+19   7.758063793153246E-4  0.9976953134580052   7.305605746409443E-4    3.98443326838799E-5   7.584752553543363E-4           1     1
+
+Predictions saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_168909.pygmo_c.local.20211209T210324/predictions/dilbert/0/predictions.csv`.
+Loading metadata from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_168909.pygmo_c.local.20211209T210324/predictions/dilbert/0/metadata.json`.
+Loading predictions from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_168909.pygmo_c.local.20211209T210324/predictions/dilbert/0/predictions.csv`.
+Metric scores: { 'acc': 0.989,
+  'app_version': 'dev [master, beef024]',
+  'balacc': 0.9890946241577648,
+  'constraint': 'pygmo_c',
+  'duration': nan,
+  'fold': 0,
+  'framework': 'H2OAutoML',
+  'id': 'openml.org/t/168909',
+  'info': None,
+  'logloss': 0.037558772844126405,
+  'metric': 'neg_logloss',
+  'mode': 'local',
+  'models_count': 19,
+  'params': '',
+  'predict_duration': 0.2971160411834717,
+  'result': -0.037558772844126405,
+  'seed': 1631310910,
+  'task': 'dilbert',
+  'training_duration': 3603.227710008621,
+  'type': 'multiclass',
+  'utc': '2021-12-09T22:04:46',
+  'version': '3.34.0.3'}
+Job `local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML` executed in 3654.989 seconds.
+All jobs executed in 3681.920 seconds.
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] CPU Utilization: 80.1%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Memory Usage: 2.2%
+[MONITORING] [local.openml_t_168909.pygmo_c.dilbert.0.H2OAutoML] Disk Usage: 43.1%
+Processing results for h2oautoml.openml_t_168909.pygmo_c.local.20211209T210324
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_168909.pygmo_c.local.20211209T210324/scores/H2OAutoML.benchmark_openml_t_168909.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_168909.pygmo_c.local.20211209T210324/scores/results.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/results.csv`.
+Summing up scores for current run:
+                 id    task fold framework constraint    result      metric  duration       seed
+openml.org/t/168909 dilbert    0 H2OAutoML    pygmo_c -0.037559 neg_logloss    3655.0 1631310910

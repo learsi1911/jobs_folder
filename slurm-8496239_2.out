@@ -1,0 +1,209 @@
+/var/spool/slurm/slurmd/job8496248/slurm_script: line 8: activate: No such file or directory
+Running benchmark `H2OAutoML` on `openml/t/359981` framework in `local` mode.
+Loading frameworks definitions from ['/home/juradoi/experiments/automlbenchmark/resources/frameworks.yaml'].
+Loading benchmark constraint definitions from ['/home/juradoi/experiments/automlbenchmark/resources/constraints.yaml'].
+Loading openml task 359981.
+
+----------------------------------------------------------------------------------------------
+Starting job local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML.
+Assigning 16 cores (total=16) for new task jungle_chess_2pcs_raw_endgame_complete.
+Assigning 91364 MB (total=95302 MB) for new jungle_chess_2pcs_raw_endgame_complete task.
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] CPU Utilization: 13.5%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Memory Usage: 2.0%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Disk Usage: 43.2%
+Running task jungle_chess_2pcs_raw_endgame_complete on framework H2OAutoML with config:
+TaskConfig({})
+Running cmd `/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py`
+INFO:__main__:
+**** H2O AutoML [v3.34.0.3] ****
+
+INFO:__main__:Starting H2O cluster with 16 cores, 60909M memory.
+Checking whether there is an H2O instance running at http://localhost:26947 ..... not found.
+Attempting to start a local H2O server...
+  Java Version: openjdk version "11.0.12" 2021-07-20; OpenJDK Runtime Environment (build 11.0.12+7-post-Debian-2deb10u1); OpenJDK 64-Bit Server VM (build 11.0.12+7-post-Debian-2deb10u1, mixed mode, sharing)
+  Starting server from /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/backend/bin/h2o.jar
+  Ice root: /tmp/tmpzrf5uqen
+  JVM stdout: /tmp/tmpzrf5uqen/h2o_unknownUser_started_from_python.out
+  JVM stderr: /tmp/tmpzrf5uqen/h2o_unknownUser_started_from_python.err
+  Server is running at http://127.0.0.1:26947
+Connecting to H2O server at http://127.0.0.1:26947 ... successful.
+--------------------------  ------------------------------------------------------------------
+H2O_cluster_uptime:         01 secs
+H2O_cluster_timezone:       Europe/Amsterdam
+H2O_data_parsing_timezone:  UTC
+H2O_cluster_version:        3.34.0.3
+H2O_cluster_version_age:    2 months and 2 days
+H2O_cluster_name:           H2O_from_python_unknownUser_4o0mnu
+H2O_cluster_total_nodes:    1
+H2O_cluster_free_memory:    59.48 Gb
+H2O_cluster_total_cores:    16
+H2O_cluster_allowed_cores:  16
+H2O_cluster_status:         locked, healthy
+H2O_connection_url:         http://127.0.0.1:26947
+H2O_connection_proxy:       {"http": null, "https": null}
+H2O_internal_security:      False
+H2O_API_Extensions:         Amazon S3, XGBoost, Algos, AutoML, Core V3, TargetEncoder, Core V4
+Python_version:             3.8.12 final
+--------------------------  ------------------------------------------------------------------
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+INFO:__main__:Running model on task jungle_chess_2pcs_raw_endgame_complete, fold 0.
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] CPU Utilization: 79.8%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Memory Usage: 44.5%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] CPU Utilization: 89.3%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Memory Usage: 45.0%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] CPU Utilization: 89.9%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Memory Usage: 45.1%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] CPU Utilization: 91.9%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Memory Usage: 46.8%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] CPU Utilization: 94.9%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Memory Usage: 46.8%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] CPU Utilization: 95.2%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Memory Usage: 47.0%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] CPU Utilization: 96.2%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Memory Usage: 47.1%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] CPU Utilization: 94.7%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Memory Usage: 47.1%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] CPU Utilization: 95.1%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Memory Usage: 47.4%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] CPU Utilization: 91.2%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Memory Usage: 47.8%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] CPU Utilization: 95.4%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Memory Usage: 47.8%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] CPU Utilization: 94.6%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Memory Usage: 47.9%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] CPU Utilization: 94.4%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Memory Usage: 47.9%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] CPU Utilization: 97.1%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Memory Usage: 47.9%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] CPU Utilization: 95.8%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Memory Usage: 48.0%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] CPU Utilization: 92.5%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Memory Usage: 48.0%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] CPU Utilization: 92.2%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Memory Usage: 48.1%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] CPU Utilization: 93.3%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Memory Usage: 48.1%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] CPU Utilization: 93.0%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Memory Usage: 48.1%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] CPU Utilization: 92.1%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Memory Usage: 48.3%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] CPU Utilization: 92.9%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Memory Usage: 48.4%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] CPU Utilization: 93.5%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Memory Usage: 48.9%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] CPU Utilization: 93.1%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Memory Usage: 48.9%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] CPU Utilization: 95.1%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Memory Usage: 48.9%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] CPU Utilization: 96.7%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Memory Usage: 49.3%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] CPU Utilization: 97.5%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Memory Usage: 49.3%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] CPU Utilization: 96.9%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Memory Usage: 49.3%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] CPU Utilization: 97.4%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Memory Usage: 49.3%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] CPU Utilization: 89.4%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Memory Usage: 49.3%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] CPU Utilization: 90.7%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Memory Usage: 49.4%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] CPU Utilization: 94.3%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Memory Usage: 49.4%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Disk Usage: 43.2%
+AutoML progress: |███████████████████████████████████████████████████████████████| (done) 100%
+stackedensemble prediction progress: |███████████████████████████████████████████| (done) 100%
+H2O session _sid_aad4 closed.
+
+
+
+Predictions preview:
+                          b                       d                    w predictions truth
+0       0.2185947717338791     0.07182148442668085   0.7095837438394401           w     w
+1    0.0010264145847892394     5.39174708792475E-4   0.9984344107064183           w     w
+2    2.1746415521673074E-5    4.669388082519401E-4   0.9995113147762265           w     w
+3    4.3160329748828476E-8   3.6719715707698864E-7   0.9999995896425132           w     w
+4       0.4685421471365877     0.06139576862290847  0.47006208424050394           w     w
+5      0.05349739866383651      0.0933806137734002   0.8531219875627633           w     w
+6    3.828911745503934E-10  1.4017968049485938E-11   0.9999999996030908           w     w
+7      0.00833208300562026   1.1398290581841059E-4   0.9915539340885612           w     w
+8    3.651695035368922E-10   5.352827561485008E-11   0.9999999995813023           w     w
+9    8.572885476720419E-10  3.8257289790148714E-10   0.9999999987601385           w     w
+10   3.146735128249076E-11   5.514562266138793E-12    0.999999999963018           w     w
+11  1.3825035294627059E-12  2.4123300708170067E-12   0.9999999999962053           w     w
+12     0.03954853675896389    7.345242267563511E-5   0.9603780108183605           w     w
+13   4.096690394285619E-11   7.070597509541785E-12   0.9999999999519624           w     w
+14     0.11070992086703106     0.02506435975992895   0.8642257193730399           w     w
+15  1.9479128310389366E-12   7.576210305838459E-13   0.9999999999972944           w     w
+16     0.04930858874538749   1.0463532325461511E-4   0.9505867759313579           w     w
+17     0.24210424076763862    8.719652057355802E-4   0.7570237940266258           w     w
+18  1.5630025068848615E-10    9.81689275023093E-12   0.9999999998338829           w     w
+19   1.5380104537740312E-7    4.256652786979307E-9   0.9999998419423018           w     w
+
+Predictions saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359981.pygmo_c.local.20211210T063857/predictions/jungle_chess_2pcs_raw_endgame_complete/0/predictions.csv`.
+Loading metadata from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359981.pygmo_c.local.20211210T063857/predictions/jungle_chess_2pcs_raw_endgame_complete/0/metadata.json`.
+Loading predictions from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359981.pygmo_c.local.20211210T063857/predictions/jungle_chess_2pcs_raw_endgame_complete/0/predictions.csv`.
+Metric scores: { 'acc': 0.9475680499776885,
+  'app_version': 'dev [master, beef024]',
+  'balacc': 0.9112062877113836,
+  'constraint': 'pygmo_c',
+  'duration': nan,
+  'fold': 0,
+  'framework': 'H2OAutoML',
+  'id': 'openml.org/t/359981',
+  'info': None,
+  'logloss': 0.14351656639118884,
+  'metric': 'neg_logloss',
+  'mode': 'local',
+  'models_count': 167,
+  'params': '',
+  'predict_duration': 1.743330955505371,
+  'result': -0.14351656639118884,
+  'seed': 821890947,
+  'task': 'jungle_chess_2pcs_raw_endgame_complete',
+  'training_duration': 3712.2254099845886,
+  'type': 'multiclass',
+  'utc': '2021-12-10T07:41:03',
+  'version': '3.34.0.3'}
+Job `local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML` executed in 3725.797 seconds.
+All jobs executed in 3725.828 seconds.
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] CPU Utilization: 19.1%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Memory Usage: 2.0%
+[MONITORING] [local.openml_t_359981.pygmo_c.jungle_chess_2pcs_raw_endgame_complete.0.H2OAutoML] Disk Usage: 43.2%
+Processing results for h2oautoml.openml_t_359981.pygmo_c.local.20211210T063857
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359981.pygmo_c.local.20211210T063857/scores/H2OAutoML.benchmark_openml_t_359981.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359981.pygmo_c.local.20211210T063857/scores/results.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/results.csv`.
+Summing up scores for current run:
+                 id                                   task fold framework constraint    result      metric  duration      seed
+openml.org/t/359981 jungle_chess_2pcs_raw_endgame_complete    0 H2OAutoML    pygmo_c -0.143517 neg_logloss    3725.8 821890947

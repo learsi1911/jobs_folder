@@ -1,0 +1,241 @@
+/var/spool/slurm/slurmd/job8493989/slurm_script: line 8: activate: No such file or directory
+Running benchmark `H2OAutoML` on `openml/t/359956` framework in `local` mode.
+Loading frameworks definitions from ['/home/juradoi/experiments/automlbenchmark/resources/frameworks.yaml'].
+Loading benchmark constraint definitions from ['/home/juradoi/experiments/automlbenchmark/resources/constraints.yaml'].
+Loading openml task 359956.
+--- Logging error ---
+Traceback (most recent call last):
+
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/logging/__init__.py", line 1088, in emit
+    stream.write(msg + self.terminator)
+
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 958-959: ordinal not in range(256)
+
+Call stack:
+  File "runbenchmark.py", line 163, in <module>
+    bench = amlb.Benchmark(args.framework, args.benchmark, args.constraint)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 84, in __init__
+    self.benchmark_def, self.benchmark_name, self.benchmark_path = rget().benchmark_definition(benchmark_name, self.constraint_def)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/resources.py", line 195, in benchmark_definition
+    log.debug("Available task definitions:\n%s", tasks)
+
+Message: 'Available task definitions:\n%s'
+Arguments: ([{'name': 'qsar-biodeg', 'description': "**Author**: Kamel Mansouri, Tine Ringsted, Davide Ballabio  \n**Source**: [UCI](https://archive.ics.uci.edu/ml/datasets/QSAR+biodegradation)  \n**Please cite**: Mansouri, K., Ringsted, T., Ballabio, D., Todeschini, R., Consonni, V. (2013). Quantitative Structure - Activity Relationship models for ready biodegradability of chemicals. Journal of Chemical Information and Modeling, 53, 867-878 \n\n\nQSAR biodegradation Data Set \n\n* Abstract: \n\nData set containing values for 41 attributes (molecular descriptors) used to classify 1055 chemicals into 2 classes (ready and not ready biodegradable).\n\n\n* Source:\n\nKamel Mansouri, Tine Ringsted, Davide Ballabio (davide.ballabio '@' unimib.it), Roberto Todeschini, Viviana Consonni, Milano Chemometrics and QSAR Research Group (http://michem.disat.unimib.it/chm/), Universit�  degli Studi Milano �\u20ac\u201c Bicocca, Milano (Italy)\n\n\n* Data Set Information:\n\nThe QSAR biodegradation dataset was built in the Milano Chemometrics and QSAR Research Group (Universit�  degli Studi Milano �\u20ac\u201c Bicocca, Milano, Italy). The research leading to these results has received funding from the European Community�\u20ac\u2122s Seventh Framework Programme [FP7/2007-2013] under Grant Agreement n. 238701 of Marie Curie ITN Environmental Chemoinformatics (ECO) project. \nThe data have been used to develop QSAR (Quantitative Structure Activity Relationships) models for the study of the relationships between chemical structure and biodegradation of molecules. Biodegradation experimental values of 1055 chemicals were collected from the webpage of the National Institute of Technology and Evaluation of Japan (NITE). Classification models were developed in order to discriminate ready (356) and not ready (699) biodegradable molecules by means of three different modelling methods: k Nearest Neighbours, Partial Least Squares Discriminant Analysis and Support Vector Machines. Details on attributes (molecular descriptors) selected in each model can be found in the quoted reference: Mansouri, K., Ringsted, T., Ballabio, D., Todeschini, R., Consonni, V. (2013). Quantitative Structure - Activity Relationship models for ready biodegradability of chemicals. Journal of Chemical Information and Modeling, 53, 867-878.\n\n\n* Attribute Information:\n\n41 molecular descriptors and 1 experimental class: \n1) SpMax_L: Leading eigenvalue from Laplace matrix \n2) J_Dz(e): Balaban-like index from Barysz matrix weighted by Sanderson electronegativity \n3) nHM: Number of heavy atoms \n4) F01[N-N]: Frequency of N-N at topological distance 1 \n5) F04[C-N]: Frequency of C-N at topological distance 4 \n6) NssssC: Number of atoms of type ssssC \n7) nCb-: Number of substituted benzene C(sp2) \n8) C%: Percentage of C atoms \n9) nCp: Number of terminal primary C(sp3) \n10) nO: Number of oxygen atoms \n11) F03[C-N]: Frequency of C-N at topological distance 3 \n12) SdssC: Sum of dssC E-states \n13) HyWi_B(m): Hyper-Wiener-like index (log function) from Burden matrix weighted by mass \n14) LOC: Lopping centric index \n15) SM6_L: Spectral moment of order 6 from Laplace matrix \n16) F03[C-O]: Frequency of C - O at topological distance 3 \n17) Me: Mean atomic Sanderson electronegativity (scaled on Carbon atom) \n18) Mi: Mean first ionization potential (scaled on Carbon atom) \n19) nN-N: Number of N hydrazines \n20) nArNO2: Number of nitro groups (aromatic) \n21) nCRX3: Number of CRX3 \n22) SpPosA_B(p): Normalized spectral positive sum from Burden matrix weighted by polarizability \n23) nCIR: Number of circuits \n24) B01[C-Br]: Presence/absence of C - Br at topological distance 1 \n25) B03[C-Cl]: Presence/absence of C - Cl at topological distance 3 \n26) N-073: Ar2NH / Ar3N / Ar2N-Al / R..N..R \n27) SpMax_A: Leading eigenvalue from adjacency matrix (Lovasz-Pelikan index) \n28) Psi_i_1d: Intrinsic state pseudoconnectivity index - type 1d \n29) B04[C-Br]: Presence/absence of C - Br at topological distance 4 \n30) SdO: Sum of dO E-states \n31) TI2_L: Second Mohar index from Laplace matrix \n32) nCrt: Number of ring tertiary C(sp3) \n33) C-026: R--CX--R \n34) F02[C-N]: Frequency of C - N at topological distance 2 \n35) nHDon: Number of donor atoms for H-bonds (N and O) \n36) SpMax_B(m): Leading eigenvalue from Burden matrix weighted by mass \n37) Psi_i_A: Intrinsic state pseudoconnectivity index - type S average \n38) nN: Number of Nitrogen atoms \n39) SM6_B(m): Spectral moment of order 6 from Burden matrix weighted by mass \n40) nArCOOR: Number of esters (aromatic) \n41) nX: Number of halogen atoms \n42) experimental class: ready biodegradable (RB) and not ready biodegradable (NRB)\n\n\n* Relevant Papers:\n\nMansouri, K., Ringsted, T., Ballabio, D., Todeschini, R., Consonni, V. (2013). Quantitative Structure - Activity Relationship models for ready biodegradability of chemicals. Journal of Chemical Information and Modeling, 53, 867-878", 'openml_task_id': 359956, 'id': 'openml.org/t/359956', 'folds': 1, 'max_runtime_seconds': 3600, 'cores': 16, 'max_mem_size_mb': -1, 'min_vol_size_mb': -1, 'metric': None, 'ec2_instance_type': 'm5.4xlarge', 'ec2_volume_type': 'standard'}, {'folds': 1, 'max_runtime_seconds': 3600, 'cores': 16, 'name': '__defaults__', 'max_mem_size_mb': -1, 'min_vol_size_mb': -1, 'id': None, 'metric': None, 'ec2_instance_type': 'm5.4xlarge', 'ec2_volume_type': 'standard', 'enabled': False}],)
+--- Logging error ---
+Traceback (most recent call last):
+
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/logging/__init__.py", line 1088, in emit
+    stream.write(msg + self.terminator)
+
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 958-959: ordinal not in range(256)
+
+Call stack:
+  File "runbenchmark.py", line 163, in <module>
+    bench = amlb.Benchmark(args.framework, args.benchmark, args.constraint)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 85, in __init__
+    log.debug("Using benchmark definition: %s.", self.benchmark_def)
+
+Message: 'Using benchmark definition: %s.'
+Arguments: ([{'name': 'qsar-biodeg', 'description': "**Author**: Kamel Mansouri, Tine Ringsted, Davide Ballabio  \n**Source**: [UCI](https://archive.ics.uci.edu/ml/datasets/QSAR+biodegradation)  \n**Please cite**: Mansouri, K., Ringsted, T., Ballabio, D., Todeschini, R., Consonni, V. (2013). Quantitative Structure - Activity Relationship models for ready biodegradability of chemicals. Journal of Chemical Information and Modeling, 53, 867-878 \n\n\nQSAR biodegradation Data Set \n\n* Abstract: \n\nData set containing values for 41 attributes (molecular descriptors) used to classify 1055 chemicals into 2 classes (ready and not ready biodegradable).\n\n\n* Source:\n\nKamel Mansouri, Tine Ringsted, Davide Ballabio (davide.ballabio '@' unimib.it), Roberto Todeschini, Viviana Consonni, Milano Chemometrics and QSAR Research Group (http://michem.disat.unimib.it/chm/), Universit�  degli Studi Milano �\u20ac\u201c Bicocca, Milano (Italy)\n\n\n* Data Set Information:\n\nThe QSAR biodegradation dataset was built in the Milano Chemometrics and QSAR Research Group (Universit�  degli Studi Milano �\u20ac\u201c Bicocca, Milano, Italy). The research leading to these results has received funding from the European Community�\u20ac\u2122s Seventh Framework Programme [FP7/2007-2013] under Grant Agreement n. 238701 of Marie Curie ITN Environmental Chemoinformatics (ECO) project. \nThe data have been used to develop QSAR (Quantitative Structure Activity Relationships) models for the study of the relationships between chemical structure and biodegradation of molecules. Biodegradation experimental values of 1055 chemicals were collected from the webpage of the National Institute of Technology and Evaluation of Japan (NITE). Classification models were developed in order to discriminate ready (356) and not ready (699) biodegradable molecules by means of three different modelling methods: k Nearest Neighbours, Partial Least Squares Discriminant Analysis and Support Vector Machines. Details on attributes (molecular descriptors) selected in each model can be found in the quoted reference: Mansouri, K., Ringsted, T., Ballabio, D., Todeschini, R., Consonni, V. (2013). Quantitative Structure - Activity Relationship models for ready biodegradability of chemicals. Journal of Chemical Information and Modeling, 53, 867-878.\n\n\n* Attribute Information:\n\n41 molecular descriptors and 1 experimental class: \n1) SpMax_L: Leading eigenvalue from Laplace matrix \n2) J_Dz(e): Balaban-like index from Barysz matrix weighted by Sanderson electronegativity \n3) nHM: Number of heavy atoms \n4) F01[N-N]: Frequency of N-N at topological distance 1 \n5) F04[C-N]: Frequency of C-N at topological distance 4 \n6) NssssC: Number of atoms of type ssssC \n7) nCb-: Number of substituted benzene C(sp2) \n8) C%: Percentage of C atoms \n9) nCp: Number of terminal primary C(sp3) \n10) nO: Number of oxygen atoms \n11) F03[C-N]: Frequency of C-N at topological distance 3 \n12) SdssC: Sum of dssC E-states \n13) HyWi_B(m): Hyper-Wiener-like index (log function) from Burden matrix weighted by mass \n14) LOC: Lopping centric index \n15) SM6_L: Spectral moment of order 6 from Laplace matrix \n16) F03[C-O]: Frequency of C - O at topological distance 3 \n17) Me: Mean atomic Sanderson electronegativity (scaled on Carbon atom) \n18) Mi: Mean first ionization potential (scaled on Carbon atom) \n19) nN-N: Number of N hydrazines \n20) nArNO2: Number of nitro groups (aromatic) \n21) nCRX3: Number of CRX3 \n22) SpPosA_B(p): Normalized spectral positive sum from Burden matrix weighted by polarizability \n23) nCIR: Number of circuits \n24) B01[C-Br]: Presence/absence of C - Br at topological distance 1 \n25) B03[C-Cl]: Presence/absence of C - Cl at topological distance 3 \n26) N-073: Ar2NH / Ar3N / Ar2N-Al / R..N..R \n27) SpMax_A: Leading eigenvalue from adjacency matrix (Lovasz-Pelikan index) \n28) Psi_i_1d: Intrinsic state pseudoconnectivity index - type 1d \n29) B04[C-Br]: Presence/absence of C - Br at topological distance 4 \n30) SdO: Sum of dO E-states \n31) TI2_L: Second Mohar index from Laplace matrix \n32) nCrt: Number of ring tertiary C(sp3) \n33) C-026: R--CX--R \n34) F02[C-N]: Frequency of C - N at topological distance 2 \n35) nHDon: Number of donor atoms for H-bonds (N and O) \n36) SpMax_B(m): Leading eigenvalue from Burden matrix weighted by mass \n37) Psi_i_A: Intrinsic state pseudoconnectivity index - type S average \n38) nN: Number of Nitrogen atoms \n39) SM6_B(m): Spectral moment of order 6 from Burden matrix weighted by mass \n40) nArCOOR: Number of esters (aromatic) \n41) nX: Number of halogen atoms \n42) experimental class: ready biodegradable (RB) and not ready biodegradable (NRB)\n\n\n* Relevant Papers:\n\nMansouri, K., Ringsted, T., Ballabio, D., Todeschini, R., Consonni, V. (2013). Quantitative Structure - Activity Relationship models for ready biodegradability of chemicals. Journal of Chemical Information and Modeling, 53, 867-878", 'openml_task_id': 359956, 'id': 'openml.org/t/359956', 'folds': 1, 'max_runtime_seconds': 3600, 'cores': 16, 'max_mem_size_mb': -1, 'min_vol_size_mb': -1, 'metric': None, 'ec2_instance_type': 'm5.4xlarge', 'ec2_volume_type': 'standard'}, {'folds': 1, 'max_runtime_seconds': 3600, 'cores': 16, 'name': '__defaults__', 'max_mem_size_mb': -1, 'min_vol_size_mb': -1, 'id': None, 'metric': None, 'ec2_instance_type': 'm5.4xlarge', 'ec2_volume_type': 'standard', 'enabled': False}],)
+
+-------------------------------------------------------------------
+Starting job local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML.
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] CPU Utilization: 16.0%
+Assigning 16 cores (total=16) for new task qsar-biodeg.
+Assigning 90963 MB (total=95302 MB) for new qsar-biodeg task.
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Memory Usage: 2.4%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Disk Usage: 43.2%
+Running task qsar-biodeg on framework H2OAutoML with config:
+TaskConfig({})
+Running cmd `/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py`
+INFO:__main__:
+**** H2O AutoML [v3.34.0.3] ****
+
+INFO:__main__:Starting H2O cluster with 16 cores, 60642M memory.
+Checking whether there is an H2O instance running at http://localhost:32922 ..... not found.
+Attempting to start a local H2O server...
+  Java Version: openjdk version "11.0.12" 2021-07-20; OpenJDK Runtime Environment (build 11.0.12+7-post-Debian-2deb10u1); OpenJDK 64-Bit Server VM (build 11.0.12+7-post-Debian-2deb10u1, mixed mode, sharing)
+  Starting server from /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/backend/bin/h2o.jar
+  Ice root: /tmp/tmp5_ixo17c
+  JVM stdout: /tmp/tmp5_ixo17c/h2o_unknownUser_started_from_python.out
+  JVM stderr: /tmp/tmp5_ixo17c/h2o_unknownUser_started_from_python.err
+  Server is running at http://127.0.0.1:32922
+Connecting to H2O server at http://127.0.0.1:32922 ... successful.
+--------------------------  ------------------------------------------------------------------
+H2O_cluster_uptime:         01 secs
+H2O_cluster_timezone:       Europe/Amsterdam
+H2O_data_parsing_timezone:  UTC
+H2O_cluster_version:        3.34.0.3
+H2O_cluster_version_age:    2 months and 2 days
+H2O_cluster_name:           H2O_from_python_unknownUser_72e6hs
+H2O_cluster_total_nodes:    1
+H2O_cluster_free_memory:    59.23 Gb
+H2O_cluster_total_cores:    16
+H2O_cluster_allowed_cores:  16
+H2O_cluster_status:         locked, healthy
+H2O_connection_url:         http://127.0.0.1:32922
+H2O_connection_proxy:       {"http": null, "https": null}
+H2O_internal_security:      False
+H2O_API_Extensions:         Amazon S3, XGBoost, Algos, AutoML, Core V3, TargetEncoder, Core V4
+Python_version:             3.8.12 final
+--------------------------  ------------------------------------------------------------------
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+INFO:__main__:Running model on task qsar-biodeg, fold 0.
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] CPU Utilization: 62.4%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Memory Usage: 45.4%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] CPU Utilization: 96.9%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Memory Usage: 45.6%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] CPU Utilization: 98.0%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Memory Usage: 45.5%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] CPU Utilization: 97.7%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Memory Usage: 45.7%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] CPU Utilization: 97.3%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Memory Usage: 45.7%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] CPU Utilization: 97.7%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Memory Usage: 45.8%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] CPU Utilization: 97.7%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Memory Usage: 45.8%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] CPU Utilization: 97.6%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Memory Usage: 45.8%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] CPU Utilization: 96.7%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Memory Usage: 46.0%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] CPU Utilization: 97.3%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Memory Usage: 46.0%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] CPU Utilization: 97.5%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Memory Usage: 46.1%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] CPU Utilization: 96.7%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Memory Usage: 46.1%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] CPU Utilization: 97.4%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Memory Usage: 46.1%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] CPU Utilization: 97.6%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Memory Usage: 46.2%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] CPU Utilization: 97.7%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Memory Usage: 46.3%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] CPU Utilization: 97.3%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Memory Usage: 46.4%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] CPU Utilization: 97.1%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Memory Usage: 46.4%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] CPU Utilization: 97.4%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Memory Usage: 46.4%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] CPU Utilization: 98.0%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Memory Usage: 46.5%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] CPU Utilization: 97.9%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Memory Usage: 46.5%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] CPU Utilization: 95.2%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Memory Usage: 46.6%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] CPU Utilization: 98.4%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Memory Usage: 46.7%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] CPU Utilization: 97.1%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Memory Usage: 46.7%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] CPU Utilization: 97.1%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Memory Usage: 46.8%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] CPU Utilization: 96.6%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Memory Usage: 46.9%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] CPU Utilization: 97.7%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Memory Usage: 46.9%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] CPU Utilization: 97.6%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Memory Usage: 47.0%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] CPU Utilization: 97.5%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Memory Usage: 47.0%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Disk Usage: 43.2%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] CPU Utilization: 63.4%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Memory Usage: 47.7%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Disk Usage: 43.2%
+AutoML progress: |███████████████████████████████████████████████████████████████| (done) 100%
+stackedensemble prediction progress: |███████████████████████████████████████████| (done) 100%
+H2O session _sid_8be3 closed.
+
+
+
+Predictions preview:
+                       1                      2 predictions truth
+0    0.5865696830781535     0.4134303169218465           2     1
+1    0.7780117818357717    0.22198821816422826           1     1
+2     0.935384791006502    0.06461520899349807           1     1
+3    0.9985762676062304  0.0014237323937695747           1     1
+4    0.7975775693969106    0.20242243060308937           1     1
+5    0.4351212919822023     0.5648787080177977           2     1
+6    0.9620731447291361    0.03792685527086388           1     1
+7      0.68830237597501       0.31169762402499           1     1
+8    0.9897361447976093    0.01026385520239067           1     1
+9    0.9983297131627628  0.0016702868372372474           1     1
+10   0.9982296560591505   0.001770343940849492           1     1
+11  0.49703914820075845     0.5029608517992415           2     1
+12   0.9915665186212568    0.00843348137874325           1     1
+13   0.9391872330372617    0.06081276696273829           1     1
+14   0.9957905082820334   0.004209491717966538           1     1
+15   0.9602131309520439    0.03978686904795611           1     1
+16   0.7378049103386574    0.26219508966134264           1     1
+17   0.8663855984381682    0.13361440156183177           1     1
+18   0.9980508094589459   0.001949190541054099           1     1
+19   0.9959916127712619   0.004008387228738052           1     1
+
+Predictions saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359956.pygmo_c.local.20211209T221452/predictions/qsar-biodeg/0/predictions.csv`.
+Loading metadata from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359956.pygmo_c.local.20211209T221452/predictions/qsar-biodeg/0/metadata.json`.
+Loading predictions from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359956.pygmo_c.local.20211209T221452/predictions/qsar-biodeg/0/predictions.csv`.
+Metric scores: { 'acc': 0.8584905660377359,
+  'app_version': 'dev [master, beef024]',
+  'auc': 0.9519841269841269,
+  'balacc': 0.8591269841269842,
+  'constraint': 'pygmo_c',
+  'duration': nan,
+  'fold': 0,
+  'framework': 'H2OAutoML',
+  'id': 'openml.org/t/359956',
+  'info': None,
+  'logloss': 0.2639887614953469,
+  'metric': 'auc',
+  'mode': 'local',
+  'models_count': 280,
+  'params': '',
+  'predict_duration': 0.10594987869262695,
+  'result': 0.9519841269841269,
+  'seed': 1260848115,
+  'task': 'qsar-biodeg',
+  'training_duration': 3527.6511781215668,
+  'type': 'binary',
+  'utc': '2021-12-09T23:13:49',
+  'version': '3.34.0.3'}
+Job `local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML` executed in 3536.377 seconds.
+All jobs executed in 3536.833 seconds.
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] CPU Utilization: 85.9%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Memory Usage: 2.4%
+[MONITORING] [local.openml_t_359956.pygmo_c.qsar-biodeg.0.H2OAutoML] Disk Usage: 43.2%
+Processing results for h2oautoml.openml_t_359956.pygmo_c.local.20211209T221452
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359956.pygmo_c.local.20211209T221452/scores/H2OAutoML.benchmark_openml_t_359956.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_359956.pygmo_c.local.20211209T221452/scores/results.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/results.csv`.
+Summing up scores for current run:
+                 id        task fold framework constraint   result metric  duration       seed
+openml.org/t/359956 qsar-biodeg    0 H2OAutoML    pygmo_c 0.951984    auc    3536.4 1260848115

@@ -1,0 +1,204 @@
+/var/spool/slurm/slurmd/job8493694/slurm_script: line 8: activate: No such file or directory
+Running benchmark `H2OAutoML` on `openml/t/190137` framework in `local` mode.
+Loading frameworks definitions from ['/home/juradoi/experiments/automlbenchmark/resources/frameworks.yaml'].
+Loading benchmark constraint definitions from ['/home/juradoi/experiments/automlbenchmark/resources/constraints.yaml'].
+Loading openml task 190137.
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] CPU Utilization: 22.3%
+
+-----------------------------------------------------------------------
+Starting job local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML.
+Assigning 16 cores (total=16) for new task ozone-level-8hr.
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Memory Usage: 2.2%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Disk Usage: 45.3%
+Assigning 91144 MB (total=95302 MB) for new ozone-level-8hr task.
+Running task ozone-level-8hr on framework H2OAutoML with config:
+TaskConfig({})
+Running cmd `/home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/bin/python -W ignore /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/exec.py`
+INFO:__main__:
+**** H2O AutoML [v3.34.0.3] ****
+
+INFO:__main__:Starting H2O cluster with 16 cores, 60763M memory.
+Checking whether there is an H2O instance running at http://localhost:26189 ..... not found.
+Attempting to start a local H2O server...
+  Java Version: openjdk version "11.0.12" 2021-07-20; OpenJDK Runtime Environment (build 11.0.12+7-post-Debian-2deb10u1); OpenJDK 64-Bit Server VM (build 11.0.12+7-post-Debian-2deb10u1, mixed mode, sharing)
+  Starting server from /home/juradoi/experiments/automlbenchmark/frameworks/H2OAutoML/venv/lib/python3.8/site-packages/h2o/backend/bin/h2o.jar
+  Ice root: /tmp/tmpv6jdfg_e
+  JVM stdout: /tmp/tmpv6jdfg_e/h2o_unknownUser_started_from_python.out
+  JVM stderr: /tmp/tmpv6jdfg_e/h2o_unknownUser_started_from_python.err
+  Server is running at http://127.0.0.1:26189
+Connecting to H2O server at http://127.0.0.1:26189 ... successful.
+--------------------------  ------------------------------------------------------------------
+H2O_cluster_uptime:         01 secs
+H2O_cluster_timezone:       Europe/Amsterdam
+H2O_data_parsing_timezone:  UTC
+H2O_cluster_version:        3.34.0.3
+H2O_cluster_version_age:    2 months and 2 days
+H2O_cluster_name:           H2O_from_python_unknownUser_ycegp6
+H2O_cluster_total_nodes:    1
+H2O_cluster_free_memory:    59.34 Gb
+H2O_cluster_total_cores:    16
+H2O_cluster_allowed_cores:  16
+H2O_cluster_status:         locked, healthy
+H2O_connection_url:         http://127.0.0.1:26189
+H2O_connection_proxy:       {"http": null, "https": null}
+H2O_internal_security:      False
+H2O_API_Extensions:         Amazon S3, XGBoost, Algos, AutoML, Core V3, TargetEncoder, Core V4
+Python_version:             3.8.12 final
+--------------------------  ------------------------------------------------------------------
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+Parse progress: |████████████████████████████████████████████████████████████████| (done) 100%
+INFO:__main__:Running model on task ozone-level-8hr, fold 0.
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] CPU Utilization: 49.6%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Memory Usage: 45.3%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Disk Usage: 45.3%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] CPU Utilization: 62.6%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Memory Usage: 45.3%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Disk Usage: 45.3%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] CPU Utilization: 64.5%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Memory Usage: 45.3%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Disk Usage: 45.3%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] CPU Utilization: 77.4%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Memory Usage: 46.1%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Disk Usage: 45.3%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] CPU Utilization: 94.9%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Memory Usage: 46.1%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Disk Usage: 45.3%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] CPU Utilization: 95.0%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Memory Usage: 46.3%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Disk Usage: 45.3%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] CPU Utilization: 95.5%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Memory Usage: 46.3%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Disk Usage: 45.3%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] CPU Utilization: 95.6%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Memory Usage: 46.3%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Disk Usage: 45.3%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] CPU Utilization: 95.0%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Memory Usage: 46.3%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Disk Usage: 45.3%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] CPU Utilization: 94.1%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Memory Usage: 46.3%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Disk Usage: 45.3%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] CPU Utilization: 93.7%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Memory Usage: 46.4%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Disk Usage: 45.3%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] CPU Utilization: 93.4%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Memory Usage: 46.4%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Disk Usage: 45.3%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] CPU Utilization: 94.2%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Memory Usage: 46.4%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Disk Usage: 45.3%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] CPU Utilization: 94.1%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Memory Usage: 46.4%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Disk Usage: 45.3%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] CPU Utilization: 94.9%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Memory Usage: 46.4%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Disk Usage: 45.3%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] CPU Utilization: 96.2%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Memory Usage: 46.4%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Disk Usage: 45.3%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] CPU Utilization: 95.3%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Memory Usage: 46.4%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Disk Usage: 45.3%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] CPU Utilization: 95.4%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Memory Usage: 46.4%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Disk Usage: 45.3%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] CPU Utilization: 95.9%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Memory Usage: 46.5%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Disk Usage: 45.3%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] CPU Utilization: 94.2%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Memory Usage: 46.5%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Disk Usage: 45.3%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] CPU Utilization: 94.4%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Memory Usage: 46.7%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Disk Usage: 45.3%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] CPU Utilization: 92.9%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Memory Usage: 46.7%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Disk Usage: 45.3%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] CPU Utilization: 94.1%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Memory Usage: 46.7%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Disk Usage: 45.3%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] CPU Utilization: 94.5%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Memory Usage: 46.8%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Disk Usage: 45.3%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] CPU Utilization: 94.7%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Memory Usage: 46.8%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Disk Usage: 45.3%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] CPU Utilization: 94.7%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Memory Usage: 46.8%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Disk Usage: 45.3%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] CPU Utilization: 94.3%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Memory Usage: 46.8%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Disk Usage: 45.3%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] CPU Utilization: 94.8%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Memory Usage: 46.8%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Disk Usage: 45.3%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] CPU Utilization: 72.3%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Memory Usage: 47.0%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Disk Usage: 45.3%
+AutoML progress: |███████████████████████████████████████████████████████████████| (done) 100%
+stackedensemble prediction progress: |███████████████████████████████████████████| (done) 100%
+H2O session _sid_bcea closed.
+
+
+
+Predictions preview:
+                      1                      2 predictions truth
+0   0.9966113678352561   0.003388632164743976           1     1
+1   0.9757796114656545   0.024220388534345473           1     1
+2   0.9970913241555133  0.0029086758444867517           1     1
+3   0.9995629689362407  4.3703106375920516E-4           1     1
+4   0.9990602374455982   9.397625544018049E-4           1     1
+5   0.9994665410115555   5.334589884445086E-4           1     1
+6   0.9972087968028135  0.0027912031971865526           1     1
+7   0.9932974002171124   0.006702599782887615           1     1
+8   0.9965424635226052  0.0034575364773947476           1     1
+9   0.9992161208145005   7.838791854995179E-4           1     1
+10  0.9956077359258284   0.004392264074171619           1     1
+11  0.9968794140104783   0.003120585989521745           1     1
+12  0.9863355888142289   0.013664411185771152           1     1
+13  0.9867492590299585    0.01325074097004155           1     1
+14  0.9987250362787496  0.0012749637212503362           1     1
+15   0.999499840911358   5.001590886420106E-4           1     1
+16  0.9992419763031332   7.580236968668257E-4           1     1
+17  0.9993315305806099   6.684694193901684E-4           1     1
+18  0.9967480740820591  0.0032519259179408706           1     1
+19  0.9946627444591629   0.005337255540837123           1     1
+
+Predictions saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_190137.pygmo_c.local.20211209T211551/predictions/ozone-level-8hr/0/predictions.csv`.
+Loading metadata from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_190137.pygmo_c.local.20211209T211551/predictions/ozone-level-8hr/0/metadata.json`.
+Loading predictions from `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_190137.pygmo_c.local.20211209T211551/predictions/ozone-level-8hr/0/predictions.csv`.
+Metric scores: { 'acc': 0.937007874015748,
+  'app_version': 'dev [master, beef024]',
+  'auc': 0.9440651260504201,
+  'balacc': 0.76234243697479,
+  'constraint': 'pygmo_c',
+  'duration': nan,
+  'fold': 0,
+  'framework': 'H2OAutoML',
+  'id': 'openml.org/t/190137',
+  'info': None,
+  'logloss': 0.14000656880267437,
+  'metric': 'auc',
+  'mode': 'local',
+  'models_count': 253,
+  'params': '',
+  'predict_duration': 0.10432171821594238,
+  'result': 0.9440651260504201,
+  'seed': 1577928454,
+  'task': 'ozone-level-8hr',
+  'training_duration': 3542.2313928604126,
+  'type': 'binary',
+  'utc': '2021-12-09T22:15:02',
+  'version': '3.34.0.3'}
+Job `local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML` executed in 3550.024 seconds.
+All jobs executed in 3550.643 seconds.
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] CPU Utilization: 67.1%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Memory Usage: 2.2%
+[MONITORING] [local.openml_t_190137.pygmo_c.ozone-level-8hr.0.H2OAutoML] Disk Usage: 45.3%
+Processing results for h2oautoml.openml_t_190137.pygmo_c.local.20211209T211551
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_190137.pygmo_c.local.20211209T211551/scores/H2OAutoML.benchmark_openml_t_190137.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/h2oautoml.openml_t_190137.pygmo_c.local.20211209T211551/scores/results.csv`.
+Scores saved to `/home/juradoi/experiments/automlbenchmark/results/results.csv`.
+Summing up scores for current run:
+                 id            task fold framework constraint   result metric  duration       seed
+openml.org/t/190137 ozone-level-8hr    0 H2OAutoML    pygmo_c 0.944065    auc    3550.0 1577928454

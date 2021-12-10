@@ -1,0 +1,89 @@
+/var/spool/slurm/slurmd/job8493060/slurm_script: line 8: activate: No such file or directory
+Running benchmark `H2OAutoML` on `openml/t/167120` framework in `local` mode.
+Loading frameworks definitions from ['/home/juradoi/experiments/automlbenchmark/resources/frameworks.yaml'].
+Loading benchmark constraint definitions from ['/home/juradoi/experiments/automlbenchmark/resources/constraints.yaml'].
+Loading openml task 167120.
+--- Logging error ---
+Traceback (most recent call last):
+
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/logging/__init__.py", line 1088, in emit
+    stream.write(msg + self.terminator)
+
+UnicodeEncodeError: 'latin-1' codec can't encode character '\u2019' in position 468: ordinal not in range(256)
+
+Call stack:
+  File "runbenchmark.py", line 163, in <module>
+    bench = amlb.Benchmark(args.framework, args.benchmark, args.constraint)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 84, in __init__
+    self.benchmark_def, self.benchmark_name, self.benchmark_path = rget().benchmark_definition(benchmark_name, self.constraint_def)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/resources.py", line 195, in benchmark_definition
+    log.debug("Available task definitions:\n%s", tasks)
+
+Message: 'Available task definitions:\n%s'
+Arguments: ([{'name': 'numerai28_6', 'description': '**Author**: Numer.ai  \n**Source**: [Kaggle](https://www.kaggle.com/numerai/encrypted-stock-market-data-from-numerai)  \n**Please cite**:   \n\n**Encrypted Stock Market Training Data from Numer.ai**  \nThe data is cleaned, regularized and encrypted global equity data. The first 21 columns (feature1 - feature21) are features, and target is the binary class you\u2019re trying to predict.', 'openml_task_id': 167120, 'id': 'openml.org/t/167120', 'folds': 1, 'max_runtime_seconds': 3600, 'cores': 16, 'max_mem_size_mb': -1, 'min_vol_size_mb': -1, 'metric': None, 'ec2_instance_type': 'm5.4xlarge', 'ec2_volume_type': 'standard'}, {'folds': 1, 'max_runtime_seconds': 3600, 'cores': 16, 'name': '__defaults__', 'max_mem_size_mb': -1, 'min_vol_size_mb': -1, 'id': None, 'metric': None, 'ec2_instance_type': 'm5.4xlarge', 'ec2_volume_type': 'standard', 'enabled': False}],)
+--- Logging error ---
+Traceback (most recent call last):
+
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/logging/__init__.py", line 1088, in emit
+    stream.write(msg + self.terminator)
+
+UnicodeEncodeError: 'latin-1' codec can't encode character '\u2019' in position 468: ordinal not in range(256)
+
+Call stack:
+  File "runbenchmark.py", line 163, in <module>
+    bench = amlb.Benchmark(args.framework, args.benchmark, args.constraint)
+
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 85, in __init__
+    log.debug("Using benchmark definition: %s.", self.benchmark_def)
+
+Message: 'Using benchmark definition: %s.'
+Arguments: ([{'name': 'numerai28_6', 'description': '**Author**: Numer.ai  \n**Source**: [Kaggle](https://www.kaggle.com/numerai/encrypted-stock-market-data-from-numerai)  \n**Please cite**:   \n\n**Encrypted Stock Market Training Data from Numer.ai**  \nThe data is cleaned, regularized and encrypted global equity data. The first 21 columns (feature1 - feature21) are features, and target is the binary class you\u2019re trying to predict.', 'openml_task_id': 167120, 'id': 'openml.org/t/167120', 'folds': 1, 'max_runtime_seconds': 3600, 'cores': 16, 'max_mem_size_mb': -1, 'min_vol_size_mb': -1, 'metric': None, 'ec2_instance_type': 'm5.4xlarge', 'ec2_volume_type': 'standard'}, {'folds': 1, 'max_runtime_seconds': 3600, 'cores': 16, 'name': '__defaults__', 'max_mem_size_mb': -1, 'min_vol_size_mb': -1, 'id': None, 'metric': None, 'ec2_instance_type': 'm5.4xlarge', 'ec2_volume_type': 'standard', 'enabled': False}],)
+
+-------------------------------------------------------------------
+Starting job local.openml_t_167120.pygmo_c.numerai28_6.0.H2OAutoML.
+Assigning 16 cores (total=16) for new task numerai28_6.
+Assigning 91085 MB (total=95302 MB) for new numerai28_6 task.
+[MONITORING] [local.openml_t_167120.pygmo_c.numerai28_6.0.H2OAutoML] CPU Utilization: 16.1%
+[MONITORING] [local.openml_t_167120.pygmo_c.numerai28_6.0.H2OAutoML] Memory Usage: 2.3%
+[MONITORING] [local.openml_t_167120.pygmo_c.numerai28_6.0.H2OAutoML] Disk Usage: 43.2%
+Job `local.openml_t_167120.pygmo_c.numerai28_6.0.H2OAutoML` failed with error: [Errno 17] File exists: '/home/juradoi/.cache/openml/org/openml/www/org/openml/www/datasets/23517'
+Traceback (most recent call last):
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 92, in start
+    self._setup()
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 512, in setup
+    self.load_data()
+  File "/home/juradoi/experiments/automlbenchmark/amlb/benchmark.py", line 482, in load_data
+    self._dataset = Benchmark.data_loader.load(DataSourceType.openml_task, task_id=self._task_def.openml_task_id, fold=self.fold)
+  File "/home/juradoi/experiments/automlbenchmark/amlb/datasets/__init__.py", line 21, in load
+    return self.openml_loader.load(*args, **kwargs)
+  File "/home/juradoi/experiments/automlbenchmark/amlb/utils/process.py", line 702, in profiler
+    return fn(*args, **kwargs)
+  File "/home/juradoi/experiments/automlbenchmark/amlb/datasets/openml.py", line 43, in load
+    task = oml.tasks.get_task(task_id, download_qualities=False)
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/site-packages/openml/tasks/functions.py", line 376, in get_task
+    raise e
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/site-packages/openml/tasks/functions.py", line 361, in get_task
+    dataset = get_dataset(task.dataset_id, download_data, download_qualities=download_qualities)
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/site-packages/openml/datasets/functions.py", line 410, in get_dataset
+    did_cache_dir = _create_cache_directory_for_id(DATASETS_CACHE_DIR_NAME, dataset_id,)
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/site-packages/openml/utils.py", line 315, in _create_cache_directory_for_id
+    os.makedirs(cache_dir)
+  File "/home/juradoi/miniconda3/envs/venv/lib/python3.8/os.py", line 223, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/home/juradoi/.cache/openml/org/openml/www/org/openml/www/datasets/23517'
+Job `local.openml_t_167120.pygmo_c.numerai28_6.0.H2OAutoML` did not stop gracefully: Job `local.openml_t_167120.pygmo_c.numerai28_6.0.H2OAutoML` was interrupted.
+Traceback (most recent call last):
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 142, in stop
+    self._cancel()
+  File "/home/juradoi/experiments/automlbenchmark/amlb/job.py", line 179, in _cancel
+    raise_in_thread(self.thread_id, CancelledError(f"Job `{self.name}` was interrupted."))
+  File "/home/juradoi/experiments/automlbenchmark/amlb/utils/process.py", line 395, in raise_in_thread
+    ret = ctypes.pythonapi.PyThreadState_SetAsyncExc(tid, exc_class)
+amlb.utils.process.CancelledError: Job `local.openml_t_167120.pygmo_c.numerai28_6.0.H2OAutoML` was interrupted.
+All jobs executed in 0.072 seconds.
+[MONITORING] [local.openml_t_167120.pygmo_c.numerai28_6.0.H2OAutoML] CPU Utilization: 2.6%
+[MONITORING] [local.openml_t_167120.pygmo_c.numerai28_6.0.H2OAutoML] Memory Usage: 2.3%
+[MONITORING] [local.openml_t_167120.pygmo_c.numerai28_6.0.H2OAutoML] Disk Usage: 43.2%
+Processing results for h2oautoml.openml_t_167120.pygmo_c.local.20211209T183916
